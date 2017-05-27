@@ -15,13 +15,13 @@ div#page-dup {
 div#page-libdem {
 	background: $orange;
 
-	h1, p { color: $black; }
+	h1, p { color: $black !important; }
 }
 
 div#page-snp {
 	background: $yellow;
 
-	h1, p { color: $black; }
+	h1, p { color: $black !important; }
 }
 
 div#page-green,
