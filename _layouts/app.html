@@ -1,0 +1,192 @@
+---
+layout: default
+---
+
+{% assign count-parties = 0 %}
+{% assign total-members = 0 %}
+
+{% for party in site.data.parties %}
+
+	{% assign count-parties = count-parties | plus: 1 %}
+
+  	{% assign count-members = 0 %}
+
+	{% for member in site.data.members %}
+
+		{% if party.party == member.party %}
+			{% assign total-members = total-members | plus: 1 %}
+			{% assign count-members = count-members | plus: 1 %}
+		{% endif %}
+
+	{% endfor %}
+
+	{% if count-members > 0 %}
+		{% assign count-parties-non-zero = count-parties-non-zero | plus: 1 %}
+	{% endif %}
+
+{% endfor %}
+
+
+<main id="app">
+
+	<div id="page-landing" class="page">
+
+		<div id="content-landing" class="content">
+
+			<img id="app" src="{{ site.logo-svg | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" alt="LGBT MP">
+
+			<div id="app-info">
+
+				<h1 id="total-count" class="display-1">{{ total-members }}</h1>
+
+				<p>LGBT MPs in the<br>{{ page.title }}<br>Parliament</p>
+
+				<h1 id="total-count" class="display-1">{{ count-parties-non-zero }}</h1>
+
+				<p>Parties with at least 1 out LGBT MP</p>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	{% for party in site.data.parties %}
+
+	{% assign count-members = 0 %}
+
+	{% for member in site.data.members %}
+
+		{% if party.party == member.party %}
+			{% assign count-members = count-members | plus: 1 %}
+		{% endif %}
+
+	{% endfor %}
+
+	{% if count-members > 0 %}
+
+	<div id="page-{{ party.css }}" class="page">
+
+		<div id="content-{{ party.css }}" class="content">
+
+			<div class="banner">
+
+				<img id="logo-{{ party.css }}" src="{{ party.image | prepend: '/app' | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" alt="{{ party.css }} logo">
+
+				<h1 class="party-name">{{ party.party }}</h1>
+
+			</div>
+
+			<div class="totals">
+
+				<p class="total-members">{{ count-members }}</p>
+
+			</div>
+
+			<div class="members">
+
+				<ul>
+				{% for member in site.data.members %}
+
+					{% if party.party == member.party %}
+
+						<li class="flip-container">
+							<div class="flipper">
+								<div class="front">
+									<span class="card-top">{{ member.name }}</span>
+									<span class="card-bottom">{{ member.constituency }}</span>
+								</div>
+								<div class="back">
+									<span class="card-top">Source: <a href="{{ member.source }}" title="Source for {{ member.name }}: visit {{ member.source-description }}">{{ member.source-description }}</a></span>
+									<span class="card-bottom">{{ member.source-date | date: "%d %b %Y" }}</span>
+								</div>
+							</div>
+						</li>
+
+					{% endif %}
+
+				{% endfor %}
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	{% endif %}
+
+	{% endfor %}
+
+	<div id="page-non-zero" class="page">
+
+	{% for party in site.data.parties %}
+
+	{% assign count-members = 0 %}
+
+	{% for member in site.data.members %}
+
+		{% if party.party == member.party %}
+			{% assign count-members = count-members | plus: 1 %}
+		{% endif %}
+
+	{% endfor %}
+
+	{% if count-members == 0 %}
+
+		<div id="page-{{ party.css }}" class="stump">
+
+			<div id="content-{{ party.css }}" class="content">
+
+				<div class="banner">
+
+					<img id="logo-{{ party.css }}" src="{{ party.image | prepend: '/app' | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" alt="{{ party.css }} logo">
+
+					<h1 class="party-name">{{ party.party }}</h1>
+
+				</div>
+
+				<div class="totals">
+
+					<p class="total-members">{{ count-members }}</p>
+
+				</div>
+
+				<div class="members">
+
+					<ul>
+					{% for member in site.data.members %}
+
+						{% if party.party == member.party %}
+
+							<li class="flip-container">
+								<div class="flipper">
+									<div class="front">
+										<span class="card-top">{{ member.name }}</span>
+										<span class="card-bottom">{{ member.constituency }}</span>
+									</div>
+									<div class="back">
+										<span class="card-top">Source: {{ member.source-date | date: "%d %b %Y" }}</span>
+										<span class="card-bottom"><a href="{{ member.source }}" title="Source for {{ member.name }}: visit {{ member.source-description }}">{{ member.source-description }}</a></span>
+									</div>
+								</div>
+							</li>
+
+						{% endif %}
+
+					{% endfor %}
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	{% endif %}
+
+	{% endfor %}
+
+	</div>
+
+</main>

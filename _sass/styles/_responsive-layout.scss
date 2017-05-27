@@ -1,0 +1,265 @@
+@include media-breakpoint-between(xs, sm) {
+
+	main#home {
+
+		width: 100vw;
+		min-height: 100vh;
+
+		overflow: hidden;
+		overflow-y: visible;
+
+		div#content-landing {
+
+			animation-name: one-third-page-height;
+			animation-duration: 5s;
+
+			height: 150px;
+
+		}
+
+		img#app {
+
+			animation-name: image-app-landing-shrink, landing-opacity;
+			animation-duration: 5s;
+
+			position: relative;
+			display: block;
+
+			margin-left: auto;
+			margin-right: auto;
+
+			width: 75%;
+			height: 100%;
+
+		}
+
+		div.page {
+			width: 100vw;
+			min-height: 100vh;
+
+			div.content {
+				width: 100vw;
+				min-height: 150px;
+
+				position: relative;
+				display: block;
+				float: left;
+
+				padding: 1rem;
+			}
+			div.navigation {
+				width: 100vw;
+				min-height: 100vh;
+
+				position: relative;
+				display: block;
+				float: left;
+
+				padding: 1rem;
+
+				ul#navigation {
+					li {
+						max-width: 320px;
+					}
+				}
+			}
+		}
+
+	}
+
+	main#app {
+		max-width: 100vw;
+
+		div.page {
+			width: 100vw;
+			min-height: 100vh;
+
+			padding: 1rem;
+
+			div.stump {
+				padding: 1rem;
+			}
+		}
+
+		div#page-landing {
+
+		    div#app-info {
+			    width: 100%;
+
+			    padding: 2rem 0;
+		    }
+
+		}
+
+		img#app {
+
+			position: relative;
+			display: block;
+
+			margin-left: auto;
+			margin-right: auto;
+
+			width: 75%;
+			height: 50%;
+
+		}
+
+		img[id*='logo-'] {
+
+			margin: 0 0 1rem 0;
+
+			max-height: 75px;
+
+		}
+
+	}
+
+
+}
+
+@include media-breakpoint-between(md, xl) {
+
+	main#home {
+
+		width: 100vw;
+		min-height: 100vh;
+
+		overflow: hidden;
+		overflow-y: visible;
+
+		div#content-landing {
+
+			animation-name: half-page-width;
+			animation-duration: 5s;
+
+		}
+
+		img#app {
+
+			animation-name: landing-opacity;
+			animation-duration: 5s;
+
+			position: relative;
+			display: block;
+
+			margin-left: auto;
+			margin-right: auto;
+
+			width: 50%;
+			height: 50%;
+		}
+
+		div.page {
+			width: 100vw;
+			height: 100vh;
+
+			animation-name: horizontal-view-shrink;
+			animation-duration: 5s;
+
+			div.content {
+
+				width: 50vw;
+				min-height: 100vh;
+
+				position: relative;
+				display: flex;
+				float: left;
+
+				align-items: center;
+				justify-content: center;
+
+				overflow: hidden;
+
+			}
+			div.navigation {
+
+				animation-name: landing-opacity;
+				animation-duration: 10s;
+
+				width: 50vw;
+				min-height: 100vh;
+
+				position: relative;
+				display: flex;
+				float: left;
+
+				align-items: center;
+				justify-content: center;
+
+				padding: 1rem;
+
+				ul#navigation {
+					li {
+						max-width: 400px;
+					}
+				}
+			}
+
+		}
+
+	}
+
+	main#app {
+		min-width: 130vw;
+		height: 100vh;
+
+		overflow-y: hidden;
+
+		div#page-landing {
+
+			animation-name: one-third-page-width;
+			animation-duration: 2.5s;
+
+		    div#app-info {
+			    animation: slide-in-left 2.5s;
+
+			    width: 100%;
+			    max-width: 30vw;
+
+			    padding: 2rem 0;
+		    }
+
+		}
+
+		div.page {
+			width: 30vw;
+			height: 100vh;
+
+			overflow-y: scroll;
+
+			padding: 2rem 1rem;
+
+			div.stump {
+				padding: 2rem 1rem;
+			}
+
+		}
+
+		img {
+		    margin-right: auto !important;
+		    margin-left: auto !important;
+		}
+
+		img#app {
+
+			position: relative;
+			display: block;
+
+			margin-left: auto;
+			margin-right: auto;
+
+			width: 50%;
+			height: 50%;
+		}
+
+		img[id*='logo-'] {
+
+			margin: 0 0 1rem 0;
+
+			max-height: 100px;
+
+		}
+
+	}
+
+}

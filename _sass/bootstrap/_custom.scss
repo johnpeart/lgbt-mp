@@ -1,0 +1,64 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+$blue:			#005ea5;
+$pink:			#d53880;
+$green:			#006435;
+$purple:		#912b88;
+$red:			#b10e1e;
+$yellow:		#ffbf47;
+$orange:		#f47738;
+$turquoise:		#28a197;
+$silver: 		#dddddd;
+
+$brand-primary:		$pink;
+$brand-info:		$blue;
+$brand-danger:		$red;
+$brand-success:		$green;
+$brand-warning:		$yellow;
+$brand-inverse:		#ffffff;
+
+$font-size-h1: 2.25rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.5rem;
+$font-size-h4: 1.25rem;
+$font-size-h5: 1rem;
+$font-size-h6: 1rem;
+
+$body-bg:		#f9f9fa;
+$body-color:	#1d1d1d;
+
+$link-color:		$brand-primary;
+$link-hover-color:	$link-color;
+$link-decoration:       none !default;
+$link-hover-decoration: underline !default;
+
+$menu-color:						#ffffff;
+$menu-bg:							#000000;
+
+$header-color:						$brand-primary;
+$header-bg:							$brand-inverse;
+$header-link-color: 				$brand-primary;
+$header-link-hover-decoration:		none;
+$header-link-hover-color: 			darken($brand-primary, 10%);
+$header-link-hover-decoration:		underline;
+
+$footer-bg: darken($body-bg, 3%);
+$footer-color: #1d1d1d;
+$footer-link-color: $brand-primary;
+
+$kbd-bg: 		transparent;
+$kbd-color:		$brand-primary;
+
+$code-bg:			$kbd-bg;
+$code-color:		$kbd-color;
+$code-font-size:	100%;
+
+$btn-primary-color:              $brand-primary;
+$btn-primary-bg:                 transparent;
+$btn-primary-border:             $brand-primary;
+
+$card-color: rgba(213, 56, 128, 1);
+$card-color-opacity-50: rgba(213, 56, 128, 0.5)

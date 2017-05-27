@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<main id="home">
+
+	<div id="landing" class="page">
+
+		<div id="content-landing" class="content">
+
+			<img id="app" src="{{ site.logo-svg | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" alt="LGBT MP">
+
+		</div>
+
+		<div id="navgation-landing" class="navigation">
+
+			<ul id="navigation">
+
+				<li>
+					<span class="card-top">
+						{{ page.title }}
+					</span>
+					<span class="card-bottom">
+						{{ content }}
+					</span>
+				</li>
+
+				<li>
+					<span class="card-top">
+						Site last generated:
+					</span>
+					<span class="card-bottom text-center">
+						{{ "now" | date: "%d %B %Y at %H:%M" }}
+					</span>
+				</li>
+
+				<li>
+					<span class="card-top">
+						Contact me
+					</span>
+					<span class="card-bottom text-center">
+						<a href="//jrpeart.com" class="btn btn-primary btn-block">Visit my website</a>
+						<a href="//twitter.com/johnpeart" class="btn btn-primary btn-block">Follow me on Twitter</a>
+					</span>
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+</main>
+

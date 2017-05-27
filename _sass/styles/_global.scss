@@ -1,0 +1,309 @@
+main#home {
+
+	div.page {
+		position: relative;
+		display: block;
+		float: left;
+
+		text-align: center;
+
+		div.navigation {
+
+			padding: 5vh 5vw;
+
+			h1 {
+				font-weight: 200;
+				margin-bottom: 1rem;
+			}
+		}
+
+		ul#navigation {
+
+			width: 100%;
+
+			margin: 0;
+			padding: 0;
+
+			color: $black;
+
+			li {
+
+				position: relative;
+				display: block;
+
+				width: 100%;
+
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 1rem;
+
+				list-style: none;
+
+				text-align: left;
+
+				border-radius: 10px;
+
+				background: #bcbcbc;
+
+				span.card-top {
+					position: relative;
+					display: inline-block;
+
+					width: 100%;
+
+					padding: 0.5rem;
+
+					background: rgba(255, 255, 255, 0.85);
+
+					border-top-left-radius: 10px;
+					border-top-right-radius: 10px;
+
+					font-weight: 600;
+					text-align: center;
+				}
+
+				span.card-bottom {
+					position: relative;
+					display: inline-block;
+
+					width: 100%;
+
+					background: rgba(255, 255, 255, 0.75);
+
+					border-bottom-left-radius: 10px;
+					border-bottom-right-radius: 10px;
+
+					padding: 0.5rem;
+					font-weight: 400;
+				}
+
+			}
+
+		}
+
+	}
+
+
+
+}
+
+main#app {
+
+	position: relative;
+	display: block;
+
+	float: left;
+
+	min-height: 100vh;
+
+	div.page {
+		position: relative;
+		display: block;
+		float: left;
+
+		&#page-non-zero {
+			padding: 0;
+		}
+
+		div.content {
+			position: relative;
+			display: block;
+
+			width: 100%;
+
+			img#app {
+			    @extend .img-fluid;
+		    }
+
+		    div#app-info {
+
+				position: relative;
+				display: block;
+
+			    width: 100%;
+
+				margin-left: auto;
+				margin-right: auto;
+
+				text-align: center;
+		    }
+
+			div.banner {
+				position: relative;
+				display: block;
+
+				width: 100%;
+
+				img {
+					position: relative;
+					display: block;
+
+				    margin-right: auto !important;
+				    margin-left: auto !important;
+
+				}
+
+				h1.party-name {
+					position: relative;
+					display: block;
+					width: 100%;
+
+					text-align: center;
+				}
+
+			}
+
+			div.totals {
+				position: relative;
+				display: block;
+
+				width: 100%;
+
+				p.total-members {
+					position: relative;
+					display: inline-block;
+
+					width: 100%;
+
+					margin: 1rem 0;
+
+					font-size: 150%;
+					font-weight: 200;
+
+					text-align: center;
+					color: $white;
+
+				}
+
+			}
+
+			div.members {
+
+				ul {
+					width: 100%;
+
+					margin: 0;
+					padding: 0;
+
+					li {
+
+						position: relative;
+						display: block;
+
+						width: 100%;
+
+						margin: 0.5rem 0;
+
+						list-style: none;
+
+						text-align: center;
+
+						&.flip-container {
+							perspective: 1000px;
+							transform-style: preserve-3d;
+						}
+
+						&.flip-container:hover .flipper,
+						&.flip-container.hover .flipper {
+							transform: rotateY(180deg);
+						}
+
+						&.flip-container, .front, .back {
+
+							min-height: 4rem;
+							width: 100%;
+							max-width: 320px;
+
+							margin-left: auto;
+							margin-right: auto;
+
+						}
+
+						.flipper {
+							transition: 0.6s;
+							transform-style: preserve-3d;
+
+							position: relative;
+						}
+
+						.front,
+						.back {
+
+							backface-visibility: hidden;
+							-webkit-backface-visibility: hidden;
+
+							position: absolute;
+							top: 0;
+							left: 0;
+						}
+
+						.front {
+							z-index: 2;
+
+							transform: rotateY(0deg);
+
+							background: #bcbcbc;
+
+							border-radius: 10px;
+
+						}
+
+						.back {
+							transform: rotateY(180deg);
+
+							background: #bcbcbc;
+
+							border-radius: 10px;
+
+						}
+
+
+
+						span.card-top {
+							position: relative;
+							display: inline-block;
+
+							width: 100%;
+
+							padding: 0.25rem 0;
+
+							background: rgba(255, 255, 255, 0.75);
+
+							border-top-left-radius: 10px;
+							border-top-right-radius: 10px;
+
+							font-weight: 600;
+						}
+
+						span.card-bottom {
+							position: relative;
+							display: inline-block;
+
+							width: 100%;
+
+							background: rgba(255, 255, 255, 0.5);
+
+							border-bottom-left-radius: 10px;
+							border-bottom-right-radius: 10px;
+
+							padding: 0.25rem 0;
+
+							font-size: 80%;
+						}
+					}
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+a.btn-primary:hover,
+a.btn-primary:focus {
+	background: $brand-primary;
+	border: 1px solid $brand-primary;
+	color: $white;
+}

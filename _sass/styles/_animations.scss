@@ -1,0 +1,94 @@
+@keyframes horizontal-view-shrink {
+	0% {
+		width: 150vw;
+	}
+	60% {
+		width: 150vw;
+	}
+	100% {
+		width: 100vw;
+	}
+}
+
+@keyframes half-page-width {
+	0% {
+		width: 100vw;
+	}
+	60% {
+		width: 100vw;
+	}
+	100% {
+		width: 50vw;
+	}
+}
+
+@keyframes one-third-page-width {
+	0% {
+		width: 100vw;
+	}
+	20% {
+		width: 100vw;
+	}
+	100% {
+		width: 30vw;
+	}
+}
+
+
+@keyframes one-third-page-height {
+	0% {
+		height: 100vh;
+	}
+	60% {
+		height: 100vh;
+	}
+	100% {
+		height: 150px;
+	}
+}
+
+@keyframes image-app-landing-shrink {
+	0% {
+
+		width: 75%;
+		height: 100%;
+
+	}
+	60% {
+
+		width: 75%;
+		height: 100%;
+	}
+	100% {
+
+		width: 75%;
+		height: 100%;
+
+	}
+}
+
+@keyframes landing-opacity {
+	0% {
+		opacity: 0;
+	}
+	60% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+
+	}
+}
+
+@keyframes slide-in-left {
+	0% {
+		margin-left: -35vw;
+	}
+	60% {
+		margin-left: -35vw;
+	}
+	100% {
+		margin-left: 0;
+	}
+}
+

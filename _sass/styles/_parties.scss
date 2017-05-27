@@ -1,0 +1,39 @@
+div#page-conservative,
+div#page-ulsterunionist {
+	background: $blue;
+
+	h1 { color: $white; }
+}
+
+div#page-labour,
+div#page-dup {
+	background: $red;
+
+	h1 { color: $white; }
+}
+
+div#page-libdem {
+	background: $orange;
+
+	h1 { color: $black; }
+}
+
+div#page-snp {
+	background: $yellow;
+
+	h1 { color: $black; }
+}
+
+div#page-green,
+div#page-sinnfein,
+div#page-plaid,
+div#page-sdlp {
+	background: $green;
+	h1 { color: $white; }
+}
+
+div#page-ukip {
+	background: $purple;
+	h1 { color: $white; }
+}
+

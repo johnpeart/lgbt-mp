@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<main id="home">
+
+	<div id="landing" class="page">
+
+		<div id="content-landing" class="content">
+
+			<img id="app" src="{{ site.logo-svg | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" alt="LGBT MP">
+
+		</div>
+
+		<div id="navgation-landing" class="navigation">
+
+			<ul id="navigation">
+
+				<li>
+					<span class="card-top card-bottom">
+						<p class"text-justify">{{ site.description }}</p>
+						<a href="{{ '/about/' | prepend: site.baseurl | prepend: site.url }}" class="btn btn-primary btn-block">Find out more</a>
+					</span>
+				</li>
+
+				<li>
+					<span class="card-top">Data</span>
+					<span class="card-bottom">
+						<p><strong>Parliament is dissolved pending the outcome of the June 2017 election.</strong></p>
+						<p>The currently available data shows LGBT MPs from the May 2015 to May 2017 Parliament</p>
+						<a href="{{ '/app/' | prepend: site.baseurl | prepend: site.url }}" class="btn btn-primary btn-block">View data</a>
+					</span>
+				</li>
+
+				<li>
+					<span class="card-top">Raw data</span>
+					<span class="card-bottom">
+						<p>This site only shows the LGBT MPs in the <strong>most recent or currently sitting</strong> Parliament. You can get data for this Parliament and from previous Parliaments on Github in CSV format.</p>
+						<a href="{{ '/tree/master/_data' | prepend: site.baseurl | prepend: 'https://github.com/johnpeart/' }}" class="btn btn-primary btn-block">Get CSV data on Github</a>
+					</span>
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+</main>
+
