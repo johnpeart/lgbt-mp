@@ -2,7 +2,7 @@
 
 title: "LGBT MP"
 
-description: "A website that lists the ‘out’ lesbian, gay, bisexual or trans (LGBT) politicians in the UK Parliament"
+description: "A website that lists the ‘out’ lesbian, gay, bisexual or trans (LGBT) members of the House of Commons in the UK Parliament"
 
 baseurl: "/lgbt-mp" # the subpath of your site, e.g. /blog
 url: "http://jrpeart.com"
