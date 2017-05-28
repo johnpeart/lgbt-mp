@@ -25,7 +25,13 @@
 
 window.onload = function() {
 
-    // document.getElementById("btn-share").addEventListener( 'click', share);
+    document.getElementById("btn-share").addEventListener( 'click', share);
+    document.getElementById("btn-share-close").addEventListener( 'click', share);
+
+    document.getElementById("btn-about").addEventListener( 'click', about);
+    document.getElementById("btn-about-close").addEventListener( 'click', about);
+
+    document.getElementById("app-cover").addEventListener( 'click', appInfo);
 
 	var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
@@ -38,6 +44,8 @@ window.onload = function() {
 		document.getElementById('app').style.width = ((partiesNonZero + 2) * pageWidth) + 'vw';
 
 	}
+
+
 
 }
 
@@ -57,6 +65,46 @@ window.onresize = function() {
 
 }
 
+function appInfo() {
+    document.getElementById("cover").classList.toggle("hover");
+}
+
 function share() {
-	alert('Share sheet');
+
+    var sheet = document.getElementById("share-sheet");
+
+	if (sheet.classList.contains("open")) {
+
+    	sheet.classList.remove("open");
+    	sheet.classList.add("close");
+
+    } else if (sheet.classList.contains("close")) {
+
+    	sheet.classList.remove("close");
+    	sheet.classList.add("open");
+
+    } else {
+    	sheet.classList.add("open");
+    }
+
+}
+
+function about() {
+
+    var sheet = document.getElementById("about-sheet");
+
+	if (sheet.classList.contains("open")) {
+
+    	sheet.classList.remove("open");
+    	sheet.classList.add("close");
+
+    } else if (sheet.classList.contains("close")) {
+
+    	sheet.classList.remove("close");
+    	sheet.classList.add("open");
+
+    } else {
+    	sheet.classList.add("open");
+    }
+
 }

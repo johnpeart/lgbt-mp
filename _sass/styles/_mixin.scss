@@ -1,0 +1,9 @@
+@mixin background-gradient($color-1, $color-2, $color-3) {
+
+	background-image:	-webkit-gradient(linear, left bottom, right top, from($color-1), to($color-2), to($color-3));
+	background-image:	-webkit-linear-gradient(45deg, $color-1, $color-2, $color-3);
+	background-image:	-moz-linear-gradient(45deg, $color-1, $color-2, $color-3);
+	background-image:	-o-linear-gradient(45deg, $color-1, $color-2, $color-3);
+	background-image:	linear-gradient(45deg, $color-1, $color-2, $color-3);
+
+}

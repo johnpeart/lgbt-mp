@@ -27,8 +27,10 @@ $font-size-h4: 1.25rem;
 $font-size-h5: 1rem;
 $font-size-h6: 1rem;
 
-$body-bg:		#f9f9fa;
-$body-color:	#1d1d1d;
+$body-bg:				#1d1d1d;
+$body-bg-inverse:		#f1f1fa;
+$body-color:			#f1f1fa;
+$body-color-inverse:	#1d1d1d;
 
 $link-color:		$brand-primary;
 $link-hover-color:	$link-color;
@@ -56,9 +58,8 @@ $code-bg:			$kbd-bg;
 $code-color:		$kbd-color;
 $code-font-size:	100%;
 
-$btn-primary-color:              $brand-primary;
-$btn-primary-bg:                 transparent;
-$btn-primary-border:             $brand-primary;
+$btn-primary-color:              $body-color-inverse;
+$btn-primary-bg:                 rgba(0, 0, 0, 0.15);
 
-$card-color: rgba(213, 56, 128, 1);
-$card-color-opacity-50: rgba(213, 56, 128, 0.5)
+$card-top-color: #F7F7F7;
+$card-bottom-color: #dbddde;

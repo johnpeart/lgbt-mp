@@ -2,24 +2,20 @@
 layout: default
 ---
 
-<main id="home">
+<main id="four-oh-four">
 
-	<div id="landing" class="page">
+	<div class="container">
 
-		<div id="content-landing" class="content">
+		<div class="row">
 
-			<img id="app" src="{{ site.logo-four-oh-four | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" alt="Error">
+			<div class="col">
 
-		</div>
+				<img id="app" src="{{ site.logo-four-oh-four | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" alt="Error">
 
-		<div id="navgation-landing" class="navigation">
+				<h1>Something went wrong</h1>
+				<p>Much like a Parliament, this page seems to have dissolved.<br>Sorry about that.</p>
 
-			<div>
-
-			<h1 class="app-name--four-oh-four">Page not found</h1>
-			<p class="app-description--four-oh-four">You've arrived somewhere that isn't anywhere at all.<br>Frightfully sorry about that.</p>
-
-			<p class="app-button--four-oh-four"><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}" class="btn btn-primary">Go home</a></p>
+				<p id="shimmer"><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}">Go home</a></p>
 
 			</div>
 

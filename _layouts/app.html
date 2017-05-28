@@ -2,48 +2,44 @@
 layout: default
 ---
 
-{% assign count-parties = 0 %}
-{% assign total-members = 0 %}
-
-{% for party in site.data.parties %}
-
-	{% assign count-parties = count-parties | plus: 1 %}
-
-  	{% assign count-members = 0 %}
-
-	{% for member in site.data.members %}
-
-		{% if party.party == member.party %}
-			{% assign total-members = total-members | plus: 1 %}
-			{% assign count-members = count-members | plus: 1 %}
-		{% endif %}
-
-	{% endfor %}
-
-	{% if count-members > 0 %}
-		{% assign count-parties-non-zero = count-parties-non-zero | plus: 1 %}
-	{% endif %}
-
-{% endfor %}
-
 
 <main id="app">
 
-	<div id="page-landing" class="page">
+	<div id="cover" class="page flip-container">
 
-		<div id="content-landing" class="content">
+		<div id="content-cover" class="content flipper">
 
-			<img id="app" src="{{ site.logo-svg | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" alt="LGBT MP">
+			<div class="front">
 
-			<div id="app-info">
+				<div id="app-cover">
 
-				<h1 id="total-count" class="display-1">{{ total-members }}</h1>
+					<img id="app" src="{{ site.logo-svg | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" alt="LGBT MP">
 
-				<p>LGBT MPs in the<br>{{ page.title }}<br>Parliament</p>
+					<h1>LGBT MP</h1>
+					<p>A dataset of <strong>MPs</strong> who define as lesbian, gay, bisexual, or trans <strong>(LGBT)</strong> in the <strong>UK House of Commons</strong></p>
+					<p id="shimmer">Tap for more info</p>
 
-				<h1 id="total-count" class="display-1">{{ count-parties-non-zero }}</h1>
+				</div>
 
-				<p>Parties with at least 1 out LGBT MP</p>
+			</div>
+
+			<div class="back">
+
+				<div id="app-info">
+
+					{{ content }}
+
+					<div id="app-actions">
+
+						<p><a id="btn-share" class="btn btn-block btn-primary">Share this</a></p>
+						<p><a id="btn-about" class="btn btn-block btn-primary">About this site</a></p>
+						<p><a id="btn-github" class="btn btn-block btn-primary" href="{{ 'https://github.com/johnpeart' | append: site.baseurl | append: '/tree/master/_data' }}">Get data on Github</a></p>
+
+						<a href="{{ site.url }}" title="Created by John Peart - visit my website"><img id="footer" src="{{ site.footer-svg | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}"></a>
+
+					</div>
+
+				</div>
 
 			</div>
 
@@ -97,8 +93,8 @@ layout: default
 									<span class="card-bottom">{{ member.constituency }}</span>
 								</div>
 								<div class="back">
-									<span class="card-top">Source: <a href="{{ member.source-link }}" title="Source for {{ member.name }}: visit {{ member.source-description }}">{{ member.source-description }}</a></span>
-									<span class="card-bottom">{{ member.source-date | date: "%d %b %Y" }}</span>
+									<span class="card-top">{{ member.name }}</span>
+									<span class="card-bottom">Source: <a href="{{ member.source-link }}" title="Source for {{ member.name }}: visit {{ member.source-description }}">{{ member.source-description }}</a> {{ member.source-date | date: "%d %b %Y" }}</span>
 								</div>
 							</div>
 						</li>
@@ -152,33 +148,6 @@ layout: default
 
 				</div>
 
-				<div class="members">
-
-					<ul>
-					{% for member in site.data.members %}
-
-						{% if party.party == member.party %}
-
-							<li class="flip-container">
-								<div class="flipper">
-									<div class="front">
-										<span class="card-top">{{ member.name }}</span>
-										<span class="card-bottom">{{ member.constituency }}</span>
-									</div>
-									<div class="back">
-										<span class="card-top">Source: {{ member.source-date | date: "%d %b %Y" }}</span>
-										<span class="card-bottom"><a href="{{ member.source }}" title="Source for {{ member.name }}: visit {{ member.source-description }}">{{ member.source-description }}</a></span>
-									</div>
-								</div>
-							</li>
-
-						{% endif %}
-
-					{% endfor %}
-					</ul>
-
-				</div>
-
 			</div>
 
 		</div>
@@ -190,3 +159,7 @@ layout: default
 	</div>
 
 </main>
+
+{% include share-sheet.html %}
+
+{% include about-sheet.html %}
