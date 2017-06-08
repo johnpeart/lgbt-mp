@@ -26,6 +26,10 @@
   css: 'plaid'
   image: '/plaid.svg'
 
+- party: 'Alliance (NI)'
+  css: 'alliance'
+  image: '/alliance.svg'
+
 - party: 'Democratic Unionist'
   css: 'dup'
   image: '/dup.svg'
