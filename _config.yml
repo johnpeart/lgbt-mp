@@ -8,6 +8,8 @@ baseurl: "/lgbt-mp" # the subpath of your site, e.g. /blog
 url: "http://jrpeart.com"
 author: "John Peart"
 
+election-period: "2017-2022"
+
 asset-path: "/assets"
 image-path: "/images"
 post-images-path: "/featured"
