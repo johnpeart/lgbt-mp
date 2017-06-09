@@ -14,10 +14,6 @@
   css: 'green'
   image: '/green.svg'
 
-- party: 'UKIP'
-  css: 'ukip'
-  image: '/ukip.svg'
-
 - party: 'SNP'
   css: 'snp'
   image: '/snp.svg'
