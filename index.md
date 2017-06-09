@@ -14,8 +14,10 @@ layout: app
 	{% for member in site.data.members %}
 
 		{% if party.party == member.party %}
-			{% assign total-members = total-members | plus: 1 %}
-			{% assign count-members = count-members | plus: 1 %}
+			{% if member.[site.election-period] == "Y" %}
+				{% assign total-members = total-members | plus: 1 %}
+				{% assign count-members = count-members | plus: 1 %}
+			{% endif %}
 		{% endif %}
 
 	{% endfor %}
@@ -30,9 +32,9 @@ layout: app
 
 **This website was created to record how many out LGBT MPs were sitting in the House of Commons.**
 
-**This data is currently being updated with the outcome of the May 2017 General Election.**
+**This data is currently being updated with the outcome of the June 2017 General Election.**
 
-There were {{ total-members }} MPs who said they define as LGBT when Parliament dissolved in May 2017. {{ count-parties }} parties returned MPs, and {{ count-parties-non-zero }} of them had at least 1 out LGBT MP.
+There are {{ total-members }} MPs define as LGBT in the Parliament that will form in June 2017. {{ count-parties }} parties returned MPs, and {{ count-parties-non-zero }} of them had at least 1 out LGBT MP.
 
 This dataset is available as a CSV file on Github.
 
