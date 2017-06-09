@@ -30,13 +30,9 @@ layout: app
 
 **This website was created to record how many out LGBT MPs were sitting in the House of Commons.**
 
-The data in this dataset are for the Parliament which sat from May 2015 to May 2017. The dataset is correct, to the best of my knowledge, up to 27 May 2017.
+**This data is currently being updated with the outcome of the May 2017 General Election.**
 
-There were {{ total-members }} MPs who said they define as LGBT when Parliament dissolved in May 2017.
-
-{{ count-parties }} parties returned MPs in this Parliament, and {{ count-parties-non-zero }} of them had at least 1 out LGBT MP.
-
-**This dataset will be updated as soon as possible after the June 2017 General Election.** 
+There were {{ total-members }} MPs who said they define as LGBT when Parliament dissolved in May 2017. {{ count-parties }} parties returned MPs, and {{ count-parties-non-zero }} of them had at least 1 out LGBT MP.
 
 This dataset is available as a CSV file on Github.
 
