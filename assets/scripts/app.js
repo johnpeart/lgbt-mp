@@ -12,7 +12,7 @@
 	{% for member in site.data.members %}
 
 		{% if party.party == member.party %}
-			{% if member.[site.election-period] == "Y" %}
+			{% if member.[site.election-period] == "Elected" %}
 				{% assign count-members = count-members | plus: 1 %}
 			{% endif %}
 		{% endif %}
