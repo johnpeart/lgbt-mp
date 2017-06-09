@@ -34,7 +34,7 @@ layout: app
 
 **This data is currently being updated with the outcome of the June 2017 General Election.**
 
-There are {{ total-members }} MPs define as LGBT in the Parliament that will form in June 2017. {{ count-parties }} parties returned MPs, and {{ count-parties-non-zero }} of them had at least 1 out LGBT MP.
+There are {{ total-members }} MPs define as LGBT in the Parliament that will form in June 2017. {{ count-parties-non-zero }} parties had at least 1 out LGBT MP.
 
 This dataset is available as a CSV file on Github.
 
