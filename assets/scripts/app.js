@@ -33,6 +33,9 @@ window.onload = function() {
     document.getElementById("btn-about").addEventListener( 'click', about);
     document.getElementById("btn-about-close").addEventListener( 'click', about);
 
+    document.getElementById("btn-data").addEventListener( 'click', data);
+    document.getElementById("btn-data-close").addEventListener( 'click', data);
+
     document.getElementById("app-cover").addEventListener( 'click', appInfo);
 
 	var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
@@ -94,6 +97,26 @@ function share() {
 function about() {
 
     var sheet = document.getElementById("about-sheet");
+
+	if (sheet.classList.contains("open")) {
+
+    	sheet.classList.remove("open");
+    	sheet.classList.add("close");
+
+    } else if (sheet.classList.contains("close")) {
+
+    	sheet.classList.remove("close");
+    	sheet.classList.add("open");
+
+    } else {
+    	sheet.classList.add("open");
+    }
+
+}
+
+function data() {
+
+    var sheet = document.getElementById("data-sheet");
 
 	if (sheet.classList.contains("open")) {
 
