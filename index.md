@@ -32,7 +32,7 @@ layout: app
 
 **This website was created to record how many out LGBT MPs were sitting in the House of Commons.**
 
-*This data is correct, to the best of my knowledge, as of 11 June 2017.*
+*This data is correct, to the best of my knowledge, as of 3 April 2019.*
 
 There are {{ total-members }} MPs who define as LGBT in the 2017 to 2022 Parliament. {{ count-parties-non-zero }} parties or groups had at least 1 out LGBT MP.
 
