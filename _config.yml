@@ -45,8 +45,3 @@ future: false
 sass:
     sass_dir: _sass
     sourcemap: true
-
-gems:
-- jekyll-sitemap
-- jekyll-feed
-- jekyll-redirect-from
