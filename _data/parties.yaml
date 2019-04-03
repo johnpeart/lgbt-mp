@@ -1,10 +1,10 @@
-- party: 'Conservative'
-  css: 'conservative'
-  image: '/conservative.svg'
-
 - party: 'Labour'
   css: 'labour'
   image: '/labour.svg'
+  
+- party: 'Conservative'
+  css: 'conservative'
+  image: '/conservative.svg'
 
 - party: 'Liberal Democrat'
   css: 'libdem'
@@ -29,3 +29,7 @@
 - party: 'Sinn Fein'
   css: 'sinnfein'
   image: '/sinnfein.svg'
+  
+- party: 'Independent'
+  css: 'independent'
+  image: '/independent.svg'
