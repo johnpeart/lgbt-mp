@@ -40,3 +40,9 @@ div#page-ukip {
 	h1 { color: $body-color; }
 }
 
+div#page-independent {
+	background: $white;
+
+	h1, p.total-members { color: $body-color-inverse !important; }
+}
+

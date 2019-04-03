@@ -34,7 +34,7 @@ layout: app
 
 *This data is correct, to the best of my knowledge, as of 11 June 2017.*
 
-There are {{ total-members }} MPs who define as LGBT in the 2017 to 2022 Parliament. {{ count-parties-non-zero }} parties had at least 1 out LGBT MP.
+There are {{ total-members }} MPs who define as LGBT in the 2017 to 2022 Parliament. {{ count-parties-non-zero }} parties or groups had at least 1 out LGBT MP.
 
 **Hover or tap on an MP's name to see where the source of this information comes from.** 
 
