@@ -330,7 +330,14 @@ section#app-header {
 				}
 				&:focus {
 					background:	$yellow;
+					outline:		2px solid $yellow;
+					
+					@include dark-mode {
+						color: 	$black;
+					}
 				}
+				
+				
 			}
 		}
 		
