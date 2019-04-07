@@ -53,3 +53,8 @@ future: false
 sass:
     sass_dir: _sass
     sourcemap: true
+
+collections:
+  parliaments:
+    output: true
+    permalink: /historic/parliament/:year-:month-:day/:slug

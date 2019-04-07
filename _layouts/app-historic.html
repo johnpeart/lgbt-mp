@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% assign formatted-date = page.date | date: "%Y-%m-%d" %}
+
 {% assign count-parties = 0 %}
 {% assign total-members = 0 %}
 
@@ -14,7 +16,7 @@ layout: default
 	{% for member in site.data.members %}
 
 		{% if party.party == member.party %}
-			{% if member[site.election-period] == "Elected" %}
+			{% if member[formatted-date] =="Elected" %}
 				{% assign total-members = total-members | plus: 1 %}
 				{% assign count-members = count-members | plus: 1 %}
 			{% endif %}

@@ -248,8 +248,6 @@ section#app-header {
 		color: 			$black;
 		background: 		$white;
 		
-		padding: 		($container-padding * 2) 0;
-		
 		@include dark-mode {
 			color: 		$white;
 			background: 	$black;
@@ -304,41 +302,29 @@ section#app-header {
 		}
 		
 		article {
+			padding: 		($container-padding * 2) 0;
+		}
+		
+		blockquote ~ article {
+			padding: 		0;			
+		}
+		
+		a {
+			text-decoration: underline;
 			
-			blockquote {
-				background:		$gray-200;
-				color:			$black;
+			&:hover {
+				color: 		$blue;
+			}
+			&:focus {
+				background:	$yellow;
+				outline:		2px solid $yellow;
+				text-decoration: none;
 				
 				@include dark-mode {
-					background: 	$gray-700;
-					color: 		$white;
-				}
-				
-				padding:			$container-padding;
-				margin-bottom: 	$container-padding;
-				
-				p:last-of-type {
-					padding-bottom: 		0;
+					color: 	$black;
 				}
 			}
-			
-			a {
-				text-decoration: underline;
-				
-				&:hover {
-					color: 		$blue;
-				}
-				&:focus {
-					background:	$yellow;
-					outline:		2px solid $yellow;
-					
-					@include dark-mode {
-						color: 	$black;
-					}
-				}
-				
-				
-			}
+								
 		}
 		
 	}

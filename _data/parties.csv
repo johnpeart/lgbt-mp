@@ -1,0 +1,14 @@
+party,css,image,2017-05-03,2017-06-21,current
+Conservative,conservative,/conservative.svg,TRUE,TRUE,TRUE
+Democratic Unionist,dup,/dup.svg,TRUE,TRUE,TRUE
+Green,green,/green.svg,TRUE,TRUE,TRUE
+Labour,labour,/labour.svg,TRUE,TRUE,TRUE
+Liberal Democrat,libdem,/libdem.svg,TRUE,TRUE,TRUE
+Plaid Cymru,plaid,/plaid.svg,TRUE,TRUE,TRUE
+Scottish National,snp,/snp.svg,TRUE,TRUE,TRUE
+Sinn Fein,sinnfein,/sinnfein.svg,TRUE,TRUE,TRUE
+Social Democratic and Labour,sdlp,/sdlp.svg,TRUE,FALSE,FALSE
+Ulster Unionist,uup,/uup.svg,TRUE,FALSE,FALSE
+United Kingdom Independence,ukip,/ukip.svg,TRUE,FALSE,FALSE
+Independent,independent,/independent.svg,TRUE,TRUE,TRUE
+Speaker,speaker,/speaker.svg,TRUE,TRUE,TRUE

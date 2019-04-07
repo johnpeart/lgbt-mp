@@ -6,7 +6,7 @@
 	<!-- ADD THIS WHEN MAX() SUPPORT IS MORE WIDESPREAD - meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"-->
 	
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
+	<title>{% if page.layout == "app-historic" %}Parliament {{ page.slug }}ing {{ page.date | date: "%-d %B %Y" }} • {% endif %}{{ site.title }}</title>
 	
 	<!-- Short description of the page (limit to 150 characters) -->
 	<!-- In *some* situations this description is used as a part of the snippet shown in the search results. -->
