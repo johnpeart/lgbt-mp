@@ -2,9 +2,7 @@ main#app-main {
 	
 	display: 		block;
 	position: 		relative;
-	
-	-webkit-overflow-scrolling: auto;
-	
+		
 	@include md-up {
 		
 		height: 		100vh;
@@ -97,9 +95,6 @@ main#app-main {
 			transition:		1s all;
 		}
 	}
-
-
-
 	
 	
 	section#app-header,
@@ -416,11 +411,7 @@ main#app-main {
 	}
 	
 	section[id^="data-"] {
-			
-		@include md-up {
-			float: 			left;
-		}
-		
+
 		@include sm-down {
 			
 			width: 		100vw;
@@ -432,6 +423,8 @@ main#app-main {
 			width: 		30vw;
 			height: 		100vh;
 			
+			float: 			left;
+
 			overflow-x: 		hidden;
 			overflow-y: 		scroll;
 		}
@@ -447,8 +440,8 @@ main#app-main {
 		
 		> section[id^="data-"] {
 		
-		height: 			auto;
-		min-height: 		auto;
+			height: 			auto;
+			min-height: 		auto;
 		
 		}
 		
