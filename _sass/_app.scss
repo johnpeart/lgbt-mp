@@ -181,6 +181,7 @@ main#app-main {
 		}
 	}
 	
+	@include clearfix;
 	
 	section#app-header,
 	section#app-data {
@@ -200,6 +201,8 @@ main#app-main {
 			height: 			100vh;
 			float: 			left;
 			padding-left: 	0vw;
+		
+			z-index: 		99999;
 			
 			&.open {
 				transition:		1s all;
@@ -226,8 +229,6 @@ main#app-main {
 				padding-left: 	30vw;
 			}
 		}
-		
-		z-index: 		99999;
 		
 		header.app-header--logo {
 	
@@ -260,7 +261,7 @@ main#app-main {
 				width: 		45vw;
 			}
 			
-			@include lg {
+			@include lg-up {
 				width: 		30vw;
 			}
 			
@@ -459,6 +460,8 @@ main#app-main {
 		header.app-party--header {
 	
 			background: inherit;
+			
+			z-index: 		99999;
 	
 			@include sm-down {
 				padding: 	($container-padding * 1.25) $container-padding;
@@ -552,6 +555,9 @@ main#app-main {
 
 			overflow-x: 		hidden;
 			overflow-y: 		scroll;
+			
+			-webkit-overflow-scrolling: touch;
+			
 		}
 		
 		@include md-up {
