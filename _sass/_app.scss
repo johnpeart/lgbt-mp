@@ -458,87 +458,6 @@ section[id^="data-"] {
 		overflow-y: 		scroll;
 	}
 	
-	&#data-conservative {
-		background: 		$conservative;
-		color: 			$white;
-		
-		@include dark-mode {
-			background:	$conservative-dark-mode;
-		}
-	}
-	
-	&#data-dup {
-		background: 		$dup;
-		color: 			$white;
-		
-		@include dark-mode {
-			background:	$dup-dark-mode;
-		}
-	}
-	
-	&#data-green {
-		background: 		$green-party;
-		color: 			$white;
-		
-		@include dark-mode {
-			background:	$green-party-dark-mode;
-		}
-	}
-	
-	&#data-independent {
-		background: 		$independent;
-		color: 			$black;
-		
-		@include dark-mode {
-			background:	$independent-dark-mode;
-		}
-	}
-	
-	&#data-labour {
-		background: 		$labour;
-		color: 			$white;
-		
-		@include dark-mode {
-			background:	$labour-dark-mode;
-		}
-	}
-	
-	&#data-libdem {
-		background: 		$libdem;
-		color: 			$black;
-		
-		@include dark-mode {
-			background:	$libdem-dark-mode;
-		}
-	}
-	
-	&#data-plaid {
-		background: 		$plaid;
-		color: 			$white;
-		
-		@include dark-mode {
-			background:	$plaid-dark-mode;
-		}
-	}
-	
-	&#data-sinnfein {
-		background: 		$sinnfein;
-		color: 			$white;
-		
-		@include dark-mode {
-			background:	$sinnfein-dark-mode;
-		}
-	}
-	
-	&#data-snp {
-		background: 		$snp;
-		color: 			$black;
-		
-		@include dark-mode {
-			background:	$snp-dark-mode;
-		}
-	}
-	
 }
 
 section#data-zero-mps {
@@ -729,6 +648,47 @@ li.card {
 body.no-js {
 	
 	@include md-up {
+		
+		main	 {
+				
+			&.width-1 {
+				width: 		(4 * 30vw);
+			}
+			
+			&.width-2 {
+				width: 		(5 * 30vw);
+			}
+			
+			&.width-3 {
+				width: 		(6 * 30vw);
+			}
+			
+			&.width-4 {
+				width: 		(7 * 30vw);
+			}
+			
+			&.width-5 {
+				width: 		(8 * 30vw);
+			}
+			
+			&.width-6 {
+				width: 		(9 * 30vw);
+			}
+			
+			&.width-7 {
+				width: 		(10 * 30vw);
+			}
+			
+			&.width-8 {
+				width: 		(11 * 30vw);
+			}
+			
+			&.width-9 {
+				width: 		(12 * 30vw);
+			}
+			
+			transition:		1s all;
+		}
 		
 		section#app-header {
 			width: 			60vw;
