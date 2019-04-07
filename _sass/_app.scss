@@ -2,13 +2,63 @@ main#app-main {
 	
 	display: 		block;
 	position: 		relative;
-		
+	
 	@include md-up {
 		
 		height: 		100vh;
 		
 		overflow-x: 	scroll;
 		overflow-y: 	hidden;
+			
+		transition:		1s all;
+		
+		&:after {
+			@include clearfix;
+		}
+		
+	}
+	
+	@include md {
+		
+		&.width-1 {
+			width: 		(3 * 45vw);
+		}
+		
+		&.width-2 {
+			width: 		(4 * 45vw);
+		}
+		
+		&.width-3 {
+			width: 		(5 * 45vw);
+		}
+		
+		&.width-4 {
+			width: 		(6 * 45vw);
+		}
+		
+		&.width-5 {
+			width: 		(7 * 45vw);
+		}
+		
+		&.width-6 {
+			width: 		(8 * 45vw);
+		}
+		
+		&.width-7 {
+			width: 		(9 * 45vw);
+		}
+		
+		&.width-8 {
+			width: 		(10 * 45vw);
+		}
+		
+		&.width-9 {
+			width: 		(11 * 45vw);
+		}
+		
+	}
+		
+	@include lg-up {
 		
 		&.width-1 {
 			width: 		(3 * 30vw);
@@ -45,16 +95,51 @@ main#app-main {
 		&.width-9 {
 			width: 		(11 * 30vw);
 		}
-			
-		transition:		1s all;
-		
-		&:after {
-			@include clearfix;
-		}
 	}
 	
 	&.open {
-		@include md-up {
+		@include md {
+			
+			&.width-1 {
+				width: 		(4 * 45vw);
+			}
+			
+			&.width-2 {
+				width: 		(5 * 45vw);
+			}
+			
+			&.width-3 {
+				width: 		(6 * 45vw);
+			}
+			
+			&.width-4 {
+				width: 		(7 * 45vw);
+			}
+			
+			&.width-5 {
+				width: 		(8 * 45vw);
+			}
+			
+			&.width-6 {
+				width: 		(9 * 45vw);
+			}
+			
+			&.width-7 {
+				width: 		(10 * 45vw);
+			}
+			
+			&.width-8 {
+				width: 		(11 * 45vw);
+			}
+			
+			&.width-9 {
+				width: 		(12 * 45vw);
+			}
+			
+			transition:		1s all;
+		}
+		
+		@include lg-up {
 			
 			&.width-1 {
 				width: 		(4 * 30vw);
@@ -113,19 +198,32 @@ main#app-main {
 		
 		@include md-up {
 			height: 			100vh;
-			width: 			30vw;
-		
 			float: 			left;
-		
 			padding-left: 	0vw;
-									
+			
 			&.open {
-				width: 			60vw;
-				padding-left: 	30vw;
 				transition:		1s all;
 			}
 			&.closed {
 				transition:		1s all;
+			}
+		}
+		
+		@include md {
+			width: 			45vw;
+											
+			&.open {
+				width: 			90vw;
+				padding-left: 	45vw;
+			}
+		}
+		
+		@include lg-up {
+			width: 			30vw;
+													
+			&.open {
+				width: 			60vw;
+				padding-left: 	30vw;
 			}
 		}
 		
@@ -153,9 +251,17 @@ main#app-main {
 				left: 		0;
 				
 				height: 		100vh;
-				width: 		30vw;
 				
 				z-index: 		999999;
+
+			}
+			
+			@include md {
+				width: 		45vw;
+			}
+			
+			@include lg {
+				width: 		30vw;
 			}
 			
 			.container {
@@ -212,13 +318,19 @@ main#app-main {
 				bottom: 			0;
 				left: 			0;
 				
-				width: 			30vw;
-				
 				margin: 			0;
 				padding:			15px;
 				
 				animation: 		slide-in-from-bottom 2s linear;
 				
+			}
+			
+			@include md {
+				width: 			45vw;
+			}
+			
+			@include lg-up {
+				width: 			30vw;
 			}
 		
 			background:		$gray-900;
@@ -273,7 +385,6 @@ main#app-main {
 				display: 		block;
 				position: 		fixed;
 				
-				width: 			30vw;
 				height: 			100vh;
 				
 				overflow-y: 		scroll;
@@ -281,11 +392,7 @@ main#app-main {
 	
 				left:			0;
 				
-									
 				&.open {
-					width: 			30vw;
-					left: 			30vw;
-					
 					box-shadow: 		0 19px 38px rgba(0,0,0,0.30), 
 									0 15px 12px rgba(0,0,0,0.22);
 	
@@ -296,6 +403,25 @@ main#app-main {
 				}
 				
 				z-index: 		9999;
+
+			}
+			
+			@include md {
+				width: 			45vw;
+				
+				&.open {
+					width: 			45vw;
+					left: 			45vw;
+				}
+			}
+			
+			@include lg-up {
+				width: 			30vw;
+				
+				&.open {
+					width: 			30vw;
+					left: 			30vw;
+				}
 			}
 			
 			article {
@@ -420,13 +546,20 @@ main#app-main {
 		
 		@include md-up {
 			
-			width: 		30vw;
-			height: 		100vh;
+			height: 			100vh;
 			
 			float: 			left;
 
 			overflow-x: 		hidden;
 			overflow-y: 		scroll;
+		}
+		
+		@include md-up {
+			width: 			45vw;
+		}
+		
+		@include lg-up {
+			width: 			30vw;
 		}
 		
 	}
