@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" width="16" height="16">
+  <defs/>
+  <metadata> Produced by OmniGraffle 7.10.2 
+    <dc:date>2019-04-07 13:25:32 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke="none" fill-opacity="1" fill="none" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_30">
+        <rect x="0" y="4" width="1" height="4" fill="black"/>
+      </g>
+      <g id="Graphic_31">
+        <rect x="0" y="9" width="1" height="4" fill="black"/>
+      </g>
+      <g id="Graphic_34">
+        <rect x="0" y="14" width="1" height="2" fill="black"/>
+      </g>
+      <g id="Graphic_59">
+        <path d="M 11 14 L 13 14 L 11 16 Z" fill="black"/>
+      </g>
+      <g id="Graphic_69">
+        <path d="M 8 14 L 10 14 L 8 16 Z" fill="black"/>
+      </g>
+      <g id="Graphic_70">
+        <path d="M 5 14 L 7 14 L 5 16 Z" fill="black"/>
+      </g>
+      <g id="Graphic_71">
+        <path d="M 2 14 L 4 14 L 2 16 Z" fill="black"/>
+      </g>
+      <g id="Graphic_76">
+        <path d="M 4 3 L 2 3 L 4 1 Z" fill="black"/>
+      </g>
+      <g id="Graphic_77">
+        <path d="M 8 3 L 11 3 L 8 2220446e-22 Z" fill="black"/>
+      </g>
+      <g id="Graphic_88">
+        <rect x="2" y="4" width="5" height="4" fill="black"/>
+      </g>
+      <g id="Graphic_92">
+        <rect x="14" y="4" width="1" height="4" fill="black"/>
+      </g>
+      <g id="Graphic_91">
+        <rect x="14" y="9" width="1" height="4" fill="black"/>
+      </g>
+      <g id="Graphic_90">
+        <rect x="14" y="14" width="1" height="2" fill="black"/>
+      </g>
+      <g id="Graphic_96">
+        <rect x="2" y="9" width="5" height="4" fill="black"/>
+      </g>
+      <g id="Graphic_97">
+        <rect x="8" y="4" width="5" height="4" fill="black"/>
+      </g>
+      <g id="Graphic_98">
+        <rect x="8" y="9" width="5" height="4" fill="black"/>
+      </g>
+      <g id="Graphic_100">
+        <rect x="0" y="1" width="1" height="2" fill="black"/>
+      </g>
+      <g id="Graphic_99">
+        <rect x="14" y="1" width="1" height="2" fill="black"/>
+      </g>
+      <g id="Graphic_101">
+        <path d="M 7 3 L 4 3 L 7 -2220446e-22 Z" fill="black"/>
+      </g>
+      <g id="Graphic_102">
+        <path d="M 11 3 L 13 3 L 11 1 Z" fill="black"/>
+      </g>
+    </g>
+  </g>
+</svg>

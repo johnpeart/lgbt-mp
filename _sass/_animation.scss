@@ -1,0 +1,16 @@
+@keyframes slide-in-from-bottom {
+	0% {
+		bottom: -20vh;
+	}
+	50% {
+		bottom:	0vh;
+		background: 	$gray-900;
+	}
+	75% {
+		background: 	$gray-700;
+	}
+	100% {
+		background: 	$gray-900;
+	}
+	
+}

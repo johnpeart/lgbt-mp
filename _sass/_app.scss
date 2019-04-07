@@ -1,0 +1,734 @@
+main {
+	
+	display: 		block;
+	position: 		relative;
+	
+	-webkit-overflow-scrolling: auto;
+	
+	@include md-up {
+		
+		height: 		100vh;
+		
+		overflow-x: 	scroll;
+		overflow-y: 	hidden;
+		
+		&.width-1 {
+			width: 		(3 * 30vw);
+		}
+		
+		&.width-2 {
+			width: 		(4 * 30vw);
+		}
+		
+		&.width-3 {
+			width: 		(5 * 30vw);
+		}
+		
+		&.width-4 {
+			width: 		(6 * 30vw);
+		}
+		
+		&.width-5 {
+			width: 		(7 * 30vw);
+		}
+		
+		&.width-6 {
+			width: 		(8 * 30vw);
+		}
+		
+		&.width-7 {
+			width: 		(9 * 30vw);
+		}
+		
+		&.width-8 {
+			width: 		(10 * 30vw);
+		}
+		
+		&.width-9 {
+			width: 		(11 * 30vw);
+		}
+			
+		transition:		1s all;
+		
+		&:after {
+			@include clearfix;
+		}
+	}
+	
+	&.open {
+		@include md-up {
+			
+			&.width-1 {
+				width: 		(4 * 30vw);
+			}
+			
+			&.width-2 {
+				width: 		(5 * 30vw);
+			}
+			
+			&.width-3 {
+				width: 		(6 * 30vw);
+			}
+			
+			&.width-4 {
+				width: 		(7 * 30vw);
+			}
+			
+			&.width-5 {
+				width: 		(8 * 30vw);
+			}
+			
+			&.width-6 {
+				width: 		(9 * 30vw);
+			}
+			
+			&.width-7 {
+				width: 		(10 * 30vw);
+			}
+			
+			&.width-8 {
+				width: 		(11 * 30vw);
+			}
+			
+			&.width-9 {
+				width: 		(12 * 30vw);
+			}
+			
+			transition:		1s all;
+		}
+	}
+}
+
+section#app-header,
+section#app-data {
+	@include clearfix;
+	-webkit-overflow-scrolling: auto;
+}
+
+section#app-header {
+
+	display: 		block;
+	position: 		relative;
+	
+	background:		$true-black;
+	
+	min-height: 			100vh;
+	
+	@include md-up {
+		height: 			100vh;
+		width: 			30vw;
+	
+		float: 			left;
+	
+		padding-left: 	0vw;
+								
+		&.open {
+			width: 			60vw;
+			padding-left: 	30vw;
+			transition:		1s all;
+		}
+		&.closed {
+			transition:		1s all;
+		}
+	}
+	
+	z-index: 		99999;
+	
+	header.app-header--logo {
+
+		display: 		block;
+		position: 		relative;
+		
+		color: 			$white;
+		background: 		$true-black;
+		
+		@include sm-down {
+			height: 			100vh;
+			width: 			100vw;
+		}
+		
+		@include md-up {	
+			
+			display: 	block;
+			position: 	fixed;
+			
+			top: 		0;
+			left: 		0;
+			
+			height: 		100vh;
+			width: 		30vw;
+			
+			z-index: 		999999;
+		}
+		
+		.container {
+			
+			display: 	block;
+			position: 	absolute;
+			
+			top:			50%;
+			transform:	translateY(-50%);
+			
+		}
+	
+		img.app-header--rainbow-portcullis {
+			
+			@include xs {
+				width: 120px;
+			}
+			
+			@include sm {
+				width: 140px;
+			}
+			
+			@include md-up {
+				width: 160px;
+			}
+			
+		}
+		
+		h1.app-header--wordmark {
+			
+		}
+		
+		p.app-header--wordmark--subtitle {
+			max-width: 		400px;
+		}
+		
+	}
+
+	button.toggle {
+		
+		z-index: 	999999;
+		
+		font-size: 	18px;
+		
+		@include sm-down {
+			display: 		none;
+		}
+		
+		@include md-up {
+			
+			display: 		block;
+			position: 		fixed;
+			
+			bottom: 			0;
+			left: 			0;
+			
+			width: 			30vw;
+			
+			margin: 			0;
+			padding:			15px;
+			
+			animation: 		slide-in-from-bottom 2s linear;
+			
+		}
+	
+		background:		$gray-900;
+		color: 			$white;
+		border:			none;
+	
+		&:hover {
+			background:		$gray-700;
+			color: 			$white;
+		}
+		&:focus {
+			background:		$gray-300;
+			color: 			$black;
+			outline:			none;
+		}
+		
+	}
+	
+	aside#app-header--about {
+		
+		display: 		block;
+		position: 		relative;
+		
+		color: 			$black;
+		background: 		$white;
+		
+		padding: 		($container-padding * 2) 0;
+		
+		@include dark-mode {
+			color: 		$white;
+			background: 	$black;
+			
+			a {
+				color: 	$white;
+			}
+		}
+		
+		overflow-y: 		hidden;
+		overflow-x: 		hidden;
+
+		box-shadow: 		0;
+				
+		@include sm-down {
+			
+			display: 		block;
+			position: 		relative;
+			
+			width: 			100vw;
+			height: 			auto;						
+		}
+		
+		@include md-up {
+			
+			display: 		block;
+			position: 		fixed;
+			
+			width: 			30vw;
+			height: 			100vh;
+			
+			overflow-y: 		scroll;
+			overflow-x: 		hidden;
+
+			left:			0;
+			
+								
+			&.open {
+				width: 			30vw;
+				left: 			30vw;
+				
+				box-shadow: 		0 19px 38px rgba(0,0,0,0.30), 
+								0 15px 12px rgba(0,0,0,0.22);
+
+				transition:		1s all;
+			}
+			&.closed {
+				transition:		1s all;
+			}
+			
+			z-index: 		9999;
+		}
+		
+		article {
+			
+			blockquote {
+				background:		$gray-200;
+				padding:			$container-padding;
+				margin-bottom: 	$container-padding;
+				
+				p:last-of-type {
+					padding-bottom: 		0;
+				}
+			}
+			
+			a {
+				text-decoration: underline;
+				
+				&:hover {
+					color: 		$blue;
+				}
+				&:focus {
+					background:	$yellow;
+				}
+			}
+		}
+		
+	}
+		
+}
+
+section#app-data {
+
+	header.app-party--header {
+
+		background: inherit;
+
+		@include sm-down {
+			padding: 	($container-padding * 1.25) $container-padding;
+		}
+
+		@include md-up {
+			padding: 	($container-padding * 2) $container-padding;
+		}
+
+		display: 		block;
+		position: 		relative;
+		
+		text-align: 		center;
+				
+		@include sticky {
+			top: 0;
+		}
+
+		img.party-logo {
+			max-height: 		100px;
+			max-width: 		100px;
+		}
+		
+		h2.party-name {			
+			
+		}
+		
+		p.total-members {
+			padding-bottom: 	0;
+			font-weight: 	bold;
+		}
+		
+		@include sm-down {
+			img.party-logo {
+				
+				display: inline-block;
+				float: left;
+				
+				max-height: 		50px;
+				max-width: 		50px;
+			}
+			
+			h2.party-name {	
+				text-align: 		left;
+				padding-top: 	0;		
+				padding-left: 	70px;
+			}
+			
+			p.total-members {
+				text-align: 		left;
+				padding-top: 	0;		
+				padding-bottom: 	0;
+				padding-left: 	70px;
+			}
+		}
+		
+		@include md-up {
+			img.party-logo {
+				max-height: 		100px;
+				max-width: 		100px;
+			}
+			
+			h2.party-name {			
+				
+			}
+			
+			p.total-members {
+				padding-bottom: 	0;
+				font-weight: 	bold;
+			}
+		}
+		
+		
+	}
+
+}
+
+section[id^="data-"] {
+		
+	@include md-up {
+		float: 			left;
+	}
+	
+	@include sm-down {
+		
+		width: 		100vw;
+		
+	}
+	
+	@include md {
+		
+		width: 		320px;
+		height: 		100vh;
+		
+	}
+	
+	@include lg-up {
+		
+		width: 		30vw;
+		height: 		100vh;
+		
+	}
+	
+	@include md-up {		
+		overflow-x: 		hidden;
+		overflow-y: 		scroll;
+	}
+	
+	&#data-conservative {
+		background: 		$conservative;
+		color: 			$white;
+		
+		@include dark-mode {
+			background:	$conservative-dark-mode;
+		}
+	}
+	
+	&#data-dup {
+		background: 		$dup;
+		color: 			$white;
+		
+		@include dark-mode {
+			background:	$dup-dark-mode;
+		}
+	}
+	
+	&#data-green {
+		background: 		$green-party;
+		color: 			$white;
+		
+		@include dark-mode {
+			background:	$green-party-dark-mode;
+		}
+	}
+	
+	&#data-independent {
+		background: 		$independent;
+		color: 			$black;
+		
+		@include dark-mode {
+			background:	$independent-dark-mode;
+		}
+	}
+	
+	&#data-labour {
+		background: 		$labour;
+		color: 			$white;
+		
+		@include dark-mode {
+			background:	$labour-dark-mode;
+		}
+	}
+	
+	&#data-libdem {
+		background: 		$libdem;
+		color: 			$black;
+		
+		@include dark-mode {
+			background:	$libdem-dark-mode;
+		}
+	}
+	
+	&#data-plaid {
+		background: 		$plaid;
+		color: 			$white;
+		
+		@include dark-mode {
+			background:	$plaid-dark-mode;
+		}
+	}
+	
+	&#data-sinnfein {
+		background: 		$sinnfein;
+		color: 			$white;
+		
+		@include dark-mode {
+			background:	$sinnfein-dark-mode;
+		}
+	}
+	
+	&#data-snp {
+		background: 		$snp;
+		color: 			$black;
+		
+		@include dark-mode {
+			background:	$snp-dark-mode;
+		}
+	}
+	
+}
+
+section#data-zero-mps {
+	
+	@include sm-down {
+		height: 			auto;
+		min-height: 		auto;
+	}
+	
+	> section[id^="data-"] {
+	
+	height: 			auto;
+	min-height: 		auto;
+	
+	}
+	
+}
+
+ul.list-of-members {
+	padding: 	$container-padding;
+}
+
+li.card {
+	
+	background:		$card-background-secondary;
+	color:			$card-color;
+	
+	@include dark-mode {
+		background:	$card-background-secondary-dark-mode;
+		color: 		$card-color-dark-mode;
+	}
+	
+	margin-bottom: 	$container-padding;
+		
+	box-shadow: 		0 1px 3px rgba(0,0,0,0.12), 
+					0 1px 2px rgba(0,0,0,0.24);
+					
+	transition: 		0.25s all;
+	
+	@include xs {
+		height: 			($container-padding * 2) + $member-text-font-size-base-xs;
+	}
+	@include sm {
+		height: 			($container-padding * 2) + $member-text-font-size-base-sm;
+	}
+	@include md {
+		height: 			($container-padding * 2) + $member-text-font-size-base-sm;
+	}
+	@include lg {
+		height: 			($container-padding * 2) + $member-text-font-size-base-lg;
+	}
+	@include xl {
+		height: 			($container-padding * 2) + $member-text-font-size-base-xl;
+	}
+
+	overflow-y:			hidden;
+		
+	transition:			0.25s all;
+	
+	&:hover,
+	&:focus,
+	&:focus-within {
+		box-shadow: 	0 14px 28px rgba(0,0,0,0.25), 
+					0 10px 10px rgba(0,0,0,0.22);
+	}
+
+	&:focus,
+	&:focus-within {
+		@include xs {
+			height: 			$container-padding + $member-text-font-size-base-xs +$container-padding + $container-padding + ($member-text-font-size-base-xs * 0.75) + ($member-text-padding-bottom-xs / 2) + ($member-text-font-size-base-xs * 0.6) + $container-padding;
+		}
+		@include sm {
+			height: 			$container-padding + $member-text-font-size-base-sm +$container-padding + $container-padding + ($member-text-font-size-base-sm * 0.75) + ($member-text-padding-bottom-sm / 2) + ($member-text-font-size-base-sm * 0.6) + $container-padding;
+		}
+		@include md {
+			height: 			$container-padding + $member-text-font-size-base-md +$container-padding + $container-padding + ($member-text-font-size-base-md * 0.75) + ($member-text-padding-bottom-md / 2) + ($member-text-font-size-base-md * 0.6) + $container-padding;
+		}
+		@include lg {
+			height: 			$container-padding + $member-text-font-size-base-lg +$container-padding + $container-padding + ($member-text-font-size-base-lg * 0.75) + ($member-text-padding-bottom-lg / 2) + ($member-text-font-size-base-lg * 0.6) + $container-padding;
+		}
+		@include xl {
+			height: 			$container-padding + $member-text-font-size-base-xl +$container-padding + $container-padding + ($member-text-font-size-base-xl * 0.75) + ($member-text-padding-bottom-xl / 2) + ($member-text-font-size-base-xl * 0.6) + $container-padding;
+		}
+	
+		overflow-y:			hidden;
+		
+		transition:			0.25s all;
+	}
+	
+	p:last-of-type {
+		padding-bottom: 		0;
+	}
+	
+	p.card--member-name {
+
+		background:			$card-background-primary; 
+		
+		@include dark-mode {
+		background:			$card-background-primary-dark-mode; 
+		}
+		
+		font-weight: 		$member-text-font-weight;
+		text-align: 			center;
+		
+		line-height: 		1;
+		
+		padding:				$container-padding;
+		
+		@include xs {
+			font-size: 		$member-text-font-size-base-xs;
+		}
+		@include sm {
+			font-size: 		$member-text-font-size-base-sm;
+		}
+		@include md {
+			font-size: 		$member-text-font-size-base-md;
+		}
+		@include lg {
+			font-size: 		$member-text-font-size-base-lg;
+		}
+		@include xl {
+			font-size: 		$member-text-font-size-base-xl;
+		}
+	}
+	
+	p.card--member-constituency {
+		
+		padding-top: 		$container-padding;
+		
+		text-align: 			center;
+		
+		line-height: 		1;
+		
+		@include xs {
+			font-size: 		$member-text-font-size-base-xs * 0.75;
+			padding-bottom: 	$member-text-padding-bottom-xs / 2;
+		}
+		@include sm {
+			font-size: 		$member-text-font-size-base-sm * 0.75;
+			padding-bottom: 	$member-text-padding-bottom-sm / 2;
+		}
+		@include md {
+			font-size: 		$member-text-font-size-base-md * 0.75;
+			padding-bottom: 	$member-text-padding-bottom-md / 2;
+		}
+		@include lg {
+			font-size: 		$member-text-font-size-base-lg * 0.75;
+			padding-bottom: 	$member-text-padding-bottom-lg / 2;
+		}
+		@include xl {
+			font-size: 		$member-text-font-size-base-xl * 0.75;
+			padding-bottom: 	$member-text-padding-bottom-xl / 2;
+		}
+	}
+	
+	p.card--member-source {
+		
+		text-align: 			center;
+		
+		line-height: 		1;
+		
+		@include xs {
+			font-size: 		$member-text-font-size-base-xs * 0.6;
+		}
+		@include sm {
+			font-size: 		$member-text-font-size-base-sm * 0.6;
+		}
+		@include md {
+			font-size: 		$member-text-font-size-base-md * 0.6;
+		}
+		@include lg {
+			font-size: 		$member-text-font-size-base-lg * 0.6;
+		}
+		@include xl {
+			font-size: 		$member-text-font-size-base-xl * 0.6;
+		}
+		
+		padding:				0 $container-padding $container-padding;
+		
+		a {
+			@include dark-mode {
+				color: 			$card-color-dark-mode;
+			}
+		}
+	}
+}
+
+body.no-js {
+	
+	@include md-up {
+		
+		section#app-header {
+			width: 			60vw;
+			padding-left: 	30vw;
+		}
+		
+		aside#app-header--about {
+			left: 			30vw !important;
+			transition:  	none;
+		}
+		
+		button.toggle {
+			display: 		none !important;
+		}
+	}
+	
+}

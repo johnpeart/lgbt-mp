@@ -1,0 +1,106 @@
+// Mixins
+
+// Breakpoints
+
+/* breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+); */
+
+
+// BREAKPOINT ONLY 
+
+@mixin xs {
+	@media 	only screen 
+			and (max-width: $sm) {
+				@content;
+			}
+}
+
+@mixin sm {
+	@media 	only screen 
+			and (min-width: $sm)
+			and (max-width: $md - 1px) {
+				@content;
+			}
+}
+
+@mixin md {
+	@media 	only screen 
+			and (min-width: $md)
+			and (max-width: $lg - 1px) {
+				@content;
+			}
+}
+
+@mixin lg {
+	@media 	only screen 
+			and (min-width: $lg)
+			and (max-width: $xl - 1px) {
+				@content;
+			}
+}
+
+@mixin xl {
+	@media 	only screen 
+			and (min-width: $xl) {
+				@content;
+			}
+}
+
+// AND UP
+
+@mixin sm-up {
+	@media 	only screen 
+			and (min-width: $sm) {
+				@content;
+			}
+}
+
+@mixin md-up {
+	@media 	only screen 
+			and (min-width: $md) {
+				@content;
+			}
+}
+
+@mixin lg-up {
+	@media 	only screen 
+			and (min-width: $lg) {
+				@content;
+			}
+}
+
+@mixin xl-up {
+	@media 	only screen 
+			and (min-width: $xl) {
+				@content;
+			}
+}
+
+
+// AND UP
+
+@mixin sm-down {
+	@media 	only screen 
+			and (max-width: $md - 1px) {
+				@content;
+			}
+}
+
+@mixin md-down {
+	@media 	only screen 
+			and (max-width: $lg - 1px) {
+				@content;
+			}
+}
+
+@mixin lg-down {
+	@media 	only screen 
+			and (max-width: $xl - 1px) {
+				@content;
+			}
+}

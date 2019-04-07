@@ -1,0 +1,113 @@
+// Mixins
+
+// Backgrounds
+
+@mixin dark-mode {
+	
+	@media (prefers-color-scheme: dark) {
+		
+		@content;
+		
+	}
+	
+}
+
+@mixin gradient($angle, $first-color, $second-color, $third-color) {
+	background: 	$first-color; /* For browsers that do not support gradients */
+	background: 	-webkit-linear-gradient($angle, $first-color, $second-color, $third-color); /* For Safari 5.1 to 6.0 */
+	background: 	-o-linear-gradient($angle, $first-color, $second-color, $third-color); /* For Opera 11.1 to 12.0 */
+	background: 	-moz-linear-gradient($angle, $first-color, $second-color, $third-color); /* For Firefox 3.6 to 15 */
+	background: 	linear-gradient($angle, $first-color, $second-color, $third-color); /* Standard syntax */
+}
+
+@mixin gradient-text($first-color, $second-color, $third-color, $first-color-dark-mode, $second-color-dark-mode, $third-color-dark-mode) {
+	
+	color: 					$first-color;
+			
+	@supports (background-clip: text) or (-webkit-background-clip: text) {
+		
+		color: 						transparent;
+		
+		@include gradient(90deg, $first-color, $second-color, $third-color);
+		
+		-webkit-background-clip: 	text;
+				background-clip: 	text;
+				background-size: 	100%;
+				
+	}
+	
+	/* Text and background color for dark mode */
+	@include dark-mode {
+
+		color: 					$first-color-dark-mode;
+			
+		@supports (background-clip: text) or (-webkit-background-clip: text) {
+			
+			color: 						transparent;
+			
+			@include gradient(90deg, $first-color-dark-mode, $second-color-dark-mode, $third-color-dark-mode);
+			
+			-webkit-background-clip: 	text;
+					background-clip: 	text;
+					background-size: 	100%;
+					
+		}
+
+	}
+
+}
+
+@mixin cyan {
+	color: 				$cyan !important;
+	
+	a {
+		&:hover,
+		&:focus {
+			color:		$cyan;
+		}
+	}
+}
+
+@mixin magenta {
+	color: 				$magenta !important;
+	
+	a {
+		&:hover,
+		&:focus {
+			color:		$magenta;
+		}
+	}
+}
+
+@mixin blue {
+	color: 				$blue !important;
+	
+	a {
+		&:hover,
+		&:focus {
+			color:		$blue;
+		}
+	}
+}
+
+@mixin facebook-blue {
+	color: 				$facebook-blue !important;
+	
+	a {
+		&:hover,
+		&:focus {
+			color:		$facebook-blue;
+		}
+	}
+}
+
+@mixin red {
+	color: 				$red !important;
+	
+	a {
+		&:hover,
+		&:focus {
+			color:		$red;
+		}
+	}
+}

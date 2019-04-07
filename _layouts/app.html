@@ -1,0 +1,167 @@
+---
+layout: default
+---
+
+{% assign count-parties = 0 %}
+{% assign total-members = 0 %}
+
+{% for party in site.data.parties %}
+
+	{% assign count-parties = count-parties | plus: 1 %}
+
+  	{% assign count-members = 0 %}
+
+	{% for member in site.data.members %}
+
+		{% if party.party == member.party %}
+			{% if member[site.election-period] == "Elected" %}
+				{% assign total-members = total-members | plus: 1 %}
+				{% assign count-members = count-members | plus: 1 %}
+			{% endif %}
+		{% endif %}
+
+	{% endfor %}
+
+	{% if count-members > 0 %}
+		{% assign count-parties-non-zero = count-parties-non-zero | plus: 1 %}
+	{% endif %}
+
+{% endfor %}
+
+
+<main id="app-main" class="width-{{ count-parties-non-zero }}" class="closed">
+		
+	<section id="app-header" class="closed">
+												
+		<header class="app-header--logo">
+			
+			<div class="container">
+
+				<img class="app-header--rainbow-portcullis" src="{{ '/site/logo.svg' | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" alt="A rainbow inspired version of Parliament's Portcullis symbol">
+				<h1 class="app-header--wordmark">LGBT MP</h1>
+				<p class="app-header--wordmark--subtitle">A dataset of MPs who define as lesbian, gay, bisexual, or trans (LGBT) in the UK House of Commons</p>
+							
+			</div>
+			
+		</header>
+				
+		<button id="toggle" class="toggle" onclick="toggleAbout()" tabindex="1">More information</button>
+		
+		<aside id="app-header--about" class="closed">
+										
+			<article id="app-header--about--intro">
+				
+				<div class="container" markdown="1">
+					 
+					{{ content }}
+					
+				</div>
+				
+			</article>
+			
+		</aside>
+					
+	</section>
+		
+	<section id="app-data">
+		
+	
+		{% for party in site.data.parties %}
+	
+		{% assign count-members = 0 %}
+	
+		{% for member in site.data.members %}
+	
+			{% if party.party == member.party %}
+				{% if member[site.election-period] == "Elected" %}
+					{% assign count-members = count-members | plus: 1 %}
+				{% endif %}
+			{% endif %}
+	
+		{% endfor %}
+		
+		{% if count-members > 0 %}
+	
+		<section id="data-{{ party.css }}" class="app-party">
+						
+			<header class="app-party--header section-header--{{ party.css }}">
+	
+			<img id="party-logo--{{ party.css }}" src="{{ party.image | prepend: '/app' | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" class="party-logo" alt="{{ party.css }} logo">
+	
+			<h2 class="party-name">{{ party.party }}</h2>
+	
+			<p class="total-members">
+				{{ count-members }}
+					{% if count-members != 1 %}LGBT MPs
+					{% elsif count-members == 1 %}LGBT MP{% endif %}
+					
+			</p>
+			
+			</header>
+	
+			<ul class="list-of-members">
+			{% for member in site.data.members %}
+				{% if party.party == member.party %}
+					{% if member[site.election-period] == "Elected" %}
+	
+					<li class="card" tabindex="0">
+						<p class="card--member-name">{{ member.name }}</p>
+						<p class="card--member-constituency">{{ member.constituency }}</p>
+						<p class="card--member-source"><strong>Source:</strong> <a href="{{ member.source-link }}" title="Source for {{ member.name }}: visit {{ member.source-description }}">{{ member.source-description }}</a>, {{ member.source-date | date: "%d %b %Y" }}</p>
+					</li>
+	
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+			</ul>
+	
+		</section>
+	
+		{% endif %}
+				
+		{% endfor %}
+		
+		<section id="data-zero-mps" class="app-party">
+
+		{% for party in site.data.parties %}
+	
+		{% assign count-members = 0 %}
+	
+		{% for member in site.data.members %}
+	
+			{% if party.party == member.party %}
+				{% if member[site.election-period] == "Elected" %}
+					{% assign count-members = count-members | plus: 1 %}
+				{% endif %}
+			{% endif %}
+	
+		{% endfor %}
+	
+		{% if count-members == 0 %}
+	
+			<section id="data-{{ party.css }}" class="app-party">
+						
+				<header class="app-party--header section-header--{{ party.css }}">
+		
+				<img id="party-logo--{{ party.css }}" src="{{ party.image | prepend: '/app' | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" class="party-logo" alt="{{ party.css }} logo">
+		
+				<h2 class="party-name">{{ party.party }}</h2>
+		
+				<p class="total-members">
+					{{ count-members }}
+						{% if count-members != 1 %}LGBT MPs
+						{% elsif count-members == 1 %}LGBT MP{% endif %}
+						
+				</p>
+				
+				</header>
+				
+			</section>
+	
+		{% endif %}
+	
+		{% endfor %}
+	
+		</div>
+	
+	</section>

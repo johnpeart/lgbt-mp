@@ -1,0 +1,38 @@
+# Parties in alphabetical order
+# Independent MPs listed as a 'party' last
+
+- party: 'Conservative'
+  css: 'conservative'
+  image: '/conservative.svg'
+
+- party: 'Democratic Unionist'
+  css: 'dup'
+  image: '/dup.svg'
+
+- party: 'Green'
+  css: 'green'
+  image: '/green.svg'
+  
+- party: 'Labour'
+  css: 'labour'
+  image: '/labour.svg'
+  
+- party: 'Liberal Democrat'
+  css: 'libdem'
+  image: '/libdem.svg'
+
+- party: 'Plaid Cymru'
+  css: 'plaid'
+  image: '/plaid.svg'
+
+- party: 'Scottish National'
+  css: 'snp'
+  image: '/snp.svg'
+
+- party: 'Sinn Fein'
+  css: 'sinnfein'
+  image: '/sinnfein.svg'
+  
+- party: 'Independent'
+  css: 'independent'
+  image: '/independent.svg'

@@ -1,0 +1,13 @@
+@mixin sticky {
+
+	@supports (position: sticky) or (position: -webkit-sticky) or (position: -moz-sticky) {
+		position: -webkit-sticky;
+		position:    -moz-sticky;
+		position:     -ms-sticky;
+		position:      -o-sticky;
+		
+		@content;
+		
+	}
+
+}
