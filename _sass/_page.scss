@@ -133,10 +133,18 @@ main#page {
 					
 					padding: 	$container-padding;
 					
+					@include dark-mode {
+						color: 		$card-color-dark-mode;
+					}
+					
 					&:hover,
 					&:focus {
 						text-decoration: 	none;
 						background: 			$gray-200;
+						
+						@include dark-mode {
+							background:	$gray-700;
+						}
 					}
 				}
 				
@@ -173,10 +181,6 @@ main#page {
 				}
 				
 				p.date {
-								
-					@include dark-mode {
-						background:			$card-background-primary-dark-mode; 
-					}
 					
 					font-weight: 		normal;
 					text-align: 			left;
