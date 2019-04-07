@@ -1,4 +1,4 @@
-<section id="app-header" class="closed">
+<section id="app-header" {% if page.layout contains == "app" %}class="closed"{% endif %}>
 											
 	<header class="app-header--logo">
 		
@@ -11,12 +11,18 @@
 		</div>
 		
 	</header>
-			
+	
+	{% if page.layout contains "app" %}
 	<button id="toggle" class="toggle" onclick="toggleAbout()" tabindex="1">More information</button>
 	
 	<aside id="app-header--about" class="closed">
 									
-		{% if page.layout == "app" %}	
+		{% if page.layout == "app" %}			 
+
+		<blockquote>
+			<p><strong>You are viewing data for the current Parliament.</strong></p>
+			<p><a href="{{ site.url | append: site.baseurl | append: "/historic/" }}" title="Visit the home page for the latest data">View historical data</a></p>
+		</blockquote>
 
 		<article id="app-header--about--intro">
 			
@@ -52,14 +58,14 @@
 				
 			</div>
 			
-		</article>			 
-
-		<blockquote class="fixed">
-			<p><strong>You are viewing data for the current Parliament.</strong></p>
-			<p><a href="{{ site.url | append: site.baseurl | append: "/" }}" title="Visit the home page for the latest data">View historical data</a></p>
-		</blockquote>
+		</article>	
 			
 		{% elsif page.layout == "app-historic" %}
+			
+		<blockquote>
+			<p><strong>You are viewing data for the Parliament that {{ page.slug }}ed on {{ page.date | date: "%d %B %Y" }}.</strong></p>
+			<p><a href="{{ site.url | append: site.baseurl | append: "/" }}" title="Visit the home page for the latest data">View the latest data</a></p>
+		</blockquote>			
 
 		<article id="app-header--about--intro">
 
@@ -78,14 +84,9 @@
 			</div>
 
 		</article>
-			
-		<blockquote class="fixed">
-			<p><strong>You are viewing data for the Parliament that {{ page.slug }}ed on {{ page.date | date: "%d %B %Y" }}.</strong></p>
-			<p><a href="{{ site.url | append: site.baseurl | append: "/" }}" title="Visit the home page for the latest data">View the latest data</a></p>
-		</blockquote>			
-
 		{% endif %}
 		
 	</aside>
+	{% endif %}
 				
 </section>

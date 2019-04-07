@@ -2,53 +2,46 @@
 layout: default
 ---
 
-<main id="home">
-
-	<div id="landing" class="page">
-
-		<div id="content-landing" class="content">
-
-			<img id="app" src="{{ site.logo-svg | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" alt="LGBT MP">
-
-		</div>
-
-		<div id="navgation-landing" class="navigation">
-
-			<ul id="navigation">
-
+<main id="page">
+		
+	{% include app-header.html %}
+	
+	<section id="page">
+		
+		<div class="container">
+			
+			<h1>Historic data</h1>
+			
+			<p>Use this page to find the LGBT MPs who were in each Parliament.</p>
+			
+			<ul>
+			{% for parliament in site.parliaments %}
+			
 				<li>
-					<span class="card-top">
-						{{ page.title }}
-					</span>
-					<span class="card-bottom">
-						{{ content }}
-					</span>
+					<a href="{{ site.url | append: site.baseurl | append: parliament.url }}" title="See data for Parliament {{ parliament.slug }}ing {{ parliament.date | date: "%-d %B %Y" }}">
+						<p class="date">
+							Parliament {{ parliament.slug }}ing 
+							<br>
+							<span class="large-date">{{ parliament.date | date: "%-d %B %Y" }}</span>
+						</p>
+					</a>
 				</li>
-
+			
+			{% endfor %}
+			
 				<li>
-					<span class="card-top">
-						Site last generated:
-					</span>
-					<span class="card-bottom text-center">
-						{{ "now" | date: "%d %B %Y at %H:%M" }}
-					</span>
+					<a href="{{ site.url | append: site.baseurl | append: '/' }}" title="See the current data for this Parliament">
+						<p class="date">
+							This Parliament 
+							<br>
+							<span class="large-date">Current data</span>
+						</p>
+					</a>
 				</li>
-
-				<li>
-					<span class="card-top">
-						Contact me
-					</span>
-					<span class="card-bottom text-center">
-						<a href="//jrpeart.com" class="btn btn-primary btn-block">Visit my website</a>
-						<a href="//twitter.com/johnpeart" class="btn btn-primary btn-block">Follow me on Twitter</a>
-					</span>
-				</li>
-
 			</ul>
-
+		
 		</div>
-
-	</div>
-
+		
+	</section>
+			
 </main>
-

@@ -1,0 +1,230 @@
+main#page {
+	
+	display: 		block;
+	position: 		relative;
+	
+	-webkit-overflow-scrolling: auto;
+	
+	@include md-up {
+		
+		height: 		100vh;
+		
+		overflow-x: 	scroll;
+		overflow-y: 	hidden;
+		
+		&:after {
+			@include clearfix;
+		}
+	}
+	
+	section#app-header {
+	
+		display: 		block;
+		position: 		relative;
+		
+		background:		$true-black;
+		
+		min-height: 		100vh;
+		
+		@include md-up {
+			height: 			100vh;
+			width: 			30vw;
+		
+			float: 			left;
+		}
+			
+		header.app-header--logo {
+	
+			display: 		block;
+			position: 		relative;
+			
+			color: 			$white;
+			background: 		$true-black;
+			
+			@include sm-down {
+				height: 			100vh;
+				width: 			100vw;
+			}
+			
+			@include md-up {	
+				
+				display: 	block;
+				position: 	fixed;
+				
+				top: 		0;
+				left: 		0;
+				
+				height: 		100vh;
+				width: 		30vw;
+				
+				z-index: 		999999;
+			}
+			
+			.container {
+				
+				display: 	block;
+				position: 	absolute;
+				
+				top:			50%;
+				transform:	translateY(-50%);
+				
+			}
+		
+			img.app-header--rainbow-portcullis {
+				
+				@include xs {
+					width: 120px;
+				}
+				
+				@include sm {
+					width: 140px;
+				}
+				
+				@include md-up {
+					width: 160px;
+				}
+				
+			}
+			
+			h1.app-header--wordmark {
+				
+			}
+			
+			p.app-header--wordmark--subtitle {
+				max-width: 		400px;
+			}
+			
+		}
+				
+	}
+	
+	section#page {
+	
+		min-height: 		100vh;
+		
+		@include sm-down {
+			width: 		100vw;
+		}
+		
+		@include md-up {
+			width: 		70vw;
+			float: 		left;
+		
+			overflow-x: 	hidden;
+			overflow-y: 	scroll;
+		}
+		
+		background: 	$white;
+		color: 		$black;
+		
+		@include dark-mode {
+			background: 	$black;
+			color: 		$white;
+		}
+		
+		ul {
+			
+			padding: 	($container-padding * 2) 0;
+			
+			li {
+				
+				a {
+					display: 	block;
+					
+					padding: 	$container-padding;
+					
+					&:hover,
+					&:focus {
+						text-decoration: 	none;
+						background: 			$gray-200;
+					}
+				}
+				
+				background:		$card-background-primary;
+				color:			$card-color;
+				
+				@include dark-mode {
+					background:	$card-background-primary-dark-mode;
+					color: 		$card-color-dark-mode;
+				}
+				
+				max-width:		450px;
+				
+				margin-bottom: 	$container-padding;
+					
+				box-shadow: 		0 1px 3px rgba(0,0,0,0.12), 
+								0 1px 2px rgba(0,0,0,0.24);
+								
+				transition: 		0.25s all;
+			
+				overflow-y:			hidden;
+					
+				transition:			0.25s all;
+				
+				&:hover,
+				&:focus,
+				&:focus-within {
+					box-shadow: 	0 14px 28px rgba(0,0,0,0.25), 
+								0 10px 10px rgba(0,0,0,0.22);
+				}
+				
+				p:last-of-type {
+					padding-bottom: 		0;
+				}
+				
+				p.date {
+								
+					@include dark-mode {
+						background:			$card-background-primary-dark-mode; 
+					}
+					
+					font-weight: 		normal;
+					text-align: 			left;
+					
+					line-height: 		1.5;
+										
+					@include xs {
+						font-size: 		$member-text-font-size-base-xs;
+					}
+					@include sm {
+						font-size: 		$member-text-font-size-base-sm;
+					}
+					@include md {
+						font-size: 		$member-text-font-size-base-md;
+					}
+					@include lg {
+						font-size: 		$member-text-font-size-base-lg;
+					}
+					@include xl {
+						font-size: 		$member-text-font-size-base-xl;
+					}
+					
+					span.large-date {
+						
+						font-weight: 	$member-text-font-weight;
+											
+						@include xs {
+							font-size: 		$member-text-font-size-base-xs * 1.25;
+						}
+						@include sm {
+							font-size: 		$member-text-font-size-base-sm * 1.25;
+						}
+						@include md {
+							font-size: 		$member-text-font-size-base-md * 1.25;
+						}
+						@include lg {
+							font-size: 		$member-text-font-size-base-lg * 1.25;
+						}
+						@include xl {
+							font-size: 		$member-text-font-size-base-xl * 1.25;
+						}
+					}
+				}
+
+				
+			}
+			
+		}
+	}
+
+}

@@ -271,19 +271,6 @@ blockquote {
 	padding:			$container-padding;
 	margin-bottom: 	$container-padding;
 
-	&.fixed {
-		
-		@include md-up {
-			position: 	fixed;
-			
-			@include sticky {
-				bottom: 		0;
-			}
-		}
-		
-		margin-bottom:	0;
-	}
-	
 	p:last-of-type {
 		padding-bottom: 		0;
 	}
