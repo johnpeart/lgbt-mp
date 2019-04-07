@@ -307,6 +307,13 @@ section#app-header {
 			
 			blockquote {
 				background:		$gray-200;
+				color:			$black;
+				
+				@include dark-mode {
+					background: 	$gray-700;
+					color: 		$white;
+				}
+				
 				padding:			$container-padding;
 				margin-bottom: 	$container-padding;
 				
