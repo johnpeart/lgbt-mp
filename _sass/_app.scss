@@ -427,21 +427,11 @@ main#app-main {
 			
 		}
 		
-		@include md {
-			
-			width: 		320px;
-			height: 		100vh;
-			
-		}
-		
-		@include lg-up {
+		@include md-up {
 			
 			width: 		30vw;
 			height: 		100vh;
 			
-		}
-		
-		@include md-up {		
 			overflow-x: 		hidden;
 			overflow-y: 		scroll;
 		}
