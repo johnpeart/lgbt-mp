@@ -45,7 +45,7 @@
 	<meta property="og:url" 				content="{{ site.url | append: site.baseurl | append: page.url | replace: 'index.html','' }}">
 	<meta property="og:type" 			content="{% if page.layout == 'post' %}article{% else %}website{% endif %}" />
 	<meta property="og:title" 			content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
-	<meta property="og:image" 			content="{% if page.image %}{{ site.url | append: site.baseurl | append: site.social-images-path | append: page.image }}{% else %}{{ site.url | append: site.social-media-image }}{% endif %}">
+	<meta property="og:image" 			content="{{ site.url | append: site.baseurl | append: site.social-media-image }}">
 	<meta property="og:image:width" 		content="1200">
 	<meta property="og:image:height" 	content="630">
 	<meta property="og:rich_attachment" content="true" />
@@ -62,13 +62,13 @@
 	<meta name="twitter:url" 			content="{{ site.url | append: site.baseurl | append: page.url | replace: 'index.html','' }}">
 	<meta name="twitter:title" 			content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
 	<meta name="twitter:description" 	content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description  | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
-	<meta name="twitter:image" 			content="{% if page.image %}{{ site.url | append: site.baseurl | append: site.social-images-path | append: page.image }}{% else %}{{ site.url | append: site.social-media-image }}{% endif %}">
+	<meta name="twitter:image" 			content="{{ site.url | append: site.baseurl | append: site.social-media-image }}">
 	<meta name="twitter:image:alt" 		content="{% if page.image-description %}{{ page.image-description | strip_html }}{% else %}{{ page.title }}{% endif %}">
 	
 	<!-- Schema.org settings -->
 	<meta itemprop="name" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
 	<meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description  | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
-	<meta itemprop="image" content="{% if page.image %}{{ site.url | append: site.baseurl | append: site.social-images-path | append: page.image }}{% else %}{{ site.url | append: site.social-media-image }}{% endif %}">	
+	<meta itemprop="image" content="{{ site.url | append: site.baseurl | append: site.social-media-image }}">	
 		
 	<!-- For IE 10 and below -->
 	<!-- Place favicon.ico in the root directory - no tag necessary -->
