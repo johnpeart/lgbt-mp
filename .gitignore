@@ -1,3 +1,7 @@
 _site
 .sass-cache
 *.scssc
+assets/images/.DS_Store
+assets/.DS_Store
+.DS_Store
+.DS_Store
