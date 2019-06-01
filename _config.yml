@@ -4,8 +4,8 @@ title: "LGBT MP"
 
 description: "A website that lists the ‘out’ lesbian, gay, bisexual or trans (LGBT) members of the House of Commons in the UK Parliament"
 
-baseurl: "/lgbt-mp" # the subpath of your site, e.g. /blog
-url: "https://www.johnpe.art"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://mps.whoare.lgbt"
 author: "John Peart"
 
 election-period: "current"
