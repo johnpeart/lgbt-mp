@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+{% assign todays-date = "now" | date: "%Y-%m-%d" %}
+
+{% if page.url contains "historic" %}
+	
+	{% if page.url contains "start" %}
+		{% assign parliament-check-date = page.start-date | date: "%Y-%m-%d" %}
+	{% elsif page.url contains "end" %}
+		{% assign parliament-check-date = page.end-date | date: "%Y-%m-%d" %}
+	{% endif %}
+	
+	{% assign parliament-period = parliament-check-date %}
+	
+{% else %}
+
+	{% assign parliament-check-date = todays-date %}
+	{% assign parliament-period = 'current' %}
+
+	
+{% endif %}
+
+{% assign count-parties = 0 %}
+{% assign count-parties-with-lgbt-mps = 0 %}
+{% assign count-parties-no-lgbt-mps = 0 %}
+{% assign count-mps = 0 %}
+{% assign count-mps-in-party = 0 %}
+
+{% for party in site.data.parties %}
+
+	{% assign count-mps-in-party = 0 %}
+
+	{% for mp in site.data.members %}
+	
+		{% assign mp-start-date = mp.start-date %}
+	
+		{% if mp.end-date == "present" %}
+			{% assign mp-end-date = todays-date %}
+		{% else %}
+			{% assign mp-end-date = mp.end-date | date: "%Y-%m-%d" %}
+		{% endif %}
+		
+		{% if mp-start-date <= parliament-check-date and mp-end-date >= parliament-check-date %}
+	
+			{% if mp.party == party.party %}
+			
+				{% assign count-mps-in-party = count-mps-in-party | plus: 1 %}
+			
+			{% endif %}
+		
+		{% endif %}
+	
+	{% endfor %}
+	
+	{% if count-mps-in-party > 0 %}
+		{% assign count-parties-with-lgbt-mps = count-parties-with-lgbt-mps | plus: 1 %}
+	{% else %}
+		{% assign count-parties-no-lgbt-mps = count-parties-no-lgbt-mps | plus: 1 %}
+	{% endif %}
+		
+	{% assign count-mps = count-mps | plus: count-mps-in-party %}
+		
+{% endfor %}
+
+<main id="app-main" class="width-{{ count-parties-with-lgbt-mps }}" class="closed">
+			
+	{% include header/data.html %}
+	
+	<section id="app-data">
+		
+		{% include data.html %}
+	
+	</section>
+	
+</main>

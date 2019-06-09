@@ -1,47 +1,60 @@
-<section id="app-header" {% if page.layout contains == "app" %}class="closed"{% endif %}>
-											
+<section id="app-header" {% if page.layout contains == "data" %}class="closed"{% endif %}>
+							
 	<header class="app-header--logo">
 		
 		<div class="container">
 
-			<img class="app-header--rainbow-portcullis" src="{{ '/site/logo.svg' | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" alt="A rainbow inspired version of Parliament's Portcullis symbol">
-			<h1 class="app-header--wordmark">LGBT MP</h1>
+			<img class="app-header--rainbow-portcullis" src="{{ '/site/logo.svg' | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" alt="A rainbow inspired version Parliament's portcullis symbol ">
+			<h1 class="app-header--wordmark">{{ site.title }}</h1>
 			<p class="app-header--wordmark--subtitle">A dataset of MPs who define as lesbian, gay, bisexual, or trans (LGBT) in the UK House of Commons</p>
 						
 		</div>
 		
 	</header>
 	
-	{% if page.layout contains "app" %}
 	<button id="toggle" class="toggle" onclick="toggleAbout()" tabindex="1">More information</button>
 	
 	<aside id="app-header--about" class="closed">
-									
-		{% if page.layout == "app" %}			 
-
+		
 		<blockquote>
+			{% if page.url contains 'historic' %}
+			<p><strong>You are viewing data for the Parliament that started on {{ parliament-check-date | date: "%d %B %Y" }}.</strong></p>
+			<p><a href="{{ site.url | append: site.baseurl | append: "/" }}" title="Visit the home page for the latest data">View the latest data</a></p>				
+			<p><a href="{{ site.url | append: site.baseurl | append: "/historic/" }}" title="Visit the home page for the latest data">View historical data</a></p>
+			{% else %}
 			<p><strong>You are viewing data for the current Parliament.</strong></p>
 			<p><a href="{{ site.url | append: site.baseurl | append: "/historic/" }}" title="Visit the home page for the latest data">View historical data</a></p>
+			{% endif %}
 		</blockquote>
-
+		
 		<article id="app-header--about--intro">
 			
 			<div class="container">
 		
 				<blockquote>
-				  <p><strong>Currently, there are 45 MPs who define as LGBT in Parliament.</strong></p>
-				
-				  <p><strong>4 parties or groups had at least 1 out LGBT MP.</strong></p>
-				
-				  <p><em>This data was last updated 3 April 2019.</em></p>
+					{% if page.url contains 'historic' %}
+					
+						<p><strong>In this Parliament there were {{ count-mps }} MPs who define as LGBT in the House of Commons.</strong></p>
+						<p><strong>{{ count-parties-with-lgbt-mps }} parties or groups had at least 1 out LGBT MP.</strong></p>
+						{% if page.update %}
+						<p><em>This data was correct as of {{ page.update | date: "%-d %B %Y" }}.</em></p>
+						{% else %}
+						<p><em>This data was correct as of {{ page.end-date | date: "%-d %B %Y" }}.</em></p>
+						{% endif %}
+
+					{% else %}
+					
+						<p><strong>There are currently {{ count-mps }} MPs who define as LGBT in the House of Commons.</strong></p>
+						<p><strong>{{ count-parties-with-lgbt-mps }} parties or groups have at least 1 out LGBT MP.</strong></p>
+						<p><em>This data was last updated {{ site.last-update }}.</em></p>
+						
+					{% endif %}
 				</blockquote>
 				
 				<h1 id="about-this-site">About this site</h1>
 				
 				<p>This website was created to publicly record how many out LGBT MPs were sitting in the House of Commons.</p>
-				
 				<p>The data collected shows Members of Parliament who are ‘out’ as lesbian, gay, bisexual, trans or with another minority sexual orientation or gender identity, and for which I can find a reliable source.</p>
-				
 				<p><strong>Select an MP’s name to see their constituency and where the source of this information came from.</strong></p>
 				
 				<h1 id="structured-data">Structured data</h1>
@@ -53,40 +66,12 @@
 				<h1 id="sources">Sources</h1>
 				
 				<p>This information has been collated from internet searches and publicly available information. An MP is listed either when an MP has made a public statement about their sexual orientation or gender identity, or there is a reliable independent source.</p>
-				
 				<p>The main sources so far have been <a href="//pinknews.co.uk" tabindex="0">Pink News</a>, the <a href="//independent.co.uk" tabindex="0">The Independent</a>. More recently, I have also cross-referenced with data from <a href="//lgbtqrepresentationandrights.org/" tabindex="0">The LGBTQ Representation and Rights Research Initiative</a></p>
-				
+								
 			</div>
 			
 		</article>	
-			
-		{% elsif page.layout == "app-historic" %}
-			
-		<blockquote>
-			<p><strong>You are viewing data for the Parliament that {{ page.slug }}ed on {{ page.date | date: "%d %B %Y" }}.</strong></p>
-			<p><a href="{{ site.url | append: site.baseurl | append: "/" }}" title="Visit the home page for the latest data">View the latest data</a></p>
-		</blockquote>			
-
-		<article id="app-header--about--intro">
-
-			<div class="container">
-					
-				<blockquote>
-					<p><strong>In this Parliament there were {{ total-members }} MPs who define as LGBT in Parliament.</strong></p>
-					<p><strong>{{ count-parties-non-zero }} parties or groups had at least 1 out LGBT MP.</strong></p>
-					{% if page.update %}
-					<p><em>This data was correct as of {{ page.update | date: "%-d %B %Y" }}.</em></p>
-					{% else %}
-					<p><em>This data was correct as of {{ page.date | date: "%-d %B %Y" }}.</em></p>
-					{% endif %}
-				</blockquote>
-				
-			</div>
-
-		</article>
-		{% endif %}
 		
 	</aside>
-	{% endif %}
 				
 </section>

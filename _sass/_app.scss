@@ -491,7 +491,7 @@ main#app-main {
 				
 			}
 			
-			p.total-members {
+			p.total-mps {
 				padding-bottom: 	0;
 				font-weight: 	bold;
 			}
@@ -512,7 +512,7 @@ main#app-main {
 					padding-left: 	70px;
 				}
 				
-				p.total-members {
+				p.total-mps {
 					text-align: 		left;
 					padding-top: 	0;		
 					padding-bottom: 	0;
@@ -530,7 +530,7 @@ main#app-main {
 					
 				}
 				
-				p.total-members {
+				p.total-mps {
 					padding-bottom: 	0;
 					font-weight: 	bold;
 				}
@@ -588,7 +588,7 @@ main#app-main {
 		
 	}
 	
-	ul.list-of-members {
+	ul.list-of-mps {
 		padding: 	$container-padding;
 	}
 	
@@ -610,19 +610,19 @@ main#app-main {
 		transition: 		0.25s all;
 		
 		@include xs {
-			height: 			($container-padding * 2) + $member-text-font-size-base-xs;
+			height: 			($container-padding * 2) + $mp-text-font-size-base-xs;
 		}
 		@include sm {
-			height: 			($container-padding * 2) + $member-text-font-size-base-sm;
+			height: 			($container-padding * 2) + $mp-text-font-size-base-sm;
 		}
 		@include md {
-			height: 			($container-padding * 2) + $member-text-font-size-base-sm;
+			height: 			($container-padding * 2) + $mp-text-font-size-base-sm;
 		}
 		@include lg {
-			height: 			($container-padding * 2) + $member-text-font-size-base-lg;
+			height: 			($container-padding * 2) + $mp-text-font-size-base-lg;
 		}
 		@include xl {
-			height: 			($container-padding * 2) + $member-text-font-size-base-xl;
+			height: 			($container-padding * 2) + $mp-text-font-size-base-xl;
 		}
 	
 		overflow-y:			hidden;
@@ -639,19 +639,19 @@ main#app-main {
 		&:focus,
 		&:focus-within {
 			@include xs {
-				height: 			$container-padding + $member-text-font-size-base-xs +$container-padding + $container-padding + ($member-text-font-size-base-xs * 0.75) + ($member-text-padding-bottom-xs / 2) + ($member-text-font-size-base-xs * 0.6) + $container-padding;
+				height: 			$container-padding + $mp-text-font-size-base-xs +$container-padding + $container-padding + ($mp-text-font-size-base-xs * 0.75) + ($mp-text-padding-bottom-xs / 2) + ($mp-text-font-size-base-xs * 0.6) + $container-padding;
 			}
 			@include sm {
-				height: 			$container-padding + $member-text-font-size-base-sm +$container-padding + $container-padding + ($member-text-font-size-base-sm * 0.75) + ($member-text-padding-bottom-sm / 2) + ($member-text-font-size-base-sm * 0.6) + $container-padding;
+				height: 			$container-padding + $mp-text-font-size-base-sm +$container-padding + $container-padding + ($mp-text-font-size-base-sm * 0.75) + ($mp-text-padding-bottom-sm / 2) + ($mp-text-font-size-base-sm * 0.6) + $container-padding;
 			}
 			@include md {
-				height: 			$container-padding + $member-text-font-size-base-md +$container-padding + $container-padding + ($member-text-font-size-base-md * 0.75) + ($member-text-padding-bottom-md / 2) + ($member-text-font-size-base-md * 0.6) + $container-padding;
+				height: 			$container-padding + $mp-text-font-size-base-md +$container-padding + $container-padding + ($mp-text-font-size-base-md * 0.75) + ($mp-text-padding-bottom-md / 2) + ($mp-text-font-size-base-md * 0.6) + $container-padding;
 			}
 			@include lg {
-				height: 			$container-padding + $member-text-font-size-base-lg +$container-padding + $container-padding + ($member-text-font-size-base-lg * 0.75) + ($member-text-padding-bottom-lg / 2) + ($member-text-font-size-base-lg * 0.6) + $container-padding;
+				height: 			$container-padding + $mp-text-font-size-base-lg +$container-padding + $container-padding + ($mp-text-font-size-base-lg * 0.75) + ($mp-text-padding-bottom-lg / 2) + ($mp-text-font-size-base-lg * 0.6) + $container-padding;
 			}
 			@include xl {
-				height: 			$container-padding + $member-text-font-size-base-xl +$container-padding + $container-padding + ($member-text-font-size-base-xl * 0.75) + ($member-text-padding-bottom-xl / 2) + ($member-text-font-size-base-xl * 0.6) + $container-padding;
+				height: 			$container-padding + $mp-text-font-size-base-xl +$container-padding + $container-padding + ($mp-text-font-size-base-xl * 0.75) + ($mp-text-padding-bottom-xl / 2) + ($mp-text-font-size-base-xl * 0.6) + $container-padding;
 			}
 		
 			overflow-y:			hidden;
@@ -663,7 +663,7 @@ main#app-main {
 			padding-bottom: 		0;
 		}
 		
-		p.card--member-name {
+		p.card--mp-name {
 	
 			background:			$card-background-primary; 
 			
@@ -671,7 +671,7 @@ main#app-main {
 			background:			$card-background-primary-dark-mode; 
 			}
 			
-			font-weight: 		$member-text-font-weight;
+			font-weight: 		$mp-text-font-weight;
 			text-align: 			center;
 			
 			line-height: 		1;
@@ -679,23 +679,23 @@ main#app-main {
 			padding:				$container-padding;
 			
 			@include xs {
-				font-size: 		$member-text-font-size-base-xs;
+				font-size: 		$mp-text-font-size-base-xs;
 			}
 			@include sm {
-				font-size: 		$member-text-font-size-base-sm;
+				font-size: 		$mp-text-font-size-base-sm;
 			}
 			@include md {
-				font-size: 		$member-text-font-size-base-md;
+				font-size: 		$mp-text-font-size-base-md;
 			}
 			@include lg {
-				font-size: 		$member-text-font-size-base-lg;
+				font-size: 		$mp-text-font-size-base-lg;
 			}
 			@include xl {
-				font-size: 		$member-text-font-size-base-xl;
+				font-size: 		$mp-text-font-size-base-xl;
 			}
 		}
 		
-		p.card--member-constituency {
+		p.card--mp-constituency {
 			
 			padding-top: 		$container-padding;
 			
@@ -704,47 +704,47 @@ main#app-main {
 			line-height: 		1;
 			
 			@include xs {
-				font-size: 		$member-text-font-size-base-xs * 0.75;
-				padding-bottom: 	$member-text-padding-bottom-xs / 2;
+				font-size: 		$mp-text-font-size-base-xs * 0.75;
+				padding-bottom: 	$mp-text-padding-bottom-xs / 2;
 			}
 			@include sm {
-				font-size: 		$member-text-font-size-base-sm * 0.75;
-				padding-bottom: 	$member-text-padding-bottom-sm / 2;
+				font-size: 		$mp-text-font-size-base-sm * 0.75;
+				padding-bottom: 	$mp-text-padding-bottom-sm / 2;
 			}
 			@include md {
-				font-size: 		$member-text-font-size-base-md * 0.75;
-				padding-bottom: 	$member-text-padding-bottom-md / 2;
+				font-size: 		$mp-text-font-size-base-md * 0.75;
+				padding-bottom: 	$mp-text-padding-bottom-md / 2;
 			}
 			@include lg {
-				font-size: 		$member-text-font-size-base-lg * 0.75;
-				padding-bottom: 	$member-text-padding-bottom-lg / 2;
+				font-size: 		$mp-text-font-size-base-lg * 0.75;
+				padding-bottom: 	$mp-text-padding-bottom-lg / 2;
 			}
 			@include xl {
-				font-size: 		$member-text-font-size-base-xl * 0.75;
-				padding-bottom: 	$member-text-padding-bottom-xl / 2;
+				font-size: 		$mp-text-font-size-base-xl * 0.75;
+				padding-bottom: 	$mp-text-padding-bottom-xl / 2;
 			}
 		}
 		
-		p.card--member-source {
+		p.card--mp-source {
 			
 			text-align: 			center;
 			
 			line-height: 		1;
 			
 			@include xs {
-				font-size: 		$member-text-font-size-base-xs * 0.6;
+				font-size: 		$mp-text-font-size-base-xs * 0.6;
 			}
 			@include sm {
-				font-size: 		$member-text-font-size-base-sm * 0.6;
+				font-size: 		$mp-text-font-size-base-sm * 0.6;
 			}
 			@include md {
-				font-size: 		$member-text-font-size-base-md * 0.6;
+				font-size: 		$mp-text-font-size-base-md * 0.6;
 			}
 			@include lg {
-				font-size: 		$member-text-font-size-base-lg * 0.6;
+				font-size: 		$mp-text-font-size-base-lg * 0.6;
 			}
 			@include xl {
-				font-size: 		$member-text-font-size-base-xl * 0.6;
+				font-size: 		$mp-text-font-size-base-xl * 0.6;
 			}
 			
 			padding:				0 $container-padding $container-padding;

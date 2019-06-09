@@ -1,0 +1,147 @@
+<!-- THIS CODE IS FOR PARTIES OR GROUPS WITH AT LEAST 1 LGBT MP -->
+
+{% for party in site.data.parties %}
+
+	{% if party[parliament-period] != "NA" %}
+	
+		{% assign count-mps-in-party = 0 %}
+		
+		{% for mp in site.data.members %}
+		
+			{% assign mp-start-date = mp.start-date %}
+		
+			{% if mp.end-date == "present" %}
+				{% assign mp-end-date = todays-date %}
+			{% else %}
+				{% assign mp-end-date = mp.end-date | date: "%Y-%m-%d" %}
+			{% endif %}
+			
+			{% if mp-start-date <= parliament-check-date and mp-end-date >= parliament-check-date %}
+		
+				{% if mp.party == party.party %}
+				
+					{% assign count-mps-in-party = count-mps-in-party | plus: 1 %}
+				
+				{% endif %}
+			
+			{% endif %}
+		
+		{% endfor %}
+	
+		{% if count-mps-in-party > 0 %}
+	
+		<section id="data-{{ party.css }}" class="app-party">
+					
+			<header class="app-party--header section-header--{{ party.css }}">
+		
+				<span class="party-name">					
+				
+					<img id="party-logo--{{ party.css }}" src="{{ party.image | prepend: '/app' | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" class="party-logo" alt="{{ party.css }} logo">
+
+					<h2 class="party-name">{{ party.party }}</h2>
+					
+					<p class="total-mps">
+						{{ count-mps-in-party }}
+							{% if count-members-in-party != 1 %}LGBT MPs
+							{% elsif count-members == 1 %}LGBT MP{% endif %}
+							
+					</p>
+				</span>
+			
+			</header>
+		
+			<ul class="list-of-mps">
+			{% for mp in site.data.members %}
+			
+				{% assign mp-start-date = mp.start-date | date: "%Y-%m-%d" %}
+			
+				{% if mp.end-date == "present" %}
+					{% assign mp-end-date = todays-date %}
+				{% else %}
+					{% assign mp-end-date = mp.end-date | date: "%Y-%m-%d" %}
+				{% endif %}
+				
+				{% if party.party == mp.party %}
+					{% if mp-start-date <= parliament-check-date and mp-end-date >= parliament-check-date %}
+		
+		
+					<li class="card" tabindex="0">
+						<p class="card--mp-name">{{ mp.name }}</p>
+						<p class="card--mp-constituency">{{ mp.constituency }}</p>
+						<p class="card--mp-source"><strong>Source:</strong> <a href="{{ mp.source-link }}" title="Source for {{ mp.name }}: visit {{ mp.source-description }}">{{ mp.source-description }}</a>, {{ mp.source-date | date: "%d %b %Y" }}</p>
+					</li>
+		
+					{% endif %}
+				{% endif %}
+				
+			{% endfor %}
+			</ul>
+	
+		</section>
+	
+		{% endif %}
+		
+	{% endif %}
+				
+{% endfor %}
+
+<!-- THIS CODE IS FOR PARTIES OR GROUPS WITH NO LGBT MPs -->
+
+<section id="data-zero-mps" class="app-party">
+
+{% for party in site.data.parties %}
+
+	{% if party[parliament-period] != "NA" %}
+
+		{% assign count-mps-in-party = 0 %}
+	
+		{% for mp in site.data.members %}
+		
+			{% assign mp-start-date = mp.start-date %}
+		
+			{% if mp.end-date == "present" %}
+				{% assign mp-end-date = todays-date %}
+			{% else %}
+				{% assign mp-end-date = mp.end-date | date: "%Y-%m-%d" %}
+			{% endif %}
+			
+			{% if mp-start-date <= parliament-check-date and mp-end-date >= parliament-check-date %}
+		
+				{% if mp.party == party.party %}
+				
+					{% assign count-mps-in-party = count-mps-in-party | plus: 1 %}
+				
+				{% endif %}
+			
+			{% endif %}
+		
+		{% endfor %}
+	
+		{% if count-mps-in-party == 0 %}
+	
+			<section id="data-{{ party.css }}" class="app-party">
+						
+				<header class="app-party--header small section-header--{{ party.css }}">
+				
+				<span class="party-name">
+					
+					<img id="party-logo--{{ party.css }}" src="{{ party.image | prepend: '/app' | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" class="party-logo" alt="{{ party.css }} logo">
+	
+					<h2 class="party-name">{{ party.party }}</h2>
+								
+					<p class="total-mps">
+						0 LGBT MPs
+					</p>
+				</span>		
+				
+				</header>
+				
+			</section>
+	
+		{% endif %}
+		
+	{% endif %}
+
+{% endfor %}
+
+</section>

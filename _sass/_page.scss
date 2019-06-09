@@ -188,39 +188,39 @@ main#page {
 					line-height: 		1.5;
 										
 					@include xs {
-						font-size: 		$member-text-font-size-base-xs;
+						font-size: 		$mp-text-font-size-base-xs;
 					}
 					@include sm {
-						font-size: 		$member-text-font-size-base-sm;
+						font-size: 		$mp-text-font-size-base-sm;
 					}
 					@include md {
-						font-size: 		$member-text-font-size-base-md;
+						font-size: 		$mp-text-font-size-base-md;
 					}
 					@include lg {
-						font-size: 		$member-text-font-size-base-lg;
+						font-size: 		$mp-text-font-size-base-lg;
 					}
 					@include xl {
-						font-size: 		$member-text-font-size-base-xl;
+						font-size: 		$mp-text-font-size-base-xl;
 					}
 					
 					span.large-date {
 						
-						font-weight: 	$member-text-font-weight;
+						font-weight: 	$mp-text-font-weight;
 											
 						@include xs {
-							font-size: 		$member-text-font-size-base-xs * 1.25;
+							font-size: 		$mp-text-font-size-base-xs * 1.25;
 						}
 						@include sm {
-							font-size: 		$member-text-font-size-base-sm * 1.25;
+							font-size: 		$mp-text-font-size-base-sm * 1.25;
 						}
 						@include md {
-							font-size: 		$member-text-font-size-base-md * 1.25;
+							font-size: 		$mp-text-font-size-base-md * 1.25;
 						}
 						@include lg {
-							font-size: 		$member-text-font-size-base-lg * 1.25;
+							font-size: 		$mp-text-font-size-base-lg * 1.25;
 						}
 						@include xl {
-							font-size: 		$member-text-font-size-base-xl * 1.25;
+							font-size: 		$mp-text-font-size-base-xl * 1.25;
 						}
 					}
 				}

@@ -1,14 +1,15 @@
 party,css,image,2017-05-03,2017-06-21,current
-Conservative,conservative,/conservative.svg,TRUE,TRUE,TRUE
-Democratic Unionist,dup,/dup.svg,TRUE,TRUE,TRUE
-Green,green,/green.svg,TRUE,TRUE,TRUE
-Labour,labour,/labour.svg,TRUE,TRUE,TRUE
-Liberal Democrat,libdem,/libdem.svg,TRUE,TRUE,TRUE
-Plaid Cymru,plaid,/plaid.svg,TRUE,TRUE,TRUE
-Scottish National,snp,/snp.svg,TRUE,TRUE,TRUE
-Sinn Fein,sinnfein,/sinnfein.svg,TRUE,TRUE,TRUE
-Social Democratic and Labour,sdlp,/sdlp.svg,TRUE,FALSE,FALSE
-Ulster Unionist,uup,/uup.svg,TRUE,FALSE,FALSE
-United Kingdom Independence,ukip,/ukip.svg,TRUE,FALSE,FALSE
-Independent,independent,/independent.svg,TRUE,TRUE,TRUE
-Speaker,speaker,/speaker.svg,TRUE,TRUE,TRUE
+Change UK,change,/change.svg,NA,NA,00
+Conservative,conservative,/conservative.svg,17,19,18
+Democratic Unionist,dup,/dup.svg,00,00,00
+Green,green,/green.svg,00,00,00
+Independent,independent,/independent.svg,00,01,01
+Labour,labour,/labour.svg,14,19,19
+Liberal Democrat,libdem,/libdem.svg,00,00,00
+Plaid Cymru,plaid,/plaid.svg,00,00,00
+Scottish National,snp,/snp.svg,08,07,07
+Sinn Fein,sinnfein,/sinnfein.svg,00,00,00
+Social Democratic and Labour,sdlp,/sdlp.svg,00,NA,NA
+Speaker,speaker,/speaker.svg,00,00,00
+Ulster Unionist,uup,/uup.svg,00,NA,NA
+United Kingdom Independence,ukip,/ukip.svg,00,NA,NA

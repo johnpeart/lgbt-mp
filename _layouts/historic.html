@@ -4,7 +4,7 @@ layout: default
 
 <main id="page">
 		
-	{% include app-header.html %}
+	{% include header/generic.html %}
 	
 	<section id="page">
 		
@@ -12,32 +12,38 @@ layout: default
 			
 			<h1>Historic data</h1>
 			
-			<p>Use this page to find the LGBT MPs who were in each Parliament.</p>
+			<p>Use this page to look at previous parliaments.</p>
+			
+			<p>Each historical dataset represents the composition of the House of Commons at either the start or end point of that parliament.</p>
 			
 			<ul>
-			{% for parliament in site.parliaments %}
-			
-				<li>
-					<a href="{{ site.url | append: site.baseurl | append: parliament.url }}" title="See data for Parliament {{ parliament.slug }}ing {{ parliament.date | date: "%-d %B %Y" }}">
-						<p class="date">
-							Parliament {{ parliament.slug }}ing 
-							<br>
-							<span class="large-date">{{ parliament.date | date: "%-d %B %Y" }}</span>
-						</p>
-					</a>
-				</li>
-			
-			{% endfor %}
-			
+				
 				<li>
 					<a href="{{ site.url | append: site.baseurl | append: '/' }}" title="See the current data for this Parliament">
 						<p class="date">
-							This Parliament 
+							<span class="label">Current Parliament</span>
 							<br>
 							<span class="large-date">Right now</span>
 						</p>
 					</a>
 				</li>
+			{% assign sorted = site.parliaments | reverse %} 
+			{% for parliament in sorted %}
+				<li>
+					<a href="{{ site.url | append: site.baseurl | append: parliament.url }}" title="See data for Parliament {{ parliament.slug }}ing {{ parliament.date | date: "%-d %B %Y" }}">
+						<p class="date">
+							<span class="label">Parliament that {{ parliament.slug }}ed on</span>
+							<br>
+							{% if parliament.start-date %}
+								<span class="large-date">{{ parliament.start-date | date: "%-d %B %Y" }}</span>
+							{% elsif parliament.end-date %}
+								<span class="large-date">{{ parliament.end-date | date: "%-d %B %Y" }}</span>
+							{% endif %}
+						</p>
+					</a>
+				</li>
+			{% endfor %}
+				
 			</ul>
 		
 		</div>

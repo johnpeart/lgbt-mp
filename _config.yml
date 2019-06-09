@@ -8,7 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mps.whoare.lgbt"
 author: "John Peart"
 
-election-period: "current"
+last-update: "9 June 2019"
 
 # Images and assets
 image-path: "/assets/images"
@@ -57,4 +57,4 @@ sass:
 collections:
   parliaments:
     output: true
-    permalink: /historic/parliament/:year-:month-:day/:slug
+    permalink: /historic/parliament/:slug/:year-:month-:day

@@ -35,6 +35,7 @@ $silver: 							#dddddd;
 
 // Party colours
 
+$change:							$white;
 $conservative:						$blue;
 $dup:								$red;
 $green-party:						$green;
@@ -49,6 +50,7 @@ $speaker:							$white;
 $ukip:								$purple;
 $uup:								$blue;
 
+$change-dark-mode:					darken($change, 10%);
 $conservative-dark-mode:				darken($conservative, 10%);
 $dup-dark-mode:						darken($dup, 10%);
 $green-party-dark-mode:				darken($green-party, 10%);
@@ -139,51 +141,51 @@ $p-padding-bottom-xl:				$p-font-size-base-xl;
 
 $p-font-weight:						normal;
 
-// Member name text sizes
+// mp name text sizes
 
-$member-text-font-size-base:					16px;
-$member-text-font-size-base-xs:				$member-text-font-size-base;
-$member-text-font-size-base-sm:				16px;
-$member-text-font-size-base-md:				18px;
-$member-text-font-size-base-lg:				20px;
-$member-text-font-size-base-xl:				20px;
+$mp-text-font-size-base:					16px;
+$mp-text-font-size-base-xs:				$mp-text-font-size-base;
+$mp-text-font-size-base-sm:				16px;
+$mp-text-font-size-base-md:				18px;
+$mp-text-font-size-base-lg:				20px;
+$mp-text-font-size-base-xl:				20px;
 
-$member-text-line-height-base:				$member-text-font-size-base + ($member-text-font-size-base / 3);
-$member-text-line-height-base-xs:				$member-text-line-height-base;
-$member-text-line-height-base-sm:				$member-text-font-size-base-sm + ($member-text-font-size-base-sm / 3);
-$member-text-line-height-base-md:				$member-text-font-size-base-md + ($member-text-font-size-base-md / 3);
-$member-text-line-height-base-lg:				$member-text-font-size-base-lg + ($member-text-font-size-base-lg / 4);
-$member-text-line-height-base-xl:				$member-text-font-size-base-xl + ($member-text-font-size-base-xl / 4);
+$mp-text-line-height-base:				$mp-text-font-size-base + ($mp-text-font-size-base / 3);
+$mp-text-line-height-base-xs:				$mp-text-line-height-base;
+$mp-text-line-height-base-sm:				$mp-text-font-size-base-sm + ($mp-text-font-size-base-sm / 3);
+$mp-text-line-height-base-md:				$mp-text-font-size-base-md + ($mp-text-font-size-base-md / 3);
+$mp-text-line-height-base-lg:				$mp-text-font-size-base-lg + ($mp-text-font-size-base-lg / 4);
+$mp-text-line-height-base-xl:				$mp-text-font-size-base-xl + ($mp-text-font-size-base-xl / 4);
 
-$member-text-margin-top:						$member-text-font-size-base;
-$member-text-margin-top-xs:					$member-text-font-size-base-xs;
-$member-text-margin-top-sm:					$member-text-font-size-base-sm;
-$member-text-margin-top-md:					$member-text-font-size-base-md;
-$member-text-margin-top-lg:					$member-text-font-size-base-lg;
-$member-text-margin-top-xl:					$member-text-font-size-base-xl;
+$mp-text-margin-top:						$mp-text-font-size-base;
+$mp-text-margin-top-xs:					$mp-text-font-size-base-xs;
+$mp-text-margin-top-sm:					$mp-text-font-size-base-sm;
+$mp-text-margin-top-md:					$mp-text-font-size-base-md;
+$mp-text-margin-top-lg:					$mp-text-font-size-base-lg;
+$mp-text-margin-top-xl:					$mp-text-font-size-base-xl;
 
-$member-text-margin-bottom:					$member-text-font-size-base;
-$member-text-margin-bottom-xs:				$member-text-font-size-base-xs;
-$member-text-margin-bottom-sm:				$member-text-font-size-base-sm;
-$member-text-margin-bottom-md:				$member-text-font-size-base-md;
-$member-text-margin-bottom-lg:				$member-text-font-size-base-lg;
-$member-text-margin-bottom-xl:				$member-text-font-size-base-xl;
+$mp-text-margin-bottom:					$mp-text-font-size-base;
+$mp-text-margin-bottom-xs:				$mp-text-font-size-base-xs;
+$mp-text-margin-bottom-sm:				$mp-text-font-size-base-sm;
+$mp-text-margin-bottom-md:				$mp-text-font-size-base-md;
+$mp-text-margin-bottom-lg:				$mp-text-font-size-base-lg;
+$mp-text-margin-bottom-xl:				$mp-text-font-size-base-xl;
 
-$member-text-padding-top:					$member-text-font-size-base;
-$member-text-padding-top-xs:					$member-text-font-size-base-xs;
-$member-text-padding-top-sm:					$member-text-font-size-base-sm;
-$member-text-padding-top-md:					$member-text-font-size-base-md;
-$member-text-padding-top-lg:					$member-text-font-size-base-lg;
-$member-text-padding-top-xl:					$member-text-font-size-base-xl;
+$mp-text-padding-top:					$mp-text-font-size-base;
+$mp-text-padding-top-xs:					$mp-text-font-size-base-xs;
+$mp-text-padding-top-sm:					$mp-text-font-size-base-sm;
+$mp-text-padding-top-md:					$mp-text-font-size-base-md;
+$mp-text-padding-top-lg:					$mp-text-font-size-base-lg;
+$mp-text-padding-top-xl:					$mp-text-font-size-base-xl;
 
-$member-text-padding-bottom:					$member-text-font-size-base;
-$member-text-padding-bottom-xs:				$member-text-font-size-base-xs;
-$member-text-padding-bottom-sm:				$member-text-font-size-base-sm;
-$member-text-padding-bottom-md:				$member-text-font-size-base-md;
-$member-text-padding-bottom-lg:				$member-text-font-size-base-lg;
-$member-text-padding-bottom-xl:				$member-text-font-size-base-xl;
+$mp-text-padding-bottom:					$mp-text-font-size-base;
+$mp-text-padding-bottom-xs:				$mp-text-font-size-base-xs;
+$mp-text-padding-bottom-sm:				$mp-text-font-size-base-sm;
+$mp-text-padding-bottom-md:				$mp-text-font-size-base-md;
+$mp-text-padding-bottom-lg:				$mp-text-font-size-base-lg;
+$mp-text-padding-bottom-xl:				$mp-text-font-size-base-xl;
 
-$member-text-font-weight:					bold;
+$mp-text-font-weight:					bold;
 
 // H1 TEXT SIZES & SPACING
 

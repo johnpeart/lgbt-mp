@@ -1,5 +1,5 @@
 ---
-layout: app
+layout: data
 ---
 
 {% assign count-parties = 0 %}
