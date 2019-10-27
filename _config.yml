@@ -8,7 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mps.whoare.lgbt"
 author: "John Peart"
 
-last-update: "9 June 2019"
+last-update: "27 October 2019"
 
 # Images and assets
 image-path: "/assets/images"
