@@ -454,6 +454,36 @@ main#app-main {
 			}
 			
 		}
+		
+		aside.banner-alert {
+			display: 		block;
+			position: 		relative;
+		
+			@include sticky {
+				top: 		0;
+				left: 0;
+			}
+			
+			padding:		0 20px 10px; 	
+			
+			z-index: 		99999999999999;
+			
+			min-height: 	50px;
+			
+			background:		$yellow;
+			color:			$black !important;
+			
+			h1 {
+				padding-bottom: 20px;
+			}
+			
+			a {
+				text-decoration: underline;
+				&:hover, &:focus {
+					color: 	$blue;
+				}
+			}
+		}
 			
 	}
 	

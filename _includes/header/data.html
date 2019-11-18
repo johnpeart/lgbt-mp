@@ -1,6 +1,14 @@
-<section id="app-header" {% if page.layout contains == "data" %}class="closed"{% endif %}>
+<section id="app-header" class="closed">
 							
 	<header class="app-header--logo">
+		
+		{% if site.election-mode == true %}
+		<aside class="banner-alert">
+			<h1>We're having an election</h1>
+			<p><strong>During a General Election, there are no MPs.</strong> This dataset will be updated after polling day.</p>
+			<p>For now, you can <a href="{{ site.url | append: site.baseurl | append: "/historic/" }}" title="Visit the archive page for most recent data">view historical data</a> for recent Parliaments.</p>
+		</aside>
+		{% endif %}
 		
 		<div class="container">
 
@@ -13,17 +21,17 @@
 	</header>
 	
 	<button id="toggle" class="toggle" onclick="toggleAbout()" tabindex="1">More information</button>
-	
+
 	<aside id="app-header--about" class="closed">
 		
 		<blockquote>
 			{% if page.url contains 'historic' %}
 			<p><strong>You are viewing data for the Parliament that started on {{ parliament-check-date | date: "%d %B %Y" }}.</strong></p>
 			<p><a href="{{ site.url | append: site.baseurl | append: "/" }}" title="Visit the home page for the latest data">View the latest data</a></p>				
-			<p><a href="{{ site.url | append: site.baseurl | append: "/historic/" }}" title="Visit the home page for the latest data">View historical data</a></p>
+			<p><a href="{{ site.url | append: site.baseurl | append: "/historic/" }}" title="Visit the archive page for historic data">View historical data</a></p>
 			{% else %}
 			<p><strong>You are viewing data for the current Parliament.</strong></p>
-			<p><a href="{{ site.url | append: site.baseurl | append: "/historic/" }}" title="Visit the home page for the latest data">View historical data</a></p>
+			<p><a href="{{ site.url | append: site.baseurl | append: "/historic/" }}" title="Visit the archive page for historic data">View historical data</a></p>
 			{% endif %}
 		</blockquote>
 		
