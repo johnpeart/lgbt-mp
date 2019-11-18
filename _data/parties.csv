@@ -1,15 +1,15 @@
-party,css,image,2017-05-03,2017-06-21,current
-Change UK,change,/change.svg,NA,NA,00
-Conservative,conservative,/conservative.svg,17,19,18
-Democratic Unionist,dup,/dup.svg,00,00,00
-Green,green,/green.svg,00,00,00
-Independent,independent,/independent.svg,00,01,01
+party,css,image,2017-05-03,2017-06-21,2019-11-06
+Change UK,change,/change.svg,NA,NA,0
+Conservative,conservative,/conservative.svg,18,20,18
+Democratic Unionist,dup,/dup.svg,0,0,0
+Green,green,/green.svg,0,0,0
+Independent,independent,/independent.svg,0,1,2
 Labour,labour,/labour.svg,14,19,19
-Liberal Democrat,libdem,/libdem.svg,00,00,00
-Plaid Cymru,plaid,/plaid.svg,00,00,00
-Scottish National,snp,/snp.svg,08,07,07
-Sinn Fein,sinnfein,/sinnfein.svg,00,00,00
-Social Democratic and Labour,sdlp,/sdlp.svg,00,NA,NA
-Speaker,speaker,/speaker.svg,00,00,00
-Ulster Unionist,uup,/uup.svg,00,NA,NA
-United Kingdom Independence,ukip,/ukip.svg,00,NA,NA
+Liberal Democrat,libdem,/libdem.svg,0,0,0
+Plaid Cymru,plaid,/plaid.svg,0,0,0
+Scottish National,snp,/snp.svg,8,7,7
+Sinn Fein,sinnfein,/sinnfein.svg,0,0,0
+Social Democratic and Labour,sdlp,/sdlp.svg,0,NA,NA
+Speaker,speaker,/speaker.svg,0,0,0
+Ulster Unionist,uup,/uup.svg,0,NA,NA
+United Kingdom Independence,ukip,/ukip.svg,0,NA,NA
