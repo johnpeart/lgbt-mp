@@ -378,7 +378,9 @@ main#app-main {
 				position: 		relative;
 				
 				width: 			100vw;
-				height: 			auto;						
+				height: 			auto;	
+				
+				padding-bottom: 	($container-padding * 2);					
 			}
 			
 			@include md-up {
