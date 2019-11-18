@@ -29,6 +29,7 @@ layout: default
 				</li>
 			{% assign sorted = site.parliaments | reverse %} 
 			{% for parliament in sorted %}
+			
 				<li>
 					{% if parliament.start-date %}
 					<a href="{{ site.url | append: site.baseurl | append: parliament.url }}" title="See data for Parliament {{ parliament.slug }}ing {{ parliament.start-date | date: "%Y-%m-%d" }}">
