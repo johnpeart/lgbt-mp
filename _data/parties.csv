@@ -1,16 +1,16 @@
-party,css,image,2017-05-03,2017-06-21,2019-11-06,2019-12-13
-Alliance,alliance,/alliance.svg,NA,NA,NA,0
-Change UK,change,/change.svg,NA,NA,0,NA
-Conservative,conservative,/conservative.svg,18,20,18,21
-Democratic Unionist,dup,/dup.svg,0,0,0,0
-Green,green,/green.svg,0,0,0,0
-Independent,independent,/independent.svg,0,1,2,1
-Labour,labour,/labour.svg,14,19,19,15
-Liberal Democrat,libdem,/libdem.svg,0,0,0,NA
-Plaid Cymru,plaid,/plaid.svg,0,0,0,0
-Scottish National,snp,/snp.svg,8,7,7,9
-Sinn Fein,sinnfein,/sinnfein.svg,0,0,0,0
-Social Democratic and Labour,sdlp,/sdlp.svg,0,NA,NA,0
-Speaker,speaker,/speaker.svg,0,0,0,0
-Ulster Unionist,uup,/uup.svg,0,NA,NA,NA
-United Kingdom Independence,ukip,/ukip.svg,0,NA,NA,NA
+party,css,image,2017-05-03,2017-06-21,2019-11-06,2019-12-13,current
+Alliance,alliance,/alliance.svg,NA,NA,NA,0,0
+Change UK,change,/change.svg,NA,NA,0,NA,NA
+Conservative,conservative,/conservative.svg,18,20,18,21,21
+Democratic Unionist,dup,/dup.svg,0,0,0,0,0
+Green,green,/green.svg,0,0,0,0,0
+Independent,independent,/independent.svg,0,1,2,1,1
+Labour,labour,/labour.svg,14,19,19,15,15
+Liberal Democrat,libdem,/libdem.svg,0,0,0,NA,NA
+Plaid Cymru,plaid,/plaid.svg,0,0,0,0,0
+Scottish National,snp,/snp.svg,8,7,7,9,9
+Sinn Fein,sinnfein,/sinnfein.svg,0,0,0,0,0
+Social Democratic and Labour,sdlp,/sdlp.svg,0,NA,NA,0,0
+Speaker,speaker,/speaker.svg,0,0,0,0,0
+Ulster Unionist,uup,/uup.svg,0,NA,NA,NA,NA
+United Kingdom Independence,ukip,/ukip.svg,0,NA,NA,NA,NA
