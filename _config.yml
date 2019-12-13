@@ -8,7 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mps.whoare.lgbt"
 author: "John Peart"
 
-last-update: "18 November 2019"
+last-update: "13 December 2019"
 election-mode: true
 
 # Images and assets
