@@ -1,3 +1,21 @@
+#data-alliance {
+	background: 		$alliance;
+	color: 			$black;
+	
+	@include dark-mode {
+		background:	$alliance-dark-mode;
+	}
+}
+
+#data-brexit {
+	background: 		$brexit;
+	color: 				$white;
+	
+	@include dark-mode {
+		background:	$brexit-dark-mode;
+	}
+}
+
 #data-change {
 	background: 	$change;
 	color: 			$black;
