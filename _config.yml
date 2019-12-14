@@ -44,7 +44,7 @@ google-site-verification: "DaqGCZ6cZIqm7q_nVSnOzjJmFFjbRfW2X7FDzpQDQZk" # GSV co
 
 #Analytics
 disable-analytics: false # Switch to "false" to start GA logging
-google-analytics: "UA-27553664-1" # GA ID code
+google-analytics: "UA-27553664-10" # GA ID code
 
 # Plugins and build settings
 
