@@ -8,7 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mps.whoare.lgbt"
 author: "John Peart"
 
-last-update: "13 December 2019"
+last-update: "15 December 2019"
 election-mode: true
 
 # Images and assets
@@ -35,10 +35,7 @@ logo-favicon-large: "/assets/images/site/favicon-96x96.png"
 
 
 # Social settings
-facebook-app-id: "1053585037989505" # For Facebook OpenGraph integration
-facebook-profile-id: "100003820028435" # For Facebook OpenGraph integration
-facebook-slug: "john.robert.peart" # Automatically pre-pends http://facebook.com/
-twitter-username: "johnpeart" # Twitter handle i.e. joebloggs
+twitter-username: "lgbtmp" # Twitter handle i.e. joebloggs
 github-username:  "johnpeart"
 google-site-verification: "DaqGCZ6cZIqm7q_nVSnOzjJmFFjbRfW2X7FDzpQDQZk" # GSV code; proves domain ownership
 
