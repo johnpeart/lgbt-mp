@@ -39,9 +39,6 @@
 	<link rel="me" href="{{ site.instagram-url }}" type="text/html">
 	
 	<!-- Facebook Open Graph settings -->
-	<meta property="fb:app_id" 			content="{{ site.facebook-app-id }}">
-	<meta property="fb:profile_id" 		content="{{ site.facebook-profile-id }}" />
-	<meta property="fb:admins" 			content="{{ site.facebook-profile-id }}" />
 	<meta property="og:url" 				content="{{ site.url | append: site.baseurl | append: page.url | replace: 'index.html','' }}">
 	<meta property="og:type" 			content="{% if page.layout == 'post' %}article{% else %}website{% endif %}" />
 	<meta property="og:title" 			content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
@@ -52,8 +49,6 @@
 	<meta property="og:description" 		content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description  | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
 	<meta property="og:site_name" 		content="{{ site.title }}">
 	<meta property="og:locale" 			content="en_GB">
-	<meta property="article:author" 		content="{{ site.facebook-url }}" />
-	<meta property="article:publisher" 	content="{{ site.facebook-url }}" />
 	
 	<!-- Twitter Cards settings -->
 	<meta name="twitter:card" 			content="summary_large_image">
