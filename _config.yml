@@ -9,7 +9,7 @@ url: "https://mps.whoare.lgbt"
 author: "John Peart"
 
 last-update: "15 December 2019"
-election-mode: true
+election-mode: false
 
 # Images and assets
 image-path: "/assets/images"
