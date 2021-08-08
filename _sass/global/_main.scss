@@ -1,0 +1,40 @@
+@at-root {
+	@-ms-viewport { 
+		width: device-width;
+	} // stylelint-disable-line at-rule-no-vendor-prefix
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	box-sizing: border-box;
+	-ms-overflow-style: scrollbar;
+	min-height: 100vh;
+	
+	font-family: 			$font-family;
+	font-kerning: 			auto;
+	letter-spacing: 		normal;
+
+	@include toggleDarkMode(background, $html-background, $html-background-dark);
+	@include toggleDarkMode(color, $html-color, $html-color-dark);
+}
+
+body {
+	@include toggleDarkMode(background, $body-background, $body-background-dark);
+	@include toggleDarkMode(color, $body-color, $body-color-dark);
+}
+
+main {
+	@include toggleSizes(
+		min-height, 
+		calc(100vh - #{$header-min-height--small} - #{$footer--padding-top--xs}), 
+		calc(100vh - #{$header-min-height} - #{$footer--padding-top--sm}),
+		calc(100vh - #{$header-min-height} - #{$footer--padding-top--md}),
+		calc(100vh - #{$header-min-height} - #{$footer--padding-top--lg}), 
+		calc(100vh - #{$header-min-height} - #{$footer--padding-top--xl})
+	);
+}

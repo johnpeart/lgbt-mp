@@ -4,4 +4,30 @@
 @charset "utf-8";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "styles";
+@import
+    "_reset",
+
+	"variables/_default",
+    "global/_fonts",
+
+    "helpers/_breakpoints",
+    "helpers/_clearfix",
+    "helpers/_sticky",
+	"helpers/_animations",
+	"helpers/_darkmode",
+    "helpers/_screenreaders",
+
+	"global/_containers",
+	"global/_typography",
+	"global/_code",
+	"global/_forms",
+
+	"global/_main",
+	"global/_header",
+	"global/_footer",
+
+	"global/_images",
+	"global/_forms",
+	"global/_notfound"
+
+;

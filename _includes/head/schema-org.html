@@ -1,0 +1,7 @@
+<meta itemprop="name" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
+<meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description  | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
+{% if page.layout == 'photos/photo' %}
+<meta itemprop="image" 			content="{{ absolute_url | append: site.post-images-path | append: '/' | append: page.image }}">
+{% else %}
+<meta itemprop="image" content="{% if page.image %}{{ page.image }}{% else %}{{ absolute_url | append: site.social-media-image }}{% endif %}">
+{% endif %}

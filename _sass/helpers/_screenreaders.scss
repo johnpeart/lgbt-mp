@@ -15,9 +15,7 @@
 }
 
 // Use in conjunction with .sr-only to only display content when it's focused.
-//
 // Useful for "Skip to main content" links; see https://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
-//
 // Credit: HTML5 Boilerplate
 
 @mixin sr-only-focusable {
@@ -43,43 +41,20 @@
 .skip-link {
   @include sr-only;
   @include sr-only-focusable;
-  @extend p;
   
+  z-index: 999999;
   display: block;
   width: 100%;
-
-  @include xs {
-	  padding-top: 		$p-padding-top-xs / 2 !important;
-	  padding-bottom: 	$p-padding-bottom-xs / 2 !important;
-  }
-
-  @include sm {
-	  padding-top: 		$p-padding-top-sm / 2 !important;
-	  padding-bottom: 	$p-padding-bottom-sm / 2 !important;
-  }
-
-  @include md {
-	  padding-top: 		$p-padding-top-md / 2 !important;
-	  padding-bottom: 	$p-padding-bottom-md / 2 !important;
-  }
-
-  @include lg {
-	  padding-top: 		$p-padding-top-lg / 2 !important;
-	  padding-bottom: 	$p-padding-bottom-lg / 2 !important;
-  }
-
-  @include xl {
-	  padding-top: 		$p-padding-top-xl / 2 !important;
-	  padding-bottom: 	$p-padding-bottom-xl / 2 !important;
-  }
   
-  text-align: 			center;
+  @include toggleSizes(font-size, $font-size--p--xs, $font-size--p--sm, $font-size--p--md, $font-size--p--lg, $font-size--p--xl);
+  @include toggleSizes(line-height, $line-height--p--xs, $line-height--p--sm, $line-height--p--md, $line-height--p--lg, $line-height--p--xl);
+  @include toggleSizes(padding, 10px 0, 10px 0, 10px 0, 10px 0, 10px 0);
+  
+  text-align: 			left;
   
   &:focus,
   &:hover {
-	  
-	  background: 		$skiplink-background;
-	  color:				$skiplink-color;
-
+    @include toggleDarkMode(color, $skiplink-color, $skiplink-color-dark);
+    @include toggleDarkMode(background, $skiplink-background, $skiplink-background-dark);
   }
 }

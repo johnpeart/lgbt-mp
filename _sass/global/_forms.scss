@@ -1,0 +1,238 @@
+legend {
+	@extend h2;
+	text-align: left;
+}
+
+span.sub-legend {
+	@extend h3;
+	display: block;
+	text-align: left;
+	padding: 36px 0 30px;
+}
+
+legend > span.sub-legend {
+	padding-top: 0 !important;
+}
+
+button,
+a.button {
+	@extend p;
+	display: inline-block;
+	cursor: pointer;
+	min-width: 150px;
+	width: 100%;
+	min-height: 40px;
+	font-weight: bold;
+	vertical-align: middle;
+	line-height: 40px;
+	background: $cyan;
+	color: $white;
+	border: 1px solid $cyan;
+	padding: 5px;
+	text-align: center;
+	margin-bottom: 10px;
+	text-decoration: none;
+	
+	&:hover {
+		background: $black;
+		cursor: pointer;
+		@include toggleDarkMode(color, $white, $brand);
+	}
+
+	&:focus {
+		background: $black;
+		outline: 2px solid $cyan;
+		cursor: pointer;
+		@include toggleDarkMode(color, $white, $brand);
+	}
+
+	&:last-child,
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+	
+.text-input,
+.radio-input {
+	display: block;
+	position: relative;
+
+	min-height: $input-size;
+
+	@extend p;
+	padding: 0;
+
+	margin-bottom: 30px;
+
+	clear: left;
+}
+
+.radio-input {
+	padding-left: $radios-size;
+
+	&:last-child,
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+label {
+	@extend p;
+	display: block;
+	font-weight: 600;
+	padding-bottom: 0;
+
+	&.hidden {
+		@include sr-only;
+	}
+
+	&.hidden ~ input {
+		margin: 0;
+	}
+}
+
+.label-hint {
+	@extend p;
+	color:  $gray-600;
+	@include dark-mode {
+		color: $gray-300;
+	}
+	padding-bottom: 0;
+	display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	@extend p;
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 40px;
+	
+	margin-top: 15px;
+	padding: $input-padding;
+
+	border-radius: 0;
+
+	@include toggleDarkMode(background, $absolute-white, $absolute-black);
+	@include toggleDarkMode(color, $black, $white);
+	@include toggleDarkMode(border, $border-width-form-element solid $input-border-color, $border-width-form-element solid $absolute-black);
+	
+	// Disable inner shadow and remove rounded corners
+	-webkit-appearance: none;
+	appearance: none;
+
+
+	&:hover {
+		outline: $border-width-form-element solid $input-focus-color;
+		outline-offset: 0px;
+		@include toggleDarkMode(background, $gray-200, $gray-800);
+		@include toggleDarkMode(border-width, inherit, $border-width-form-element);
+		@include toggleDarkMode(border, $border-width-form-element solid $input-border-color, $border-width-form-element solid $absolute-black);
+	}
+	&:focus {
+		outline: $border-width-form-element solid $input-focus-color;
+		outline-offset: 3px;
+
+		@include toggleDarkMode(background, inherit, $gray-900);
+		@include toggleDarkMode(box-shadow, inset 0 0 0 $border-focus-width, inset 0 0 0 $border-focus-width $absolute-black);
+		@include toggleDarkMode(border, $border-width-form-element solid $input-border-color, $border-width-form-element solid $absolute-black);
+	}
+
+	&:invalid {
+		border: $border-width-form-element solid $input-error-color;
+	}
+
+}
+
+textarea {
+	resize: vertical;
+}
+
+input[type="radio"] {
+	$input-offset: ($touch-target-size - $radios-size) / 2;
+	cursor: pointer;
+
+	position: absolute;
+
+	z-index: 1;
+	top: $input-offset * -1;
+	left: $input-offset * -1;
+
+	width: $touch-target-size;
+	height: $touch-target-size;
+	margin: 0;
+
+	opacity: 0;
+
+	~ label {
+		display: inline-block;
+		height: $input-size;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0px $radios-label-padding-left-right;
+		cursor: pointer;
+		// remove 300ms pause on mobile
+		touch-action: manipulation;
+	
+		font-weight:    600;
+
+		&::before {
+			content: "";
+			box-sizing: border-box;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			width: $radios-size;
+			height: $radios-size;
+
+			@include toggleDarkMode(border, 2px solid $black, 3px solid $white);
+			border-radius: 50%;
+			background: transparent;
+		}
+
+		&::after {
+			content: "";
+
+			position: absolute;
+			top: 10px;
+			left: 10px;
+
+			width: 0;
+			height: 0;
+
+			@include toggleDarkMode(border, 10px solid $brand, 10px solid $cyan);
+			border-radius: 50%;
+			opacity: 0;
+			background: $black;
+		}
+	
+	}
+
+	&:focus + label::before {
+		border-width: 4px;
+		box-shadow: 0 0 0 3px $cyan;
+	}
+
+	&:hover + label::before {
+		box-shadow: 0 0 0 3px $cyan;
+		@include toggleDarkMode(background, $gray-200, $gray-700);
+		@include toggleDarkMode(border-width, 2px, 3px);
+	}
+
+	&:checked + label::after {
+		opacity: 1;
+	}
+
+	~ .label-hint,  {
+		padding-right: $radios-label-padding-left-right;
+		padding-left: $radios-label-padding-left-right;
+	}
+
+	~ input[type="text"]  {
+		margin-left: $radios-label-padding-left-right;
+		width: calc(100% - #{$radios-label-padding-left-right});
+	}
+
+}

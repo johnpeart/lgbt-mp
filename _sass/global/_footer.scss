@@ -1,0 +1,87 @@
+footer#site-footer {
+	@include toggleDarkMode(background, $footer-background, $footer-background-dark);
+	@include toggleSizes(padding-top, $footer--padding-top--xs, $footer--padding-top--sm, $footer--padding-top--md, $footer--padding-top--lg, $footer--padding-top--xl);
+	@include toggleSizes(padding-bottom, $footer--padding-bottom--xs, $footer--padding-bottom--sm, $footer--padding-bottom--md, $footer--padding-bottom--lg, $footer--padding-bottom--xl);
+}
+
+aside#footer--wordmark {
+	@include toggleSizes(float, none, left, left, left, left);
+	@include toggleSizes(width, 100%, 50%, 50%, 50%, 50%);
+	
+	p.footer--wordmark {
+		font-weight: 	bold;
+		padding-bottom: 0;
+		@include toggleSizes(font-size, $font-size--p--xs * 0.9, $font-size--p--sm * 0.9, $font-size--p--md * 0.9, $font-size--p--lg * 0.9, $font-size--p--xl * 0.9);
+		@include toggleSizes(line-height, $line-height--p--xs, $line-height--p--sm, $line-height--p--md, $line-height--p--lg, $line-height--p--xl);
+	}
+	a.footer--site-link {
+		@include toggleSizes(font-size, $font-size--p--xs * 0.9, $font-size--p--sm * 0.9, $font-size--p--md * 0.9, $font-size--p--lg * 0.9, $font-size--p--xl * 0.9);
+		@include toggleSizes(line-height, $line-height--p--xs, $line-height--p--sm, $line-height--p--md, $line-height--p--lg, $line-height--p--xl);		
+	}
+	
+}
+
+nav#footer--links {
+
+	@include toggleSizes(float, none, right, right, right, right);
+	@include toggleSizes(width, 100%, 50%, 50%, 50%, 50%);
+
+	a {
+		font-weight: 		$footer-link-font-weight;
+		text-decoration: 	$footer-link-text-decoration;
+		
+		&:link {
+			@include toggleDarkMode(color, $footer-link-color, $footer-link-color-dark);
+		}
+		&:visited {
+			@include toggleDarkMode(color, $footer-link-color, $footer-link-color-dark);
+		}
+		&:hover {
+			@include toggleDarkMode(color, $footer-link-color--hover, $footer-link-color--hover-dark);
+			text-decoration: 	$footer-link-text-decoration-hover;
+		}
+		&:focus {
+			@include toggleDarkMode(color, $footer-link-color--focus, $footer-link-color--focus-dark);
+			@include toggleDarkMode(background, $footer-link-background--focus, $footer-link-background--focus-dark);
+			@include toggleDarkMode(outline, $footer-link-outline--focus, $footer-link-outline--focus-dark);
+		}
+		&:active {
+			text-decoration: 	$footer-link-text-decoration-active;
+		}
+	}	
+	
+	li {
+		display: inline-block;
+		position: relative;
+		
+		width: 50%;
+		float: left;
+		
+		border: none !important;
+		
+		@include toggleSizes(font-size, $font-size--footer--p--xs, $font-size--footer--p--sm, $font-size--footer--p--md, $font-size--footer--p--lg, $font-size--footer--p--xl);
+		@include toggleSizes(line-height, $line-height--footer--p--xs, $line-height--footer--p--sm, $line-height--footer--p--md, $line-height--footer--p--lg, $line-height--footer--p--xl);
+		@include toggleSizes(padding, $padding--footer--p--xs, $padding--footer--p--sm, $padding--footer--p--md, $padding--footer--p--lg, $padding--footer--p--xl);
+		@include toggleSizes(text-align, left, right, right, right, right);
+		
+		&:last-child {
+			@include toggleSizes(float, left, right, right, right, right);
+		}
+		
+	}
+	
+	ul {
+		padding: 0;
+		margin: 0;
+		
+		list-style: none;
+		
+		@include toggleSizes(float, left, right, right, right, right);
+		@include clearfix;
+	}
+
+}
+
+footer#site-footer {
+	@include clearfix;
+}

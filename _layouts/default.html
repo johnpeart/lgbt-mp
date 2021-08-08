@@ -3,9 +3,13 @@
 
   {% include head.html %}
 
-  <body class="no-js">
+  <body id="{{ page.layout | slugify }}"{% if page.theme %} class="theme-{{ page.theme | slugify }}"{% endif %}>
 	  
-    {{ content }}
+  	{% include skiplink.html %}
+
+  	{{ content }}
+    
+    {% include analytics.html %}
 
   </body>
 
