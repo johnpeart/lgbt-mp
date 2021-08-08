@@ -41,20 +41,25 @@
 .skip-link {
   @include sr-only;
   @include sr-only-focusable;
-  
-  z-index: 999999;
+
   display: block;
   width: 100%;
-  
-  @include toggleSizes(font-size, $font-size--p--xs, $font-size--p--sm, $font-size--p--md, $font-size--p--lg, $font-size--p--xl);
-  @include toggleSizes(line-height, $line-height--p--xs, $line-height--p--sm, $line-height--p--md, $line-height--p--lg, $line-height--p--xl);
-  @include toggleSizes(padding, 10px 0, 10px 0, 10px 0, 10px 0, 10px 0);
-  
+
+  @each $style, $sizes in $body {
+    @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+
+
+
+  padding: $container-padding !important;
+
+  border-radius: 0;
+
   text-align: 			left;
-  
+
   &:focus,
   &:hover {
-    @include toggleDarkMode(color, $skiplink-color, $skiplink-color-dark);
-    @include toggleDarkMode(background, $skiplink-background, $skiplink-background-dark);
+    z-index: 999999 !important;
   }
+
 }

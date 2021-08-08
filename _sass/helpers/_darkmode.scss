@@ -1,7 +1,7 @@
 @mixin toggleDarkMode($attribute, $light, $dark) {
 	#{$attribute}: $light;
 	@media (prefers-color-scheme: dark) {
-		#{$attribute}: $dark;	
+		#{$attribute}: $dark;
 	}
 }
 

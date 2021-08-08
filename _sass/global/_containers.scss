@@ -1,18 +1,24 @@
 .container {
-	
-	display: 			block;
-	position: 			relative;
-	
-	padding-left: 		$container-padding;
-	padding-right: 		$container-padding;
-	padding-top: 		0;
-	padding-bottom: 	0;
-	
-	width: 100%;
-		
-	margin-left: auto;
-	margin-right: auto;
-		
-	@include toggleSizes(max-width, 100%, $container-sm, $container-md, $container-lg, $container-xl);
+
+    display: 			block;
+    position: 			relative;
+
+    padding-left: 		$container-padding;
+    padding-right: 		$container-padding;
+    padding-top: 		0;
+    padding-bottom: 	0;
+
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    @include toggleSizes(max-width,
+        100%,
+        map-get($containers, "sm"),
+        map-get($containers, "md"),
+        map-get($containers, "lg"),
+        map-get($containers, "xl")
+    );
 
 }

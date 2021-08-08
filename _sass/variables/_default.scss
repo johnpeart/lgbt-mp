@@ -1,5 +1,5 @@
-//	SASS VARIABLES				
-//	All variables should go in this file				
+//	SASS VARIABLES
+//	All variables should go in this file
 
 // --------------------------------------//
 // --------------------------------------//
@@ -9,18 +9,22 @@
 //
 
 // Breakpoints
-$xs: 	 							0;
-$sm: 	 							600px;
-$md: 	 							766px;
-$lg: 	 							1000px;
-$xl: 	 							1200px;
+$breakpoints: (
+    "xs": 0,
+    "sm": 600px,
+    "md": 768px,
+    "lg": 1024px,
+    "xl": 1400px
+);
 
-// Container sizes
-$container-xs: 	 					300px;
-$container-sm: 	 					560px;
-$container-md: 	 					600px;
-$container-lg: 	 					800px;
-$container-xl: 	 					900px;
+$containers: (
+    "xs":    300px,
+    "sm":    560px,
+    "md":    600px,
+    "lg":    900px,
+    "xl":    1200px
+);
+
 $container-padding: 	 			15px;
 
 // --------------------------------------//
@@ -30,10 +34,11 @@ $container-padding: 	 			15px;
 // FONTS
 
 // Font face
-$font-family: 						"JP", ui-monospace, 'SFMono-Regular', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", Roboto, "Segoe UI", Arial, sans-serif !default;
+$font-family: "custom", -apple-system, "Helvetica Neue", Helvetica, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
 // Feature settings
-$font-feature-settings:				"ss02", "tnum", "liga", "zero", "kern";
-$sup-font-feature-settings:			"ss02", "tnum", "liga", "zero", "kern", "frac";
+$font-feature-settings:				"tnum", "liga", "zero", "kern";
+$sup-font-feature-settings:			"tnum", "liga", "zero", "kern", "frac";
 
 // --------------------------------------//
 // --------------------------------------//
@@ -43,194 +48,119 @@ $sup-font-feature-settings:			"ss02", "tnum", "liga", "zero", "kern", "frac";
 
 // PALETTE
 // All colours used should be referenced here
-$absolute-black:					#000000;
-$white:   	 						#fafafa !default;
-$gray-100:	 						#f8f9fa !default;
-$gray-200:	 						#e9ecef !default;
-$gray-300:	 						#dee2e6 !default;
-$gray-400:	 						#ced4da !default;
-$gray-500: 	 						#adb5bd !default;
-$gray-600: 	 						#868e96 !default;
-$gray-700: 	 						#495057 !default;
-$gray-800: 	 						#343a40 !default;
-$gray-900: 	 						#212529 !default;
-$black:    	 						#1d1d1d !default;
-$absolute-white:					#FFFFFF;
 
-$blue:    	 						#007aff !default;
-$desaturated-blue: 					#3b5998 !default;
-$purple:  	 						#c643fc !default;
-$magenta:   	 					#e6007e !default;
-$red:     	 						#B10E1E !default;
-$orange:  	 						#ff5e3a !default;
-$yellow:  	 						#ffed00 !default;
-$bad-ideas-yellow:                  #FFD700 !default;
-$green:   	 						#0bd318 !default;
-$cyan:    	 						#009fe3 !default;
+$colors: (
 
-// This is the 'prominent' colour used across the theme
-$brand:								$cyan;
+    "westminster-white": #ebe9e8,
+    "westminster-white-90": #f6f5f5,
 
-// SKIP LINK COLOURS
-// See 'helpers/_screenreaders.scss'
-// Light mode
-$skiplink-background:				$brand;
-$skiplink-color:					$white;
-// Dark mode
-$skiplink-background-dark:			$brand;
-$skiplink-color-dark:				$black;
+    "deep-purple": #373151,
+    "deep-purple--light": #625a75,
+    "purple": #5c2db4,
+    "purple--dark": #3e1d78,
+    "purple--light": #e7dff4,
+    "mint": #96dcbe,
+    "mint--dark": #6ec29e,
+    "mint--light": #dff4eb,
+    "commons": #006e46,
+    "commons--dark": #004229,
+    "lords": #b50938,
+    "grey-1": #4d4d4d,
+    "grey-2": #717171,
+    "grey-3": #cbc9cd,
+    "grey-4": #ebe9e8,
+    "grey-5": #f8f7f7,
+    "white": #ffffff,
 
-// HTML AND BODY COLOURS
-// Light mode
-$html-background:					$white;
-$body-background:					$white;
-$header-background:					$white;
-$footer-background:					$white;
-$html-color:						$black;
-$body-color:						$black;
-$header-color:						$black;
-$footer-color:						$black;
-// Dark mode
-$html-background-dark:				$black;
-$body-background-dark:				$black;
-$header-background-dark:			$black;
-$footer-background-dark:			$black;
-$html-color-dark:					$white;
-$body-color-dark:					$white;
-$header-color-dark:					$white;
-$footer-color-dark:					$white;
+    "link": #2b57ab,
+    "link-hover": #7592c8,
+    "link-visited": #7c1389,
+    "button": #2b57ab,
+    "button-hover": #214282,
+    "success": #00b95d,
+    "success--dark": #009049,
+    "success-light": #bfedd6,
+    "caution": #fbcf19,
+    "caution--dark": #e0b507,
+    "caution--light": #fef3c7,
+    "warning": #de2e32,
+    "warning--dark": #a72326,
+    "warning-light": #f7cbcc,
 
-// LINK COLOURS AND DECORATION
-// See 'global/_typography'
-$link-font-weight:					inherit;
-$link-outline:						none;
-$link-text-decoration:				underline;
-$link-text-decoration-hover:		underline;
-$link-text-decoration-active:		underline;
-$link-text-decoration-focus:		none;
-// Light mode
-$link-color:						$black;
-$link-color--hover:					$brand;
-$link-color--focus:					$white;
-$link-background--focus:			$brand;
-$link-outline--focus:				2px $brand solid;
-$link-border--focus:				10px $white solid;
-// Dark mode
-$link-color-dark:					$white;
-$link-color--hover-dark:			$brand;
-$link-color--focus-dark:			$white;
-$link-background--focus-dark:		$brand;
-$link-outline--focus-dark:			2px $brand solid;
-$link-border--focus-dark:			10px $black solid;
+    "dark-purple": #373151,
+    "dark-purple-90": #4d4564,
+    "dark-purple-80": #625a75,
+    "dark-purple-70": #777285,
+    "dark-purple-60": #8b8697,
+    "dark-purple-50": #a09ca9,
+    "dark-purple-40": #b6b2bb,
+    "dark-purple-30": #cbc9cd,
+    "dark-purple-20": #e2e0e1,
 
-// accordian COLOURS AND DECORATION
-// See 'global/_typography'
-$accordian-font-weight:					inherit;
-$accordian-outline:						none;
-$accordian-text-decoration:				underline;
-$accordian-text-decoration-hover:		none;
-$accordian-text-decoration-active:		underline;
-$accordian-text-decoration-focus:		none;
-// Light mode
-$accordian-color:						$black;
-$accordian-color--hover:				$brand;
-$accordian-color--focus:				$black;
-$accordian-background--focus:			unset;
-$accordian-outline--focus:				3px $brand solid;
-$accordian-border--focus:				none;
-$accordian-color--active:				$white;
-$accordian-background--active:			$brand;
-$accordian-outline--active:				3px $brand solid;
-$accordian-border--active:				1px transparent solid;
-// Dark mode
-$accordian-color-dark:					$white;
-$accordian-color--hover-dark:			$brand;
-$accordian-color--focus-dark:			$white;
-$accordian-background--focus-dark:		unset;
-$accordian-outline--focus-dark:			3px $brand solid;
-$accordian-border--focus-dark:			none;
-$accordian-color--active-dark:			$white;
-$accordian-background--active-dark:		$brand;
-$accordian-outline--active-dark:		3px $brand solid;
-$accordian-border--active-dark:			1px transparent solid;
+    "deep-bright-purple": #3e1d78,
+    "dark-bright-purple": #4c238f,
+    "bright-purple": #5f2db4,
+    "bright-purple-85": #774cbe,
+    "bright-purple-70": #8e6cca,
+    "bright-purple-60": #9e80d1,
+    "bright-purple-50": #ae95d8,
+    "bright-purple-40": #beaae0,
+    "bright-purple-30": #cebfe8,
+    "bright-purple-20": #ded4ef,
+    "bright-purple-10": #e7dff4,
 
-// HEADER LINK COLOURS AND DECORATION
-$header-link-font-weight:				normal;
-$header-link-outline:					none;
-$header-link-text-decoration:			none;
-$header-link-text-decoration-hover:		underline;
-$header-link-text-decoration-active:	none;
-$header-link-text-decoration-focus:		none;
-// Light mode
-$header-link-color:						$black;
-$header-link-color--hover:				$brand;
-$header-link-color--focus:				$white;
-$header-link-background--focus:			$brand;
-$header-link-outline--focus:			2px $brand solid;
-// Dark mode
-$header-link-color-dark:				$white;
-$header-link-color--hover-dark:			$brand;
-$header-link-color--focus-dark:			$white;
-$header-link-background--focus-dark:	$brand;
-$header-link-outline--focus-dark: 		2px $brand solid;
+    "deep-mint": #519c7c,
+    "dark-mint": #6ec29e,
+    "mint-100": #96dcbe,
+    "mint-85": #a6e1c8,
+    "mint-70": #b5e6d1,
+    "mint-60": #c0ead8,
+    "mint-50": #caedde,
+    "mint-40": #d5f1e5,
+    "mint-30": #dff4eb,
+    "mint-20": #eaf8f2,
+    "mint-10": #f4fbf8,
 
-// FOOTER LINK COLOURS AND DECORATION
-$footer-link-font-weight:				normal;
-$footer-link-outline:					none;
-$footer-link-text-decoration:			none;
-$footer-link-text-decoration-hover:		underline;
-$footer-link-text-decoration-active:	none;
-$footer-link-text-decoration-focus:		none;
-// Light mode
-$footer-link-color:						$gray-500;
-$footer-link-color--hover:				$brand;
-$footer-link-color--focus:				$white;
-$footer-link-background--focus:			$brand;
-$footer-link-outline--focus:			2px $brand solid;
-// Dark mode
-$footer-link-color-dark:				$gray-600;
-$footer-link-color--hover-dark:			$brand;
-$footer-link-color--focus-dark:			$white;
-$footer-link-background--focus-dark:	$brand;
-$footer-link-outline--focus-dark:		2px $brand solid;
+    "vibrant-yellow": #f5ee61,
+    "vibrant-ochre": #fbcf20,
+    "vibrant-orange": #ff7200,
+    "vibrant-red": #de2e32,
+    "vibrant-magenta": #ff48a6,
+    "vibrant-purple": #b81cdd,
+    "vibrant-indigo": #4541e6,
+    "vibrant-blue": #0a78ff,
+    "vibrant-teal": #46cfdb,
+    "vibrant-green": #00ba5d,
+    "vibrant-light-green": #98d94d,
+    "vibrant-lime": #d2f05a,
 
-// BLOCK QUOTE STYLES
-// Light mode
-$blockquote-background:				$gray-200;
-// Dark mode
-$blockquote-background-dark:		$gray-700;
+    "rich-light-ochre": #f0e4bb,
+    "rich-olive-green": #777d1a,
+    "rich-burnt-orange": #c23d00,
+    "rich-dark-red": #8f0028,
+    "rich-dark-magenta": #a91a71,
+    "rich-plum": #7c1389,
+    "rich-dark-indigo": #353375,
+    "rich-dark-blue": #2b57ab,
+    "rich-dark-teal": #335d7d,
+    "rich-dark-green": #005434,
+    "rich-silver": #a7a9ac,
+    "rich-gold": #a39161,
 
-// CODE STYLING
-// Light mode
-$code-color:						$black;
-$code-color--blockquote:			$black;
-$code-background:					$gray-200;
-// Dark mode
-$code-color-dark:					$white;
-$code-color--blockquote-dark:		$white;
-$code-background-dark:				$gray-700;
+    "commons-green": #006e46,
+    "commons-deeper-green": #004229,
+    "commons-darker-green": #005434,
 
-// --------------------------------------//
-// --------------------------------------//
-// --------------------------------------//
+    "lords-red": #b50938,
 
-// HEADER SIZING
-$header-min-height: 		70px;
-$header-min-height--small: 	56px;
+    "conservative": #0087dc,
+    "labour": #e41d13,
+    "liberal-democrats": #fdbb30,
+    "scottish-national-party": #fff48b,
+    "bishops": #57197c,
+    "crossbenchers": #007b87
 
-// FOOTER PADDING
-// Top
-$footer--padding-top--xs:	60px;
-$footer--padding-top--sm:	90px;
-$footer--padding-top--md:	90px;
-$footer--padding-top--lg:	120px;
-$footer--padding-top--xl:	120px;
-// Bottom
-$footer--padding-bottom--xs:	45px;
-$footer--padding-bottom--sm:	45px;
-$footer--padding-bottom--md:	60px;
-$footer--padding-bottom--lg:	60px;
-$footer--padding-bottom--xl:	60px;
+);
 
 // --------------------------------------//
 // --------------------------------------//
@@ -240,244 +170,441 @@ $footer--padding-bottom--xl:	60px;
 
 // PARAGRAPH TEXT
 // Applies to 'p' and equivalent text
-// Size
-$font-size--p--xs:		22px;
-$font-size--p--sm:		22px;
-$font-size--p--md:		22px;
-$font-size--p--lg:		26px;
-$font-size--p--xl:		30px;
-// Line height
-$line-height--p--xs:	1.25;
-$line-height--p--sm:	1.25;
-$line-height--p--md:	1.25;
-$line-height--p--lg:	1.25;
-$line-height--p--xl:	1.2;
-// Padding (bottom spacing)
-$padding--p--xs:		0 0 $font-size--p--xs 0;
-$padding--p--sm:		0 0 $font-size--p--sm 0;
-$padding--p--md:		0 0 $font-size--p--md 0;
-$padding--p--lg:		0 0 $font-size--p--lg 0;
-$padding--p--xl:		0 0 $font-size--p--xl 0;
+$wordmark: (
+    "font-size": (
+        "xs": 13pt,
+        "sm": 14pt,
+        "md": 15pt,
+        "lg": 16pt,
+        "xl": 18pt
+    ),
+    "line-height": (
+        "xs": 16pt,
+        "sm": 17pt,
+        "md": 18pt,
+        "lg": 19pt,
+        "xl": 21pt
+    ),
+    "padding": (
+        "xs": 10pt 0 0 0,
+        "sm": 10pt 0 0 0,
+        "md": 10pt 0 0 0,
+        "lg": 10pt 0 0 0,
+        "xl": 10pt 0 0 0
+    ),
+    "font-weight":  (
+        "xs": bold,
+        "sm": bold,
+        "md": bold,
+        "lg": bold,
+        "xl": bold
+    ),
+    "font-style":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "text-transform":  (
+        "xs": none,
+        "sm": none,
+        "md": none,
+        "lg": none,
+        "xl": none
+    ),
+    "text-align":  (
+        "xs": left,
+        "sm": left,
+        "md": left,
+        "lg": left,
+        "xl": left
+    ),
+);
 
-// HEADER WORDMARK TEXT
-// Applies to the Wordmark only (smaller for the normal links)
-// Size
-$font-size--header-wordmark--xs:	30px;
-$font-size--header-wordmark--sm:	30px;
-$font-size--header-wordmark--md:	30px;
-$font-size--header-wordmark--lg:	34px;
-$font-size--header-wordmark--xl:	36px;
-// Line height
-$line-height--header-wordmark--xs:	1;
-$line-height--header-wordmark--sm:	1;
-$line-height--header-wordmark--md:	1;
-$line-height--header-wordmark--lg:	1;
-$line-height--header-wordmark--xl:	1;
-// Padding (bottom spacing)
-$padding--header-wordmark--xs:		(($header-min-height--small - $font-size--header-wordmark--xs) * 0.5) 0;
-$padding--header-wordmark--sm:		(($header-min-height - $font-size--header-wordmark--sm) * 0.5) 0;
-$padding--header-wordmark--md:		(($header-min-height - $font-size--header-wordmark--md) * 0.5) 0;
-$padding--header-wordmark--lg:		(($header-min-height - $font-size--header-wordmark--lg) * 0.5) 0;
-$padding--header-wordmark--xl:		(($header-min-height - $font-size--header-wordmark--xl) * 0.5) 0;
+$body: (
+    "font-size": (
+        "xs": 12pt,
+        "sm": 13pt,
+        "md": 14pt,
+        "lg": 15pt,
+        "xl": 17pt
+    ),
+    "line-height": (
+        "xs": 16pt,
+        "sm": 17pt,
+        "md": 18pt,
+        "lg": 19pt,
+        "xl": 21pt
+    ),
+    "padding": (
+        "xs": 0 0 14pt 0,
+        "sm": 0 0 15pt 0,
+        "md": 0 0 16pt 0,
+        "lg": 0 0 17pt 0,
+        "xl": 0 0 19pt 0
+    ),
+    "font-weight":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "font-style":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "text-transform":  (
+        "xs": none,
+        "sm": none,
+        "md": none,
+        "lg": none,
+        "xl": none
+    ),
+    "text-align":  (
+        "xs": left,
+        "sm": left,
+        "md": left,
+        "lg": left,
+        "xl": left
+    ),
+);
 
-// HEADER NAV TEXT
-// Applies to text inside the Header nav items
-// Size
-$font-size--header-menu--xs:	26px;
-$font-size--header-menu--sm:	22px;
-$font-size--header-menu--md:	22px;
-$font-size--header-menu--lg:	26px;
-$font-size--header-menu--xl:	30px;
-// Line height
-$line-height--header-menu--xs:	1;
-$line-height--header-menu--sm:	1;
-$line-height--header-menu--md:	1;
-$line-height--header-menu--lg:	1;
-$line-height--header-menu--xl:	1;
-// Padding (bottom spacing)
-$padding--header-menu--xs:		(($header-min-height--small - $font-size--header-menu--xs) * 0.5) 0;
-$padding--header-menu--sm:		0 0 (($header-min-height - $font-size--header-menu--sm) * 0.5) 0;
-$padding--header-menu--md:		0 0 (($header-min-height - $font-size--header-menu--md) * 0.5) 0;
-$padding--header-menu--lg:		0 0 (($header-min-height - $font-size--header-menu--lg) * 0.5) 0;
-$padding--header-menu--xl:		0 0 (($header-min-height - $font-size--header-menu--xl) * 0.5) 0;
+$lead: (
+    "font-size": (
+        "xs": 14pt,
+        "sm": 15pt,
+        "md": 16pt,
+        "lg": 17pt,
+        "xl": 19pt
+    ),
+    "line-height": (
+        "xs": 19pt,
+        "sm": 20pt,
+        "md": 21pt,
+        "lg": 22pt,
+        "xl": 24pt
+    ),
+    "padding": (
+        "xs": 0 0 14pt 0,
+        "sm": 0 0 15pt 0,
+        "md": 0 0 16pt 0,
+        "lg": 0 0 17pt 0,
+        "xl": 0 0 19pt 0
+    ),
+    "font-weight":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "font-style":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "text-transform":  (
+        "xs": none,
+        "sm": none,
+        "md": none,
+        "lg": none,
+        "xl": none
+    ),
+    "text-align":  (
+        "xs": left,
+        "sm": left,
+        "md": left,
+        "lg": left,
+        "xl": left
+    ),
+);
 
-// FOOTER TEXT
-// Applies to text inside the Footer
-// Size
-$font-size--footer--p--xs:		18px;
-$font-size--footer--p--sm:		18px;
-$font-size--footer--p--md:		18px;
-$font-size--footer--p--lg:		20px;
-$font-size--footer--p--xl:		22px;
-// Line height
-$line-height--footer--p--xs:	1.25;
-$line-height--footer--p--sm:	1.25;
-$line-height--footer--p--md:	1.25;
-$line-height--footer--p--lg:	1.4;
-$line-height--footer--p--xl:	1.4;
-// Padding (bottom spacing)
-$padding--footer--p--xs:		0 0 ($font-size--footer--p--xs * 0.5) 0;
-$padding--footer--p--sm:		0 0 ($font-size--footer--p--sm * 0.5) 0;
-$padding--footer--p--md:		0 0 ($font-size--footer--p--md * 0.5) 0;
-$padding--footer--p--lg:		0 0 ($font-size--footer--p--lg * 0.25) 0;
-$padding--footer--p--xl:		0 0 ($font-size--footer--p--xl * 0.25) 0;
+$label: (
+    "font-size": (
+        "xs": 7pt,
+        "sm": 8pt,
+        "md": 9pt,
+        "lg": 10pt,
+        "xl": 12pt
+    ),
+    "line-height": (
+        "xs": 7pt,
+        "sm": 8pt,
+        "md": 9pt,
+        "lg": 10pt,
+        "xl": 12pt
+    ),
+    "padding": (
+        "xs": 0 0 7pt 0,
+        "sm": 0 0 8pt 0,
+        "md": 0 0 9pt 0,
+        "lg": 0 0 10pt 0,
+        "xl": 0 0 12pt 0
+    ),
+    "font-weight":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "font-style":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "text-transform":  (
+        "xs": none,
+        "sm": none,
+        "md": none,
+        "lg": none,
+        "xl": none
+    ),
+    "text-align":  (
+        "xs": left,
+        "sm": left,
+        "md": left,
+        "lg": left,
+        "xl": left
+    ),
+);
 
+// TITLES
 
-// DISPLAY TEXT
-// Applies to 'h1' size on home and 404 pages
-// Size
-$font-size--display--xs:		66px;
-$font-size--display--sm:		90px;
-$font-size--display--md:		120px;
-$font-size--display--lg:		144px;
-$font-size--display--xl:		164px;
-// Line height
-$line-height--display--xs:	1;
-$line-height--display--sm:	1;
-$line-height--display--md:	1;
-$line-height--display--lg:	1;
-$line-height--display--xl:	1;
-// Padding (bottom spacing)
-$padding--display--xs:		($font-size--display--xs * 1.25) 0 ($font-size--display--xs * 0.1) 0;
-$padding--display--sm:		($font-size--display--sm * 1.25) 0 ($font-size--display--sm * 0.1) 0;
-$padding--display--md:		($font-size--display--md * 1.25) 0 ($font-size--display--md * 0.1) 0;
-$padding--display--lg:		($font-size--display--lg * 1.5) 0 ($font-size--display--lg * 0.1) 0;
-$padding--display--xl:		($font-size--display--xl * 1.5) 0 ($font-size--display--xl * 0.1) 0;
+$largeTitle: (
+    "font-size": (
+        "xs": 30pt,
+        "sm": 43pt,
+        "md": 44pt,
+        "lg": 46pt,
+        "xl": 48pt
+    ),
+    "line-height": (
+        "xs": 35pt,
+        "sm": 50pt,
+        "md": 51pt,
+        "lg": 53pt,
+        "xl": 53pt
+    ),
+    "padding": (
+        "xs": 60pt 0 30pt,
+        "sm": 76pt 0 43pt,
+        "md": 77pt 0 44pt,
+        "lg": 78pt 0 46pt,
+        "xl": 80pt 0 48pt
+    ),
+    "font-weight":  (
+        "xs": bold,
+        "sm": bold,
+        "md": bold,
+        "lg": bold,
+        "xl": bold
+    ),
+    "font-style":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "text-transform":  (
+        "xs": none,
+        "sm": none,
+        "md": none,
+        "lg": none,
+        "xl": none
+    ),
+    "text-align":  (
+        "xs": left,
+        "sm": left,
+        "md": left,
+        "lg": left,
+        "xl": left
+    ),
+);
 
-// HEADING 1 TEXT
-// Applies to 'h1' and equivalent text
-// Size
-$font-size--h1--xs:		44px;
-$font-size--h1--sm:		60px;
-$font-size--h1--md:		60px;
-$font-size--h1--lg:		72px;
-$font-size--h1--xl:		82px;
-// Line height
-$line-height--h1--xs:	1.1;
-$line-height--h1--sm:	1.1;
-$line-height--h1--md:	1.1;
-$line-height--h1--lg:	1.1;
-$line-height--h1--xl:	1.1;
-// Padding (bottom spacing)
-$padding--h1--xs:		($font-size--h1--xs * 2) 0 $font-size--h1--xs 0;
-$padding--h1--sm:		($font-size--h1--sm * 2) 0 $font-size--h1--sm 0;
-$padding--h1--md:		($font-size--h1--md * 2) 0 $font-size--h1--md 0;
-$padding--h1--lg:		($font-size--h1--lg * 2) 0 $font-size--h1--lg 0;
-$padding--h1--xl:		($font-size--h1--xl * 2) 0 $font-size--h1--xl 0;
+$title1: (
+    "font-size": (
+        "xs": 25pt,
+        "sm": 26pt,
+        "md": 27pt,
+        "lg": 28pt,
+        "xl": 30pt
+    ),
+    "line-height": (
+        "xs": 31pt,
+        "sm": 32pt,
+        "md": 33pt,
+        "lg": 34pt,
+        "xl": 36pt
+    ),
+    "padding": (
+        "xs": 25pt 0,
+        "sm": 26pt 0,
+        "md": 27pt 0,
+        "lg": 28pt 0,
+        "xl": 30pt 0
+    ),
+    "font-weight":  (
+        "xs": bold,
+        "sm": bold,
+        "md": bold,
+        "lg": bold,
+        "xl": bold
+    ),
+    "font-style":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "text-transform":  (
+        "xs": none,
+        "sm": none,
+        "md": none,
+        "lg": none,
+        "xl": none
+    ),
+    "text-align":  (
+        "xs": left,
+        "sm": left,
+        "md": left,
+        "lg": left,
+        "xl": left
+    ),
+);
+
+$title2: (
+    "font-size": (
+        "xs": 19pt,
+        "sm": 20pt,
+        "md": 21pt,
+        "lg": 22pt,
+        "xl": 24pt
+    ),
+    "line-height": (
+        "xs": 25pt,
+        "sm": 26pt,
+        "md": 27pt,
+        "lg": 28pt,
+        "xl": 30pt
+    ),
+    "padding": (
+        "xs": 19pt 0,
+        "sm": 20pt 0,
+        "md": 21pt 0,
+        "lg": 22pt 0,
+        "xl": 24pt 0
+    ),
+    "font-weight":  (
+        "xs": bold,
+        "sm": bold,
+        "md": bold,
+        "lg": bold,
+        "xl": bold
+    ),
+    "font-style":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "text-transform":  (
+        "xs": none,
+        "sm": none,
+        "md": none,
+        "lg": none,
+        "xl": none
+    ),
+    "text-align":  (
+        "xs": left,
+        "sm": left,
+        "md": left,
+        "lg": left,
+        "xl": left
+    ),
+);
+
+$title3: (
+    "font-size": (
+        "xs": 17pt,
+        "sm": 18pt,
+        "md": 19pt,
+        "lg": 20pt,
+        "xl": 22pt
+    ),
+    "line-height": (
+        "xs": 22pt,
+        "sm": 23pt,
+        "md": 24pt,
+        "lg": 25pt,
+        "xl": 27pt
+    ),
+    "padding": (
+        "xs": 17pt 0,
+        "sm": 18pt 0,
+        "md": 19pt 0,
+        "lg": 20pt 0,
+        "xl": 22pt 0
+    ),
+    "font-weight":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "font-style":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "text-transform":  (
+        "xs": none,
+        "sm": none,
+        "md": none,
+        "lg": none,
+        "xl": none
+    ),
+    "text-align":  (
+        "xs": left,
+        "sm": left,
+        "md": left,
+        "lg": left,
+        "xl": left
+    ),
+);
+
 // Other styles
-$font-weight--h1:		bold;
 $font-style-h1:			normal;
 $text-align--h1:		left;
 $text-decoration--h1:	none;
 $text-transform--h1:	none;
 
-// HEADING 2 TEXT
-// Applies to 'h2' and equivalent text
-// Size
-$font-size--h2--xs:		27px;
-$font-size--h2--sm:		32px;
-$font-size--h2--md:		32px;
-$font-size--h2--lg:		36px;
-$font-size--h2--xl:		40px;
-// Line height
-$line-height--h2--xs:	1.25;
-$line-height--h2--sm:	1.25;
-$line-height--h2--md:	1.25;
-$line-height--h2--lg:	1.25;
-$line-height--h2--xl:	1.25;
-// Padding (bottom spacing)
-$padding--h2--xs:		($font-size--h2--xs * 2) 0 $font-size--h2--xs 0;
-$padding--h2--sm:		($font-size--h2--sm * 2) 0 $font-size--h2--sm 0;
-$padding--h2--md:		($font-size--h2--md * 2) 0 $font-size--h2--md 0;
-$padding--h2--lg:		($font-size--h2--lg * 2) 0 $font-size--h2--lg 0;
-$padding--h2--xl:		($font-size--h2--xl * 2) 0 $font-size--h2--xl 0;
 // Other styles
-$font-weight--h2:		bold;
 $font-style-h2:			normal;
 $text-align--h2:		center;
 $text-decoration--h2:	none;
 $text-transform--h2:	none;
 
-// HEADING 3 TEXT
-// Applies to 'h3' and equivalent text
-// Size
-$font-size--h3--xs:		22px;
-$font-size--h3--sm:		22px;
-$font-size--h3--md:		22px;
-$font-size--h3--lg:		26px;
-$font-size--h3--xl:		30px;
-// Line height
-$line-height--h3--xs:	1.25;
-$line-height--h3--sm:	1.25;
-$line-height--h3--md:	1.25;
-$line-height--h3--lg:	1.25;
-$line-height--h3--xl:	1.25;
-// Padding (bottom spacing)
-$padding--h3--xs:		($font-size--h3--xs) 0 ($font-size--h3--xs * 0.66) 0;
-$padding--h3--sm:		($font-size--h3--sm) 0 ($font-size--h3--sm * 0.66) 0;
-$padding--h3--md:		($font-size--h3--md) 0 ($font-size--h3--md * 0.66) 0;
-$padding--h3--lg:		($font-size--h3--lg) 0 ($font-size--h3--lg * 0.66) 0;
-$padding--h3--xl:		($font-size--h3--xl) 0 ($font-size--h3--xl * 0.66) 0;
 // Other styles
-$font-weight--h3:		bold;
 $font-style-h3:			normal;
 $text-align--h3:		left;
 $text-decoration--h3:	none;
 $text-transform--h3:	none;
-
-// HEADING 4 TEXT
-// Applies to 'h4' and equivalent text
-// Size
-$font-size--h4--xs:		22px;
-$font-size--h4--sm:		22px;
-$font-size--h4--md:		22px;
-$font-size--h4--lg:		26px;
-$font-size--h4--xl:		30px;
-// Line height
-$line-height--h4--xs:	1.25;
-$line-height--h4--sm:	1.25;
-$line-height--h4--md:	1.25;
-$line-height--h4--lg:	1.25;
-$line-height--h4--xl:	1.25;
-// Padding (bottom spacing)
-$padding--h4--xs:		0 0 ($font-size--h4--xs * 0.5) 0;
-$padding--h4--sm:		0 0 ($font-size--h4--sm * 0.5) 0;
-$padding--h4--md:		0 0 ($font-size--h4--md * 0.5) 0;
-$padding--h4--lg:		0 0 ($font-size--h4--lg * 0.5) 0;
-$padding--h4--xl:		0 0 ($font-size--h4--xl * 0.5) 0;
-// Other styles
-$font-weight--h4:		bold;
-$font-style-h4:			italic;
-$text-align--h4:		left;
-$text-decoration--h4:	none;
-$text-transform--h4:	none;
-
-// HEADING 5 TEXT
-// Applies to 'h5' and equivalent text
-// Size
-$font-size--h5--xs:		22px;
-$font-size--h5--sm:		22px;
-$font-size--h5--md:		22px;
-$font-size--h5--lg:		26px;
-$font-size--h5--xl:		30px;
-// Line height
-$line-height--h5--xs:	1.25;
-$line-height--h5--sm:	1.25;
-$line-height--h5--md:	1.25;
-$line-height--h5--lg:	1.25;
-$line-height--h5--xl:	1.25;
-// Padding (bottom spacing)
-$padding--h5--xs:		$font-size--h5--xs 0;
-$padding--h5--sm:		$font-size--h5--sm 0;
-$padding--h5--md:		$font-size--h5--md 0;
-$padding--h5--lg:		$font-size--h5--lg 0;
-$padding--h5--xl:		$font-size--h5--xl 0;
-// Other styles
-$font-weight--h5:		bold;
-$font-style-h5:			normal;
-$text-align--h5:		left;
-$text-decoration--h5:	none;
-$text-transform--h5:	none;
 
 // --------------------------------------//
 // --------------------------------------//
@@ -490,9 +617,6 @@ $touch-target-size:                 44px;
 $input-size:                       	40px;
 $border-width-form-element:         3px;
 $border-focus-width:                1px;
-$input-border-color:                $black;
-$input-error-color:                 $red;
-$input-focus-color:                 $brand;
 $input-padding:                     5px;
 
 $radios-size:                       40px;

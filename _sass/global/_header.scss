@@ -1,227 +1,74 @@
-header#site-header {
-	display: block;
-	position: relative;
-	@include toggleDarkMode(background, $header-background, $header-background-dark);
-}
-	
-nav#header--site-nav a {
-	font-weight: 		$header-link-font-weight;
-	text-decoration: 	$header-link-text-decoration;
-	
-	&:link {
-		@include toggleDarkMode(color, $header-link-color, $header-link-color-dark);
-	}
-	&:visited {
-		@include toggleDarkMode(color, $header-link-color, $header-link-color-dark);
-	}
-	&:hover {
-		@include toggleDarkMode(color, $header-link-color--hover, $header-link-color--hover-dark);
-		text-decoration: 	$header-link-text-decoration-hover;
-	}
-	&:focus {
-		@include toggleDarkMode(color, $header-link-color--focus, $header-link-color--focus-dark);
-		@include toggleDarkMode(background, $header-link-background--focus, $header-link-background--focus-dark);
-		@include toggleDarkMode(outline, $header-link-outline--focus, $header-link-outline--focus-dark);
-	}
-	&:active {
-		text-decoration: 	$header-link-text-decoration-active;
-	}
-}	
+header#site-navigation {
 
-p#header--wordmark {
-	position: relative;
-	display: block;
-	z-index: 10000;
-	
-	float: left;
-	padding: 0;
-	
-	@include toggleSizes(width, calc(100% - #{$header-min-height--small}), calc(100% - #{$header-min-height}), calc(100% - #{$header-min-height}), calc(100% - #{$header-min-height}), calc(100% - #{$header-min-height}));
-	@include toggleSizes(min-height, $header-min-height--small, $header-min-height, $header-min-height, $header-min-height, $header-min-height);
-	@include toggleSizes(font-size, $font-size--header-wordmark--xs, $font-size--header-wordmark--sm, $font-size--header-wordmark--md, $font-size--header-wordmark--lg, $font-size--header-wordmark--xl);
-	@include toggleSizes(line-height, $line-height--header-wordmark--xs, $line-height--header-wordmark--sm, $line-height--header-wordmark--md, $line-height--header-wordmark--lg, $line-height--header-wordmark--xl);
-	@include toggleSizes(padding, $padding--header-wordmark--xs, $padding--header-wordmark--sm, $padding--header-wordmark--md, $padding--header-wordmark--lg, $padding--header-wordmark--xl);
+    padding-top: $container-padding * 2;
+    padding-bottom: $container-padding * 2;
 
-	a {
-		display: inline-block;
-	}
-	a.wordmark {
-		font-weight: 	bold;
-		
-		&:link {
-			@include toggleDarkMode(color, $black, $white);
-		}
-		&:visited {
-			@include toggleDarkMode(color, $black, $white);
-		}
-		&:hover {
-			@include toggleDarkMode(color, $link-color--hover, $link-color--hover-dark);
-			text-decoration: 	$link-text-decoration-hover;	
-		}
-		&:focus {
-			@include toggleDarkMode(color, $link-color--focus, $link-color--focus-dark);
-			@include toggleDarkMode(background, $link-background--focus, $link-background--focus-dark);
-			@include toggleDarkMode(outline, $link-outline--focus, $link-outline--focus-dark);
-		}
-		&:active {
-			text-decoration: 	$link-text-decoration-active;
-		}
-	}
-	a.site-title {
-		font-weight: 	normal;
-		@include toggleSizes(margin-left, 10px, 15px, 15px, 20px, 20px);
-		
-		&:link {
-			@include toggleDarkMode(color, $gray-600, $gray-500);
-		}
-		&:visited {
-			@include toggleDarkMode(color, $gray-600, $gray-500);
-		}
-		&:hover {
-			@include toggleDarkMode(color, $link-color--hover, $link-color--hover-dark);
-			text-decoration: 	$link-text-decoration-hover;	
-		}
-		&:focus {
-			@include toggleDarkMode(color, $link-color--focus, $link-color--focus-dark);
-			@include toggleDarkMode(background, $link-background--focus, $link-background--focus-dark);
-			@include toggleDarkMode(outline, $link-outline--focus, $link-outline--focus-dark);
-		}
-		&:active {
-			text-decoration: 	$link-text-decoration-active;
-		}
-	}
-	
-	span.wordmark-hidden {
-		@include xs {
-			@include sr-only;	
-		}
-	}
-	
+    background: map-get($colors, "deep-purple");
+    color: map-get($colors, "westminster-white");
+
+    @include supports-sticky() {
+        top: 0;
+    }
+
 }
 
-button#header-menu-toggle {
-	display: block;
-	position: relative;
-	z-index: 10000;
-	
-	height: unset;
-	width: unset;
-	@include toggleSizes(min-height, $header-min-height--small, $header-min-height, $header-min-height, $header-min-height, $header-min-height);
-	@include toggleSizes(min-width, $header-min-height--small, $header-min-height, $header-min-height, $header-min-height, $header-min-height);
+header#site-navigation a#home-link {
 
-	border: 		none;
-	background: 	none;
-	
-	padding: 0;
-	margin: 0 -15px 0 0;
-	float: right;
-	
-	svg#header-menu-toggle-image {
-		@include toggleSizes(width, 20px, 20px, 25px, 25px, 25px);
-		@include toggleSizes(height, 20px, 20px, 25px, 25px, 25px);
-		path#menuicon {
-			@include toggleDarkMode(fill, $gray-500, $gray-600);
-			transform-origin: center;
-			transform: rotate(0deg);
-			transition: 0.25s all;
-		}
-	}
-	
-	&.open {
-		svg#header-menu-toggle-image path#menuicon {
-			@include toggleDarkMode(fill, $black, $white);
-			transform-origin: center;
-			transform: rotate(45deg);
-			transition: 0.1s all;
-		}
-	}
-	
-	&:hover {
-		svg#header-menu-toggle-image path#menuicon {
-			@include toggleDarkMode(fill, $link-color--hover, $link-color--hover-dark);
-			transition: 0.1s all;
-		}
-	}
-	&:focus {
-		@include toggleDarkMode(background, $link-background--focus, $link-background--focus-dark);
-		@include toggleDarkMode(border, $link-border--focus, $link-border--focus-dark);
-		@include toggleDarkMode(outline, none, none);
-		svg#header-menu-toggle-image path#menuicon {
-			@include toggleDarkMode(fill, $link-color--focus, $link-color--focus-dark);
-			transition: 0.1s all;
-		}
-	}
-	&:active {
-		@include toggleDarkMode(outline, $link-outline--focus, $link-outline--focus-dark);
-		@include toggleDarkMode(background, $link-background--focus, $link-background--focus-dark);
-		svg#header-menu-toggle-image path#menuicon {
-			@include toggleDarkMode(fill, $link-color--focus, $link-color--focus-dark);
-			transform-origin: center;
-			transform: rotate(22.5deg);
-			transition: 0.1s all;
-		}
-	}
-	
-}
-ul#header-menu-items {
-	display: block;
-	position: relative;
-	float: none;
-	clear: both;
-	z-index: 1000;
-	
-	@include toggleDarkMode(background, $header-background, $header-background-dark);
-	padding-left: 0;
-	
-	&.closed {
-		@include sr-only;
-	}
-	&.open {
-		height: auto;
-		width: 100%;
-		opacity: 1;
-	}
-	// Hide the scroll bars
-	&::-webkit-scrollbar {
-		display: none;
-	}
-	-ms-overflow-style: none;  /* IE and Edge */
-	scrollbar-width: none;  /* Firefox */
+    display: inline-block;
+    @include clearfix;
 
-	li.header-link {
-		display: inline-block;
-		@include toggleSizes(width, 100%, 100%, auto, auto, auto);
-		@include toggleSizes(margin-right, 0, 0, 20px, 20px, 20px);
-		@include toggleSizes(min-height, $header-min-height--small, $header-min-height--small, 0, 0, 0);
-		@include toggleSizes(font-size, $font-size--header-menu--xs, $font-size--header-menu--sm, $font-size--header-menu--md, $font-size--header-menu--lg, $font-size--header-menu--xl);
-		@include toggleSizes(line-height, $line-height--header-menu--xs, $line-height--header-menu--sm, $line-height--header-menu--md, $line-height--header-menu--lg, $line-height--header-menu--xl);	
-		@include toggleSizes(padding, $padding--header-menu--xs, $padding--header-menu--sm, $padding--header-menu--md, $padding--header-menu--lg, $padding--header-menu--xl);
-	}
-	
-	a {
-		&:link {
-			@include toggleDarkMode(color, $cyan, $cyan);
-			text-decoration: none;
-		}
-		&:visited {
-			@include toggleDarkMode(color, $cyan, $cyan);
-			text-decoration: none;
-		}
-		&:hover {
-			@include toggleDarkMode(color, $link-color--hover, $link-color--hover-dark);
-			text-decoration: 	underline;	
-		}
-		&:focus {
-			@include toggleDarkMode(color, $link-color--focus, $link-color--focus-dark);
-			@include toggleDarkMode(background, $link-background--focus, $link-background--focus-dark);
-			@include toggleDarkMode(outline, $link-outline--focus, $link-outline--focus-dark);
-		}
-		&:active {
-			text-decoration: 	$link-text-decoration-active;
-		}
-	}
+    &:link span[class^="line-"] {
+        color: map-get($colors, "westminster-white");
+    }
+    &:visited span[class^="line-"] {
+        color: map-get($colors, "westminster-white");
+    }
+    &:hover span[class^="line-"] {
+        text-decoration: 	underline;
+    }
+    &:focus {
+
+    }
+    &:focus span[class^="line-"] {
+        color: map-get($colors, "deep-purple");
+    }
+    &:active span[class^="line-"] {
+        text-decoration: 	none;
+    }
+
+
 }
 
-header#site-header {
-	@include clearfix;
+header#site-navigation img#banner-icon {
+
+    @each $style, $sizes in $wordmark {
+        @if $style == "line-height" {
+            @include toggleSizes(height, map-get($sizes, "xs") * 2 + 10,  map-get($sizes, "sm") * 2 + 10,  map-get($sizes, "md") * 2 + 10,  map-get($sizes, "lg") * 2 + 10,  map-get($sizes, "xl") * 2 + 10);
+        };
+    }
+    width: auto;
+
+    margin-right: $container-padding * 1.5;
+
+    float: left;
+    clear: left;
+
+}
+
+a#home-link span.wordmark {
+
+    display: block;
+    @each $style, $sizes in $wordmark {
+        @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+    }
+
+    float: left;
+
+    @include clearfix;
+}
+
+a#home-link span[class^="line-"] {
+    display: block;
+    clear: both;
+    float: left;
 }
