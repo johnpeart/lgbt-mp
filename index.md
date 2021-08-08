@@ -1,4 +1,4 @@
 ---
 layout: default
-title: LGBT+ Members of Parliament.
+title: LGBT+ Members of Parliament
 ---
