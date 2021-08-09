@@ -9,7 +9,7 @@
 *,
 *::before,
 *::after {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -47,7 +47,7 @@ body {
 
 }
 
-main {
+section#content {
 
   display: block;
   position: relative;
@@ -63,4 +63,11 @@ main {
 
   overflow-y: scroll;
 
+}
+
+main {
+  min-height: 80vh;
+
+  @include toggleSizes(padding-top, ($container-padding * 2), ($container-padding * 2), ($container-padding * 3), ($container-padding * 3), ($container-padding * 3));
+  @include toggleSizes(padding-bottom, ($container-padding * 2), ($container-padding * 2), ($container-padding * 3), ($container-padding * 3), ($container-padding * 3));
 }

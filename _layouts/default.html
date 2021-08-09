@@ -9,13 +9,19 @@
 
     {% include header.html %}
 
-    <main>
+    <section id="content">
 
-    	{{ content }}
+      <main class="container">
 
-    </main>
+        {% include banner-mode.html %}
 
-    {% include footer.html %}
+      	{{ content }}
+
+      </main>
+
+      {% include footer.html %}
+
+    </section>
 
     {% include analytics.html %}
 

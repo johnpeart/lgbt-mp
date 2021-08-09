@@ -100,3 +100,15 @@ h3 {
         @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
     }
 }
+
+
+blockquote {
+
+    padding: $container-padding;
+    border-left: 5px solid map-get($colors, "purple");
+    background: map-get($colors, "purple--light");
+
+    *:last-child {
+        padding-bottom: 0;
+    }
+}
