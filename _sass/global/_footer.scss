@@ -1,9 +1,58 @@
 footer {
 
-    min-height: 20vh;
+    min-height: 30vh;
 
     @include toggleSizes(padding-top, ($container-padding * 2), ($container-padding * 2), ($container-padding * 3), ($container-padding * 3), ($container-padding * 3));
+    @include toggleSizes(padding-bottom, ($container-padding * 2), ($container-padding * 2), ($container-padding * 3), ($container-padding * 3), ($container-padding * 3));
 
     background: map-get($colors, "grey-3");
+
+    ul {
+        list-style: none;
+    }
+
+}
+
+footer > div.container {
+
+    display: grid;
+
+    @include toggleSizes(grid-template-columns,
+        1fr,
+        1fr,
+        1fr 1fr,
+        2fr 1fr 1fr,
+        2fr 1fr 1fr
+    );
+    @include toggleSizes(grid-template-rows,
+        auto auto auto auto,
+        auto auto auto auto,
+        auto auto auto,
+        auto auto,
+        auto auto
+    );
+    @include toggleSizes(grid-template-areas,
+        "heading" "navigation" "other" "colophon",
+        "heading" "navigation" "other" "colophon",
+        "heading navigation" "heading other" "colophon colophon",
+        "heading navigation other" "colophon colophon colophon",
+        "heading navigation other" "colophon colophon colophon"
+    );
+
+    row-gap: $container-padding;
+
+    .footer--heading {
+        grid-area: heading;
+    }
+    .footer--navigation {
+        grid-area: navigation;
+    }
+    .footer--other {
+        grid-area: other;
+    }
+    .footer--colophon {
+        grid-area: colophon;
+        padding-top: $container-padding * 2;
+    }
 
 }
