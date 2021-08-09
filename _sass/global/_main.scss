@@ -1,37 +1,66 @@
 // Global styles
 
 @at-root {
-    @-ms-viewport {
-        width: device-width;
-    } // stylelint-disable-line at-rule-no-vendor-prefix
+  @-ms-viewport {
+      width: device-width;
+  } // stylelint-disable-line at-rule-no-vendor-prefix
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    font-family: 			$font-family;
-    font-kerning: 			auto;
-    letter-spacing: 		normal;
+  font-family: 			$font-family;
+  font-kerning: 			auto;
+  letter-spacing: 		normal;
 
-    background: map-get($colors, "westminster-white");
-    color: map-get($colors, "deep-purple");
+  @each $style, $sizes in $body {
+      @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
 
-    @each $style, $sizes in $body {
-        @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
-    }
+  background: map-get($colors, "deep-purple");
 
-    padding: 0 !important;
-    margin: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+
+
+  @include toggleSizes(overflow, auto, auto, hidden, hidden, hidden);
+
 }
 
 body {
 
+  display: grid;
 
+  background: map-get($colors, "deep-purple");
+  color: map-get($colors, "deep-purple");
+
+  @include toggleSizes(grid-template-columns, 1fr, 1fr, 1fr 2fr, 1fr 2fr, 1fr 2fr);
+  @include toggleSizes(grid-template-rows, 100vh auto, 100vh auto, 100vh, 100vh, 100vh);
+
+  @include toggleSizes(overflow, auto, auto, hidden, hidden, hidden);
+
+}
+
+main {
+
+  display: block;
+  position: relative;
+
+  top: 0;
+
+  background: map-get($colors, "westminster-white");
+  color: map-get($colors, "deep-purple");
+
+  min-height: 100vh;
+
+  @include toggleSizes(height, auto, auto, 100vh, 100vh, 100vh);
+
+  overflow-y: scroll;
 
 }

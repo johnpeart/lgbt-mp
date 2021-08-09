@@ -21,8 +21,8 @@ $containers: (
     "xs":    300px,
     "sm":    560px,
     "md":    600px,
-    "lg":    900px,
-    "xl":    1200px
+    "lg":    800px,
+    "xl":    1000px
 );
 
 $container-padding: 	 			15px;
@@ -51,6 +51,7 @@ $sup-font-feature-settings:			"tnum", "liga", "zero", "kern", "frac";
 
 $colors: (
 
+    "black": #000000,
     "westminster-white": #ebe9e8,
     "westminster-white-90": #f6f5f5,
 
@@ -184,13 +185,6 @@ $wordmark: (
         "md": 18pt,
         "lg": 19pt,
         "xl": 21pt
-    ),
-    "padding": (
-        "xs": 10pt 0 0 0,
-        "sm": 10pt 0 0 0,
-        "md": 10pt 0 0 0,
-        "lg": 10pt 0 0 0,
-        "xl": 10pt 0 0 0
     ),
     "font-weight":  (
         "xs": bold,

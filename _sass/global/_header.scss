@@ -1,14 +1,17 @@
 header#site-navigation {
 
-    padding-top: $container-padding * 2;
-    padding-bottom: $container-padding * 2;
+    display: flex;
+    position: relative;
+
+    align-items: center;
+
+    padding: ($container-padding * 3) ($container-padding * 2);
 
     background: map-get($colors, "deep-purple");
     color: map-get($colors, "westminster-white");
 
-    @include supports-sticky() {
-        top: 0;
-    }
+    @include toggleSizes(height, 100vh, 100vh, 100vh, 100vh, 100vh);
+    @include toggleSizes(width, 100vw, 100vw, 33.33vw, 33.33vw, 33.33vw);
 
 }
 
@@ -17,13 +20,13 @@ header#site-navigation a#home-link {
     display: inline-block;
     @include clearfix;
 
-    &:link span[class^="line-"] {
+    &:link span[class^="wordmark-line-"] {
         color: map-get($colors, "westminster-white");
     }
-    &:visited span[class^="line-"] {
+    &:visited span[class^="wordmark-line-"] {
         color: map-get($colors, "westminster-white");
     }
-    &:hover span[class^="line-"] {
+    &:hover span[class^="wordmark-line-"] {
         text-decoration: 	underline;
     }
     &:focus {
@@ -62,12 +65,13 @@ a#home-link span.wordmark {
         @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
     }
 
+    padding: 10pt 0 0 0;
     float: left;
 
     @include clearfix;
 }
 
-a#home-link span[class^="line-"] {
+a#home-link span[class^="wordmark-line-"] {
     display: block;
     clear: both;
     float: left;
