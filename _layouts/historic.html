@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<h1>Data from previous parliaments</h1>
+
+<p>Use this page to look at previous parliaments. Each historical dataset represents the composition of the House of Commons at either the start or end point of that parliament.</p>
+
+<ul class="historical-datasets">
+
+    <li>
+        <a href="{{ relative_url | append: '/' }}" title="See the current data for this Parliament">
+            <p class="date">
+                <span class="label">Current Parliament</span>
+                <br>
+                <span class="large-date">Right now</span>
+            </p>
+        </a>
+    </li>
+{% assign sorted = site.parliaments | reverse %}
+{% for parliament in sorted %}
+
+    <li>
+        {% if parliament.start-date %}
+        <a href="{{ relative_url | append: parliament.url }}" title="See data for Parliament {{ parliament.slug }}ing {{ parliament.start-date | date: "%Y-%m-%d" }}">
+        {% elsif parliament.end-date %}
+        <a href="{{ relative_url | append: parliament.url }}" title="See data for Parliament {{ parliament.slug }}ing {{ parliament.end-date | date: "%Y-%m-%d" }}">
+        {% endif %}
+            <p class="date">
+                <span class="label">Parliament that {{ parliament.slug }}ed on</span>
+                <br>
+                {% if parliament.start-date %}
+                    <span class="large-date">{{ parliament.start-date | date: "%-d %B %Y" }}</span>
+                {% elsif parliament.end-date %}
+                    <span class="large-date">{{ parliament.end-date | date: "%-d %B %Y" }}</span>
+                {% endif %}
+            </p>
+        </a>
+    </li>
+{% endfor %}
+
+</ul>
