@@ -96,7 +96,6 @@ ul.historical-datasets {
 ul.historical-datasets li {
 
   padding: $container-padding;
-  margin-bottom: $container-padding;
 
   background: map-get($colors, "white");
   box-shadow: 0 1px 1px 0 rgba(60,64,67,.08),0 1px 3px 1px rgba(60,64,67,.16);
@@ -108,5 +107,13 @@ ul.historical-datasets li {
     map-get($containers, "lg") / 2 - $container-padding,
     map-get($containers, "xl") / 2 - $container-padding
   );
+
+  &:nth-of-type(1) {
+    margin-bottom: $container-padding * 2;
+  }
+
+  &:nth-of-type(2) {
+    grid-column: 1;
+  }
 
 }
