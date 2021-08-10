@@ -40,10 +40,10 @@ body {
   background: map-get($colors, "deep-purple");
   color: map-get($colors, "deep-purple");
 
-  @include toggleSizes(grid-template-columns, 1fr, 1fr, 1fr 2fr, 1fr 2fr, 1fr 2fr);
-  @include toggleSizes(grid-template-rows, 100vh auto, 100vh auto, 100vh, 100vh, 100vh);
+  @include toggleSizes(grid-template-columns, 1fr, 1fr 2fr, 1fr 2fr, 1fr 2fr, 30vw 70vw);
+  @include toggleSizes(grid-template-rows, 100vh auto, 100vh, 100vh, 100vh, 100vh);
 
-  @include toggleSizes(overflow, auto, auto, hidden, hidden, hidden);
+  @include toggleSizes(overflow, auto, hidden, hidden, hidden, hidden);
 
 }
 
@@ -59,15 +59,54 @@ section#content {
 
   min-height: 100vh;
 
-  @include toggleSizes(height, auto, auto, 100vh, 100vh, 100vh);
-
-  overflow-y: scroll;
+  @include toggleSizes(height, auto, 100vh, 100vh, 100vh, 100vh);
+  @include toggleSizes(overflow-y, auto, scroll, scroll, scroll, scroll);
 
 }
 
 main {
-  min-height: 70vh;
+
+  min-height: 80vh;
 
   @include toggleSizes(padding-top, ($container-padding * 2), ($container-padding * 2), ($container-padding * 3), ($container-padding * 3), ($container-padding * 3));
   @include toggleSizes(padding-bottom, ($container-padding * 2), ($container-padding * 2), ($container-padding * 3), ($container-padding * 3), ($container-padding * 3));
+
+}
+
+ul.historical-datasets {
+
+  display: grid;
+  @include toggleSizes(
+    grid-template-columns,
+    1fr,
+    1fr 1fr,
+    1fr 1fr,
+    1fr 1fr,
+    1fr 1fr
+  );
+
+  grid-gap: $container-padding;
+
+  list-style: none;
+
+  margin-top: $container-padding;
+
+}
+
+ul.historical-datasets li {
+
+  padding: $container-padding;
+  margin-bottom: $container-padding;
+
+  background: map-get($colors, "white");
+  box-shadow: 0 1px 1px 0 rgba(60,64,67,.08),0 1px 3px 1px rgba(60,64,67,.16);
+
+  @include toggleSizes(max-width,
+    100%,
+    map-get($containers, "sm") / 2 - $container-padding,
+    map-get($containers, "md") / 2 - $container-padding,
+    map-get($containers, "lg") / 2 - $container-padding,
+    map-get($containers, "xl") / 2 - $container-padding
+  );
+
 }

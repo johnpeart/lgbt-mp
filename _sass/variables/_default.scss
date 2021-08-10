@@ -11,18 +11,18 @@
 // Breakpoints
 $breakpoints: (
     "xs": 0,
-    "sm": 600px,
-    "md": 768px,
-    "lg": 1024px,
-    "xl": 1400px
+    "sm": 768px,
+    "md": 1024px,
+    "lg": 1300px,
+    "xl": 1600px
 );
 
 $containers: (
     "xs":    300px,
-    "sm":    560px,
+    "sm":    600px,
     "md":    600px,
     "lg":    800px,
-    "xl":    1000px
+    "xl":    900px
 );
 
 $container-padding: 	 			15px;
@@ -174,15 +174,15 @@ $colors: (
 $wordmark: (
     "font-size": (
         "xs": 13pt,
-        "sm": 14pt,
-        "md": 15pt,
+        "sm": 13pt,
+        "md": 14pt,
         "lg": 16pt,
         "xl": 18pt
     ),
     "line-height": (
         "xs": 16pt,
-        "sm": 17pt,
-        "md": 18pt,
+        "sm": 16pt,
+        "md": 17pt,
         "lg": 19pt,
         "xl": 21pt
     ),
@@ -225,11 +225,11 @@ $body: (
         "xl": 13pt
     ),
     "line-height": (
-        "xs": 14pt,
-        "sm": 15pt,
-        "md": 16pt,
-        "lg": 16pt,
-        "xl": 16pt
+        "xs": 15pt,
+        "sm": 16pt,
+        "md": 17pt,
+        "lg": 18pt,
+        "xl": 18pt
     ),
     "padding": (
         "xs": 0 0 8pt 0,
@@ -270,25 +270,25 @@ $body: (
 
 $lead: (
     "font-size": (
-        "xs": 14pt,
-        "sm": 15pt,
-        "md": 16pt,
-        "lg": 17pt,
-        "xl": 19pt
+        "xs": 11pt,
+        "sm": 12pt,
+        "md": 13pt,
+        "lg": 14pt,
+        "xl": 16pt
     ),
     "line-height": (
-        "xs": 19pt,
-        "sm": 20pt,
-        "md": 21pt,
-        "lg": 22pt,
-        "xl": 24pt
+        "xs": 17pt,
+        "sm": 18pt,
+        "md": 19pt,
+        "lg": 20pt,
+        "xl": 22pt
     ),
     "padding": (
-        "xs": 0 0 14pt 0,
-        "sm": 0 0 15pt 0,
-        "md": 0 0 16pt 0,
-        "lg": 0 0 17pt 0,
-        "xl": 0 0 19pt 0
+        "xs": 0 0 11pt 0,
+        "sm": 0 0 12pt 0,
+        "md": 0 0 13pt 0,
+        "lg": 0 0 14pt 0,
+        "xl": 0 0 16pt 0
     ),
     "font-weight":  (
         "xs": normal,

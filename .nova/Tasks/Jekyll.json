@@ -13,5 +13,6 @@
       "script" : "bundle exec jekyll serve --liveReload -o"
     }
   },
-  "identifier" : "EEA2E8C8-42F0-42B8-8655-8912DF955197"
+  "identifier" : "EEA2E8C8-42F0-42B8-8655-8912DF955197",
+  "openLogOnRun" : "start"
 }

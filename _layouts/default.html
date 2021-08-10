@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {% include head.html %}
+  {% include head/head.html %}
 
   <body id="{{ page.layout | slugify }}"{% if page.theme %} class="theme-{{ page.theme | slugify }}"{% endif %}>
 
-  	{% include skiplink.html %}
+  	{% include global/skiplink.html %}
 
-    {% include header.html %}
+    {% include global/header.html %}
 
     <section id="content">
 
       <main class="container">
 
-        {% include banner-mode.html %}
+        {% include components/banner-mode.html %}
 
       	{{ content }}
 
       </main>
 
-      {% include footer.html %}
+      {% include global/footer.html %}
 
     </section>
 
-    {% include analytics.html %}
+    {% include global/analytics.html %}
 
   </body>
 

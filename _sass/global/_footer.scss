@@ -1,6 +1,6 @@
 footer {
 
-    min-height: 30vh;
+    min-height: 20vh;
 
     @include toggleSizes(padding-top, ($container-padding * 2), ($container-padding * 2), ($container-padding * 3), ($container-padding * 3), ($container-padding * 3));
     @include toggleSizes(padding-bottom, ($container-padding * 2), ($container-padding * 2), ($container-padding * 3), ($container-padding * 3), ($container-padding * 3));
@@ -21,28 +21,31 @@ footer > div.container {
         1fr,
         1fr,
         1fr 1fr,
-        2fr 1fr 1fr,
+        1fr 1fr,
         2fr 1fr 1fr
     );
     @include toggleSizes(grid-template-rows,
-        auto auto auto auto,
-        auto auto auto auto,
+        auto auto auto,
         auto auto auto,
         auto auto,
-        auto auto
+        auto auto,
+        auto
     );
     @include toggleSizes(grid-template-areas,
-        "heading" "navigation" "other" "colophon",
-        "heading" "navigation" "other" "colophon",
-        "heading navigation" "heading other" "colophon colophon",
-        "heading navigation other" "colophon colophon colophon",
-        "heading navigation other" "colophon colophon colophon"
+        "heading" "navigation" "other",
+        "heading" "navigation" "other",
+        "heading navigation" "heading other",
+        "heading navigation" "heading other",
+        "heading navigation other"
     );
 
     row-gap: $container-padding;
+    column-gap: $container-padding;
 
-    .footer--heading {
-        grid-area: heading;
+    p.footer--heading {
+        @each $style, $sizes in $lead {
+            @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+        }
     }
     .footer--navigation {
         grid-area: navigation;
