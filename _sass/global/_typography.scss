@@ -14,12 +14,18 @@ a {
         text-decoration: 	underline;
     }
     &:focus {
-        color: map-get($colors, "deep-purple");
+        color: map-get($colors, "deep-purple") !important;
         background: map-get($colors, "mint");
-        outline: 3px solid map-get($colors, "mint");
+        outline: none;
+    }
+    &:focus-visible {
+        color: map-get($colors, "deep-purple") !important;
+        background: map-get($colors, "mint");
+        outline: 5px solid map-get($colors, "mint");
     }
     &:active {
         text-decoration: 	none;
+        color: map-get($colors, "deep-purple") !important;
     }
 }
 

@@ -13,8 +13,8 @@ $breakpoints: (
     "xs": 0,
     "sm": 768px,
     "md": 1024px,
-    "lg": 1300px,
-    "xl": 1600px
+    "lg": 1360px,
+    "xl": 1920px
 );
 
 $containers: (
@@ -22,7 +22,7 @@ $containers: (
     "sm":    600px,
     "md":    600px,
     "lg":    800px,
-    "xl":    1200px
+    "xl":    1000px
 );
 
 $container-padding: 	 			15px;
@@ -173,8 +173,8 @@ $colors: (
 // Applies to 'p' and equivalent text
 $wordmark: (
     "font-size": (
-        "xs": 13pt,
-        "sm": 13pt,
+        "xs": 14pt,
+        "sm": 12pt,
         "md": 14pt,
         "lg": 16pt,
         "xl": 18pt
@@ -581,11 +581,115 @@ $title3: (
         "xl": left
     )
 );
+
+$largeNumber: (
+    "font-size": (
+        "xs": 45pt,
+        "sm": 45pt,
+        "md": 45pt,
+        "lg": 54pt,
+        "xl": 57pt
+    ),
+    "line-height": (
+        "xs": 45pt,
+        "sm": 45pt,
+        "md": 45pt,
+        "lg": 54pt,
+        "xl": 57pt
+    ),
+    "padding": (
+        "xs": 0,
+        "sm": 0,
+        "md": 0,
+        "lg": 0,
+        "xl": 0
+    ),
+    "font-weight":  (
+        "xs": bold,
+        "sm": bold,
+        "md": bold,
+        "lg": bold,
+        "xl": bold
+    ),
+    "font-style":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "text-transform":  (
+        "xs": none,
+        "sm": none,
+        "md": none,
+        "lg": none,
+        "xl": none
+    ),
+    "text-align":  (
+        "xs": left,
+        "sm": left,
+        "md": left,
+        "lg": left,
+        "xl": left
+    ),
+);
+$label: (
+    "font-size": (
+        "xs": 13pt,
+        "sm": 13pt,
+        "md": 14pt,
+        "lg": 16pt,
+        "xl": 18pt
+    ),
+    "line-height": (
+        "xs": 13pt,
+        "sm": 13pt,
+        "md": 14pt,
+        "lg": 16pt,
+        "xl": 18pt
+    ),
+    "padding": (
+        "xs": 0,
+        "sm": 0,
+        "md": 0,
+        "lg": 0,
+        "xl": 0
+    ),
+    "font-weight":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "font-style":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "text-transform":  (
+        "xs": none,
+        "sm": none,
+        "md": none,
+        "lg": none,
+        "xl": none
+    ),
+    "text-align":  (
+        "xs": left,
+        "sm": left,
+        "md": left,
+        "lg": left,
+        "xl": left
+    ),
+);
+
 $partyName: (
     "font-size": (
         "xs": 13pt,
-        "sm": 16pt,
-        "md": 17pt,
+        "sm": 14pt,
+        "md": 15pt,
         "lg": 18pt,
         "xl": 20pt
     ),
@@ -598,10 +702,10 @@ $partyName: (
     ),
     "padding": (
         "xs": 0,
-        "sm": 0,
-        "md": 0,
-        "lg": 0,
-        "xl": 0
+        "sm": 2pt 0,
+        "md": 2pt 0,
+        "lg": 2pt 0,
+        "xl": 2pt 0
     ),
     "font-weight":  (
         "xs": bold,
@@ -628,9 +732,9 @@ $partyName: (
 $partyTotal: (
     "font-size": (
         "xs": 11pt,
-        "sm": 14pt,
-        "md": 15pt,
-        "lg": 16pt,
+        "sm": 12pt,
+        "md": 13pt,
+        "lg": 15pt,
         "xl": 18pt
     ),
     "line-height": (
@@ -641,11 +745,11 @@ $partyTotal: (
         "xl": 25pt
     ),
     "padding": (
-        "xs": 1pt 0 0 0,
-        "sm": 5pt 0 0 0,
-        "md": 5pt 0 0 0,
-        "lg": 5pt 0 0 0,
-        "xl": 5pt 0 0 0
+        "xs": 0 0 0 0,
+        "sm": 2pt 0 0 0,
+        "md": 2pt 0 0 0,
+        "lg": 2pt 0 0 0,
+        "xl": 2pt 0 0 0
     ),
     "font-weight":  (
         "xs": normal,
@@ -667,7 +771,7 @@ $partyTotal: (
         "md": left,
         "lg": left,
         "xl": left
-    ),
+    )
 );
 
 // Other styles

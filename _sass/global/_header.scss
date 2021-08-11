@@ -10,8 +10,16 @@ header#site-navigation {
     background: map-get($colors, "deep-purple");
     color: map-get($colors, "westminster-white");
 
-    @include toggleSizes(height, 100vh, 100vh, 100vh, 100vh, 100vh);
-    @include toggleSizes(width, 100vw, 33.33vw, 33.33vw, 33.33vw, 25vw);
+    @include toggleSizes(
+        padding,
+        ($container-padding * 3) ($container-padding * 2),
+        ($container-padding * 3) ($container-padding * 2),
+        ($container-padding * 3) ($container-padding * 1),
+        ($container-padding * 3) ($container-padding * 2),
+        ($container-padding * 3) ($container-padding * 2)
+    );
+    @include toggleSizes(height, 100vh, auto, 100vh, 100vh, 100vh);
+    @include toggleSizes(width, 100vw, 100vw, 30vw, 27.5vw, 25vw);
 
 }
 
@@ -26,23 +34,25 @@ header#site-navigation a#home-link {
     display: inline-block;
     @include clearfix;
 
-    &:link span[class^="wordmark-line-"] {
+    &:link {
         color: map-get($colors, "westminster-white");
     }
-    &:visited span[class^="wordmark-line-"] {
+    &:visited {
         color: map-get($colors, "westminster-white");
     }
     &:hover span[class^="wordmark-line-"] {
         text-decoration: 	underline;
     }
     &:focus {
-
+        color: map-get($colors, "deep-purple") !important;
+        outline: 5px solid map-get($colors, "mint");
     }
     &:focus span[class^="line-"] {
-        color: map-get($colors, "deep-purple");
+        color: map-get($colors, "deep-purple") !important;
     }
     &:active span[class^="line-"] {
         text-decoration: 	none;
+        color: map-get($colors, "deep-purple") !important;
     }
 
 
