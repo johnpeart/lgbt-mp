@@ -44,6 +44,55 @@ p.lead {
     }
 }
 
+ul.historical-datasets li a {
+
+    display: block;
+
+    font-weight: 		normal;
+    text-decoration: 	none;
+    cursor: pointer;
+
+    padding: $container-padding;
+
+    &:link {
+        color: map-get($colors, "deep-purple");
+    }
+    &:visited {
+        color: map-get($colors, "link-visited");
+    }
+    &:hover {
+        color: map-get($colors, "link-hover");
+        text-decoration: 	underline;
+    }
+    &:focus {
+        color: map-get($colors, "deep-purple");
+        background: map-get($colors, "mint");
+        outline: 3px solid map-get($colors, "mint");
+    }
+    &:active {
+        text-decoration: 	none;
+    }
+
+
+}
+
+p.date {
+
+    padding: 0;
+
+    span.label {
+        display: block;
+    }
+
+    span.large-date {
+        display: block;
+        @each $style, $sizes in $largeDate {
+            @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+        }
+    }
+
+}
+
 ul {
     list-style: disc;
     padding-top: 0;
@@ -103,4 +152,9 @@ blockquote {
     *:last-child {
         padding-bottom: 0;
     }
+
+    &.banner-mode {
+        margin-bottom: $container-padding;
+    }
+
 }

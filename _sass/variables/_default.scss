@@ -22,7 +22,7 @@ $containers: (
     "sm":    600px,
     "md":    600px,
     "lg":    800px,
-    "xl":    900px
+    "xl":    1200px
 );
 
 $container-padding: 	 			15px;
@@ -320,34 +320,34 @@ $lead: (
     ),
 );
 
-$label: (
+$largeDate: (
     "font-size": (
-        "xs": 7pt,
-        "sm": 8pt,
-        "md": 9pt,
-        "lg": 10pt,
-        "xl": 12pt
+        "xs": 17pt,
+        "sm": 18pt,
+        "md": 19pt,
+        "lg": 20pt,
+        "xl": 22pt
     ),
     "line-height": (
-        "xs": 7pt,
-        "sm": 8pt,
-        "md": 9pt,
-        "lg": 10pt,
-        "xl": 12pt
+        "xs": 22pt,
+        "sm": 23pt,
+        "md": 24pt,
+        "lg": 25pt,
+        "xl": 27pt
     ),
     "padding": (
-        "xs": 0 0 7pt 0,
-        "sm": 0 0 8pt 0,
-        "md": 0 0 9pt 0,
-        "lg": 0 0 10pt 0,
-        "xl": 0 0 12pt 0
+        "xs": 5pt 0 0 0,
+        "sm": 6pt 0 0 0,
+        "md": 7pt 0 0 0,
+        "lg": 8pt 0 0 0,
+        "xl": 10pt 0 0 0
     ),
     "font-weight":  (
-        "xs": normal,
-        "sm": normal,
-        "md": normal,
-        "lg": normal,
-        "xl": normal
+        "xs": bold,
+        "sm": bold,
+        "md": bold,
+        "lg": bold,
+        "xl": bold
     ),
     "font-style":  (
         "xs": normal,
@@ -572,6 +572,94 @@ $title3: (
         "md": none,
         "lg": none,
         "xl": none
+    ),
+    "text-align":  (
+        "xs": left,
+        "sm": left,
+        "md": left,
+        "lg": left,
+        "xl": left
+    )
+);
+$partyName: (
+    "font-size": (
+        "xs": 13pt,
+        "sm": 16pt,
+        "md": 17pt,
+        "lg": 18pt,
+        "xl": 20pt
+    ),
+    "line-height": (
+        "xs": 18pt,
+        "sm": 21pt,
+        "md": 22pt,
+        "lg": 23pt,
+        "xl": 25pt
+    ),
+    "padding": (
+        "xs": 0,
+        "sm": 0,
+        "md": 0,
+        "lg": 0,
+        "xl": 0
+    ),
+    "font-weight":  (
+        "xs": bold,
+        "sm": bold,
+        "md": bold,
+        "lg": bold,
+        "xl": bold
+    ),
+    "font-style":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "text-align":  (
+        "xs": left,
+        "sm": left,
+        "md": left,
+        "lg": left,
+        "xl": left
+    )
+);
+$partyTotal: (
+    "font-size": (
+        "xs": 11pt,
+        "sm": 14pt,
+        "md": 15pt,
+        "lg": 16pt,
+        "xl": 18pt
+    ),
+    "line-height": (
+        "xs": 18pt,
+        "sm": 21pt,
+        "md": 22pt,
+        "lg": 23pt,
+        "xl": 25pt
+    ),
+    "padding": (
+        "xs": 1pt 0 0 0,
+        "sm": 5pt 0 0 0,
+        "md": 5pt 0 0 0,
+        "lg": 5pt 0 0 0,
+        "xl": 5pt 0 0 0
+    ),
+    "font-weight":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "font-style":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
     ),
     "text-align":  (
         "xs": left,

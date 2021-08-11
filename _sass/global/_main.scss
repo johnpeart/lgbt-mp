@@ -40,7 +40,7 @@ body {
   background: map-get($colors, "deep-purple");
   color: map-get($colors, "deep-purple");
 
-  @include toggleSizes(grid-template-columns, 1fr, 1fr 2fr, 1fr 2fr, 1fr 2fr, 30vw 70vw);
+  @include toggleSizes(grid-template-columns, 1fr, 1fr 2fr, 1fr 2fr, 1fr 2fr, 25vw 75vw);
   @include toggleSizes(grid-template-rows, 100vh auto, 100vh, 100vh, 100vh, 100vh);
 
   @include toggleSizes(overflow, auto, hidden, hidden, hidden, hidden);
@@ -73,6 +73,12 @@ main {
 
 }
 
+aside.errors p:first-of-type {
+  border-top: 1px solid map-get($colors, "grey-3");
+  padding: $container-padding 0 $container-padding * 3;
+  color: map-get($colors, "grey-1")
+}
+
 ul.historical-datasets {
 
   display: grid;
@@ -95,10 +101,10 @@ ul.historical-datasets {
 
 ul.historical-datasets li {
 
-  padding: $container-padding;
+  padding: 0;
 
   background: map-get($colors, "white");
-  box-shadow: 0 1px 1px 0 rgba(60,64,67,.08),0 1px 3px 1px rgba(60,64,67,.16);
+  @include box-shadow();
 
   @include toggleSizes(max-width,
     100%,
@@ -115,5 +121,181 @@ ul.historical-datasets li {
   &:nth-of-type(2) {
     grid-column: 1;
   }
+
+}
+
+section.party-data {
+
+
+
+}
+
+
+details.party {
+
+    background: map-get($colors, "white");
+    margin-bottom: $container-padding;
+    @include box-shadow();
+
+}
+
+details.party summary {
+
+    position: relative;
+    padding: $container-padding;
+
+    // Hide the marker completely.
+    list-style-image: none;
+    &::marker,
+    &::-webkit-details-marker {
+      display: none;
+      list-style-image: none;
+      content: '';
+      width: 0;
+      height: 0;
+    }
+
+}
+
+div.party-summary {
+  display: grid;
+  position: relative;
+
+  grid-template-columns: auto 1fr 20px;
+  grid-template-rows: auto auto;
+  grid-template-areas: "img party-name arrow" "img party-total arrow"
+}
+
+span.expand-icon {
+
+  display: block;
+  padding: 0;
+  margin: 0;
+
+  justify-self: flex-end;
+
+  @include toggleSizes(width, 15px, 20px, 20px, 20px, 25px);
+  @include toggleSizes(height, 15px, 20px, 20px, 20px, 25px);
+
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns='http://www.w3.org/2000/svg' xmlns:xl='http://www.w3.org/1999/xlink' viewBox='0 0 20 20' %3E%3Cdefs/%3E%3Cg id='Expand' stroke-opacity='1' stroke='none' stroke-dasharray='none' fill='none' fill-opacity='1'%3E%3Ctitle%3EExpand%3C/title%3E%3Cg id='Expand_expand'%3E%3Ctitle%3Eexpand%3C/title%3E%3Cg id='Graphic_27'%3E%3Cpath d='M 5 3 L 3 3 L 3 5 L 3 9 L 4 9 L 4 4 L 9 4 L 9 3 Z' fill='%23373151'/%3E%3C/g%3E%3Cg id='Graphic_31'%3E%3Cpath d='M 20 2 L 20 8881784e-22 L 18 26645353e-22 L 12 0 L 12 2 L 16.585786 2 L 11.050253 7.535534 L 12.464466 8.949747 L 18 3.4142136 L 18 8 L 20 8 Z' fill='%232b57ab'/%3E%3C/g%3E%3Cg id='Graphic_30'%3E%3Cpath d='M 17763568e-22 18 L 26645353e-22 20 L 2 20 L 8 20 L 8 18 L 3.4142136 18 L 8.949747 12.464466 L 7.535534 11.050253 L 2 16.585786 L 2 12 L 17763568e-22 12 Z' fill='%232b57ab'/%3E%3C/g%3E%3Cg id='Graphic_33'%3E%3Cpath d='M 15 17 L 17 17 L 17 15 L 17 11 L 16 11 L 16 16 L 11 16 L 11 17 Z' fill='%23373151'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+
+  background-repeat: no-repeat;
+}
+
+details > summary:hover,
+details > summary:focus {
+
+  .expand-icon {
+
+    display: block;
+    padding: 0;
+    margin: 0;
+
+    justify-self: flex-end;
+
+    @include toggleSizes(width, 15px, 20px, 20px, 20px, 25px);
+    @include toggleSizes(height, 15px, 20px, 20px, 20px, 25px);
+
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' xmlns:xl='http://www.w3.org/1999/xlink' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' %3E%3Cdefs/%3E%3Cg id='Expand_hover' fill='none' stroke-opacity='1' stroke='none' fill-opacity='1' stroke-dasharray='none'%3E%3Ctitle%3EExpand hover%3C/title%3E%3Cg id='Expand_hover_expand'%3E%3Ctitle%3Eexpand hover%3C/title%3E%3Cg id='Graphic_27'%3E%3Cpath d='M 2 8881784e-22 L 4440892e-22 2220446e-21 L 2220446e-21 2 L 31086245e-22 6 L 1 6 L 1 1 L 6 1 L 6 35527137e-22 Z' fill='%23373151'/%3E%3C/g%3E%3Cg id='Graphic_31'%3E%3Cpath d='M 20 2 L 20 8881784e-22 L 18 26645353e-22 L 12 0 L 12 2 L 16.585786 2 L 11.050253 7.535534 L 12.464466 8.949747 L 18 3.4142136 L 18 8 L 20 8 Z' fill='%237592c8'/%3E%3C/g%3E%3Cg id='Graphic_30'%3E%3Cpath d='M 17763568e-22 18 L 26645353e-22 20 L 2 20 L 8 20 L 8 18 L 3.4142136 18 L 8.949747 12.464466 L 7.535534 11.050253 L 2 16.585786 L 2 12 L 17763568e-22 12 Z' fill='%237592c8'/%3E%3C/g%3E%3Cg id='Graphic_33'%3E%3Cpath d='M 18 20 L 20 20 L 20 18 L 20 14 L 19 14 L 19 19 L 14 19 L 14 20 Z' fill='%23373151'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  }
+
+}
+
+details[open] > summary {
+
+  .expand-icon {
+
+    display: block;
+    padding: 0;
+    margin: 0;
+
+    justify-self: flex-end;
+
+    @include toggleSizes(width, 15px, 20px, 20px, 20px, 25px);
+    @include toggleSizes(height, 15px, 20px, 20px, 20px, 25px);
+
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns='http://www.w3.org/2000/svg' xmlns:xl='http://www.w3.org/1999/xlink' viewBox='0 0 20 20' %3E%3Cdefs/%3E%3Cg id='Collapse' stroke-opacity='1' stroke='none' stroke-dasharray='none' fill='none' fill-opacity='1'%3E%3Ctitle%3ECollapse%3C/title%3E%3Cg id='Collapse_collapse'%3E%3Ctitle%3Ecollapse%3C/title%3E%3Cg id='Graphic_25'%3E%3Cpath d='M 11.050253 6.9497475 L 11.050253 8.949747 L 13.050253 8.949747 L 19.050253 8.949747 L 19.050253 6.9497475 L 14.464466 6.9497475 L 20 1.4142136 L 18.585786 8881784e-22 L 13.050253 5.535534 L 13.050253 .9497475 L 11.050253 .9497475 Z' fill='%232b57ab'/%3E%3C/g%3E%3Cg id='Graphic_24'%3E%3Cpath d='M 8.949747 13.050253 L 8.949747 11.050253 L 6.9497475 11.050253 L .9497475 11.050253 L .9497475 13.050253 L 5.535534 13.050253 L 0 18.585786 L 1.4142136 20 L 6.9497475 14.464466 L 6.9497475 19.050253 L 8.949747 19.050253 Z' fill='%232b57ab'/%3E%3C/g%3E%3Cg id='Graphic_31'%3E%3Cpath d='M 5 3 L 3 3 L 3 5 L 3 9 L 4 9 L 4 4 L 9 4 L 9 3 Z' fill='%23373151'/%3E%3C/g%3E%3Cg id='Graphic_30'%3E%3Cpath d='M 15 17 L 17 17 L 17 15 L 17 11 L 16 11 L 16 16 L 11 16 L 11 17 Z' fill='%23373151'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  }
+
+}
+
+details[open] > summary:hover,
+details[open] > summary:focus {
+
+  .expand-icon {
+
+    display: block;
+    padding: 0;
+    margin: 0;
+
+    justify-self: flex-end;
+
+    @include toggleSizes(width, 15px, 20px, 20px, 20px, 25px);
+    @include toggleSizes(height, 15px, 20px, 20px, 20px, 25px);
+
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' xmlns:xl='http://www.w3.org/1999/xlink' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' %3E%3Cdefs/%3E%3Cg id='Collapse_1' fill='none' stroke-opacity='1' stroke='none' fill-opacity='1' stroke-dasharray='none'%3E%3Ctitle%3ECollapse 1%3C/title%3E%3Cg id='Collapse_1_collapse'%3E%3Ctitle%3Ecollapse%3C/title%3E%3Cg id='Graphic_25'%3E%3Cpath d='M 11.050253 6.9497475 L 11.050253 8.949747 L 13.050253 8.949747 L 19.050253 8.949747 L 19.050253 6.9497475 L 14.464466 6.9497475 L 20 1.4142136 L 18.585786 8881784e-22 L 13.050253 5.535534 L 13.050253 .9497475 L 11.050253 .9497475 Z' fill='%237592c8'/%3E%3C/g%3E%3Cg id='Graphic_24'%3E%3Cpath d='M 8.949747 13.050253 L 8.949747 11.050253 L 6.9497475 11.050253 L .9497475 11.050253 L .9497475 13.050253 L 5.535534 13.050253 L 0 18.585786 L 1.4142136 20 L 6.9497475 14.464466 L 6.9497475 19.050253 L 8.949747 19.050253 Z' fill='%237592c8'/%3E%3C/g%3E%3Cg id='Graphic_31'%3E%3Cpath d='M 7 5 L 5 5 L 5 7 L 5 11 L 6 11 L 6 6 L 11 6 L 11 5 Z' fill='%23373151'/%3E%3C/g%3E%3Cg id='Graphic_30'%3E%3Cpath d='M 13 15 L 15 15 L 15 13 L 15 9 L 14 9 L 14 14 L 9 14 L 9 15 Z' fill='%23373151'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+
+  }
+
+}
+
+img.party-icon {
+
+  display: block;
+  grid-area: img;
+
+  @include toggleSizes(margin-left, 0, 0, 0, $container-padding, $container-padding);
+  @include toggleSizes(margin-right, $container-padding, $container-padding, $container-padding * 2, $container-padding * 2, $container-padding * 2);
+
+  @each $style, $sizes in $partyName {
+    @if $style == "line-height" {
+      @include toggleSizes(height,
+        map-get($sizes, "xs") * 1.5,
+        map-get($sizes, "sm") * 2,
+        map-get($sizes, "md") * 2,
+        map-get($sizes, "lg") * 2,
+        map-get($sizes, "xl") * 2
+      );
+    };
+  }
+}
+
+span.party-name {
+
+  display: block;
+  grid-area: party-name;
+
+  @each $style, $sizes in $partyName {
+      @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+
+}
+
+span.party-total {
+
+  display: block;
+  grid-area: party-total;
+
+  @each $style, $sizes in $partyTotal {
+      @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+
+}
+
+section.party-members {
+
+    padding: $container-padding;
+
+}
+
+details.member {
+
+
+
+}
+
+details.member summary {
+
+
 
 }

@@ -11,7 +11,7 @@ header#site-navigation {
     color: map-get($colors, "westminster-white");
 
     @include toggleSizes(height, 100vh, 100vh, 100vh, 100vh, 100vh);
-    @include toggleSizes(width, 100vw, 33.33vw, 33.33vw, 33.33vw, 30vw);
+    @include toggleSizes(width, 100vw, 33.33vw, 33.33vw, 33.33vw, 25vw);
 
 }
 

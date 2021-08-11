@@ -12,7 +12,6 @@ layout: default
         <a href="{{ relative_url | append: '/' }}" title="See the current data for this Parliament">
             <p class="date">
                 <span class="label">Current Parliament</span>
-                <br>
                 <span class="large-date">Right now</span>
             </p>
         </a>
@@ -28,7 +27,6 @@ layout: default
         {% endif %}
             <p class="date">
                 <span class="label">Parliament that {{ parliament.slug }}ed on</span>
-                <br>
                 {% if parliament.start-date %}
                     <span class="large-date">{{ parliament.start-date | date: "%-d %B %Y" }}</span>
                 {% elsif parliament.end-date %}
