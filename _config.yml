@@ -11,7 +11,7 @@ url: "https://mps.whoare.lgbt"
 ####################
 # Feature settings #
 ####################
-banner-mode: true
+banner-mode: false
 banner-mode--header: "A General Election is taking place"
 banner-mode--body: "This dataset is not currently up to date. We will update it with the latest information as soon as it is available."
 analytics: false

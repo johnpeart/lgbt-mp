@@ -1,3 +1,78 @@
+{% assign mps = site.data.members %}
+
+<!-- ASSIGN DATES -->
+{% assign now = "now" | date: "%s" %}
+<!-- NOW: {{ now }} -->
+
+{% if page.start-date %}
+    {% assign parliamentStartDate = page.start-date | date: "%s" %}
+{% else %}
+    {% assign parliamentStartDate = "null" %}
+{% endif %}
+<!-- END DATE: {{ parliamentStartDate }} -->
+
+{% if page.end-date %}
+    {% assign parliamentEndDate = page.end-date | date: "%s" %}
+{% else %}
+    {% assign parliamentEndDate = "null" %}
+{% endif %}
+<!-- END DATE: {{ parliamentEndDate }} -->
+
+{% if parliamentStartDate == "null" and parliamentEndDate == "null" %}
+<!-- SHOW LIVE DATA FOR THE CURRENT PARLIAMENT -->
+
+    <!-- COUNT MPS -->
+    {% assign totalMPs = 0 %}
+    {% for mp in mps %}
+
+        {% if mp.end-date == "present" %}
+            {% assign memberEndDate = "now" | date: "%s" %}
+        {% else %}
+            {% assign memberEndDate = mp.end-date | date: "%s" %}
+        {% endif %}
+
+        {% if memberEndDate == now %}
+            {% assign totalMPs = totalMPs | plus: 1 %}
+        {% endif %}
+
+    {% endfor %}
+
+    <!-- COUNT PARTIES -->
+    {% assign totalParties = 0 %}
+
+{% else %}
+<!-- SHOW DATA FOR HISTORIC PARLIAMENT -->
+
+    <!-- COUNT MPS -->
+    {% assign totalMPs = 0 %}
+    {% for mp in mps %}
+
+
+        {% assign memberStartDate = mp.start-date | date: "%s" %}
+        {% if mp.end-date == "present" %}
+            {% assign memberEndDate = "now" | date: "%s" %}
+        {% else %}
+            {% assign memberEndDate = mp.end-date | date: "%s" %}
+        {% endif %}
+
+        {% if parliamentStartDate >= memberStartDate and parliamentEndDate >= memberEndDate %}
+            {% assign totalMPs = totalMPs | plus: 1 %}
+        {% endif %}
+
+
+    {% endfor %}
+
+    <!-- COUNT PARTIES -->
+    {% assign totalParties = 0 %}
+
+{% endif %}
+
+
+
+<!-- ASSIGN PARTIES -->
+{% assign parties = site.data.members | map: 'party' | join: ',' | split: ',' | uniq | sort %}
+<!-- PARTIES: {{ parties | join: ', ' }} -->
+
 <section class="summary-data">
 
     <h1>At a glance</h1>
@@ -5,12 +80,12 @@
     <div class="summary-block">
 
         <p>
-            <span class="summary-total--number">56</span>
+            <span class="summary-total--number">{{ totalMPs }}</span>
             <span class="summary-total--label">MPs who are LGBT+</span>
         </p>
 
         <p>
-            <span class="summary-total--number">5</span>
+            <span class="summary-total--number">{{ totalParties }}</span>
             <span class="summary-total--label">parties with LGBT+ MPs</span>
         </p>
 
@@ -22,26 +97,38 @@
 
     <h1>LGBT+ MPs by party</h1>
 
-    <details class="party" open>
+    {% for party in parties %}
+
+    {% assign partyTotalMPs = 0 %}
+
+    <details class="party">
+
+        {% for mp in mps %}
+        {% if mp.party == party %}
+        {% assign partyTotalMPs = partyTotalMPs | plus: 1 %}
+        {% endif %}
+        {% endfor %}
 
         <summary>
             <div class="party-summary">
-                {% include icons/conservative.svg %}
-                <p class="party-name">Conservative</p>
-                <p class="party-total">24 LGBT+ MPs</p>
+                {% include icons/{{ party | slugify }}.svg %}
+                <p class="party-name">{{ party }}</p>
+                <p class="party-total">{{ partyTotalMPs }} LGBT+ MPs</p>
                 <span class="expand-icon"></span>
             </div>
         </summary>
 
         <section class="party-members container">
 
+            {% for mp in mps %}
+            {% if mp.party == party %}
             <details class="member">
 
                 <summary>
                     <div class="member-summary">
-                        <img class="member-portrait conservative" src="/assets/images/members/anthony-higginbotham.jpeg">
-                        <p class="member-name">Anthony Higginbotham</p>
-                        <p class="member-constituency">Burnley</p>
+                        <img class="member-portrait {{ mp.party | slugify }}" src="/assets/images/members/{{ mp.name | slugify }}.jpeg">
+                        <p class="member-name">{{ mp.name }}</p>
+                        <p class="member-constituency">{{ mp.constituency }}</p>
                         <span class="more-icon"></span>
                     </div>
                 </summary>
@@ -51,98 +138,13 @@
                 </section>
 
             </details>
-
-            <details class="member">
-
-                <summary>
-                    <div class="member-summary">
-                        <img class="member-portrait conservative" src="/assets/images/members/chris-clarkson.jpeg">
-                        <p class="member-name">Chris Clarkson</p>
-                        <p class="member-constituency">Heywood and Middleton</p>
-                        <span class="more-icon"></span>
-                    </div>
-                </summary>
-
-                <section class="member-info container">
-
-                </section>
-
-            </details>
+            {% endif %}
+            {% endfor %}
 
         </section>
 
     </details>
 
-    <details class="party">
-
-        <summary>
-            <div class="party-summary">
-                {% include icons/independent.svg %}
-                <p class="party-name">Independent</p>
-                <p class="party-total">1 LGBT+ MPs</p>
-                <span class="expand-icon"></span>
-            </div>
-        </summary>
-
-        <section class="party-members container">
-
-
-        </section>
-
-    </details>
-
-    <details class="party">
-
-        <summary>
-            <div class="party-summary">
-                {% include icons/labour.svg %}
-                <p class="party-name">Labour</p>
-                <p class="party-total">21 LGBT+ MPs</p>
-                <span class="expand-icon"></span>
-            </div>
-        </summary>
-
-        <section class="party-members container">
-
-
-        </section>
-
-    </details>
-
-    <details class="party">
-
-        <summary>
-            <div class="party-summary">
-                {% include icons/liberal-democrat.svg %}
-                <p class="party-name">Liberal Democrat</p>
-                <p class="party-total">1 LGBT+ MPs</p>
-                <span class="expand-icon"></span>
-            </div>
-        </summary>
-
-        <section class="party-members container">
-
-
-        </section>
-
-    </details>
-
-    <details class="party">
-
-        <summary>
-            <div class="party-summary">
-                {% include icons/snp.svg %}
-                <p class="party-name">Scottish National</p>
-                <p class="party-total">10 LGBT+ MPs</p>
-                <span class="expand-icon"></span>
-            </div>
-        </summary>
-
-        <section class="party-members container">
-
-
-        </section>
-
-    </details>
+    {% endfor %}
 
 </section>
