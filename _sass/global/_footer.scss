@@ -21,21 +21,21 @@ footer > div.container {
         1fr,
         1fr,
         1fr 1fr,
-        1fr 1fr,
-        2fr 1fr 1fr
+        1fr 1fr 1fr,
+        1fr 1fr 1fr
     );
     @include toggleSizes(grid-template-rows,
         auto auto auto,
         auto auto auto,
         auto auto,
-        auto auto,
+        auto,
         auto
     );
     @include toggleSizes(grid-template-areas,
         "heading" "navigation" "other",
         "heading" "navigation" "other",
         "heading navigation" "heading other",
-        "heading navigation" "heading other",
+        "heading navigation other",
         "heading navigation other"
     );
 
