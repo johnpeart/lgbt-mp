@@ -11,7 +11,7 @@
 // Breakpoints
 $breakpoints: (
     "xs": 0,
-    "sm": 768px,
+    "sm": 767px,
     "md": 1024px,
     "lg": 1360px,
     "xl": 1920px
@@ -157,7 +157,7 @@ $colors: (
     "conservative": #0087dc,
     "labour": #e41d13,
     "liberal-democrats": #fdbb30,
-    "scottish-national-party": #fff48b,
+    "scottish-national-party": #FDF38E,
     "bishops": #57197c,
     "crossbenchers": #007b87
 
@@ -688,17 +688,17 @@ $label: (
 $partyName: (
     "font-size": (
         "xs": 13pt,
-        "sm": 14pt,
-        "md": 15pt,
-        "lg": 18pt,
-        "xl": 20pt
+        "sm": 16pt,
+        "md": 18pt,
+        "lg": 20pt,
+        "xl": 24pt
     ),
     "line-height": (
         "xs": 18pt,
         "sm": 21pt,
         "md": 22pt,
-        "lg": 23pt,
-        "xl": 25pt
+        "lg": 25pt,
+        "xl": 27pt
     ),
     "padding": (
         "xs": 0,
@@ -732,9 +732,9 @@ $partyName: (
 $partyTotal: (
     "font-size": (
         "xs": 11pt,
-        "sm": 12pt,
-        "md": 13pt,
-        "lg": 15pt,
+        "sm": 13pt,
+        "md": 15pt,
+        "lg": 16pt,
         "xl": 18pt
     ),
     "line-height": (
@@ -743,6 +743,94 @@ $partyTotal: (
         "md": 22pt,
         "lg": 23pt,
         "xl": 25pt
+    ),
+    "padding": (
+        "xs": 0 0 0 0,
+        "sm": 2pt 0 0 0,
+        "md": 2pt 0 0 0,
+        "lg": 2pt 0 0 0,
+        "xl": 2pt 0 0 0
+    ),
+    "font-weight":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "font-style":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "text-align":  (
+        "xs": left,
+        "sm": left,
+        "md": left,
+        "lg": left,
+        "xl": left
+    )
+);
+$memberName: (
+    "font-size": (
+        "xs": 11pt,
+        "sm": 14pt,
+        "md": 16pt,
+        "lg": 18pt,
+        "xl": 20pt
+    ),
+    "line-height": (
+        "xs": 15pt,
+        "sm": 18pt,
+        "md": 20pt,
+        "lg": 25pt,
+        "xl": 25pt
+    ),
+    "padding": (
+        "xs": 0 0 0 0,
+        "sm": 2pt 0 0 0,
+        "md": 2pt 0 0 0,
+        "lg": 2pt 0 0 0,
+        "xl": 2pt 0 0 0
+    ),
+    "font-weight":  (
+        "xs": bold,
+        "sm": bold,
+        "md": bold,
+        "lg": bold,
+        "xl": bold
+    ),
+    "font-style":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "text-align":  (
+        "xs": left,
+        "sm": left,
+        "md": left,
+        "lg": left,
+        "xl": left
+    )
+);
+$memberConstituency: (
+    "font-size": (
+        "xs": 10pt,
+        "sm": 12pt,
+        "md": 13pt,
+        "lg": 14pt,
+        "xl": 16pt
+    ),
+    "line-height": (
+        "xs": 15pt,
+        "sm": 17pt,
+        "md": 18pt,
+        "lg": 19pt,
+        "xl": 21pt
     ),
     "padding": (
         "xs": 0 0 0 0,

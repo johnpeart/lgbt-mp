@@ -22,18 +22,69 @@
 
     <h1>LGBT+ MPs by party</h1>
 
-    <details class="party">
+    <details class="party" open>
 
         <summary>
             <div class="party-summary">
-                <img src="/assets/images/site/banner-icon.svg" class="party-icon">
-                <span class="party-name">Conservative</span>
-                <span class="party-total">24 LGBT+ MPs</span>
+                {% include icons/conservative.svg %}
+                <p class="party-name">Conservative</p>
+                <p class="party-total">24 LGBT+ MPs</p>
                 <span class="expand-icon"></span>
             </div>
         </summary>
 
-        <section class="party-members">
+        <section class="party-members container">
+
+            <details class="member">
+
+                <summary>
+                    <div class="member-summary">
+                        <img class="member-portrait conservative" src="/assets/images/members/anthony-higginbotham.jpeg">
+                        <p class="member-name">Anthony Higginbotham</p>
+                        <p class="member-constituency">Burnley</p>
+                        <span class="elipsis-icon"></span>
+                    </div>
+                </summary>
+
+                <section class="member-info">
+
+                </section>
+
+            </details>
+
+            <details class="member">
+
+                <summary>
+                    <div class="member-summary">
+                        <img class="member-portrait conservative" src="/assets/images/members/chris-clarkson.jpeg">
+                        <p class="member-name">Chris Clarkson</p>
+                        <p class="member-constituency">Heywood and Middleton</p>
+                        <span class="elipsis-icon"></span>
+                    </div>
+                </summary>
+
+                <section class="member-info container">
+
+                </section>
+
+            </details>
+
+        </section>
+
+    </details>
+
+    <details class="party">
+
+        <summary>
+            <div class="party-summary">
+                {% include icons/independent.svg %}
+                <p class="party-name">Independent</p>
+                <p class="party-total">1 LGBT+ MPs</p>
+                <span class="expand-icon"></span>
+            </div>
+        </summary>
+
+        <section class="party-members container">
 
 
         </section>
@@ -44,14 +95,14 @@
 
         <summary>
             <div class="party-summary">
-                <img src="/assets/images/site/banner-icon.svg" class="party-icon">
-                <span class="party-name">Independent</span>
-                <span class="party-total">1 LGBT+ MPs</span>
+                {% include icons/labour.svg %}
+                <p class="party-name">Labour</p>
+                <p class="party-total">21 LGBT+ MPs</p>
                 <span class="expand-icon"></span>
             </div>
         </summary>
 
-        <section class="party-members">
+        <section class="party-members container">
 
 
         </section>
@@ -62,14 +113,14 @@
 
         <summary>
             <div class="party-summary">
-                <img src="/assets/images/site/banner-icon.svg" class="party-icon">
-                <span class="party-name">Labour</span>
-                <span class="party-total">21 LGBT+ MPs</span>
+                {% include icons/liberal-democrat.svg %}
+                <p class="party-name">Liberal Democrat</p>
+                <p class="party-total">1 LGBT+ MPs</p>
                 <span class="expand-icon"></span>
             </div>
         </summary>
 
-        <section class="party-members">
+        <section class="party-members container">
 
 
         </section>
@@ -80,32 +131,14 @@
 
         <summary>
             <div class="party-summary">
-                <img src="/assets/images/site/banner-icon.svg" class="party-icon">
-                <span class="party-name">Liberal Democrat</span>
-                <span class="party-total">1 LGBT+ MPs</span>
+                {% include icons/snp.svg %}
+                <p class="party-name">Scottish National</p>
+                <p class="party-total">10 LGBT+ MPs</p>
                 <span class="expand-icon"></span>
             </div>
         </summary>
 
-        <section class="party-members">
-
-
-        </section>
-
-    </details>
-
-    <details class="party">
-
-        <summary>
-            <div class="party-summary">
-                <img src="/assets/images/site/banner-icon.svg" class="party-icon">
-                <span class="party-name">Scottish National</span>
-                <span class="party-total">10 LGBT+ MPs</span>
-                <span class="expand-icon"></span>
-            </div>
-        </summary>
-
-        <section class="party-members">
+        <section class="party-members container">
 
 
         </section>
