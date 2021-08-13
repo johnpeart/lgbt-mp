@@ -411,13 +411,119 @@ p.party-total {
 
 }
 
-section.party-members,
-section.member-info {
+section.party-members {
 
   display: grid;
 
   padding: $container-padding;
 
+}
+
+section.member-info {
+
+  display: grid;
+
+  @include toggleSizes(
+    grid-template-columns,
+    1fr,
+    1fr 1fr,
+    1fr 1fr,
+    1fr 1fr,
+    1fr 1fr
+  );
+
+}
+
+section.member-info p {
+  padding: 0;
+
+  &:nth-child(1) {
+
+    @include toggleSizes(
+      padding,
+      $container-padding 0,
+      $container-padding 0,
+      $container-padding 0,
+      $container-padding 0,
+      $container-padding 0
+    );
+
+    @include toggleSizes(
+      border-bottom,
+      1px dotted map-get($colors, "grey-3"),
+      1px dotted map-get($colors, "grey-3"),
+      1px dotted map-get($colors, "grey-3"),
+      1px dotted map-get($colors, "grey-3"),
+      1px dotted map-get($colors, "grey-3")
+    );
+    @include toggleSizes(
+      border-right,
+      none,
+      1px dotted map-get($colors, "grey-3"),
+      1px dotted map-get($colors, "grey-3"),
+      1px dotted map-get($colors, "grey-3"),
+      1px dotted map-get($colors, "grey-3")
+    );
+
+  }
+  &:nth-child(2) {
+
+    @include toggleSizes(
+      padding,
+      $container-padding 0,
+      $container-padding 0,
+      $container-padding 0,
+      $container-padding 0,
+      $container-padding 0
+    );
+
+    @include toggleSizes(
+      border-bottom,
+      1px dotted map-get($colors, "grey-3"),
+      1px dotted map-get($colors, "grey-3"),
+      1px dotted map-get($colors, "grey-3"),
+      1px dotted map-get($colors, "grey-3"),
+      1px dotted map-get($colors, "grey-3")
+    );
+
+  }
+  &:nth-child(3) {
+
+    grid-column: 1;
+
+    padding: $container-padding 0;
+
+    @include toggleSizes(border-bottom, 1px dotted map-get($colors, "grey-3"), none, none, none, none);
+    @include toggleSizes(border-right, none, 1px dotted map-get($colors, "grey-3"), 1px dotted map-get($colors, "grey-3"), 1px dotted map-get($colors, "grey-3"), 1px dotted map-get($colors, "grey-3"));
+
+  }
+  &:nth-child(4) {
+
+    @include toggleSizes(
+      padding,
+      $container-padding 0,
+      $container-padding 0,
+      $container-padding 0,
+      $container-padding 0,
+      $container-padding 0
+    );
+    @include toggleSizes(
+      border-right,
+      none,
+      1px dotted map-get($colors, "grey-3"),
+      1px dotted map-get($colors, "grey-3"),
+      1px dotted map-get($colors, "grey-3"),
+      1px dotted map-get($colors, "grey-3")
+    );
+
+  }
+
+}
+
+section.member-info p strong.label,
+section.member-info p span.data {
+  display: block;
+  text-align: center;
 }
 
 details.member {

@@ -179,9 +179,41 @@
 
                             <section class="member-info">
 
-                                {{ mp.notes }}
+                                <p class="gender">
+                                    <strong class="label">First elected</strong>
+                                    <span class="data">
+                                        {{ mp.start-date | date: "%d %B %Y" }}
+                                    </span>
+                                </p>
 
-                                {{ mp.source }}
+                                <p class="identity">
+                                    <strong class="label">Identity</strong>
+                                    <span class="data">
+                                        {% if mp.identity %}
+                                        {{ mp.identity }}
+                                        {% else %}
+                                        LGBT+
+                                        {% endif %}
+                                    </span>
+                                </p>
+
+                                <p class="source">
+                                    <strong class="label">Source</strong>
+                                    <span class="data">
+                                        <a href="{{ mp.source-url }}">{{ mp.source-description }}</a>
+                                    </span>
+                                </p>
+
+                                <p class="source-access-date">
+                                    <strong class="label">Access date</strong>
+                                    <span class="data">
+                                        {{ mp.source-date | date: "%d %B %Y" }}
+                                    </span>
+                                </p>
+
+                                {% if mp.notes %}
+                                <p>{{ mp.notes }}</p>
+                                {% endif %}
 
                             </section>
 
