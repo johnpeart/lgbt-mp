@@ -270,10 +270,12 @@ details[open] > summary:hover span.more-icon {
 details > summary:focus,
 details[open] > summary:focus {
 
-  &:active {
-    background: map-get($colors, "bright-purple-10");
-  }
+  background: map-get($colors, "mint--light");
   outline: none;
+
+  &:active {
+    outline: 5px solid map-get($colors, "mint--light");
+  }
 
 }
 
