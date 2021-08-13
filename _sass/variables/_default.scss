@@ -322,6 +322,64 @@ $lead: (
         "xl": left
     ),
 );
+$note: (
+    "font-size": (
+        "xs": 10pt,
+        "sm": 11pt,
+        "md": 12pt,
+        "lg": 13pt,
+        "xl": 13pt
+    ),
+    "line-height": (
+        "xs": 15pt,
+        "sm": 16pt,
+        "md": 17pt,
+        "lg": 18pt,
+        "xl": 18pt
+    ),
+    "margin": (
+        "xs": 13pt 0 0 0,
+        "sm": 14pt 0 0 0,
+        "md": 15pt 0 0 0,
+        "lg": 16pt 0 0 0,
+        "xl": 18pt 0 0 0
+    ),
+    "padding": (
+        "xs": 13pt 0 6pt 0,
+        "sm": 14pt 0 7pt 0,
+        "md": 15pt 0 8pt 0,
+        "lg": 16pt 0 8pt 0,
+        "xl": 18pt 0 9pt 0
+    ),
+    "font-weight":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "font-style":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "text-transform":  (
+        "xs": none,
+        "sm": none,
+        "md": none,
+        "lg": none,
+        "xl": none
+    ),
+    "text-align":  (
+        "xs": left,
+        "sm": left,
+        "md": left,
+        "lg": left,
+        "xl": left
+    ),
+);
 
 $largeDate: (
     "font-size": (

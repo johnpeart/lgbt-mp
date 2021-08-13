@@ -132,8 +132,14 @@ div.summary-data {
     padding: 0 0 10pt;
   }
 
-  p.lead:last-of-type {
+  p.lead {
     border-bottom: 1px dotted map-get($colors, "grey-3");
+  }
+  p.note{
+    @each $style, $sizes in $note {
+      @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+    border-top: 1px dotted map-get($colors, "grey-3");
   }
 
 }
