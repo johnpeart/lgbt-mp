@@ -128,6 +128,10 @@ div.summary-data {
   background: map-get($colors, "white");
   padding: $container-padding * 2 $container-padding * 2 $container-padding;
 
+  h1 {
+    padding: 0 0 10pt;
+  }
+
   p.lead:last-of-type {
     border-bottom: 1px dotted map-get($colors, "grey-3");
   }
@@ -156,8 +160,6 @@ div.summary-block {
 
   grid-gap: $container-padding;
 
-  margin-bottom: $container-padding;
-
 }
 
 div.summary-block p {
@@ -175,6 +177,10 @@ p span.summary-total--number {
 
   @each $style, $sizes in $largeNumber {
       @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+
+  &.top-padding {
+    @include toggleSizes(margin-top, 25pt, 0, 0, 0, 0);
   }
 
   color: map-get($colors, "purple--dark");
