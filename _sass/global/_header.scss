@@ -47,6 +47,10 @@ header#site-navigation a#home-link {
         color: map-get($colors, "deep-purple") !important;
         outline: 5px solid map-get($colors, "mint");
     }
+    &:active {
+        background: map-get($colors, "mint");
+        outline: 5px solid map-get($colors, "mint");
+    }
     &:focus span[class^="line-"] {
         color: map-get($colors, "deep-purple") !important;
     }
