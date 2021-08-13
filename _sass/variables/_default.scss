@@ -154,12 +154,15 @@ $colors: (
 
     "lords-red": #b50938,
 
+    "alba": #005EB8,
     "conservative": #0087dc,
     "labour": #e41d13,
     "liberal-democrats": #fdbb30,
+    "plaid-cymru": #d16d2f,
     "scottish-national-party": #FDF38E,
     "bishops": #57197c,
-    "crossbenchers": #007b87
+    "crossbenchers": #007b87,
+    "independent": #4d4d4d
 
 );
 
@@ -480,25 +483,25 @@ $title1: (
 
 $title2: (
     "font-size": (
-        "xs": 19pt,
-        "sm": 20pt,
-        "md": 21pt,
-        "lg": 22pt,
-        "xl": 24pt
+        "xs": 22pt,
+        "sm": 23pt,
+        "md": 24pt,
+        "lg": 25pt,
+        "xl": 27pt
     ),
     "line-height": (
-        "xs": 25pt,
-        "sm": 26pt,
-        "md": 27pt,
-        "lg": 28pt,
-        "xl": 30pt
+        "xs": 28pt,
+        "sm": 29pt,
+        "md": 30pt,
+        "lg": 31pt,
+        "xl": 33pt
     ),
     "padding": (
-        "xs": 19pt 0,
-        "sm": 20pt 0,
-        "md": 21pt 0,
-        "lg": 22pt 0,
-        "xl": 24pt 0
+        "xs": 40pt 0 0 0,
+        "sm": 42pt 0 0 0,
+        "md": 44pt 0 0 0,
+        "lg": 46pt 0 0 0,
+        "xl": 50pt 0 0 0
     ),
     "font-weight":  (
         "xs": bold,
@@ -532,25 +535,25 @@ $title2: (
 
 $title3: (
     "font-size": (
-        "xs": 17pt,
-        "sm": 18pt,
-        "md": 19pt,
-        "lg": 20pt,
-        "xl": 22pt
+        "xs": 12pt,
+        "sm": 13pt,
+        "md": 14pt,
+        "lg": 15pt,
+        "xl": 17pt
     ),
     "line-height": (
-        "xs": 22pt,
-        "sm": 23pt,
-        "md": 24pt,
-        "lg": 25pt,
-        "xl": 27pt
+        "xs": 15pt,
+        "sm": 16pt,
+        "md": 17pt,
+        "lg": 18pt,
+        "xl": 20pt
     ),
     "padding": (
-        "xs": 17pt 0,
-        "sm": 18pt 0,
-        "md": 19pt 0,
-        "lg": 20pt 0,
-        "xl": 22pt 0
+        "xs": 24pt 0 12pt 0,
+        "sm": 26pt 0 13pt 0,
+        "md": 28pt 0 14pt 0,
+        "lg": 30pt 0 15pt 0,
+        "xl": 34pt 0 17pt 0
     ),
     "font-weight":  (
         "xs": normal,

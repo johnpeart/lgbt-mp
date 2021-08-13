@@ -326,12 +326,16 @@ details.party > summary svg {
 
 details.party:hover {
 
+  #party-icon--alba path {
+    fill: map-get($colors, "alba");
+  }
+
   #party-icon--conservative path {
     fill: map-get($colors, "conservative");
   }
 
   #party-icon--independent path {
-    fill: map-get($colors, "purple");
+    fill: map-get($colors, "independent");
   }
 
   #party-icon--labour path {
@@ -450,8 +454,32 @@ img.member-portrait {
 
   border: 3px solid;
 
+  &.alba {
+    border-color: map-get($colors, "alba");
+  }
+
   &.conservative {
     border-color: map-get($colors, "conservative");
+  }
+
+  &.independent {
+    border-color: map-get($colors, "independent");
+  }
+
+  &.labour {
+    border-color: map-get($colors, "labour");
+  }
+
+  &.liberal-democrat {
+    border-color: map-get($colors, "liberal-democrats");
+  }
+
+  &.scottish-national {
+    border-color: map-get($colors, "scottish-national-party");
+  }
+
+  &.plaid-cymru {
+    border-color: #d16d2f;
   }
 
 }

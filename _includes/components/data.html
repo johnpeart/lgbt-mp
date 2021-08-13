@@ -62,15 +62,7 @@
 
 {% endfor %}
 
-
-<blockquote>
-    <p><strong>NOW:</strong> {{ now }}</p>
-    <p><strong>PARLIAMENT START DATE:</strong> {{ parliamentStartDate }}</p>
-    <p><strong>PARLIAMENT END DATE:</strong> {{ parliamentEndDate }}</p>
-    <p><strong>DATE TO CHECK AGAINST:</strong> {{ parliamentComparatorDate }}</p>
-    <p><strong>PARTIES IN THIS PARLIAMENT:</strong> {{ validParties | join: ', ' }}</p>
-</blockquote>
-
+{% include components/data--error-check.html %}
 
 <section class="summary-data">
 
@@ -104,27 +96,27 @@
 
         {% for mp in mps %}
 
-        {% assign memberParty = mp.party | slugify %}
-        {% assign comparatorParty = party | slugify %}
+            {% assign memberParty = mp.party | slugify %}
+            {% assign comparatorParty = party | slugify %}
 
-        {% if memberParty == comparatorParty %}
+            {% if memberParty == comparatorParty %}
 
-            {% assign memberStartDate = mp.start-date | date: "%s" | times: 1 %}
+                {% assign memberStartDate = mp.start-date | date: "%s" | times: 1 %}
 
-            {% if mp.end-date == "present" %}
-            {% assign memberEndDate = now %}
-            {% else %}
-            {% assign memberEndDate = mp.end-date | date: "%s" | times: 1 %}
+                {% if mp.end-date == "present" %}
+                {% assign memberEndDate = now %}
+                {% else %}
+                {% assign memberEndDate = mp.end-date | date: "%s" | times: 1 %}
+                {% endif %}
+
+                {% if memberStartDate <= parliamentComparatorDate and memberEndDate >= parliamentComparatorDate %}
+                    {% assign partyTotalMPs = partyTotalMPs | plus: 1 %}
+                    {% assign nonZeroParty = true %}
+                {% endif %}
+
             {% endif %}
 
-            {% if memberStartDate <= parliamentComparatorDate and memberEndDate >= parliamentComparatorDate %}
-                {% assign partyTotalMPs = partyTotalMPs | plus: 1 %}
-                {% assign nonZeroParty = true %}
-            {% endif %}
-
-        {% endif %}
-
-    {% endfor %}
+        {% endfor %}
 
         <summary>
             <div class="party-summary">
@@ -138,24 +130,51 @@
         <section class="party-members container">
 
             {% for mp in mps %}
-            {% if mp.party == party %}
-            <details class="member">
 
-                <summary>
-                    <div class="member-summary">
-                        <img class="member-portrait {{ mp.party | slugify }}" src="/assets/images/members/{{ mp.name | slugify }}.jpeg">
-                        <p class="member-name">{{ mp.name }}</p>
-                        <p class="member-constituency">{{ mp.constituency }}</p>
-                        <span class="more-icon"></span>
-                    </div>
-                </summary>
+                {% assign memberID = mp.id %}
+                {% assign memberName = mp.name %}
+                {% assign memberConstituency = mp.constituency %}
+                {% assign memberParty = mp.party | slugify %}
+                {% assign comparatorParty = party | slugify %}
 
-                <section class="member-info">
+                {% if memberParty == comparatorParty %}
 
-                </section>
+                    {% assign memberStartDate = mp.start-date | date: "%s" | times: 1 %}
 
-            </details>
-            {% endif %}
+                    {% if mp.end-date == "present" %}
+                    {% assign memberEndDate = now %}
+                    {% else %}
+                    {% assign memberEndDate = mp.end-date | date: "%s" | times: 1 %}
+                    {% endif %}
+
+                    {% if memberStartDate <= parliamentComparatorDate and memberEndDate >= parliamentComparatorDate %}
+
+                        <details class="member">
+
+                            <summary>
+                                <div class="member-summary">
+                                    <img class="member-portrait {{ memberParty }}" src="/assets/images/members/{{ memberID }}-{{ memberName | slugify }}.jpg">
+                                    <p class="member-name">{{ memberName }}</p>
+                                    <p class="member-constituency">{{ memberConstituency }}</p>
+                                    <span class="more-icon"></span>
+                                </div>
+                            </summary>
+
+                            <section class="member-info">
+
+                                {{ mp.notes }}
+
+                                {{ mp.source }}
+
+                            </section>
+
+                        </details>
+
+                    {% endif %}
+
+
+                {% endif %}
+
             {% endfor %}
 
         </section>
