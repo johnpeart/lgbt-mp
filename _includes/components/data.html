@@ -1,77 +1,76 @@
+<!-- ASSIGN WHOLE DATASET -->
 {% assign mps = site.data.members %}
-
-<!-- ASSIGN DATES -->
-{% assign now = "now" | date: "%s" %}
-<!-- NOW: {{ now }} -->
-
-{% if page.start-date %}
-    {% assign parliamentStartDate = page.start-date | date: "%s" %}
-{% else %}
-    {% assign parliamentStartDate = "null" %}
-{% endif %}
-<!-- END DATE: {{ parliamentStartDate }} -->
-
-{% if page.end-date %}
-    {% assign parliamentEndDate = page.end-date | date: "%s" %}
-{% else %}
-    {% assign parliamentEndDate = "null" %}
-{% endif %}
-<!-- END DATE: {{ parliamentEndDate }} -->
-
-{% if parliamentStartDate == "null" and parliamentEndDate == "null" %}
-<!-- SHOW LIVE DATA FOR THE CURRENT PARLIAMENT -->
-
-    <!-- COUNT MPS -->
-    {% assign totalMPs = 0 %}
-    {% for mp in mps %}
-
-        {% if mp.end-date == "present" %}
-            {% assign memberEndDate = "now" | date: "%s" %}
-        {% else %}
-            {% assign memberEndDate = mp.end-date | date: "%s" %}
-        {% endif %}
-
-        {% if memberEndDate == now %}
-            {% assign totalMPs = totalMPs | plus: 1 %}
-        {% endif %}
-
-    {% endfor %}
-
-    <!-- COUNT PARTIES -->
-    {% assign totalParties = 0 %}
-
-{% else %}
-<!-- SHOW DATA FOR HISTORIC PARLIAMENT -->
-
-    <!-- COUNT MPS -->
-    {% assign totalMPs = 0 %}
-    {% for mp in mps %}
-
-
-        {% assign memberStartDate = mp.start-date | date: "%s" %}
-        {% if mp.end-date == "present" %}
-            {% assign memberEndDate = "now" | date: "%s" %}
-        {% else %}
-            {% assign memberEndDate = mp.end-date | date: "%s" %}
-        {% endif %}
-
-        {% if parliamentStartDate >= memberStartDate and parliamentEndDate >= memberEndDate %}
-            {% assign totalMPs = totalMPs | plus: 1 %}
-        {% endif %}
-
-
-    {% endfor %}
-
-    <!-- COUNT PARTIES -->
-    {% assign totalParties = 0 %}
-
-{% endif %}
-
-
-
 <!-- ASSIGN PARTIES -->
 {% assign parties = site.data.members | map: 'party' | join: ',' | split: ',' | uniq | sort %}
-<!-- PARTIES: {{ parties | join: ', ' }} -->
+
+<!-- ASSIGN DATES -->
+{% assign now = "now" | date: "%s" | times: 1 %}
+
+{% if page.start-date %}
+    {% assign parliamentStartDate = page.start-date | date: "%s" | times: 1 %}
+    {% assign parliamentEndDate = "null" %}
+    {% assign parliamentComparatorDate = parliamentStartDate | date: "%s" | times: 1 %}
+{% elsif page.end-date %}
+    {% assign parliamentEndDate = page.end-date | date: "%s" | times: 1 %}
+    {% assign parliamentStartDate = "null" %}
+    {% assign parliamentComparatorDate = parliamentEndDate | date: "%s" | times: 1 %}
+{% else %}
+    {% assign parliamentStartDate = "null" %}
+    {% assign parliamentEndDate = "null" %}
+    {% assign parliamentComparatorDate = now | date: "%s" | times: 1 %}
+{% endif %}
+
+
+<!-- ASSIGN EMPTY COUNTS -->
+{% assign totalParties = 0 %}
+{% assign totalMPs = 0 %}
+{% assign validParties = "" | split: ", " %}
+
+{% for party in parties %}
+
+    {% assign nonZeroParty = false %}
+
+    {% for mp in mps %}
+
+        {% assign memberParty = mp.party | slugify %}
+        {% assign comparatorParty = party | slugify %}
+
+        {% if memberParty == comparatorParty %}
+
+            {% assign memberStartDate = mp.start-date | date: "%s" | times: 1 %}
+
+            {% if mp.end-date == "present" %}
+            {% assign memberEndDate = now %}
+            {% else %}
+            {% assign memberEndDate = mp.end-date | date: "%s" | times: 1 %}
+            {% endif %}
+
+            {% if memberStartDate <= parliamentComparatorDate and memberEndDate >= parliamentComparatorDate %}
+                {% assign totalMPs = totalMPs | plus: 1 %}
+                {% assign nonZeroParty = true %}
+            {% endif %}
+
+        {% endif %}
+
+    {% endfor %}
+
+    {% if nonZeroParty == true %}
+        {% assign totalParties = totalParties | plus: 1 %}
+        {% assign validParty = party | split: ", " %}
+        {% assign validParties = validParties | concat: validParty %}
+    {% endif %}
+
+{% endfor %}
+
+
+<blockquote>
+    <p><strong>NOW:</strong> {{ now }}</p>
+    <p><strong>PARLIAMENT START DATE:</strong> {{ parliamentStartDate }}</p>
+    <p><strong>PARLIAMENT END DATE:</strong> {{ parliamentEndDate }}</p>
+    <p><strong>DATE TO CHECK AGAINST:</strong> {{ parliamentComparatorDate }}</p>
+    <p><strong>PARTIES IN THIS PARLIAMENT:</strong> {{ validParties | join: ', ' }}</p>
+</blockquote>
+
 
 <section class="summary-data">
 
@@ -97,17 +96,35 @@
 
     <h1>LGBT+ MPs by party</h1>
 
-    {% for party in parties %}
+    {% for party in validParties %}
 
     {% assign partyTotalMPs = 0 %}
 
     <details class="party">
 
         {% for mp in mps %}
-        {% if mp.party == party %}
-        {% assign partyTotalMPs = partyTotalMPs | plus: 1 %}
+
+        {% assign memberParty = mp.party | slugify %}
+        {% assign comparatorParty = party | slugify %}
+
+        {% if memberParty == comparatorParty %}
+
+            {% assign memberStartDate = mp.start-date | date: "%s" | times: 1 %}
+
+            {% if mp.end-date == "present" %}
+            {% assign memberEndDate = now %}
+            {% else %}
+            {% assign memberEndDate = mp.end-date | date: "%s" | times: 1 %}
+            {% endif %}
+
+            {% if memberStartDate <= parliamentComparatorDate and memberEndDate >= parliamentComparatorDate %}
+                {% assign partyTotalMPs = partyTotalMPs | plus: 1 %}
+                {% assign nonZeroParty = true %}
+            {% endif %}
+
         {% endif %}
-        {% endfor %}
+
+    {% endfor %}
 
         <summary>
             <div class="party-summary">
