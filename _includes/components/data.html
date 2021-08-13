@@ -72,7 +72,7 @@
 
     <div class="summary-data">
         {% if parliamentEndDate == "null" and parliamentStartDate == "null" %}
-        <p class="lead">As of {{ now | date: "%d %B %Y" }}, at least:</p>
+        <p class="lead">In the current Parliament, as of {{ now | date: "%d %B %Y" }}, at least:</p>
         {% elsif page.start-date %}
         <p class="lead">For the Parliament that started on <strong>{{ page.start-date | date: "%d %B %Y" }}</strong>, at least:</p>
         {% elsif page.end-date %}
