@@ -68,19 +68,30 @@
 
 <section class="summary-data">
 
-    <h1>At a glance</h1>
+    <div class="summary-data container">
+    {% if parliamentEndDate == "null" and parliamentStartDate == "null" %}
+    <p class="lead">As of {{ now | date: "%d %B %Y" }}, at least:</p>
+    {% elsif page.start-date %}
+    <p class="lead">For the Parliament that started on <strong>{{ page.start-date | date: "%d %B %Y" }}</strong>, at least:</p>
+    {% elsif page.end-date %}
+    <p class="lead">For the Parliament that ended on {{ page.end-date | date: "%d %B %Y" }}, at least:</p>
+    {% endif %}
+
+
 
     <div class="summary-block">
 
         <p>
             <span class="summary-total--number">{{ totalMPs }}</span>
-            <span class="summary-total--label">MPs who are LGBT+</span>
+            <span class="summary-total--label">MPs {% if parliamentEndDate == "null" and parliamentStartDate == "null" %} are {% else %} were {% endif %} LGBT+</span>
         </p>
 
         <p>
             <span class="summary-total--number">{{ totalParties }}</span>
-            <span class="summary-total--label">parties with LGBT+ MPs</span>
+            <span class="summary-total--label">parties {% if parliamentEndDate == "null" and parliamentStartDate == "null" %} have {% else %} had {% endif %} LGBT+ MPs</span>
         </p>
+
+    </div>
 
     </div>
 

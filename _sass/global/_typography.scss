@@ -131,13 +131,19 @@ h1 {
 }
 
 h1.largeTitle {
-    @each $style, $sizes in $largeTitle {
+    @each $style, $sizes in $title1LargeTitle {
         @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
     }
 }
 
 h2 {
     @each $style, $sizes in $title2 {
+        @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+    }
+}
+
+h2.largeTitle {
+    @each $style, $sizes in $title2LargeTitle {
         @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
     }
 }

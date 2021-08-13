@@ -273,25 +273,25 @@ $body: (
 
 $lead: (
     "font-size": (
-        "xs": 11pt,
-        "sm": 12pt,
-        "md": 13pt,
-        "lg": 14pt,
-        "xl": 16pt
+        "xs": 13pt,
+        "sm": 14pt,
+        "md": 15pt,
+        "lg": 16pt,
+        "xl": 18pt
     ),
     "line-height": (
-        "xs": 17pt,
-        "sm": 18pt,
-        "md": 19pt,
-        "lg": 20pt,
-        "xl": 22pt
+        "xs": 20pt,
+        "sm": 21pt,
+        "md": 22pt,
+        "lg": 23pt,
+        "xl": 25pt
     ),
     "padding": (
-        "xs": 0 0 11pt 0,
-        "sm": 0 0 12pt 0,
-        "md": 0 0 13pt 0,
-        "lg": 0 0 14pt 0,
-        "xl": 0 0 16pt 0
+        "xs": 0 0 13pt 0,
+        "sm": 0 0 14pt 0,
+        "md": 0 0 15pt 0,
+        "lg": 0 0 16pt 0,
+        "xl": 0 0 18pt 0
     ),
     "font-weight":  (
         "xs": normal,
@@ -377,27 +377,27 @@ $largeDate: (
 
 // TITLES
 
-$largeTitle: (
+$title1LargeTitle: (
     "font-size": (
         "xs": 30pt,
-        "sm": 43pt,
-        "md": 44pt,
-        "lg": 46pt,
+        "sm": 30pt,
+        "md": 34pt,
+        "lg": 40pt,
         "xl": 48pt
     ),
     "line-height": (
-        "xs": 35pt,
-        "sm": 50pt,
-        "md": 51pt,
-        "lg": 53pt,
-        "xl": 53pt
+        "xs": 36pt,
+        "sm": 36pt,
+        "md": 40pt,
+        "lg": 48pt,
+        "xl": 54pt
     ),
     "padding": (
-        "xs": 60pt 0 30pt,
-        "sm": 76pt 0 43pt,
-        "md": 77pt 0 44pt,
-        "lg": 78pt 0 46pt,
-        "xl": 80pt 0 48pt
+        "xs": 30pt 0 5pt,
+        "sm": 33pt 0 6pt,
+        "md": 34pt 0 7pt,
+        "lg": 36pt 0 8pt,
+        "xl": 40pt 0 10pt
     ),
     "font-weight":  (
         "xs": bold,
@@ -445,11 +445,63 @@ $title1: (
         "xl": 36pt
     ),
     "padding": (
-        "xs": 25pt 0,
-        "sm": 26pt 0,
-        "md": 27pt 0,
-        "lg": 28pt 0,
-        "xl": 30pt 0
+        "xs": 30pt 0 25pt 0,
+        "sm": 32pt 0 26pt 0,
+        "md": 34pt 0 27pt 0,
+        "lg": 36pt 0 28pt 0,
+        "xl": 40pt 0 30pt 0
+    ),
+    "font-weight":  (
+        "xs": bold,
+        "sm": bold,
+        "md": bold,
+        "lg": bold,
+        "xl": bold
+    ),
+    "font-style":  (
+        "xs": normal,
+        "sm": normal,
+        "md": normal,
+        "lg": normal,
+        "xl": normal
+    ),
+    "text-transform":  (
+        "xs": none,
+        "sm": none,
+        "md": none,
+        "lg": none,
+        "xl": none
+    ),
+    "text-align":  (
+        "xs": left,
+        "sm": left,
+        "md": left,
+        "lg": left,
+        "xl": left
+    ),
+);
+
+$title2LargeTitle: (
+    "font-size": (
+        "xs": 25pt,
+        "sm": 26pt,
+        "md": 27pt,
+        "lg": 28pt,
+        "xl": 30pt
+    ),
+    "line-height": (
+        "xs": 31pt,
+        "sm": 32pt,
+        "md": 33pt,
+        "lg": 34pt,
+        "xl": 36pt
+    ),
+    "padding": (
+        "xs": 50pt 0 25pt 0,
+        "sm": 52pt 0 26pt 0,
+        "md": 54pt 0 27pt 0,
+        "lg": 56pt 0 28pt 0,
+        "xl": 60pt 0 30pt 0
     ),
     "font-weight":  (
         "xs": bold,
@@ -601,11 +653,11 @@ $largeNumber: (
         "xl": 57pt
     ),
     "padding": (
-        "xs": 0,
-        "sm": 0,
-        "md": 0,
-        "lg": 0,
-        "xl": 0
+        "xs": 10pt 0 0,
+        "sm": 15pt 0 0 0,
+        "md": 15pt 0 0 0,
+        "lg": 20pt 0 0 0,
+        "xl": 20pt 0 0 0
     ),
     "font-weight":  (
         "xs": bold,

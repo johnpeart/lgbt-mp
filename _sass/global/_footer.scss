@@ -3,7 +3,7 @@ footer {
     min-height: 20vh;
 
     @include toggleSizes(padding-top, ($container-padding * 2), ($container-padding * 2), ($container-padding * 3), ($container-padding * 3), ($container-padding * 3));
-    @include toggleSizes(padding-bottom, ($container-padding * 2), ($container-padding * 2), ($container-padding * 3), ($container-padding * 3), ($container-padding * 3));
+    @include toggleSizes(padding-bottom, ($container-padding * 3), ($container-padding * 3), ($container-padding * 4), ($container-padding * 4), ($container-padding * 6));
 
     background: map-get($colors, "grey-3");
 

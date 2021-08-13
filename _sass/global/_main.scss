@@ -124,6 +124,16 @@ ul.historical-datasets li {
 
 }
 
+div.summary-data {
+  background: map-get($colors, "white");
+  padding: $container-padding * 2 $container-padding * 2 $container-padding;
+
+  p.lead:last-of-type {
+    border-bottom: 1px dotted map-get($colors, "grey-3");
+  }
+
+}
+
 div.summary-block {
 
   display: grid;
@@ -176,12 +186,6 @@ p span.summary-total--label {
   @each $style, $sizes in $label {
       @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
   }
-
-}
-
-section.party-data {
-
-
 
 }
 
