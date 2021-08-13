@@ -16,7 +16,7 @@ a {
     &:focus {
         color: map-get($colors, "deep-purple") !important;
         background: map-get($colors, "mint");
-        outline: none;
+        outline: 5px solid map-get($colors, "mint");
     }
     &:focus-visible {
         color: map-get($colors, "deep-purple") !important;
