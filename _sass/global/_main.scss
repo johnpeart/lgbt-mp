@@ -434,7 +434,7 @@ section.member-info {
 
 }
 
-section.member-info p {
+section.member-info > p {
   padding: 0;
 
   &:nth-child(1) {
@@ -507,17 +507,19 @@ section.member-info p {
       $container-padding 0,
       $container-padding 0
     );
-    @include toggleSizes(
-      border-right,
-      none,
-      1px dotted map-get($colors, "grey-3"),
-      1px dotted map-get($colors, "grey-3"),
-      1px dotted map-get($colors, "grey-3"),
-      1px dotted map-get($colors, "grey-3")
-    );
 
   }
 
+}
+
+div.member-notes {
+  grid-column: 1 / span 2;
+  padding: $container-padding;
+  border-top:  1px dotted map-get($colors, "grey-3");
+
+  p:last-child {
+    padding-bottom: 0;
+  }
 }
 
 section.member-info p strong.label,

@@ -205,14 +205,16 @@
                                 </p>
 
                                 <p class="source-access-date">
-                                    <strong class="label">Access date</strong>
+                                    <strong class="label">Source access date</strong>
                                     <span class="data">
                                         {{ mp.source-date | date: "%d %B %Y" }}
                                     </span>
                                 </p>
 
                                 {% if mp.notes %}
-                                <p>{{ mp.notes }}</p>
+                                <div class="member-notes">
+                                    {{ mp.notes | markdownify }}
+                                </div>
                                 {% endif %}
 
                             </section>
