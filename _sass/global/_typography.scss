@@ -136,6 +136,10 @@ h1.largeTitle {
     }
 }
 
+h1 + h2 {
+    padding-top: 0;
+}
+
 h2 {
     @each $style, $sizes in $title2 {
         @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
