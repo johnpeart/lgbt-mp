@@ -55,7 +55,9 @@
     {% endfor %}
 
     {% if nonZeroParty == true %}
+        {% if party != "Independent" %}
         {% assign totalParties = totalParties | plus: 1 %}
+        {% endif %}
         {% assign validParty = party | split: ", " %}
         {% assign validParties = validParties | concat: validParty %}
     {% endif %}
@@ -122,7 +124,7 @@
             <div class="party-summary">
                 {% include icons/{{ party | slugify }}.svg %}
                 <p class="party-name">{{ party }}</p>
-                <p class="party-total">{{ partyTotalMPs }} LGBT+ MPs</p>
+                <p class="party-total">{{ partyTotalMPs }} LGBT+ MP{% if partyTotalMPs > 1 %}s{% endif %}</p>
                 <span class="expand-icon"></span>
             </div>
         </summary>
