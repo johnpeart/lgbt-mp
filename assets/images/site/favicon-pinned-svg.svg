@@ -1,10 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 16 16" width="16" height="16">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
   <defs/>
-  <metadata>Designed by John Peart. Inspired by the official UK Parliament brand identity.</metadata>
-  <g id="pinnedfavicon" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none" stroke="none" fill="none">
-    <title>Rainbow Portcullis</title>
-        <path d="M 1 7 L 1 8 L 0 8 L 0 10 L 1 10 L 1 11 L 0 11 L 0 13 L 1 13 L 1 14 L 0 14 L 0 16 L 1 16 L 2 16 L 2 14 L 2 13 L 2 11 L 2 10 L 2 8 L 2 7 L 2 5 L 1 5 L 0 5 L 0 7 Z M 14 7 L 14 8 L 14 10 L 14 11 L 14 13 L 14 14 L 14 16 L 15 16 L 16 16 L 16 14 L 15 14 L 15 13 L 16 13 L 16 11 L 15 11 L 15 10 L 16 10 L 16 8 L 15 8 L 15 7 L 16 7 L 16 5 L 15 5 L 14 5 Z M 3 6 L 3 8 L 3 9 L 3 11 L 3 12 L 3 14 L 3 15 L 3 16 L 4 16 L 4 15 L 6 15 L 6 16 L 7 16 L 7 15 L 9 15 L 9 16 L 10 16 L 10 15 L 12 15 L 12 16 L 13 16 L 13 15 L 13 14 L 13 12 L 13 11 L 13 9 L 13 8 L 13 6 L 13 5 L 12 5 L 10 5 L 9 5 L 7 5 L 6 5 L 4 5 L 3 5 Z M 4 6 L 6 6 L 6 8 L 4 8 Z M 12 6 L 12 8 L 10 8 L 10 6 Z M 9 6 L 9 8 L 7 8 L 7 6 Z M 4 9 L 6 9 L 6 11 L 4 11 Z M 12 9 L 12 11 L 10 11 L 10 9 Z M 9 9 L 9 11 L 7 11 L 7 9 Z M 4 12 L 6 12 L 6 14 L 4 14 Z M 12 12 L 12 14 L 10 14 L 10 12 Z M 9 12 L 9 14 L 7 14 L 7 12 Z M 3 4 L 4 4 L 6 4 L 7 4 L 9 4 L 10 4 L 12 4 L 13 4 L 13 3 L 13 2 L 12 2 L 12 3 L 10 3 L 10 0 L 9 0 L 9 3 L 7 3 L 7 0 L 6 0 L 6 3 L 4 3 L 4 2 L 3 2 L 3 3 Z" fill="black"/>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-08-08 21:15:40 +0000</metadata>
+  <g id="favicon-pinned-svg" stroke="none" stroke-dasharray="none" fill="none" stroke-opacity="1" fill-opacity="1">
+    <title>favicon-pinned-svg</title>
+    <g id="favicon-pinned-svg_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_88">
+        <rect x="3" y="3" width="10" height="1" fill="black"/>
+      </g>
+      <g id="Graphic_87">
+        <rect x="12" y="2" width="1" height="2" fill="black"/>
+      </g>
+      <g id="Graphic_86">
+        <rect x="9" y="0" width="1" height="4" fill="black"/>
+      </g>
+      <g id="Graphic_85">
+        <rect x="6" y="0" width="1" height="4" fill="black"/>
+      </g>
+      <g id="Graphic_84">
+        <rect x="3" y="2" width="1" height="2" fill="black"/>
+      </g>
+      <g id="Graphic_81">
+        <rect x="3" y="5" width="10" height="9" fill="black"/>
+      </g>
+      <g id="Graphic_80">
+        <rect x="6" y="5" width="1" height="11" fill="black"/>
+      </g>
+      <g id="Graphic_79">
+        <rect x="9" y="5" width="1" height="11" fill="black"/>
+      </g>
+      <g id="Graphic_78">
+        <rect x="12" y="5" width="1" height="11" fill="black"/>
+      </g>
+      <g id="Graphic_77">
+        <rect x="3" y="5" width="1" height="11" fill="black"/>
+      </g>
+      <g id="Graphic_74">
+        <rect x="14" y="14" width="2" height="2" fill="black"/>
+      </g>
+      <g id="Graphic_73">
+        <rect x="14" y="11" width="2" height="2" fill="black"/>
+      </g>
+      <g id="Graphic_72">
+        <rect x="14" y="8" width="2" height="2" fill="black"/>
+      </g>
+      <g id="Graphic_71">
+        <rect x="14" y="5" width="2" height="2" fill="black"/>
+      </g>
+      <g id="Graphic_70">
+        <rect x="0" y="14" width="2" height="2" fill="black"/>
+      </g>
+      <g id="Graphic_69">
+        <rect x="0" y="11" width="2" height="2" fill="black"/>
+      </g>
+      <g id="Graphic_68">
+        <rect x="0" y="8" width="2" height="2" fill="black"/>
+      </g>
+      <g id="Graphic_67">
+        <rect x="0" y="5" width="2" height="2" fill="black"/>
+      </g>
+    </g>
   </g>
 </svg>
