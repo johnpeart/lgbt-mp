@@ -10,6 +10,21 @@ The dataset shows Members of Parliament who are ‘out’ as lesbian, gay, bisex
 
 Members of Parliament are only included where it is clear that the individual has made an affirmative decision to reveal their identity publicly. This information has been collated from internet searches and publicly available information. Members of Parliament are only listed if a reliable source has been found to verify the individual's identity. These sources might include media reporting or personal testimony.
 
+## Citations and references
+
+This dataset has been used by journalists at the BBC, Sky News and Quartz, and cited in academic publications.
+
+### Media publications
+
+- **BBC News**, 11 June 2017, [Election results 2017: The most diverse Parliament yet](https://www.bbc.co.uk/news/election-2017-40232272)
+- **BBC News**, 17 December 2019, [Election 2019: Britain’s most diverse Parliament](https://www.bbc.co.uk/news/election-2019-50808536)
+- **Sky News**, 16 December 2019, [General election: 2019 heralds the most diverse parliament for gender and ethnicity](https://news.sky.com/story/general-election-2019-heralds-the-most-diverse-parliament-for-gender-and-ethnicity-11885529)
+- **Quartz**, 17 December 2019, [The UK’s new parliament is its most diverse ever](https://qz.com/1769275/new-uk-parliament-has-record-number-of-female-non-white-and-lgbtq-mps/)
+
+### Academic publications
+
+- **Hertner, I.** (2021). [Gender and British Politics](https://kclpure.kcl.ac.uk/portal/files/155399603/Hertner_Politics_UK_Chapter_11_proofs.pdf) in B. Jones, P. Norton, & I. Hertner (Eds.), Politics UK : 10th edition (10 ed., pp. 244-265). Routledge-Taylor Francis
+
 ## Using this data
 
 The data contained in the dataset is made available through the [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) license.
@@ -31,7 +46,7 @@ No additional restrictions — You may not apply legal terms or technological me
 
 ### Website
 
-This website was designed and built by [John Peart](//www.johnpe.art).
+This website was designed and built by [John Peart](//www.johnpe.art). This [blog post](https://www.johnpe.art/2020/02/24/making-a-dataset-of-lgbt-mps) explains why the website and dataset were created.
 
 ### Dataset
 
