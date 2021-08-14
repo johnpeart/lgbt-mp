@@ -1,57 +1,86 @@
-# Site settings
-
-title: "LGBT MP"
-
-description: "A website that lists the ‘out’ lesbian, gay, bisexual or trans (LGBT) members of the House of Commons in the UK Parliament"
+######################
+# Site configuration #
+######################
+title: "LGBT+ Members of Parliament"
+description: "A website that lists the ‘out’ lesbian, gay, bisexual or trans (LGBT) members of the House of Commons in the UK Parliament."
+author: "John Peart"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mps.whoare.lgbt"
-author: "John Peart"
 
-last-update: "17 July 2021"
-election-mode: false
+####################
+# Feature settings #
+####################
+banner-mode: false
+banner-mode--header: "A General Election is taking place"
+banner-mode--body: "This dataset is not currently up to date. We will update it with the latest information as soon as it is available."
 
-# Images and assets
+# Shows a blockquote on data pages exposing some of the underlying calculations
+error-check: false
+
+analytics: false
+analytics-token: "d36444326796457985d7fc75774c393e"
+
+###############
+# Asset paths #
+###############
 image-path: "/assets/images"
 css-path: "/assets/styles"
 js-path: "/assets/scripts"
-
-hero-images-path: "/assets/images/hero"
-social-images-path: "/assets/images/social"
-post-images-path: "/assets/images/posts"
-
-logo-png: "/assets/images/site/logo.png"
-logo-svg: "/assets/images/site/logo.svg"
-four-oh-four-svg: "/assets/images/site/four-oh-four.svg"
-
 social-media-image: "/assets/images/site/social-media.png"
+favicon: "/favicon.ico"
+favicon-svg: "/assets/images/site/favicon.svg"
+favicon-pinned-svg: "/assets/images/site/favicon-pinned-svg.svg"
+favicon-large-png: "/assets/images/site/favicon-large-png.png"
+theme-colour: "#373151"
 
-touch: "/assets/images/site/touch.png"
-pinned: "/assets/images/site/pinned.svg"
-pinned-colour: "#ff2a68"
-logo-favicon-small: "/assets/images/site/favicon-16x16.png"
-logo-favicon-medium: "/assets/images/site/favicon-32x32.png"
-logo-favicon-large: "/assets/images/site/favicon-96x96.png"
+#######################
+# <link rel="me" ...> #
+#######################
+# Twitter
+twitter-url: "https://twitter.com/johnpeart" # Twitter handle i.e. joebloggs
+twitter-handle: "johnpeart" # Twitter handle i.e. joebloggs
+# Mastodon
+mastodon-url: "https://mastodon.social/@johnpeart"
+mastodon-handle: "johnpeart@mastodon.social"
+# Github
+github-url:  "https://github.com/johnpeart/lgbt-mp"
+github-handle:  "johnpeart"
 
-
-# Social settings
-twitter-username: "lgbtmp" # Twitter handle i.e. joebloggs
-github-username:  "johnpeart"
-google-site-verification: "DaqGCZ6cZIqm7q_nVSnOzjJmFFjbRfW2X7FDzpQDQZk" # GSV code; proves domain ownership
-
-#Analytics
-disable-analytics: false # Switch to "false" to start GA logging
-google-analytics: "UA-27553664-10" # GA ID code
-
-# Plugins and build settings
-
-permalink: pretty
-markdown: kramdown
-future: false
-sass:
-    sass_dir: _sass
+###############
+# Collections #
+###############
 
 collections:
   parliaments:
     output: true
     permalink: /historic/parliament/:slug/:name
+    defaults:
+      values:
+        layout: blog/post
+
+##################
+# Build settings #
+##################
+permalink: pretty
+markdown: kramdown
+future: false
+highlighter: rouge
+sass:
+  sass_dir: _sass
+
+plugins:
+- jekyll-sitemap
+- jekyll-redirect-from
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

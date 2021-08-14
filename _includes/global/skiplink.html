@@ -1,0 +1,19 @@
+{% if page.skiplink %}
+<a href="#{{ page.skiplink }}" class="skip-link">
+	<div class="container">
+		Skip to main content
+	</div>
+</a>
+{% elsif layout.skiplink %}
+<a href="#{{ layout.skiplink }}" class="skip-link">
+	<div class="container">
+		Skip to main content
+	</div>
+</a>
+{% else %}
+<a href="#content" class="skip-link">
+	<div class="container">
+		Skip to main content
+	</div>
+</a>
+{% endif %}

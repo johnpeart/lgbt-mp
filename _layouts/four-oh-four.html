@@ -2,22 +2,22 @@
 layout: default
 ---
 
-<main id="four-oh-four">
+{% include header.html %}
 
-	<div class="container">
-		
-		<div class="four-oh-four">
+<main id="content" class="container">
 
-		<img id="app-four-oh-four-logo" src="{{ site.four-oh-four-svg | prepend: site.baseurl | prepend: site.url }}" alt="Error">
+	<div class="colophon">
 
-		<h1>Something went wrong</h1>
-		<p>Much like a Parliament, this page seems to have dissolved.<br>Sorry about that.</p>
+		<h1 class="display">Oops!</h1>
 
-		<p><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}">Go home</a></p>
-		
-		</div>
+		<p>This is a bit embarrassing, but something's gone wrong.</p>
+
+		<p>The page you're looking for either doesn't exist or it's lost.</p>
+
+		<p>Not to worry. You can go back to the <a href="{{ relative_url }}" title="Go home">home page</a>.
 
 	</div>
 
 </main>
 
+{% include footer.html %}

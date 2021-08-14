@@ -1,0 +1,237 @@
+<!-- ASSIGN WHOLE DATASET -->
+{% assign mps = site.data.members %}
+<!-- ASSIGN PARTIES -->
+{% assign parties = site.data.members | map: 'party' | join: ',' | split: ',' | uniq | sort %}
+
+<!-- ASSIGN DATES -->
+{% assign now = "now" | date: "%s" | times: 1 %}
+
+{% if page.start-date %}
+    {% assign parliamentStartDate = page.start-date | date: "%s" | times: 1 %}
+    {% assign parliamentEndDate = "null" %}
+    {% assign parliamentComparatorDate = parliamentStartDate | date: "%s" | times: 1 %}
+{% elsif page.end-date %}
+    {% assign parliamentEndDate = page.end-date | date: "%s" | times: 1 %}
+    {% assign parliamentStartDate = "null" %}
+    {% assign parliamentComparatorDate = parliamentEndDate | date: "%s" | times: 1 %}
+{% else %}
+    {% assign parliamentStartDate = "null" %}
+    {% assign parliamentEndDate = "null" %}
+    {% assign parliamentComparatorDate = now | date: "%s" | times: 1 %}
+{% endif %}
+
+
+<!-- ASSIGN EMPTY COUNTS -->
+{% assign totalParties = 0 %}
+{% assign totalMPs = 0 %}
+{% assign validParties = "" | split: ", " %}
+
+{% for party in parties %}
+
+    {% assign nonZeroParty = false %}
+
+    {% for mp in mps %}
+
+        {% assign memberParty = mp.party | slugify %}
+        {% assign comparatorParty = party | slugify %}
+
+        {% if memberParty == comparatorParty %}
+
+            {% assign memberStartDate = mp.start-date | date: "%s" | times: 1 %}
+
+            {% if mp.end-date == "present" %}
+            {% assign memberEndDate = now %}
+            {% else %}
+            {% assign memberEndDate = mp.end-date | date: "%s" | times: 1 %}
+            {% endif %}
+
+            {% if memberStartDate <= parliamentComparatorDate and memberEndDate >= parliamentComparatorDate %}
+                {% assign totalMPs = totalMPs | plus: 1 %}
+                {% assign nonZeroParty = true %}
+            {% endif %}
+
+        {% endif %}
+
+    {% endfor %}
+
+    {% if nonZeroParty == true %}
+        {% if party != "Independent" %}
+        {% assign totalParties = totalParties | plus: 1 %}
+        {% endif %}
+        {% assign validParty = party | split: ", " %}
+        {% assign validParties = validParties | concat: validParty %}
+    {% endif %}
+
+{% endfor %}
+
+{% include components/data--error-check.html %}
+
+<section class="summary-data">
+
+    <h1>This Parliament at a glance</h1>
+
+    <div class="summary-data">
+        {% if parliamentEndDate == "null" and parliamentStartDate == "null" %}
+        <p class="lead">In the current Parliament, as of {{ now | date: "%d %B %Y" }}, at least:</p>
+        {% elsif page.start-date %}
+        <p class="lead">For the Parliament that started on <strong>{{ page.start-date | date: "%d %B %Y" }}</strong>, at least:</p>
+        {% elsif page.end-date %}
+        <p class="lead">For the Parliament that ended on {{ page.end-date | date: "%d %B %Y" }}, at least:</p>
+        {% endif %}
+
+        <div class="summary-block">
+
+            <p>
+                <span class="summary-total--number top-padding">{{ totalMPs }}</span>
+                <span class="summary-total--label">MPs {% if parliamentEndDate == "null" and parliamentStartDate == "null" %} are {% else %} were {% endif %} LGBT+</span>
+            </p>
+
+            <p>
+                <span class="summary-total--number">{{ totalParties }}</span>
+                <span class="summary-total--label">parties {% if parliamentEndDate == "null" and parliamentStartDate == "null" %} have {% else %} had {% endif %} LGBT+ MPs</span>
+            </p>
+
+        </div>
+
+        {% if parliamentEndDate != "null" or parliamentStartDate != "null" %}
+        <p class="note">This dataset shows MPs who are known to be LGBT+ today. The MPs referenced might not have been known to be LGBT+ at the time this Parliament took place.</p>
+        {% endif %}
+
+    </div>
+
+</section>
+
+<section class="party-data">
+
+    <h1>LGBT+ MPs by party</h1>
+
+    {% for party in validParties %}
+
+    {% assign partyTotalMPs = 0 %}
+
+    <details class="party">
+
+        {% for mp in mps %}
+
+            {% assign memberParty = mp.party | slugify %}
+            {% assign comparatorParty = party | slugify %}
+
+            {% if memberParty == comparatorParty %}
+
+                {% assign memberStartDate = mp.start-date | date: "%s" | times: 1 %}
+
+                {% if mp.end-date == "present" %}
+                {% assign memberEndDate = now %}
+                {% else %}
+                {% assign memberEndDate = mp.end-date | date: "%s" | times: 1 %}
+                {% endif %}
+
+                {% if memberStartDate <= parliamentComparatorDate and memberEndDate >= parliamentComparatorDate %}
+                    {% assign partyTotalMPs = partyTotalMPs | plus: 1 %}
+                    {% assign nonZeroParty = true %}
+                {% endif %}
+
+            {% endif %}
+
+        {% endfor %}
+
+        <summary>
+            <div class="party-summary">
+                {% include icons/{{ party | slugify }}.svg %}
+                <p class="party-name">{{ party }}</p>
+                <p class="party-total">{{ partyTotalMPs }} LGBT+ MP{% if partyTotalMPs > 1 %}s{% endif %}</p>
+                <span class="expand-icon"></span>
+            </div>
+        </summary>
+
+        <section class="party-members container">
+
+            {% for mp in mps %}
+
+                {% assign memberID = mp.id %}
+                {% assign memberName = mp.name %}
+                {% assign memberConstituency = mp.constituency %}
+                {% assign memberParty = mp.party | slugify %}
+                {% assign comparatorParty = party | slugify %}
+
+                {% if memberParty == comparatorParty %}
+
+                    {% assign memberStartDate = mp.start-date | date: "%s" | times: 1 %}
+
+                    {% if mp.end-date == "present" %}
+                    {% assign memberEndDate = now %}
+                    {% else %}
+                    {% assign memberEndDate = mp.end-date | date: "%s" | times: 1 %}
+                    {% endif %}
+
+                    {% if memberStartDate <= parliamentComparatorDate and memberEndDate >= parliamentComparatorDate %}
+
+                        <details class="member">
+
+                            <summary>
+                                <div class="member-summary">
+                                    <img class="member-portrait {{ memberParty }}" src="/assets/images/members/{{ memberID }}-{{ memberName | slugify }}.jpg">
+                                    <p class="member-name">{{ memberName }}</p>
+                                    <p class="member-constituency">{{ memberConstituency }}</p>
+                                    <span class="more-icon"></span>
+                                </div>
+                            </summary>
+
+                            <section class="member-info">
+
+                                <p class="gender">
+                                    <strong class="label">First elected</strong>
+                                    <span class="data">
+                                        {{ mp.start-date | date: "%d %B %Y" }}
+                                    </span>
+                                </p>
+
+                                <p class="identity">
+                                    <strong class="label">Identity</strong>
+                                    <span class="data">
+                                        {% if mp.identity %}
+                                        {{ mp.identity }}
+                                        {% else %}
+                                        LGBT+
+                                        {% endif %}
+                                    </span>
+                                </p>
+
+                                <p class="source">
+                                    <strong class="label">Source</strong>
+                                    <span class="data">
+                                        <a href="{{ mp.source-url }}">{{ mp.source-description }}</a>
+                                    </span>
+                                </p>
+
+                                <p class="source-access-date">
+                                    <strong class="label">Source publication date</strong>
+                                    <span class="data">
+                                        {{ mp.source-date | date: "%d %B %Y" }}
+                                    </span>
+                                </p>
+
+                                {% if mp.notes %}
+                                <div class="member-notes">
+                                    {{ mp.notes | markdownify }}
+                                </div>
+                                {% endif %}
+
+                            </section>
+
+                        </details>
+
+                    {% endif %}
+
+
+                {% endif %}
+
+            {% endfor %}
+
+        </section>
+
+    </details>
+
+    {% endfor %}
+
+</section>

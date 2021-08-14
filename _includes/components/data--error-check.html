@@ -1,0 +1,9 @@
+{% if site.error-check == true %}
+<blockquote>
+    <p><strong>NOW:</strong> {{ now }}</p>
+    <p><strong>PARLIAMENT START DATE:</strong> {{ parliamentStartDate }}</p>
+    <p><strong>PARLIAMENT END DATE:</strong> {{ parliamentEndDate }}</p>
+    <p><strong>DATE TO CHECK AGAINST:</strong> {{ parliamentComparatorDate }}</p>
+    <p><strong>PARTIES IN THIS PARLIAMENT:</strong> {{ validParties | join: ', ' }}</p>
+</blockquote>
+{% endif %}
