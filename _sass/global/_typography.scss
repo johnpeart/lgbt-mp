@@ -102,6 +102,7 @@ p.date {
 ul {
     list-style: disc;
     padding-top: 0;
+    padding-left: $container-padding * 2;
 }
 ol {
     list-style: decimal;
@@ -137,6 +138,11 @@ h1.largeTitle {
 }
 
 h1 + h2 {
+
+}
+
+
+h2 + h3 {
     padding-top: 0;
 }
 
@@ -154,6 +160,12 @@ h2.largeTitle {
 
 h3 {
     @each $style, $sizes in $title3 {
+        @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+    }
+}
+
+h4 {
+    @each $style, $sizes in $title4 {
         @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
     }
 }
