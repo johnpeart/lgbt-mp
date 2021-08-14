@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+  <defs/>
+  <g id="Collapse_1" fill="none" stroke-opacity="1" stroke="none" fill-opacity="1" stroke-dasharray="none">
+    <title>Collapse 1</title>
+    <g id="Collapse_1_collapse">
+      <title>collapse</title>
+      <g id="Graphic_25">
+        <path d="M 11.050253 6.9497475 L 11.050253 8.949747 L 13.050253 8.949747 L 19.050253 8.949747 L 19.050253 6.9497475 L 14.464466 6.9497475 L 20 1.4142136 L 18.585786 8881784e-22 L 13.050253 5.535534 L 13.050253 .9497475 L 11.050253 .9497475 Z" fill="black"/>
+      </g>
+      <g id="Graphic_24">
+        <path d="M 8.949747 13.050253 L 8.949747 11.050253 L 6.9497475 11.050253 L .9497475 11.050253 L .9497475 13.050253 L 5.535534 13.050253 L 0 18.585786 L 1.4142136 20 L 6.9497475 14.464466 L 6.9497475 19.050253 L 8.949747 19.050253 Z" fill="black"/>
+      </g>
+      <g id="Graphic_31">
+        <path d="M 7 5 L 5 5 L 5 7 L 5 11 L 6 11 L 6 6 L 11 6 L 11 5 Z" fill="black"/>
+      </g>
+      <g id="Graphic_30">
+        <path d="M 13 15 L 15 15 L 15 13 L 15 9 L 14 9 L 14 14 L 9 14 L 9 15 Z" fill="black"/>
+      </g>
+    </g>
+  </g>
+</svg>
