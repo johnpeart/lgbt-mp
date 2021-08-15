@@ -18,7 +18,7 @@ banner-mode--body: "This dataset is not currently up to date. We will update it 
 # Shows a blockquote on data pages exposing some of the underlying calculations
 error-check: false
 
-analytics: false
+analytics: true
 analytics-token: "d36444326796457985d7fc75774c393e"
 
 ###############
