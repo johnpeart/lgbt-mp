@@ -2,7 +2,7 @@
 # Site configuration #
 ######################
 title: "LGBT+ Members of Parliament"
-description: "A website that lists the ‘out’ lesbian, gay, bisexual or trans (LGBT) members of the House of Commons in the UK Parliament."
+description: "A website and dataset listing the Members of Parliament in the UK House of Commons who say they are lesbian, gay, bisexual or trans or have another minority sexual orientation or gender identity."
 author: "John Peart"
 
 baseurl: "" # the subpath of your site, e.g. /blog
