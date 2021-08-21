@@ -68,7 +68,11 @@
 
 <section class="summary-data">
 
+    {% if parliamentEndDate == "null" and parliamentStartDate == "null" %}
+    <h1>The current Parliament at a glance</h1>
+    {% else %}
     <h1>This Parliament at a glance</h1>
+    {% endif %}
 
     <div class="summary-data">
         {% if parliamentEndDate == "null" and parliamentStartDate == "null" %}
