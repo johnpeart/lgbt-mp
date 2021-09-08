@@ -1713,4 +1713,6 @@ footer > div.container .footer--other { grid-area: other; }
 
 footer > div.container .footer--colophon { grid-area: colophon; padding-top: 30px; }
 
+footer ul.footer--navigation, footer ul.footer--other { padding-left: 0; }
+
 /*# sourceMappingURL=styles.css.map */
