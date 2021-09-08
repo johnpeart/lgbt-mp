@@ -805,7 +805,7 @@ main { min-height: 80vh; padding-top: 30px; padding-bottom: 30px; }
 
 aside.errors p:first-of-type { border-top: 1px solid #cbc9cd; padding: 15px 0 45px; color: #4d4d4d; }
 
-ul.historical-datasets { display: grid; grid-template-columns: 1fr; grid-gap: 15px; list-style: none; margin-top: 15px; padding-left: 0; }
+ul.historical-datasets { display: grid; grid-template-columns: 1fr; grid-gap: 15px; list-style: none; margin-top: 15px; padding-left: 0; margin-left: 0; }
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) { ul.historical-datasets { grid-template-columns: 1fr 1fr; } }
 
@@ -815,7 +815,7 @@ ul.historical-datasets { display: grid; grid-template-columns: 1fr; grid-gap: 15
 
 @media only screen and (min-width: 1920px) { ul.historical-datasets { grid-template-columns: 1fr 1fr; } }
 
-ul.historical-datasets li { padding: 0; background: #ffffff; -webkit-box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08), 0 1px 3px 1px rgba(60, 64, 67, 0.16); -moz-box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08), 0 1px 3px 1px rgba(60, 64, 67, 0.16); box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08), 0 1px 3px 1px rgba(60, 64, 67, 0.16); max-width: 100%; }
+ul.historical-datasets li { padding: 0; margin: 0; background: #ffffff; -webkit-box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08), 0 1px 3px 1px rgba(60, 64, 67, 0.16); -moz-box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08), 0 1px 3px 1px rgba(60, 64, 67, 0.16); box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08), 0 1px 3px 1px rgba(60, 64, 67, 0.16); max-width: 100%; }
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) { ul.historical-datasets li { max-width: 285px; } }
 
@@ -1707,7 +1707,7 @@ footer > div.container p.footer--heading { font-size: 13pt; line-height: 20pt; p
 
 @media only screen and (min-width: 1920px) { footer > div.container p.footer--heading { text-align: left; } }
 
-footer > div.container .footer--navigation { grid-area: navigation; font-size: 13pt; line-height: 20pt; padding: 0 0 13pt 0; font-weight: normal; font-style: normal; text-transform: none; text-align: left; font-weight: 400; }
+footer > div.container .footer--navigation { grid-area: navigation; padding-left: 0; font-size: 13pt; line-height: 20pt; padding: 0 0 13pt 0; font-weight: normal; font-style: normal; text-transform: none; text-align: left; font-weight: 400; }
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) { footer > div.container .footer--navigation { font-size: 14pt; } }
 
@@ -1765,7 +1765,7 @@ footer > div.container .footer--navigation { grid-area: navigation; font-size: 1
 
 @media only screen and (min-width: 1920px) { footer > div.container .footer--navigation { text-align: left; } }
 
-footer > div.container .footer--other { grid-area: other; font-size: 13pt; line-height: 20pt; padding: 0 0 13pt 0; font-weight: normal; font-style: normal; text-transform: none; text-align: left; font-weight: 400; }
+footer > div.container .footer--other { grid-area: other; padding-left: 0; font-size: 13pt; line-height: 20pt; padding: 0 0 13pt 0; font-weight: normal; font-style: normal; text-transform: none; text-align: left; font-weight: 400; }
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) { footer > div.container .footer--other { font-size: 14pt; } }
 
@@ -1823,8 +1823,6 @@ footer > div.container .footer--other { grid-area: other; font-size: 13pt; line-
 
 @media only screen and (min-width: 1920px) { footer > div.container .footer--other { text-align: left; } }
 
-footer > div.container .footer--colophon { grid-area: colophon; padding-top: 30px; }
-
-footer ul.footer--navigation, footer ul.footer--other { padding-left: 0; }
+footer > div.container .footer--colophon { padding-left: 0; grid-area: colophon; padding-top: 30px; }
 
 /*# sourceMappingURL=styles.css.map */
