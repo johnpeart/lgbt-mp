@@ -1707,9 +1707,121 @@ footer > div.container p.footer--heading { font-size: 13pt; line-height: 20pt; p
 
 @media only screen and (min-width: 1920px) { footer > div.container p.footer--heading { text-align: left; } }
 
-footer > div.container .footer--navigation { grid-area: navigation; }
+footer > div.container .footer--navigation { grid-area: navigation; font-size: 13pt; line-height: 20pt; padding: 0 0 13pt 0; font-weight: normal; font-style: normal; text-transform: none; text-align: left; font-weight: 400; }
 
-footer > div.container .footer--other { grid-area: other; }
+@media only screen and (min-width: 767px) and (max-width: 1023px) { footer > div.container .footer--navigation { font-size: 14pt; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { footer > div.container .footer--navigation { font-size: 15pt; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { footer > div.container .footer--navigation { font-size: 16pt; } }
+
+@media only screen and (min-width: 1920px) { footer > div.container .footer--navigation { font-size: 18pt; } }
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) { footer > div.container .footer--navigation { line-height: 21pt; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { footer > div.container .footer--navigation { line-height: 22pt; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { footer > div.container .footer--navigation { line-height: 23pt; } }
+
+@media only screen and (min-width: 1920px) { footer > div.container .footer--navigation { line-height: 25pt; } }
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) { footer > div.container .footer--navigation { padding: 0 0 14pt 0; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { footer > div.container .footer--navigation { padding: 0 0 15pt 0; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { footer > div.container .footer--navigation { padding: 0 0 16pt 0; } }
+
+@media only screen and (min-width: 1920px) { footer > div.container .footer--navigation { padding: 0 0 18pt 0; } }
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) { footer > div.container .footer--navigation { font-weight: normal; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { footer > div.container .footer--navigation { font-weight: normal; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { footer > div.container .footer--navigation { font-weight: normal; } }
+
+@media only screen and (min-width: 1920px) { footer > div.container .footer--navigation { font-weight: normal; } }
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) { footer > div.container .footer--navigation { font-style: normal; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { footer > div.container .footer--navigation { font-style: normal; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { footer > div.container .footer--navigation { font-style: normal; } }
+
+@media only screen and (min-width: 1920px) { footer > div.container .footer--navigation { font-style: normal; } }
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) { footer > div.container .footer--navigation { text-transform: none; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { footer > div.container .footer--navigation { text-transform: none; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { footer > div.container .footer--navigation { text-transform: none; } }
+
+@media only screen and (min-width: 1920px) { footer > div.container .footer--navigation { text-transform: none; } }
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) { footer > div.container .footer--navigation { text-align: left; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { footer > div.container .footer--navigation { text-align: left; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { footer > div.container .footer--navigation { text-align: left; } }
+
+@media only screen and (min-width: 1920px) { footer > div.container .footer--navigation { text-align: left; } }
+
+footer > div.container .footer--other { grid-area: other; font-size: 13pt; line-height: 20pt; padding: 0 0 13pt 0; font-weight: normal; font-style: normal; text-transform: none; text-align: left; font-weight: 400; }
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) { footer > div.container .footer--other { font-size: 14pt; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { footer > div.container .footer--other { font-size: 15pt; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { footer > div.container .footer--other { font-size: 16pt; } }
+
+@media only screen and (min-width: 1920px) { footer > div.container .footer--other { font-size: 18pt; } }
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) { footer > div.container .footer--other { line-height: 21pt; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { footer > div.container .footer--other { line-height: 22pt; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { footer > div.container .footer--other { line-height: 23pt; } }
+
+@media only screen and (min-width: 1920px) { footer > div.container .footer--other { line-height: 25pt; } }
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) { footer > div.container .footer--other { padding: 0 0 14pt 0; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { footer > div.container .footer--other { padding: 0 0 15pt 0; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { footer > div.container .footer--other { padding: 0 0 16pt 0; } }
+
+@media only screen and (min-width: 1920px) { footer > div.container .footer--other { padding: 0 0 18pt 0; } }
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) { footer > div.container .footer--other { font-weight: normal; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { footer > div.container .footer--other { font-weight: normal; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { footer > div.container .footer--other { font-weight: normal; } }
+
+@media only screen and (min-width: 1920px) { footer > div.container .footer--other { font-weight: normal; } }
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) { footer > div.container .footer--other { font-style: normal; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { footer > div.container .footer--other { font-style: normal; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { footer > div.container .footer--other { font-style: normal; } }
+
+@media only screen and (min-width: 1920px) { footer > div.container .footer--other { font-style: normal; } }
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) { footer > div.container .footer--other { text-transform: none; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { footer > div.container .footer--other { text-transform: none; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { footer > div.container .footer--other { text-transform: none; } }
+
+@media only screen and (min-width: 1920px) { footer > div.container .footer--other { text-transform: none; } }
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) { footer > div.container .footer--other { text-align: left; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { footer > div.container .footer--other { text-align: left; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { footer > div.container .footer--other { text-align: left; } }
+
+@media only screen and (min-width: 1920px) { footer > div.container .footer--other { text-align: left; } }
 
 footer > div.container .footer--colophon { grid-area: colophon; padding-top: 30px; }
 
