@@ -82,6 +82,7 @@ aside.errors p:first-of-type {
 ul.historical-datasets {
 
   display: grid;
+  
   @include toggleSizes(
     grid-template-columns,
     1fr,
@@ -98,12 +99,14 @@ ul.historical-datasets {
   margin-top: $container-padding;
   
   padding-left: 0;
+  margin-left: 0;
 
 }
 
 ul.historical-datasets li {
 
   padding: 0;
+  margin: 0;
 
   background: map-get($colors, "white");
   @include box-shadow();

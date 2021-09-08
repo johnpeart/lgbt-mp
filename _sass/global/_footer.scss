@@ -49,6 +49,7 @@ footer > div.container {
     }
     .footer--navigation {
         grid-area: navigation;
+        padding-left: 0;
         @each $style, $sizes in $lead {
             @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
         }
@@ -56,23 +57,16 @@ footer > div.container {
     }
     .footer--other {
         grid-area: other;
+        padding-left: 0;
         @each $style, $sizes in $lead {
             @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
         }
         font-weight: 400;
     }
     .footer--colophon {
+        padding-left: 0;
         grid-area: colophon;
         padding-top: $container-padding * 2;
     }
 
-}
-
-footer ul {
-
-    &.footer--navigation,
-    &.footer--other {
-        padding-left: 0
-    }
-    
 }
