@@ -49,9 +49,17 @@ footer > div.container {
     }
     .footer--navigation {
         grid-area: navigation;
+        @each $style, $sizes in $lead {
+            @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+        }
+        font-weight: 400;
     }
     .footer--other {
         grid-area: other;
+        @each $style, $sizes in $lead {
+            @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+        }
+        font-weight: 400;
     }
     .footer--colophon {
         grid-area: colophon;
