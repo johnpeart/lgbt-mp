@@ -373,7 +373,7 @@ h1 { font-size: 25pt; line-height: 31pt; padding: 30pt 0 25pt 0; font-weight: bo
 
 @media only screen and (min-width: 1920px) { h1 { text-align: left; } }
 
-h1.largeTitle { font-size: 30pt; line-height: 36pt; padding: 30pt 0; font-weight: bold; font-style: normal; text-transform: none; text-align: left; }
+h1.largeTitle { font-size: 24pt; line-height: 30pt; padding: 24pt 0; font-weight: bold; font-style: normal; text-transform: none; text-align: left; }
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) { h1.largeTitle { font-size: 30pt; } }
 
@@ -675,7 +675,7 @@ blockquote.banner-mode { margin-bottom: 15px; }
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { box-sizing: border-box; font-family: "custom", -apple-system, "Helvetica Neue", Helvetica, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-kerning: auto; letter-spacing: normal; font-size: 10pt; line-height: 15pt; padding: 0 0 8pt 0; font-weight: normal; font-style: normal; text-transform: none; text-align: left; background: #373151; padding: 0 !important; margin: 0 !important; overflow: auto; }
+html { box-sizing: border-box; font-family: "custom", -apple-system, "Helvetica Neue", Helvetica, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-kerning: auto; letter-spacing: normal; font-size: 10pt; line-height: 15pt; padding: 0 0 8pt 0; font-weight: normal; font-style: normal; text-transform: none; text-align: left; background: #373151; padding: 0 !important; margin: 0 !important; overflow-y: auto; overflow-x: hidden; }
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) { html { font-size: 11pt; } }
 
@@ -733,15 +733,23 @@ html { box-sizing: border-box; font-family: "custom", -apple-system, "Helvetica 
 
 @media only screen and (min-width: 1920px) { html { text-align: left; } }
 
-@media only screen and (min-width: 767px) and (max-width: 1023px) { html { overflow: auto; } }
+@media only screen and (min-width: 767px) and (max-width: 1023px) { html { overflow-y: auto; } }
 
-@media only screen and (min-width: 1024px) and (max-width: 1359px) { html { overflow: hidden; } }
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { html { overflow-y: scroll; } }
 
-@media only screen and (min-width: 1360px) and (max-width: 1919px) { html { overflow: hidden; } }
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { html { overflow-y: scroll; } }
 
-@media only screen and (min-width: 1920px) { html { overflow: hidden; } }
+@media only screen and (min-width: 1920px) { html { overflow-y: scroll; } }
 
-body { display: grid; background: #373151; color: #373151; grid-template-columns: 1fr; grid-template-rows: 100vh auto; overflow: auto; }
+@media only screen and (min-width: 767px) and (max-width: 1023px) { html { overflow-x: hidden; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { html { overflow-x: auto; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { html { overflow-x: auto; } }
+
+@media only screen and (min-width: 1920px) { html { overflow-x: auto; } }
+
+body { display: grid; background: #373151; color: #373151; grid-template-columns: 1fr; grid-template-rows: 100vh auto; overflow-y: auto; overflow-x: hidden; }
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) { body { grid-template-columns: 1fr; } }
 
@@ -759,15 +767,23 @@ body { display: grid; background: #373151; color: #373151; grid-template-columns
 
 @media only screen and (min-width: 1920px) { body { grid-template-rows: 100vh; } }
 
-@media only screen and (min-width: 767px) and (max-width: 1023px) { body { overflow: auto; } }
+@media only screen and (min-width: 767px) and (max-width: 1023px) { body { overflow-y: auto; } }
 
-@media only screen and (min-width: 1024px) and (max-width: 1359px) { body { overflow: hidden; } }
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { body { overflow-y: scroll; } }
 
-@media only screen and (min-width: 1360px) and (max-width: 1919px) { body { overflow: hidden; } }
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { body { overflow-y: scroll; } }
 
-@media only screen and (min-width: 1920px) { body { overflow: hidden; } }
+@media only screen and (min-width: 1920px) { body { overflow-y: scroll; } }
 
-section#content { display: block; position: relative; top: 0; background: #ebe9e8; color: #373151; min-height: 100vh; height: auto; overflow-y: auto; }
+@media only screen and (min-width: 767px) and (max-width: 1023px) { body { overflow-x: hidden; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { body { overflow-x: auto; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { body { overflow-x: auto; } }
+
+@media only screen and (min-width: 1920px) { body { overflow-x: auto; } }
+
+section#content { display: block; position: relative; top: 0; background: #ebe9e8; color: #373151; min-height: 100vh; height: auto; overflow-y: auto; overflow-x: hidden; }
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) { section#content { height: auto; } }
 
@@ -784,6 +800,14 @@ section#content { display: block; position: relative; top: 0; background: #ebe9e
 @media only screen and (min-width: 1360px) and (max-width: 1919px) { section#content { overflow-y: scroll; } }
 
 @media only screen and (min-width: 1920px) { section#content { overflow-y: scroll; } }
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) { section#content { overflow-x: hidden; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { section#content { overflow-x: auto; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { section#content { overflow-x: auto; } }
+
+@media only screen and (min-width: 1920px) { section#content { overflow-x: auto; } }
 
 main { min-height: 80vh; padding-top: 30px; padding-bottom: 30px; }
 
