@@ -3,6 +3,10 @@ layout: page
 title: Change log
 ---
 
+## 10 October 2021
+
+The dataset was updated to include Dehenna Davison (Conservative, Bishop Auckland) who came out as bisexual in an article in the Telegraph on 10 October 2021.
+
 ## 14 August 2021
 
 A number of major changes were made to this website and the structure of the dataset
