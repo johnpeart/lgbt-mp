@@ -3,6 +3,10 @@ layout: page
 title: Change log
 ---
 
+## 11 October 2021
+
+The dataset was updated to include Olivia Blake (Labour, Sheffield Hallam).
+
 ## 10 October 2021
 
 The dataset was updated to include Dehenna Davison (Conservative, Bishop Auckland) who came out as bisexual in an article in the Telegraph on 10 October 2021.
