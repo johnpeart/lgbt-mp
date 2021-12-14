@@ -3,6 +3,10 @@ layout: page
 title: Change log
 ---
 
+## 14 December 2021
+
+The dataset was updated to include Scott Benton (Conservative, Blackpool South).
+
 ## 11 October 2021
 
 The dataset was updated to include Olivia Blake (Labour, Sheffield Hallam).
