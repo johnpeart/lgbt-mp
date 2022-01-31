@@ -24,10 +24,17 @@ This dataset has been used by journalists at the BBC, Sky News and Quartz, and c
 - **BBC News**, 17 December 2019, [Election 2019: Britain’s most diverse Parliament](https://www.bbc.co.uk/news/election-2019-50808536)
 - **Sky News**, 16 December 2019, [General election: 2019 heralds the most diverse parliament for gender and ethnicity](https://news.sky.com/story/general-election-2019-heralds-the-most-diverse-parliament-for-gender-and-ethnicity-11885529)
 - **Quartz**, 17 December 2019, [The UK’s new parliament is its most diverse ever](https://qz.com/1769275/new-uk-parliament-has-record-number-of-female-non-white-and-lgbtq-mps/)
+- **Cosmopolitan**, 11 June 2020, [Your no BS guide to the Gender Recognition Act reforms
+](https://www.cosmopolitan.com/uk/reports/a29590439/gender-recognition-act/)
 
 ### Academic publications
 
-- **Hertner, I.** (2021). [Gender and British Politics](https://kclpure.kcl.ac.uk/portal/files/155399603/Hertner_Politics_UK_Chapter_11_proofs.pdf) in B. Jones, P. Norton, & I. Hertner (Eds.), Politics UK : 10th edition (10 ed., pp. 244-265). Routledge-Taylor Francis
+- **Bönisch, L. E** (2021). [What factors shape the substantive representation of LGBs in parliament? Testing the impact of minority membership, political values, and awareness](https://blogs.lse.ac.uk/politicsandpolicy/lgb-representation/). Blogpost and eprint. London School of Economics. 
+- **Hertner, I.** (2021). [Gender and British Politics](https://kclpure.kcl.ac.uk/portal/files/155399603/Hertner_Politics_UK_Chapter_11_proofs.pdf) in B. Jones, P. Norton, & I. Hertner (Eds.), Politics UK : 10th edition (10 ed., pp. 244-265). Routledge-Taylor Francis.
+
+### Government publications
+
+- **Lamprinakou, C et al** (2019). [Diversity of candidates and elected officials in Great Britain](https://www.equalityhumanrights.com/en/publication-download/diversity-candidates-and-elected-officials-great-britain). Equality and Human Rights Commission
 
 ## Using this data
 
