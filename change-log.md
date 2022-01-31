@@ -3,6 +3,12 @@ layout: page
 title: Change log
 ---
 
+## 31 January 2022
+
+The dataset was updated to include multiple MPs from Parliaments prior to 2017.
+
+The dataset was updated to add the declared identities of several MPs.
+
 ## 14 December 2021
 
 The dataset was updated to include Scott Benton (Conservative, Blackpool South).
