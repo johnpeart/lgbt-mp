@@ -3,6 +3,10 @@ layout: page
 title: Change log
 ---
 
+## 30 March 2022
+
+The dataset was updated to include Jamie Wallis (Conservative, Bridgend and Porthcawl).
+
 ## 31 January 2022
 
 The dataset was updated to include multiple MPs from Parliaments prior to 2017.
