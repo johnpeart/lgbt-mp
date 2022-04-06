@@ -1269,7 +1269,7 @@ p.party-total { display: block; grid-area: party-total; font-size: 11pt; line-he
 
 section.party-members { display: grid; padding: 15px; }
 
-section.member-info { display: grid; grid-template-columns: 1fr; }
+section.member-info { display: grid; grid-template-columns: 100; }
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) { section.member-info { grid-template-columns: 1fr 1fr; } }
 
@@ -1353,7 +1353,15 @@ section.member-info > p:nth-child(4) { padding: 15px 0; }
 
 @media only screen and (min-width: 1920px) { section.member-info > p:nth-child(4) { padding: 15px 0; } }
 
-div.member-notes { grid-column: 1 / span 2; padding: 15px; border-top: 1px dotted #cbc9cd; }
+div.member-notes { grid-column: 1; padding: 15px; border-top: 1px dotted #cbc9cd; }
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) { div.member-notes { grid-column: 1/span 2; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) { div.member-notes { grid-column: 1/span 2; } }
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) { div.member-notes { grid-column: 1/span 2; } }
+
+@media only screen and (min-width: 1920px) { div.member-notes { grid-column: 1/span 2; } }
 
 div.member-notes p:last-child { padding-bottom: 0; }
 
