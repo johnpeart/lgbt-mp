@@ -3,6 +3,10 @@ layout: page
 title: Change log
 ---
 
+## 8 May 2022
+
+The UK Parliament website records that Imran Ahmad Khan (Wakefield) left the House of Commons on 3 May, following his resignation.
+
 ## 21 April 2022
 
 The dataset was updated to include Imran Ahmad Khan (Wakefield). Imran Ahmad Khan was originally added to the dataset following the 2019 general election. His information was subsequently removed after it was reported that he was not actually gay. In his recent criminal trial, he confirmed he was, in fact, gay. His data was re-added to the dataset as a result.
