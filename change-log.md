@@ -3,6 +3,10 @@ layout: page
 title: Change log
 ---
 
+## 7 September 2022
+
+The dataset was updated to include Simon Lightwood (Labour, Wakefield).
+
 ## 8 May 2022
 
 The UK Parliament website records that Imran Ahmad Khan (Wakefield) left the House of Commons on 3 May, following his resignation.
