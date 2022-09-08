@@ -3,6 +3,10 @@ layout: page
 title: Change log
 ---
 
+## 8 September 2022
+
+The dataset was updated to show a change of party affiliation for Nick Brown (Labour, Newcastle East). [BBC News reports](https://www.bbc.co.uk/news/uk-politics-62828438) that Nick was "suspended from the Labour Party pending an investigation into a complaint" and would "sit as an independent until reinstated".
+
 ## 7 September 2022
 
 The dataset was updated to include Simon Lightwood (Labour, Wakefield).
