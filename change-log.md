@@ -3,6 +3,10 @@ layout: page
 title: Change log
 ---
 
+## 18 October 2022
+
+The dataset was updated to show a change of party affiliation for Conor Burns (Conservative, Bournemouth West). Following an allegation of serious misconduct, the whip was restored as the investigation "[concluded Mr Burns has no case to answer over a complaint that was made against him in early October](https://news.sky.com/story/tory-mp-conor-burns-has-conservative-whip-restored-and-says-he-was-thrown-to-the-wolves-12760852)".
+
 ## 11 October 2022
 
 The dataset was updated to show a change of party affiliation for Conor Burns (Conservative, Bournemouth West). Following "[a complaint of serious misconduct](https://www.bbc.co.uk/news/uk-politics-63177669)", the Conservative Party whip was suspended and Conor Burns now sits as an independent MP.
