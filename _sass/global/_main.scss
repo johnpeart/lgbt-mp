@@ -45,6 +45,14 @@ body {
 
   @include toggleSizes(overflow-y, auto, auto, scroll, scroll, scroll);
   @include toggleSizes(overflow-x, hidden, hidden, auto, auto, auto);
+  
+  &::-webkit-scrollbar {
+    @include toggleSizes(display, auto, auto, none, none, none);
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  @include toggleSizes(-ms-overflow-style, auto, auto, none, none, none); /* IE and Edge */
+  @include toggleSizes(scrollbar-width, auto, auto, none, none, none); /* Firefox */
 
 }
 
