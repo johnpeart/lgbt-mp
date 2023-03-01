@@ -184,7 +184,7 @@
                             <section class="member-info">
 
                                 <p class="first-elected">
-                                    <strong class="label">First elected</strong>
+                                    <strong class="label">Elected since</strong>
                                     <span class="data">
                                         {{ mp.start-date | date: "%d %B %Y" }}
                                     </span>
@@ -209,16 +209,24 @@
                                 </p>
 
                                 <p class="source-access-date">
-                                    <strong class="label">Source publication date</strong>
+                                    <strong class="label">Source date</strong>
                                     <span class="data">
                                         {{ mp.source-date | date: "%d %B %Y" }}
                                     </span>
                                 </p>
+                                
+                                <p class="parliamentary-website">
+                                    <strong class="label">Official information</strong>
+                                    <span class="data">
+                                        <a href="{{ mp.parliament-website }}" alt="Visit {{mp.name}}’s page on the UK Parliament website (Open’s in new window)" target="_blank">{{ mp.name }} on the UK Parliament website</a>
+                                    </span>
+                                </p>
 
                                 {% if mp.notes %}
-                                <div class="member-notes">
-                                    {{ mp.notes | markdownify }}
-                                </div>
+                                <p class="member-notes">
+                                    <strong class="label">Notes on entry</strong>
+                                    <span class="data">{{ mp.notes }}</span>
+                                </p>
                                 {% endif %}
 
                             </section>

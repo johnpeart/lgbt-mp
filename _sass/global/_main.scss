@@ -450,111 +450,60 @@ section.party-members {
 section.member-info {
 
   display: grid;
-
+  
   @include toggleSizes(
     grid-template-columns,
-    100,
-    1fr 1fr,
-    1fr 1fr,
-    1fr 1fr,
-    1fr 1fr
+    auto,
+    auto,
+    auto,
+    auto,
+    auto
   );
 
 }
 
 section.member-info > p {
-  padding: 0;
-
-  &:nth-child(1) {
-
-    @include toggleSizes(
-      padding,
-      $container-padding 0,
-      $container-padding 0,
-      $container-padding 0,
-      $container-padding 0,
-      $container-padding 0
-    );
-
-    @include toggleSizes(
-      border-bottom,
-      1px dotted map-get($colors, "grey-3"),
-      1px dotted map-get($colors, "grey-3"),
-      1px dotted map-get($colors, "grey-3"),
-      1px dotted map-get($colors, "grey-3"),
-      1px dotted map-get($colors, "grey-3")
-    );
-    @include toggleSizes(
-      border-right,
-      none,
-      1px dotted map-get($colors, "grey-3"),
-      1px dotted map-get($colors, "grey-3"),
-      1px dotted map-get($colors, "grey-3"),
-      1px dotted map-get($colors, "grey-3")
-    );
-
-  }
-  &:nth-child(2) {
-
-    @include toggleSizes(
-      padding,
-      $container-padding 0,
-      $container-padding 0,
-      $container-padding 0,
-      $container-padding 0,
-      $container-padding 0
-    );
-
-    @include toggleSizes(
-      border-bottom,
-      1px dotted map-get($colors, "grey-3"),
-      1px dotted map-get($colors, "grey-3"),
-      1px dotted map-get($colors, "grey-3"),
-      1px dotted map-get($colors, "grey-3"),
-      1px dotted map-get($colors, "grey-3")
-    );
-
-  }
-  &:nth-child(3) {
-
-    grid-column: 1;
-
-    padding: $container-padding 0;
-
-    @include toggleSizes(border-bottom, 1px dotted map-get($colors, "grey-3"), none, none, none, none);
-    @include toggleSizes(border-right, none, 1px dotted map-get($colors, "grey-3"), 1px dotted map-get($colors, "grey-3"), 1px dotted map-get($colors, "grey-3"), 1px dotted map-get($colors, "grey-3"));
-
-  }
-  &:nth-child(4) {
-
-    @include toggleSizes(
-      padding,
-      $container-padding 0,
-      $container-padding 0,
-      $container-padding 0,
-      $container-padding 0,
-      $container-padding 0
-    );
-
-  }
-
-}
-
-div.member-notes {
   
-  @include toggleSizes(grid-column, 1,  1 / span 2,  1 / span 2,  1 / span 2,  1 / span 2);
-  padding: $container-padding;
-  border-top:  1px dotted map-get($colors, "grey-3");
+  
+  display: grid;
+  
+  @include toggleSizes(
+    grid-template-columns,
+    1fr,
+    1fr 2fr,
+    1fr 2fr,
+    1fr 2fr,
+    1fr 2fr
+  );
 
-  p:last-child {
-    padding-bottom: 0;
+  @include toggleSizes(
+    padding,
+    $container-padding,
+    $container-padding,
+    $container-padding,
+    $container-padding,
+    $container-padding
+  );
+  
+  @include toggleSizes(
+    border-bottom,
+    1px dotted map-get($colors, "grey-3"),
+    1px dotted map-get($colors, "grey-3"),
+    1px dotted map-get($colors, "grey-3"),
+    1px dotted map-get($colors, "grey-3"),
+    1px dotted map-get($colors, "grey-3")
+  );
+  
+  &:last-of-type {
+    border-bottom: none !important;
   }
+
 }
+
 
 section.member-info p strong.label,
 section.member-info p span.data {
-  display: block;
-  text-align: center;
+  text-align: left;
 }
 
 details.member {
