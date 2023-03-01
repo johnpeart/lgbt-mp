@@ -115,10 +115,10 @@ ul.historical-datasets li {
 
   @include toggleSizes(max-width,
     100%,
-    map-get($containers, "sm") / 2 - $container-padding,
-    map-get($containers, "md") / 2 - $container-padding,
-    map-get($containers, "lg") / 2 - $container-padding,
-    map-get($containers, "xl") / 2 - $container-padding
+    calc(map-get($containers, "sm") / 2) - $container-padding,
+    calc(map-get($containers, "md") / 2) - $container-padding,
+    calc(map-get($containers, "lg") / 2) - $container-padding,
+    calc(map-get($containers, "xl") / 2) - $container-padding
   );
 
   &:nth-of-type(1) {
@@ -320,8 +320,21 @@ details.party > summary svg {
   align-self: center;
   justify-self: center;
 
-  @include toggleSizes(margin-right, $container-padding, $container-padding, $container-padding * 2, $container-padding * 2, $container-padding * 2);
-  @include toggleSizes(margin-left, 0, 0, $container-padding / 2, $container-padding / 2, $container-padding / 2);
+  @include toggleSizes(margin-right, 
+    $container-padding, 
+    $container-padding, 
+    $container-padding * 2, 
+    $container-padding * 2, 
+    $container-padding * 2
+  );
+  @include toggleSizes(
+    margin-left, 
+    0, 
+    0, 
+    calc($container-padding / 2), 
+    calc($container-padding / 2), 
+    calc($container-padding / 2)
+  );
 
   @each $style, $sizes in $partyName {
     @if $style == "line-height" {
