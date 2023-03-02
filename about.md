@@ -16,7 +16,7 @@ Members of Parliament are only included where it is clear that the individual ha
 
 ## Citations and references
 
-This dataset has been used by journalists at the BBC, Sky News and Quartz, and cited in academic publications.
+This dataset has been used by journalists at the BBC, Sky News and Quartz, and cited in academic publications. It has also cited as a source on Wikipedia.
 
 ### Media publications
 
@@ -26,6 +26,7 @@ This dataset has been used by journalists at the BBC, Sky News and Quartz, and c
 - **Quartz**, 17 December 2019, [The UK’s new parliament is its most diverse ever](https://qz.com/1769275/new-uk-parliament-has-record-number-of-female-non-white-and-lgbtq-mps/)
 - **Cosmopolitan**, 11 June 2020, [Your no BS guide to the Gender Recognition Act reforms
 ](https://www.cosmopolitan.com/uk/reports/a29590439/gender-recognition-act/)
+- **Pink News**, 24 June 2022, [UK has record number of LGBTQ+ MPs as Labour wins crucial ‘red wall’ by-election](https://www.thepinknews.com/2022/06/24/wakefield-by-election-lgbtq-mps-simon-lightwood/)
 
 ### Academic publications
 
@@ -35,6 +36,10 @@ This dataset has been used by journalists at the BBC, Sky News and Quartz, and c
 ### Government publications
 
 - **Lamprinakou, C et al** (2019). [Diversity of candidates and elected officials in Great Britain](https://www.equalityhumanrights.com/en/publication-download/diversity-candidates-and-elected-officials-great-britain). Equality and Human Rights Commission
+
+### Other blog posts and reports
+
+- **YouGov**, 26 July 2022, [Do Britons think a minority prime minister would improve things for minority groups?](https://yougov.co.uk/topics/politics/articles-reports/2022/07/26/do-britons-think-minority-prime-minister-would-imp)
 
 ## Using this data
 
