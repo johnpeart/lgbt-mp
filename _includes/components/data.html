@@ -37,12 +37,12 @@
 
         {% if memberParty == comparatorParty %}
 
-            {% assign memberStartDate = mp.start-date | date: "%s" | times: 1 %}
+            {% assign memberStartDate = mp.entry-start-date | date: "%s" | times: 1 %}
 
-            {% if mp.end-date == "present" %}
+            {% if mp.entry-end-date == "present" %}
             {% assign memberEndDate = now %}
             {% else %}
-            {% assign memberEndDate = mp.end-date | date: "%s" | times: 1 %}
+            {% assign memberEndDate = mp.entry-end-date | date: "%s" | times: 1 %}
             {% endif %}
 
             {% if memberStartDate <= parliamentComparatorDate and memberEndDate >= parliamentComparatorDate %}
@@ -122,12 +122,12 @@
 
             {% if memberParty == comparatorParty %}
 
-                {% assign memberStartDate = mp.start-date | date: "%s" | times: 1 %}
+                {% assign memberStartDate = mp.entry-start-date | date: "%s" | times: 1 %}
 
-                {% if mp.end-date == "present" %}
+                {% if mp.entry-end-date == "present" %}
                 {% assign memberEndDate = now %}
                 {% else %}
-                {% assign memberEndDate = mp.end-date | date: "%s" | times: 1 %}
+                {% assign memberEndDate = mp.entry-end-date | date: "%s" | times: 1 %}
                 {% endif %}
 
                 {% if memberStartDate <= parliamentComparatorDate and memberEndDate >= parliamentComparatorDate %}
@@ -160,12 +160,12 @@
 
                 {% if memberParty == comparatorParty %}
 
-                    {% assign memberStartDate = mp.start-date | date: "%s" | times: 1 %}
+                    {% assign memberStartDate = mp.entry-start-date | date: "%s" | times: 1 %}
 
-                    {% if mp.end-date == "present" %}
+                    {% if mp.entry-end-date == "present" %}
                     {% assign memberEndDate = now %}
                     {% else %}
-                    {% assign memberEndDate = mp.end-date | date: "%s" | times: 1 %}
+                    {% assign memberEndDate = mp.entry-end-date | date: "%s" | times: 1 %}
                     {% endif %}
 
                     {% if memberStartDate <= parliamentComparatorDate and memberEndDate >= parliamentComparatorDate %}
@@ -182,13 +182,24 @@
                             </summary>
 
                             <section class="member-info">
-
+                                
                                 <p class="first-elected">
-                                    <strong class="label">Elected since</strong>
+                                    <strong class="label">First elected</strong>
                                     <span class="data">
-                                        {{ mp.start-date | date: "%d %B %Y" }}
+                                        {{ mp.mp-since | date: "%d %B %Y" }}
                                     </span>
                                 </p>
+                                
+                                {% if mp.mp-since != mp.entry-start-date %}
+                                
+                                <p class="party-start">
+                                    <strong class="label">Party affiliation since</strong>
+                                    <span class="data">
+                                        {{ mp.entry-start-date | date: "%d %B %Y" }}
+                                    </span>
+                                </p>
+                                
+                                {% endif %}
 
                                 <p class="identity">
                                     <strong class="label">Identity</strong>

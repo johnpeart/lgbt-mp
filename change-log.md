@@ -3,6 +3,17 @@ layout: page
 title: Change log
 ---
 
+## 2 March 2023
+
+The dataset was restructured to ensure the presentation of the data on this website was clearer and more accurate. The `start-date` and `end-date` columns have been renamed as `entry-start-date` and `entry-end-date`. A new
+`mp-since` column has been added, containing the date from which an MP has been continuously elected.
+
+This website now uses both dates to present information about MPs.
+
+Links have also been added to MPs official pages on the UK Parliament website.
+
+The dataset was also updated to remove a duplicate record for former MP.
+
 ## 25 February 2023
 
 The dataset was updated to include Ashley Dalton (Labour, West Lancashire).

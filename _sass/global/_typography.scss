@@ -125,6 +125,10 @@ center {
     text-align: center;
 }
 
+code {
+    font-weight: bold;
+}
+
 h1 {
     @each $style, $sizes in $title1 {
         @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
