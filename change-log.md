@@ -3,6 +3,10 @@ layout: page
 title: Change log
 ---
 
+## 22 July 2023
+
+The dataset was updated to include Keir Mather (Labour, Selby and Ainsty).
+
 ## 2 March 2023
 
 The dataset was restructured to ensure the presentation of the data on this website was clearer and more accurate. The `start-date` and `end-date` columns have been renamed as `entry-start-date` and `entry-end-date`. A new
