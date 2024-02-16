@@ -3,6 +3,11 @@ layout: page
 title: Change log
 ---
 
+## 16 February 2024
+
+The dataset was updated to include Damien Egan (Labour, Kingswood).
+
+
 ## 16 December 2023
 
 The dataset was updated to show a chance of party affiliation for Scott Benton (Blackpool South). Scott Benton was suspended from the Conservative party following [allegations of misconduct](https://www.bbc.co.uk/news/uk-politics-65193097) and pending an investigation. He has been an independent MP since 5 April 2023; this is now reflected in the dataset.
