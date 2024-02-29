@@ -3,10 +3,13 @@ layout: page
 title: Change log
 ---
 
+## 29 February 2024
+
+The dataset was updated to include Kirsty Blackman (Scottish National Party, Aberdeen North)
+
 ## 16 February 2024
 
 The dataset was updated to include Damien Egan (Labour, Kingswood).
-
 
 ## 16 December 2023
 
