@@ -2,17 +2,16 @@
   "actions" : {
     "build" : {
       "enabled" : true,
-      "script" : "bundle exec jekyll clean\nbundle exec jekyll build"
+      "script" : "jekyll clean\njekyll build"
     },
     "clean" : {
       "enabled" : true,
-      "script" : "bundle exec jekyll clean"
+      "script" : "jekyll clean"
     },
     "run" : {
       "enabled" : true,
-      "script" : "bundle exec jekyll serve --liveReload -o"
+      "script" : "jekyll serve --liveReload -o"
     }
   },
-  "identifier" : "EEA2E8C8-42F0-42B8-8655-8912DF955197",
   "openLogOnRun" : "start"
 }
