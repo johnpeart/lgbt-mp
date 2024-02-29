@@ -611,3 +611,7 @@ p.member-constituency {
 details[open] > summary {
   border-bottom: 1px dotted map-get($colors, "grey-3");
 }
+
+summary:hover {
+  cursor: pointer;
+}
