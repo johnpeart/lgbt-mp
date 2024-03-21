@@ -81,7 +81,7 @@ The following people have helped to build this dataset:
 
 #### Principle contributors
 
-- [John Peart](https://twitter.com/johnpeart)
+- [John Peart](https://www.johnpe.art)
 
 #### Other contributors
 
