@@ -31,7 +31,8 @@ This dataset has been used by journalists at the BBC, Sky News and Quartz, and c
 ### Academic publications
 
 - **Bönisch, L. E** (2021). [What factors shape the substantive representation of LGBs in parliament? Testing the impact of minority membership, political values, and awareness](https://blogs.lse.ac.uk/politicsandpolicy/lgb-representation/). Blogpost and eprint. London School of Economics. 
-- **Hertner, I.** (2021). [Gender and British Politics](https://kclpure.kcl.ac.uk/portal/files/155399603/Hertner_Politics_UK_Chapter_11_proofs.pdf) in B. Jones, P. Norton, & I. Hertner (Eds.), Politics UK : 10th edition (10 ed., pp. 244-265). Routledge-Taylor Francis.
+- **Hertner, I.** (2021). [Gender and British Politics](https://kclpure.kcl.ac.uk/portal/files/155399603/Hertner_Politics_UK_Chapter_11_proofs.pdf) in B. Jones, P. Norton, & I. Hertner (Eds.), Politics UK: 10th Edition (, pp. 244-265).
+- **Jeffery, Heppell, Roe-Crines & Butler.** (2022). [Trusting Truss: Conservative MPs’ Voting Preferences in the (First) British Conservative Party Leadership Election of 2022](https://doi.org/10.1080/00344893.2023.2231469) in Representation, Journal of Representative Democracy, 59:4 (pp. 555-572).
 
 ### Government publications
 
@@ -39,6 +40,7 @@ This dataset has been used by journalists at the BBC, Sky News and Quartz, and c
 
 ### Other blog posts and reports
 
+- **Fawcett Society**, January 2022, [Sex and Power 2022](https://www.fawcettsociety.org.uk/sex-power-2022)
 - **YouGov**, 26 July 2022, [Do Britons think a minority prime minister would improve things for minority groups?](https://yougov.co.uk/topics/politics/articles-reports/2022/07/26/do-britons-think-minority-prime-minister-would-imp)
 
 ## Using this data
