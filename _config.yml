@@ -37,12 +37,6 @@ theme-colour: "#373151"
 #######################
 # <link rel="me" ...> #
 #######################
-# Twitter
-twitter-url: "https://twitter.com/johnpeart" # Twitter handle i.e. joebloggs
-twitter-handle: "johnpeart" # Twitter handle i.e. joebloggs
-# Mastodon
-mastodon-url: "https://mastodon.social/@johnpeart"
-mastodon-handle: "johnpeart@mastodon.social"
 # Github
 github-url:  "https://github.com/johnpeart/lgbt-mp"
 github-handle:  "johnpeart"
