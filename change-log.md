@@ -3,6 +3,10 @@ layout: page
 title: Change log
 ---
 
+## 9 April 2024
+
+The dataset was updated to show a change in party affilition for William Wragg (Hazel Grove). William Wragg [resigned the Conservative Party whip](https://www.bbc.co.uk/news/uk-politics-68773702) on 9 April 2024.
+
 ## 29 February 2024
 
 The dataset was updated to include Kirsty Blackman (Scottish National Party, Aberdeen North)
