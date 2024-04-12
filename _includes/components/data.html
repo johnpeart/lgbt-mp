@@ -69,7 +69,7 @@
 <section class="summary-data">
 
     {% if parliamentEndDate == "null" and parliamentStartDate == "null" %}
-    <h1>The current Parliament at a glance</h1>
+    <h1>LGBT+ MPs in Parliament now</h1>
     {% else %}
     <h1>This Parliament at a glance</h1>
     {% endif %}
@@ -97,6 +97,10 @@
 
         </div>
 
+	    {% if parliamentEndDate == "null" and parliamentStartDate == "null" %}
+        <p class="note">This data shows the number of LGBT+ MPs sitting in Parliament on {{ now | date: "%d %B %Y" }}. This data may have changed since this Parliament began.</p>
+		<p><a href="/historic">View data from previous time periods and Parliaments</a></p>
+		{% endif %}
         {% if parliamentEndDate != "null" or parliamentStartDate != "null" %}
         <p class="note">This dataset shows MPs who are known to be LGBT+ today. The MPs referenced might not have been known to be LGBT+ at the time this Parliament took place.</p>
         {% endif %}
