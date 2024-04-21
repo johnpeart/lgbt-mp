@@ -18,7 +18,7 @@ header#site-navigation {
         ($container-padding * 3) ($container-padding * 2),
         ($container-padding * 3) ($container-padding * 2)
     );
-    @include toggleSizes(height, 100vh, auto, 100vh, 100vh, 100vh);
+    @include toggleSizes(height, auto, auto, 100vh, 100vh, 100vh);
     @include toggleSizes(width, 100vw, 100vw, 30vw, 27.5vw, 25vw);
 
 }

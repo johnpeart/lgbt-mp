@@ -41,7 +41,7 @@ body {
   color: map-get($colors, "deep-purple");
 
   @include toggleSizes(grid-template-columns, 1fr, 1fr, 30vw 1fr, 27.5vw 1fr, 25vw 1fr);
-  @include toggleSizes(grid-template-rows, 100vh auto, auto auto, 100vh, 100vh, 100vh);
+  @include toggleSizes(grid-template-rows, auto auto, auto auto, 100vh, 100vh, 100vh);
 
   @include toggleSizes(overflow-y, auto, auto, scroll, scroll, scroll);
   @include toggleSizes(overflow-x, hidden, hidden, auto, auto, auto);
