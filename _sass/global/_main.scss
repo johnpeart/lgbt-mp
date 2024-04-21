@@ -302,10 +302,12 @@ details > summary:focus,
 details[open] > summary:focus {
 
   background: map-get($colors, "mint--light");
-  outline: none;
+  outline: 5px solid map-get($colors, "mint--light");
+  outline-offset: 6px;
 
   &:active {
-    outline: 5px solid map-get($colors, "mint--light");
+  	outline: none;	
+	outline-offset: 0;
   }
 
 }
