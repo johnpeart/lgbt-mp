@@ -1,0 +1,58 @@
+name: Update an LGBT+ MP
+description: Suggest an amendment to an existing MP's information in LGBT+ MPs dataset
+title: "Update an MP: [Replace with full name of MP]"
+labels: ["Edit MP"]
+
+assignees:
+  - johnpeart
+
+body:
+  - type: markdown
+    attributes:
+      value: "## About the MP"
+        
+  - type: input
+    id: name-of-MP
+    attributes:
+      label: Name of the MP
+      description: What is the full name of the MP in the existing dataset?
+      placeholder: e.g. Jo Bloggs
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: mp-or-candidate
+    attributes:
+      label: What is the MPs political party in the existing dataset?
+      description: If the party is not listed, please select 'Other not listed'
+      options:
+        - Conservative
+        - Labour
+        - Liberal Democrat
+        - Scottish National
+        - Independent
+        - Other not listed
+    validations:
+      required: true
+
+  - type: input
+    id: constituency
+    attributes:
+      label: Constituency
+      description: What is the full name of the constituency for the MP in the existing dataset?
+      placeholder: e.g. Plymouth, Sutton and Devonport
+    validations:
+      required: true
+      
+  - type: markdown
+    attributes:
+      value: "## Justification"
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: Why should this MP's information be updated?
+      placeholder: e.g. This MP has changed party. They were in the X Party, they are now in the Y Party.
+    validations:
+      required: true
+  

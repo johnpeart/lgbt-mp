@@ -1,0 +1,97 @@
+name: Add an LGBT+ MP
+description: Suggest an LGBT+ MP for inclusion in the LGBT+ MPs dataset
+title: "Add an MP: [Replace with full name of MP]"
+labels: ["Add MP"]
+
+assignees:
+  - johnpeart
+
+body:
+  - type: markdown
+    attributes:
+      value: "## About the MP"
+        
+  - type: input
+    id: name-of-MP
+    attributes:
+      label: Name of the MP
+      description: What is the full name of the MP?
+      placeholder: Jo Bloggs
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: mp-or-candidate
+    attributes:
+      label: What is the MPs political party?
+      description: If the party is not listed, please select 'Other not listed'
+      options:
+        - Conservative
+        - Labour
+        - Liberal Democrat
+        - Scottish National
+        - Independent
+        - Other not listed
+    validations:
+      required: true
+
+  - type: input
+    id: constituency
+    attributes:
+      label: Constituency
+      description: What is the full name of the constituency for which the person is an MP?
+      placeholder: e.g. Plymouth, Sutton and Devonport
+    validations:
+      required: true
+
+  - type: input
+    id: about--parliament-URL
+    attributes:
+      label: Parliamentary website
+      description: | 
+        What is the URL of the MP's profile on the UK Parliament website? 
+        
+        [Visit the UK Parliament website](https://members.parliament.uk/members/commons) to look up an MP.
+      placeholder: e.g. https://members.parliament.uk/member/0000/contact
+    validations:
+      required: false
+      
+  - type: markdown
+    attributes:
+      value: "## Sources"
+      
+  - type: markdown
+    attributes:
+      value: |
+        Only MPs that are have made an affirmative decision to reveal that they are LGBT+ will be included in this dataset.
+        If you are suggesting someone be added to this dataset, you should provide referencing information to prove that is the case. This must be able to be independently validated, or we won't include it in the dataset.
+
+        Acceptable sources include, but are not limited to: media interviews, speeches, social media posts, and blogposts from the MP.
+      
+  - type: input
+    id: source--name
+    attributes:
+      label: Name of source
+      description: What is the name of the source?
+      placeholder: e.g  Wikipedia, Twitter
+    validations:
+      required: true
+
+  - type: input
+    id: source--URL
+    attributes:
+      label: URL of source
+      description: A full URL of the source of the information.
+      placeholder: e.g  Wikipedia, Twitter
+    validations:
+      required: true
+
+  - type: textarea
+    id: source--explanation
+    attributes:
+      label: Explanation of source
+      description: "How do you know this source is reliable?"
+      placeholder: e.g. This statement comes directly from the MP
+    validations:
+      required: false
+  

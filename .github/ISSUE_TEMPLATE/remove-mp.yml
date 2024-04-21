@@ -1,0 +1,58 @@
+name: Remove an LGBT+ MP
+description: Suggest an MP for removal from the LGBT+ MPs dataset
+title: "Remove an MP: [Replace with full name of MP]"
+labels: ["Remove MP"]
+
+assignees:
+  - johnpeart
+
+body:
+  - type: markdown
+    attributes:
+      value: "## About the MP"
+        
+  - type: input
+    id: name-of-MP
+    attributes:
+      label: Name of the MP
+      description: What is the full name of the MP?
+      placeholder: Jo Bloggs
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: mp-or-candidate
+    attributes:
+      label: What is the MPs political party?
+      description: If the party is not listed, please select 'Other not listed'
+      options:
+        - Conservative
+        - Labour
+        - Liberal Democrat
+        - Scottish National
+        - Independent
+        - Other not listed
+    validations:
+      required: true
+
+  - type: input
+    id: constituency
+    attributes:
+      label: Constituency
+      description: What is the full name of the constituency for which the person is MP?
+      placeholder: e.g. Plymouth, Sutton and Devonport
+    validations:
+      required: true
+      
+  - type: markdown
+    attributes:
+      value: "## Justification"
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: Why should this MP be removed?
+      placeholder: e.g. This person is no longer an MP and should not be listed.
+    validations:
+      required: true
+  
