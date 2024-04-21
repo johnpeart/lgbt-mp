@@ -2,7 +2,7 @@
 <blockquote class="banner-mode">
 
 	<p><strong>{{ site.banner-mode--header }}</strong></p>
-	<p>{{ site.banner-mode--body }}</p>
+	{{ site.banner-mode--body | markdownify }}
 
 </blockquote>
 {% endif %}
