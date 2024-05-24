@@ -3,6 +3,10 @@ layout: page
 title: Change log
 ---
 
+# 24 May 2024
+
+Added missing official portraits of Damien Egan (Labour, Fylde) and Keir Mather (Selby and Aintsy).
+
 ## 18 April 2024
 
 The dataset was updated to show a change of party affiliation for Mark Menzies (Fylde). Mark Menzies was [suspended from the Conservative Party over alleged misuse of campaign funds](https://www.bbc.co.uk/news/uk-politics-68841840) on 18 April 2024.
