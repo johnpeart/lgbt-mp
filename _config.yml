@@ -11,9 +11,12 @@ url: "https://mps.whoare.lgbt"
 ####################
 # Feature settings #
 ####################
-banner-mode: false
-banner-mode--header: "A General Election is taking place"
-banner-mode--body: "This dataset is not currently up to date. We will update it with the latest information as soon as it is available."
+banner-mode: true
+banner-mode--header: "A General Election is taking place on 4 July 2024"
+banner-mode--body: |
+    This dataset reflects LGBT+ MPs in the Parliament that dissolved on 30 May 2024. The dataset will be updated  with the information about the next Parliament as soon as it is available.
+
+    **Help to update this dataset.** [Submit information about new, returning or former LGBT+ MPs](/contribute/).
 
 # Shows a blockquote on data pages exposing some of the underlying calculations
 error-check: false
