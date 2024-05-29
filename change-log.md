@@ -3,6 +3,10 @@ layout: page
 title: Change log
 ---
 
+# 29 May 2024
+
+The dataset was updated to show a change of party affiliation for Lloyd Russell-Moyle (Labour, Brighton Kemptown). The BBC reports that [Lloyd Russell-Moyle is suspended from the Labour Party](https://www.bbc.co.uk/news/articles/c5114q1x09eo) following a complaint into his behaviour.
+
 # 24 May 2024
 
 Added missing official portraits of Damien Egan (Labour, Fylde) and Keir Mather (Selby and Aintsy).
@@ -17,7 +21,7 @@ The dataset was updated to indicate that Scott Benton (Independent, Blackpool So
 
 ## 9 April 2024
 
-The dataset was updated to show a change in party affilitaion for William Wragg (Hazel Grove). William Wragg [resigned the Conservative Party whip](https://www.bbc.co.uk/news/uk-politics-68773702) on 9 April 2024.
+The dataset was updated to show a change in party affiliation for William Wragg (Hazel Grove). William Wragg [resigned the Conservative Party whip](https://www.bbc.co.uk/news/uk-politics-68773702) on 9 April 2024.
 
 ## 29 February 2024
 
@@ -29,7 +33,7 @@ The dataset was updated to include Damien Egan (Labour, Kingswood).
 
 ## 16 December 2023
 
-The dataset was updated to show a chance of party affiliation for Scott Benton (Blackpool South). Scott Benton was suspended from the Conservative party following [allegations of misconduct](https://www.bbc.co.uk/news/uk-politics-65193097) and pending an investigation. He has been an independent MP since 5 April 2023; this is now reflected in the dataset.
+The dataset was updated to show a change of party affiliation for Scott Benton (Blackpool South). Scott Benton was suspended from the Conservative party following [allegations of misconduct](https://www.bbc.co.uk/news/uk-politics-65193097) and pending an investigation. He has been an independent MP since 5 April 2023; this is now reflected in the dataset.
 
 ## 22 July 2023
 
