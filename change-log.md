@@ -3,6 +3,10 @@ layout: page
 title: Change log
 ---
 
+## 30 May 2024
+
+A General Election has been called. This dataset was updated to reflect the [final composition of the House of Commons](/historic/parliament/end/2024-05-30) on 30 May 2024, when Parliament was dissolved.
+
 # 29 May 2024
 
 The dataset was updated to show a change of party affiliation for Lloyd Russell-Moyle (Labour, Brighton Kemptown). The BBC reports that [Lloyd Russell-Moyle is suspended from the Labour Party](https://www.bbc.co.uk/news/articles/c5114q1x09eo) following a complaint into his behaviour.
