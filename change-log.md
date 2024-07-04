@@ -3,6 +3,12 @@ layout: page
 title: Change log
 ---
 
+## 4 – 5 July 2024
+
+The dataset was updated to reflect the initial results of the UK General Election.
+
+Further updates to the dataset are likely to be required in the coming days.
+
 ## 3 June 2024
 
 The dataset was updated to reflect former MPs who had confirmed they were not standing for re-election.
