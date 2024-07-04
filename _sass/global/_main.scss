@@ -366,6 +366,10 @@ details.party:hover {
     fill: map-get($colors, "labour");
   }
 
+  #party-icon--green path {
+    fill: map-get($colors, "green");
+  }
+
   #party-icon--liberal-democrat path {
     fill: map-get($colors, "liberal-democrats");
   }
@@ -562,6 +566,11 @@ img.member-portrait {
 
   &.plaid-cymru {
     border-color: #d16d2f;
+    border-color: map-get($colors, "plaid-cymru");
+  }
+
+  &.green {
+    border-color: map-get($colors, "green");
   }
 
 }

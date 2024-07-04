@@ -186,7 +186,9 @@
 
                             <summary>
                                 <div class="member-summary">
+                                    {% if memberID %}
                                     <img class="member-portrait {{ memberParty }}" src="/assets/images/members/{{ memberID }}-{{ memberName | slugify }}.jpg">
+                                    {% endif %}
                                     <p class="member-name">{{ memberName }}</p>
                                     <p class="member-constituency">{{ memberConstituency }}</p>
                                     <span class="more-icon"></span>
