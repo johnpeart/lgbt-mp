@@ -3,6 +3,18 @@ layout: page
 title: Change log
 ---
 
+## 4 – 5 July 2024
+
+The dataset was updated to reflect the initial results of the UK General Election.
+
+Further updates to the dataset are likely to be required in the coming days.
+
+## 3 June 2024
+
+The dataset was updated to reflect former MPs who had confirmed they were not standing for re-election.
+
+The dataset was also updated to reflect missing data for Crispin Blunt (Reigate, Independent). Other data was amended to ensure correct dates were recorded.
+
 ## 30 May 2024
 
 A General Election has been called. This dataset was updated to reflect the [final composition of the House of Commons](/historic/parliament/end/2024-05-30) on 30 May 2024, when Parliament was dissolved.

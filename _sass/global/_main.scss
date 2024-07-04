@@ -93,15 +93,7 @@ ul.historical-datasets {
 
   display: grid;
 
-  @include toggleSizes(
-    grid-template-columns,
-    1fr,
-    1fr 1fr,
-    1fr 1fr,
-    1fr 1fr,
-    1fr 1fr
-  );
-
+  grid-template-columns: 1fr;
   grid-gap: $container-padding;
 
   list-style: none;
@@ -120,22 +112,6 @@ ul.historical-datasets li {
 
   background: map-get($colors, "white");
   @include box-shadow();
-
-  @include toggleSizes(max-width,
-    100%,
-    calc(map-get($containers, "sm") / 2) - $container-padding,
-    calc(map-get($containers, "md") / 2) - $container-padding,
-    calc(map-get($containers, "lg") / 2) - $container-padding,
-    calc(map-get($containers, "xl") / 2) - $container-padding
-  );
-
-  &:nth-of-type(1) {
-    margin-bottom: $container-padding * 2;
-  }
-
-  &:nth-of-type(2) {
-    grid-column: 1;
-  }
 
 }
 
