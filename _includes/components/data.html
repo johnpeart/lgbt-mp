@@ -76,11 +76,11 @@
 
     <div class="summary-data">
         {% if parliamentEndDate == "null" and parliamentStartDate == "null" %}
-        <p class="lead">In the current Parliament, as of {{ now | date: "%d %B %Y" }}, at least:</p>
+        <p class="lead">In the current Parliament, on {{ now | date: "%d %B %Y" }}, at least:</p>
         {% elsif page.start-date %}
         <p class="lead">For the Parliament that started on <strong>{{ page.start-date | date: "%d %B %Y" }}</strong>, at least:</p>
         {% elsif page.end-date %}
-        <p class="lead">For the Parliament that ended on {{ page.end-date | date: "%d %B %Y" }}, at least:</p>
+        <p class="lead">For this Parliament, on {{ page.end-date | date: "%d %B %Y" }} when Parliament dissolved, at least:</p>
         {% endif %}
 
         <div class="summary-block">
@@ -102,7 +102,9 @@
 		<p><a href="/historic">View data from previous time periods and Parliaments</a></p>
 		{% endif %}
         {% if parliamentEndDate != "null" or parliamentStartDate != "null" %}
-        <p class="note">This dataset shows MPs who are known to be LGBT+ today. The MPs referenced might not have been known to be LGBT+ at the time this Parliament took place.</p>
+        <p class="note">This dataset shows MPs who are known to be LGBT+ today. The MPs referenced might not have been known to be LGBT+ at the time this Parliament took place.
+        <br/><br/>
+        MPs that were elected through by-elections or that resigned during the Parliament may not be included on this page. <a href="https://github.com/johnpeart/lgbt-mp/blob/main/_data/members.csv" title="View the dataset in CSV format on Github">A full dataset is available in CSV format on Github.</a></p>
         {% endif %}
 
     </div>
