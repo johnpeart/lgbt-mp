@@ -203,17 +203,6 @@
                                         {{ mp.mp-since | date: "%d %B %Y" }}
                                     </span>
                                 </p>
-                                
-                                {% if mp.mp-since != mp.entry-start-date %}
-                                
-                                <p class="party-start">
-                                    <strong class="label">Party affiliation since</strong>
-                                    <span class="data">
-                                        {{ mp.entry-start-date | date: "%d %B %Y" }}
-                                    </span>
-                                </p>
-                                
-                                {% endif %}
 
                                 <p class="identity">
                                     <strong class="label">Identity</strong>
@@ -240,12 +229,14 @@
                                     </span>
                                 </p>
                                 
+                                {% if mp.parliament-website %}
                                 <p class="parliamentary-website">
                                     <strong class="label">Official information</strong>
                                     <span class="data">
                                         <a href="{{ mp.parliament-website }}" alt="Visit {{memberName}}’s page on the UK Parliament website (Open’s in new window)" target="_blank">{{ memberName }} on the UK Parliament website</a>
                                     </span>
                                 </p>
+                                {% endif %}
 
                                 {% if mp.notes %}
                                 <p class="member-notes">
