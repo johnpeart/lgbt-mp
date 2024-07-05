@@ -165,7 +165,7 @@
             {% for mp in mps %}
 
                 {% assign memberID = mp.id %}
-                {% assign memberName = mp.name %}
+                {% assign memberName = mp.first-name | append: " " | append: mp.last-name %}
                 {% assign memberConstituency = mp.constituency %}
                 {% assign memberParty = mp.party | slugify %}
                 {% assign comparatorParty = party | slugify %}
@@ -243,7 +243,7 @@
                                 <p class="parliamentary-website">
                                     <strong class="label">Official information</strong>
                                     <span class="data">
-                                        <a href="{{ mp.parliament-website }}" alt="Visit {{mp.name}}’s page on the UK Parliament website (Open’s in new window)" target="_blank">{{ mp.name }} on the UK Parliament website</a>
+                                        <a href="{{ mp.parliament-website }}" alt="Visit {{memberName}}’s page on the UK Parliament website (Open’s in new window)" target="_blank">{{ memberName }} on the UK Parliament website</a>
                                     </span>
                                 </p>
 
