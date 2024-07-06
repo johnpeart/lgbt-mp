@@ -164,7 +164,7 @@
 
             {% for mp in mps %}
 
-                {% assign memberID = mp.id %}
+                {% assign memberID = mp.members-id %}
                 {% assign memberName = mp.first-name | append: " " | append: mp.last-name %}
                 {% assign memberConstituency = mp.constituency %}
                 {% assign memberParty = mp.party | slugify %}
@@ -186,9 +186,7 @@
 
                             <summary>
                                 <div class="member-summary">
-                                    {% if mp.image-source-url %}
-                                    <img class="member-portrait {{ memberParty }}" src="/assets/images/members/{{ memberID }}-{{ memberName | slugify }}.jpg">
-                                    {% endif %}
+                                    {% if memberID %}<img class="member-portrait {{ memberParty }}" src="https://members-api.parliament.uk/api/Members/{{ memberID }}/Thumbnail">{% endif %}
                                     <p class="member-name">{{ memberName }}</p>
                                     <p class="member-constituency">{{ memberConstituency }}</p>
                                     <span class="more-icon"></span>
@@ -207,8 +205,8 @@
                                 <p class="identity">
                                     <strong class="label">Identity</strong>
                                     <span class="data">
-                                        {% if mp.identity %}
-                                        {{ mp.identity }}
+                                        {% if mp.members-identity %}
+                                        {{ mp.members-identity }}
                                         {% else %}
                                         LGBT+
                                         {% endif %}
