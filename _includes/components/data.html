@@ -186,7 +186,7 @@
 
                             <summary>
                                 <div class="member-summary">
-                                    {% if memberID %}
+                                    {% if mp.image-source-url %}
                                     <img class="member-portrait {{ memberParty }}" src="/assets/images/members/{{ memberID }}-{{ memberName | slugify }}.jpg">
                                     {% endif %}
                                     <p class="member-name">{{ memberName }}</p>
@@ -233,7 +233,7 @@
                                 <p class="parliamentary-website">
                                     <strong class="label">Official information</strong>
                                     <span class="data">
-                                        <a href="{{ mp.parliament-website }}" alt="Visit {{memberName}}’s page on the UK Parliament website (Open’s in new window)" target="_blank">{{ memberName }} on the UK Parliament website</a>
+                                        <a href="//members.parliament.uk/member/{{ memberID }}" alt="Visit {{memberName}}’s page on the UK Parliament website (Open’s in new window)" target="_blank">{{ memberName }} on the UK Parliament website</a>
                                     </span>
                                 </p>
                                 {% endif %}
