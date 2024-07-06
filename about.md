@@ -88,5 +88,8 @@ The following people have helped to build this dataset:
 
 - [George Ryan](https://twitter.com/GeorgeMRyan)
 - [Will Fletcher](https://twitter.com/WillFletchUK)
+- [HereAgain2004](https://github.com/HereAgain2024)
+- [emynx](https://github.com/emynx)
+- [Frobsi](https://github.com/HereAgain2024)
 
 
