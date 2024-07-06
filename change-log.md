@@ -3,9 +3,9 @@ layout: page
 title: Change log
 ---
 
-## 4 – 5 July 2024
+## 4 – 6 July 2024
 
-The dataset was updated to reflect the initial results of the UK General Election.
+The dataset was updated to reflect the results of the UK General Election.
 
 Further updates to the dataset are likely to be required in the coming days.
 
