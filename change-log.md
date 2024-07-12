@@ -3,7 +3,7 @@ layout: page
 title: Change log
 ---
 
-## 4 – 9 July 2024
+## 4 – 12 July 2024
 
 The dataset was updated to reflect the results of the UK General Election.
 
