@@ -216,7 +216,11 @@
                                 <p class="source">
                                     <strong class="label">Source</strong>
                                     <span class="data">
+                                        {% if mp.source-url %}
                                         <a href="{{ mp.source-url }}">{{ mp.source-description }}</a>
+                                        {% else %}
+                                        {{ mp.source-description }}
+                                        {% endif %}
                                     </span>
                                 </p>
 
