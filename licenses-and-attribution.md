@@ -1,35 +1,40 @@
 ---
-layout: page
+layout: 'layouts/page.html'
 title: Licenses and attribution
 ---
 
-<!-- ASSIGN WHOLE DATASET -->
-{% assign mps = site.data.members %}
-
-## References
-
-### Images 
+## Images 
 
 <p>All images provided via the Parliament Members API v1 OAS3 under the <a href="https://www.parliament.uk/site-information/copyright-parliament/open-parliament-licence/">Open Parliament Licence</a>.</p>
 
-### Members
-{% for mp in mps %}
+## Data sources
 
-{% assign memberID = mp.members-id %}
-{% assign memberName = mp.first-name | append: " " | append: mp.last-name %}
-{% assign memberSource = mp.source-description %}
-{% assign memberSourceURL = mp.source-url %}
-{% assign memberParliamentURL = mp.parliament-website %}
+Data relating to MP's parliamentary activity is gathered from the Parliament Members API v1 OAS3 under the <a href="https://www.parliament.uk/site-information/copyright-parliament/open-parliament-licence/">Open Parliament Licence</a>.
 
-{% if uniqueMemberName != memberName %}
+All other data is gathered manually. Sources are cited on individual pages relating to each Member of Parliament.
 
-#### {{ memberName }}
-<p><strong>LGBT+ reference source:</strong> <a href="{{ memberSourceURL }}" title="Visit the reference source page for {{ memberName }}">{{ memberSource }}</a></p>
-<p><strong>UK Parliament website page:</strong> <a href="{{ memberParliamentURL }}" title="Visit {{ memberName }}'s page on the UK Parliament website">{{ memberName }}</a></p>
+## Using this data
 
+### Quick reference
 
-{% endif %}
+If you use this dataset, please reference it. The following is a suggested referencing style:
 
-{% assign uniqueMemberName = memberName %}
+> **Referencing style**  \
+> LGBT+ Members of Parliament ({{ 'now' | date: "%Y" }}) *'A dataset of MPs who define as LGBT+ in the UK House of Commons'*, electronic dataset, available at: [https://mps.whoare.lgbt](https://mps.whoare.lgbt) (Accessed: {{ 'now' | date: "%Y-%m-%d" | prettyDate }})
 
-{% endfor %}
+### License
+
+The data contained in the dataset is made available through the [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) license.
+
+You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material
+for any purpose, even commercially.
+
+Under the following terms:
+
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+- **No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.

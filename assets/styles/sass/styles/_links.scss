@@ -1,0 +1,90 @@
+a {
+    font-weight: 		normal;
+    text-decoration: 	none;
+    cursor: pointer;
+
+    &:link {
+        color: map-get($colors, "link");
+    }
+    &:visited {
+        color: map-get($colors, "link-visited");
+    }
+    &:hover {
+        color: map-get($colors, "link-hover");
+        text-decoration: 	underline;
+    }
+    &:focus,
+    &:focus-visible {
+        color: map-get($colors, "deep-purple") !important;
+        background: map-get($colors, "mint");
+        outline: 5px solid map-get($colors, "mint");
+    }
+    &:active {
+        text-decoration: 	none;
+        color: map-get($colors, "deep-purple") !important;
+    }
+    &:focus:hover {
+        color: map-get($colors, "deep-purple") !important;
+        text-decoration: none;
+    }
+}
+
+a.inverse {
+    &:link,
+    &:visited {
+        color: map-get($colors, "westminster-white-90");
+        text-decoration: underline;
+    }
+    &:focus {
+        text-decoration: none;
+    }
+    &:focus:hover,
+    &:focus-visible:hover {
+        text-decoration: underline;
+    }
+    &:active {
+        text-decoration: 	none;
+    }
+}
+
+a.card {
+    &:link,
+    &:link .card {
+        h1,h2,h3 {
+            color: map-get($colors, "deep-purple");
+        }
+        p {
+            color: map-get($colors, "black");
+        }
+    }
+    &:visited,
+    &:visited .card {
+        h1,h2,h3 {
+            color: map-get($colors, "deep-purple");
+        }
+        p {
+            color: map-get($colors, "black");
+        }
+    }
+    &:hover,
+    &:hover .card {
+        h1,h2,h3 {
+            color: map-get($colors, "deep-purple");
+        }
+        p {
+            color: map-get($colors, "black");
+        }
+        text-decoration: 	none;
+        background: map-get($colors, "grey-5");
+    }
+    &:focus,
+    &:focus .card {
+        color: map-get($colors, "deep-purple");
+        background: map-get($colors, "mint");
+        outline: 3px solid map-get($colors, "mint");
+    }
+    &:active,
+    &:active .card {
+        text-decoration: 	none;
+    }
+}

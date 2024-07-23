@@ -1,0 +1,93 @@
+{% if endDate == false or endDate == null %}
+    {% assign startDate = parliament.startDate | date: "%Y-%m-%dT00:00:00" %}
+{% elsif startDate == false %}
+    {% assign endDate = parliament.endDate | date: "%Y-%m-%dT00:00:00" %}
+{% endif %}
+
+{% assign currentMembers = members %}
+{% assign countMembers = 0 %}
+
+{% assign partyNames = "" %}
+{% for member in currentMembers %}
+    {% for history in member.houseMembershipHistory %}
+        {% assign house = history.house %}
+        {% assign membershipStartDate = history.membershipStartDate | date: "%s" %}
+        {% assign membershipEndDate = history.membershipEndDate | date: "%s" %}
+        
+        {% if endDate == null and startDate == null %}
+            {% if   house == 1 and
+                    membershipEndDate == null %}
+                        {% assign countMembers = countMembers | plus: 1 %}
+                        {% for party in member.partyHistory %}
+                            {% assign partyName = party.party.name %}
+                            {% unless partyNames contains partyName %}
+                                {% assign partyNames = partyNames | append: partyName | append: ", " %}
+                            {% endunless %}
+                        {% endfor %}
+            {% endif %}
+        {% elsif parliament.endDate == null %}
+            {% assign compareEndDate = null %}
+            {% if   house == 1 and
+                    compareEndDate == membershipEndDate %}
+                        {% assign countMembers = countMembers | plus: 1 %}
+                        {% for party in member.partyHistory %}
+                            {% assign partyStartDate = party.startDate | date: "%s" %}
+                            {% assign partyEndDate = party.endDate | date: "%s" %}
+                            {% if   compareEndDate == partyEndDate %}
+                                    {% assign partyName = party.party.name %}
+                                    {% unless partyNames contains partyName %}
+                                        {% assign partyNames = partyNames | append: partyName | append: ", " %}
+                                    {% endunless %}
+                            {% endif %}
+                        {% endfor %}
+            {% endif %}
+        {% elsif endDate == false %}
+            {% assign compareStartDate = startDate | date: "%s" %}
+            {% if   house == 1 and
+                    compareStartDate >= membershipStartDate  and
+                    compareStartDate <= membershipEndDate %}
+                        {% assign countMembers = countMembers | plus: 1 %}
+                        {% for party in member.partyHistory %}
+                            {% assign partyStartDate = party.startDate | date: "%s" %}
+                            {% assign partyEndDate = party.endDate | date: "%s" %}
+                            {% if   compareStartDate >= partyStartDate and
+                                    compareStartDate <= partyEndDate %}
+                                    {% assign partyName = party.party.name %}
+                                    {% unless partyNames contains partyName %}
+                                        {% assign partyNames = partyNames | append: partyName | append: ", " %}
+                                    {% endunless %}
+                            {% endif %}
+                        {% endfor %}
+            {% endif %}
+        {% elsif startDate == false %}
+            {% assign compareEndDate = endDate | date: "%s" %}
+            {% if   house == 1 and
+                    compareEndDate >= membershipStartDate  and
+                    compareEndDate <= membershipEndDate %}
+                        {% assign countMembers = countMembers | plus: 1 %}
+                        {% for party in member.partyHistory %}
+                            {% assign partyStartDate = party.startDate | date: "%s" %}
+                            {% assign partyEndDate = party.endDate | date: "%s" %}
+                            {% if   compareEndDate <= partyEndDate
+                                    compareEndDate >= partyEndDate %}
+                                    {% assign partyName = party.party.name %}
+                                    {% unless partyNames contains partyName %}
+                                        {% assign partyNames = partyNames | append: partyName | append: ", " %}
+                                    {% endunless %}
+                            {% endif %}
+                        {% endfor %}
+            {% endif %}
+        {% endif %}
+        
+    {% endfor %}
+{% endfor %}
+
+{% assign countAllMembers = countMembers %}
+
+{% assign uniquePartyNamesArray = partyNames | split: ", " | uniq | sort %}
+{% assign countAllParties = uniquePartyNamesArray | size %}
+{% if uniquePartyNamesArray contains "Independent" and uniquePartyNamesArray contains "Non-affiliated" %}
+    {% assign countAllParties = uniquePartyNamesArray | size | minus: 2 %}
+{% elsif uniquePartyNamesArray contains "Independent" or uniquePartyNamesArray contains "Non-affiliated" %}
+    {% assign countAllParties = uniquePartyNamesArray | size | minus: 1 %}
+{% endif %}

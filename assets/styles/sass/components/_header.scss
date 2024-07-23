@@ -1,0 +1,182 @@
+header#site-navigation {
+
+    display: flex;
+    position: relative;
+
+    align-items: center;
+
+    
+    padding: ($container-padding + 1px) 0;
+
+    background: map-get($colors, "deep-purple");
+    color: map-get($colors, "westminster-white");
+    
+}
+
+nav#header-menu {
+
+    text-align: left;
+
+}
+
+header#site-navigation a#home-link {
+
+    display: inline-block;
+    @include clearfix;
+
+    &:link {
+        color: map-get($colors, "westminster-white");
+    }
+    &:visited {
+        color: map-get($colors, "westminster-white");
+    }
+    &:hover span[class^="wordmark-line-"] {
+        text-decoration: 	underline;
+    }
+    &:focus {
+        color: map-get($colors, "deep-purple") !important;
+        outline: 5px solid map-get($colors, "mint");
+    }
+    &:active {
+        background: map-get($colors, "mint");
+        outline: 5px solid map-get($colors, "mint");
+    }
+    &:focus span[class^="line-"] {
+        color: map-get($colors, "deep-purple") !important;
+    }
+    &:active span[class^="line-"] {
+        text-decoration: 	none;
+        color: map-get($colors, "deep-purple") !important;
+    }
+
+
+}
+
+header#site-navigation img#banner-icon {
+
+    @include sm-down() {
+        height: 40px;
+    }
+    
+    @include md-up() {
+        height: 45px;
+    }
+    
+    width: auto;
+
+    margin-right: $container-padding * 1.5;
+
+    float: left;
+    clear: left;
+
+}
+
+a#home-link span.wordmark {
+    display: block;
+    @include sm-down() {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    @include md-up() {
+        font-size: 21px;
+        line-height: 24px;
+    }
+    font-weight: bold;
+    font-style: normal;
+    float: left;
+
+    @include clearfix;
+}
+
+a#home-link span[class^="wordmark-line-"] {
+    display: block;
+    clear: both;
+    float: left;
+}
+
+.page-type-banner,
+.hero-banner {
+    display: block;
+    text-wrap: balance;
+    color: map-get($colors, "white");
+    
+    h1, h2 {
+        padding: $container-padding 0;
+    }
+    
+    p { 
+        max-width: 60ch;
+    }
+
+}
+
+.page-type-banner {    
+    padding: $container-padding;
+    border-top: 1px solid map-get($colors, "deep-purple--light");
+}
+
+.hero-banner {
+    padding: $container-padding 0 $container-padding * 2;
+
+    &.hero-banner--default {
+        padding: $container-padding * 3 0 $container-padding * 4;
+        background: map-get($colors, "deep-purple");
+        border-top: 1px solid map-get($colors, "deep-purple--light");
+        color: map-get($colors, "white");
+        
+        a.inverse:hover,
+        a.inverse:active {
+            color: map-get($colors, "purple--light") !important;
+        }
+        a.inverse:focus:hover,
+        a.inverse:focus-visible:hover {
+            color: map-get($colors, "deep-purple") !important;
+        }
+        
+    }
+    
+    &.hero-banner--commons {
+        background: map-get($colors, "commons-green");
+        color: map-get($colors, "white");
+        
+        a.inverse:hover,
+        a.inverse:active {
+            color: map-get($colors, "mint") !important;
+        }
+        a.inverse:focus:hover,
+        a.inverse:focus-visible:hover {
+            color: map-get($colors, "deep-purple") !important;
+        }
+    }
+    
+    &.hero-banner--lords {
+        background: map-get($colors, "lords");
+        color: map-get($colors, "white");
+        
+        a.inverse:hover,
+        a.inverse:active {
+            color: map-get($colors, "warning-light") !important;
+        }
+        a.inverse:focus:hover,
+        a.inverse:focus-visible:hover {
+            color: map-get($colors, "deep-purple") !important;
+        }
+    }
+    
+    &.hero-banner--with-image .container {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto;
+        grid-template-areas: "text portrait";
+        @include sm-down() {
+            grid-template-columns: 1fr;    
+            grid-template-rows: auto auto;
+            grid-template-areas: "portrait" "text";
+        }
+        grid-gap: $container-padding;
+    }
+    
+    p:last-child {
+        padding: 0;
+    }
+}

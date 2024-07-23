@@ -1,0 +1,13 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "npm run fetch-data\n"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "npm run build:sass\nnpm run start"
+    }
+  },
+  "openLogOnRun" : "start"
+}

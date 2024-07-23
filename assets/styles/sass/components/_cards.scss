@@ -1,0 +1,78 @@
+.member {
+
+    display: grid;
+    position: relative;
+
+    grid-template-columns: auto 1fr 20px;
+    grid-template-rows: auto auto;
+    grid-gap: 0 $container-padding;
+    grid-template-areas: "portrait member-name arrow" "portrait member-constituency arrow";
+    
+    @include box-shadow();
+    padding: $container-padding;
+    
+    .member-name {
+
+        grid-area: member-name;
+        
+        @each $style, $sizes in $memberName {
+            @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+        }
+    
+    }
+    
+    .member-constituency {
+    
+        grid-area: member-constituency;
+        
+        @each $style, $sizes in $memberConstituency {
+            @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+        }
+    
+    }
+
+}
+
+.card--with-border {
+    border-left: 6px solid;
+    
+    &.alba {
+        border-color: map-get($colors, "alba");
+    }
+
+    &.conservative {
+        border-color: map-get($colors, "conservative");
+    }
+
+    &.independent {
+        border-color: map-get($colors, "independent");
+    }
+
+    &.labour {
+        border-color: map-get($colors, "labour");
+    }
+
+    &.liberal-democrat {
+        border-color: map-get($colors, "liberal-democrats");
+    }
+
+    &.scottish-national-party {
+        border-color: map-get($colors, "scottish-national-party");
+    }
+
+    &.plaid-cymru {
+        border-color: map-get($colors, "plaid-cymru");
+    }
+
+    &.green-party {
+        border-color: map-get($colors, "green");
+    }
+
+    &.commons {
+        border-color: map-get($colors, "commons");
+    }
+
+    &.lords {
+        border-color: map-get($colors, "lords");
+    }
+}

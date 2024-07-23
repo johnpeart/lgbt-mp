@@ -1,0 +1,62 @@
+<head prefix="og: http://ogp.me/ns#">
+    
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    {% if layout == "layouts/parliament.html" %}
+        {% if endDate == false %}
+            {% assign startDate = parliament.startDate | prettyDate %}
+            {% assign pageTitle = 'Parliament that started on ' | append: startDate | append: ' • LGBT+ Members of Parliament' %}
+        {% elsif startDate == false %}
+            {% assign endDate = parliament.endDate | prettyDate %}
+            {% assign pageTitle = 'Parliament that dissolved on ' | append: endDate | append: ' • LGBT+ Members of Parliament' %}
+        {% else %}
+            {% assign pageTitle = site.title %}
+        {% endif %}
+    {% elsif layout == "layouts/parliaments.html" %}
+        {% assign pageTitle = 'All parliaments' | append: ' • LGBT+ Members of Parliament' %}
+    {% elsif layout == "layouts/member.html" %}
+        {% assign pageTitle = member.firstName | append: ' ' | append: member.lastName | append: ' • LGBT+ Members of Parliament' %}
+    {% else %}
+        {% assign pageTitle = null %}
+    {% endif %}
+    <title>{{ pageTitle | default: site.title }}</title>
+    
+    <!-- Short description of the page (limit to 150 characters) -->
+    <!-- In *some* situations this description is used as a part of the snippet shown in the search results. -->
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="author" content="{{ site.author }}" />
+    
+    <!-- Control the behavior of search engine crawling and indexing -->
+    <meta name="robots" content="index,follow"><!-- All Search Engines -->
+    <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+    
+    <!-- Base URLS, duplicate URLs and feeds -->
+    <meta name="url" content="{{ site.url | append: page.url }}">
+    <base href="{{ site.baseUrl | default: '/' }}">
+    <link rel="index" href="{{ site.url | append: site.baseUrl | append: 'index.html' }}">
+    <link rel="canonical" href="{{ site.url | append: page.url }}">
+    
+    <!-- Schema.org settings -->
+    <meta itemprop="name" content="{{ site.title }}">
+    <meta itemprop="description" content="{{ site.description }}">
+    <meta itemprop="image" content="{{ site.url | append: '/assets/images/site/social-media.png' }}">
+    
+    <!-- Fediverse -->
+    <meta property="fediverse:creator" content="{{ site.fediverse }}" />
+
+    <!-- Favicons -->
+    <!-- Place favicon.ico in the root directory - no tag necessary -->
+    <link rel="icon" href="{{ site.url | append: '/assets/images/site/favicon.svg' }} ">
+    <link rel="mask-icon" href="{{ site.url | append: '/assets/images/site/favicon-pinned-svg.svg' }}" color="#373151">
+    <link rel="apple-touch-icon" href="{{ site.url | append: '/assets/images/site/favicon-large-png.png' }}">
+    
+    <!-- Safari toolbar colors -->
+    <meta name="theme-color" content="#373151">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ site.url | append: '/assets/styles/styles.css' }}">
+    
+</head>

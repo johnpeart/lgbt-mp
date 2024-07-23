@@ -1,0 +1,81 @@
+footer {
+
+    min-height: 20vh;
+
+    margin-block-start: $container-padding;
+    padding: $container-padding * 3 0;
+
+    background: map-get($colors, "grey-3");
+
+    ul {
+        list-style: none;
+    }
+
+}
+
+footer > div.container {
+
+    display: grid;
+
+    @include toggleSizes(grid-template-columns,
+        1fr,
+        1fr,
+        1fr 1fr,
+        1fr 1fr 1fr,
+        1fr 1fr 1fr
+    );
+    @include toggleSizes(grid-template-rows,
+        auto auto auto,
+        auto auto auto,
+        auto auto,
+        auto,
+        auto
+    );
+    @include toggleSizes(grid-template-areas,
+        "heading" "navigation" "other",
+        "heading" "navigation" "other",
+        "heading navigation" "heading other",
+        "heading navigation other",
+        "heading navigation other"
+    );
+
+    row-gap: $container-padding;
+    column-gap: $container-padding;
+
+    p.footer--heading {
+        @each $style, $sizes in $lead {
+            @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+        }
+    }
+    .footer--navigation {
+        grid-area: navigation;
+        padding-left: 0;
+        @each $style, $sizes in $lead {
+            @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+        }
+        font-weight: 400;
+    }
+    .footer--other {
+        grid-area: other;
+        padding-left: 0;
+        @each $style, $sizes in $lead {
+            @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+        }
+        font-weight: 400;
+    }
+    .footer--colophon {
+        padding-left: 0;
+        grid-area: colophon;
+        padding-top: $container-padding * 2;
+    }
+
+}
+
+
+
+aside.errors p:first-of-type {
+  border-top: 1px solid map-get($colors, "grey-3");
+  margin-block-start: $container-padding * 3;
+  padding: $container-padding 0;
+  color: map-get($colors, "grey-1")
+}

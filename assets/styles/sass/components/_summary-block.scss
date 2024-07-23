@@ -1,0 +1,53 @@
+div.summary-data {
+  background: map-get($colors, "white");
+  padding: $container-padding * 2 $container-padding * 2 $container-padding;
+
+  h1 {
+    padding: 0 0 10pt;
+  }
+
+  p.lead {
+    border-bottom: 1px dotted map-get($colors, "grey-3");
+  }
+  p.note{
+    padding-block-start: $container-padding;
+    margin-block-start: $container-padding;
+    border-top: 1px dotted map-get($colors, "grey-3");
+  }
+
+}
+
+div.summary-block {
+
+  display: grid;
+  @include toggleSizes(grid-template-columns,
+    1fr,
+    1fr 1fr,
+    1fr 1fr,
+    1fr 1fr,
+    1fr 1fr
+  );
+  @include toggleSizes(grid-template-rows,
+    1fr 1fr,
+    1fr,
+    1fr,
+    1fr,
+    1fr
+  );
+
+  align-items: center;
+
+  grid-gap: $container-padding;
+
+}
+
+div.summary-block p {
+
+  display: grid;
+
+  grid-template-rows: auto auto;
+  grid-gap: $container-padding;
+
+  align-items: center;
+
+}

@@ -1,7 +1,10 @@
 ---
-layout: page
-title: Suggest edits to the dataset
+layout: 'layouts/page.html'
+title: Contribute
+excerpt: This dataset is maintained entirely by volunteers in their spare time. Help to keep it up to date by suggesting edits to the dataset.
 ---
+
+## Suggest edits to the dataset
 
 You can suggest additions, amendments or removals of information from this dataset using Github Issues.
 

@@ -1,0 +1,149 @@
+// PARTY ICONS
+details.party > summary svg {
+
+    display: block;
+    grid-area: img;
+
+    align-self: center;
+    justify-self: center;
+
+    @include toggleSizes(margin-right, 
+        $container-padding, 
+        $container-padding, 
+        $container-padding * 2, 
+        $container-padding * 2, 
+        $container-padding * 2
+    );
+    margin-left: 0;
+
+    @each $style, $sizes in $partyName {
+        @if $style == "line-height" {
+            @include toggleSizes(height,
+                map-get($sizes, "xs") * 1.5,
+                map-get($sizes, "sm") * 2,
+                map-get($sizes, "md") * 2,
+                map-get($sizes, "lg") * 2,
+                map-get($sizes, "xl") * 2
+            );
+        };
+    }
+
+    @each $style, $sizes in $partyName {
+        @if $style == "line-height" {
+            @include toggleSizes(max-width,
+                map-get($sizes, "xs") * 1.5,
+                map-get($sizes, "sm") * 2,
+                map-get($sizes, "md") * 2,
+                map-get($sizes, "lg") * 2,
+                map-get($sizes, "xl") * 2
+            );
+        };
+    }
+
+}
+
+details.party summary:hover {
+
+    #party-icon--alba path {
+        fill: map-get($colors, "alba");
+    }
+
+    #party-icon--conservative path {
+        fill: map-get($colors, "conservative");
+    }
+
+    #party-icon--independent path {
+        fill: map-get($colors, "independent");
+    }
+
+    #party-icon--labour path {
+        fill: map-get($colors, "labour");
+    }
+
+    #party-icon--green path {
+        fill: map-get($colors, "green");
+    }
+
+    #party-icon--liberal-democrat path {
+        fill: map-get($colors, "liberal-democrats");
+    }
+
+    #party-icon--snp path {
+        fill: map-get($colors, "scottish-national-party");
+    }
+
+    #party-icon--plaid-cymru {
+
+        #plaid-outer path {
+            fill: #fbc707;
+        }
+        #plaid-fourth path {
+            fill: #f5af0b;
+        }
+        #plaid-third path {
+            fill: #e8860f;
+        }
+        #plaid-second path {
+            fill: #ef9b0d;
+        }
+        #plaid-inner path {
+            fill: #d16d2f;
+        }
+    }
+
+}
+
+img.member-portrait {
+
+    grid-area: portrait;
+    border-radius: 100%;
+    
+    border: 3px solid;
+    
+    &.member-portrait-small {
+        @include toggleSizes(max-height, 50px, 50px, 60px, 70px, 75px);
+        @include toggleSizes(max-width, 50px, 50px, 60px, 70px, 75px);
+    }
+    &.member-portrait-large {
+        align-self: flex-start;
+        margin-block-start: $container-padding;
+        @include toggleSizes(max-height, 100px, 100px, 100px, 150px, 150px);
+        @include toggleSizes(max-width, 100px, 100px, 100px, 150px, 150px);
+    }
+    @include md-up() {   
+        margin-right: $container-padding;
+    }
+
+    &.alba {
+        border-color: map-get($colors, "alba");
+    }
+
+    &.conservative {
+        border-color: map-get($colors, "conservative");
+    }
+
+    &.independent {
+        border-color: map-get($colors, "independent");
+    }
+
+    &.labour {
+        border-color: map-get($colors, "labour");
+    }
+
+    &.liberal-democrat {
+        border-color: map-get($colors, "liberal-democrats");
+    }
+
+    &.scottish-national-party {
+        border-color: map-get($colors, "scottish-national-party");
+    }
+
+    &.plaid-cymru {
+        border-color: map-get($colors, "plaid-cymru");
+    }
+
+    &.green-party {
+        border-color: map-get($colors, "green");
+    }
+
+}

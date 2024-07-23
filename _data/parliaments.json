@@ -1,0 +1,32 @@
+[
+  {
+    "parliamentPeriod": 59,
+    "parliamentPeriodSuffix": "th",
+    "endDate": null,
+    "startDate": "2024-07-04"
+  },
+  {
+    "parliamentPeriod": 58,
+    "parliamentPeriodSuffix": "th",
+    "endDate": "2024-05-30",
+    "startDate": "2019-12-17"
+  },
+  {
+    "parliamentPeriod": 57,
+    "parliamentPeriodSuffix": "th",
+    "endDate": "2019-11-05",
+    "startDate": "2017-06-13"
+  },
+  {
+    "parliamentPeriod": 56,
+    "parliamentPeriodSuffix": "th",
+    "endDate": "2017-05-03",
+    "startDate": "2015-05-18"
+  },
+  {
+    "parliamentPeriod": 55,
+    "parliamentPeriodSuffix": "th",
+    "endDate": "2015-03-30",
+    "startDate": "2010-05-18"
+  }
+]

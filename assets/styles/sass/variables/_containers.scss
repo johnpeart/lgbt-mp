@@ -1,0 +1,20 @@
+// BREAKPOINTS AND CONTAINER SIZING
+
+// Breakpoints
+$breakpoints: (
+    "xs": 0,
+    "sm": 767px,
+    "md": 1024px,
+    "lg": 1360px,
+    "xl": 1920px
+);
+
+$containers: (
+    "xs":    300px,
+    "sm":    510px,
+    "md":    690px,
+    "lg":    900px,
+    "xl":    950px
+);
+
+$container-padding: 	 			15px;

@@ -1,0 +1,37 @@
+{% assign now = 'now' | date: "%Y-%m-%d" | prettyDate %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include "components/head.html" %}
+
+    <body id="parliament">
+
+  	    <a href="#content" class="skip-link">
+	        <div class="container">
+		        Skip to main content
+	        </div>
+        </a>
+    
+        {% include "components/header.html" %}
+    
+        {% include "components/hero-banner.html" %}
+
+        <section id="content">
+    
+            <main class="container">
+            
+                {{ content }}
+            
+            </main>
+    
+            {% include "components/footer.html" %}
+    
+        </section>
+    
+        <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": ""}'></script><!-- End Cloudflare Web Analytics -->
+
+    </body>
+
+</html>
+

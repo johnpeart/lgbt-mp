@@ -1,5 +1,8 @@
 {
   "workspace.art_style" : 0,
   "workspace.color" : 9,
-  "workspace.name" : "LGBT+ MPs"
+  "workspace.name" : "LGBT+ MPs",
+  "workspace.preview_append_paths" : false,
+  "workspace.preview_type" : "custom",
+  "workspace.preview_url" : "localhost:8080"
 }

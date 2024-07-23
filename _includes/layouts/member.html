@@ -1,0 +1,69 @@
+---
+layout: layouts/base.html
+---
+
+<h2>How we know this member is LGBT</h2>
+
+<dl>
+    <dt>Identity</dt>
+    <dd>{{ member.lgbt.lgbtIdentity | default: "LGBT+ (specific identity not known)"  }}</dd>
+    
+    <dt>Source</dt>
+    <dd><a href="{{ member.lgbt.lgbtSourceURL }}">{{ member.lgbt.lgbtSourceDescription }}</a></dd>
+    
+    <dt>Source date</dt>
+    <dd>{{ member.lgbt.lgbtSourceDate | date: "%Y-%m-%d" | prettyDate }}</dd>
+</dl>
+
+<h2>Representations</h2>
+{% assign constituencies = member.houseMembershipHistory | reverse %}
+{% assign parties = member.partyHistory | reverse %}
+
+{% for history in constituencies %}
+    {% assign constituency = history.membershipFrom %}
+    {% assign constituencyStartDate = history.membershipStartDate | date: "%Y-%m-%d" | prettyDate %}
+    {% if history.membershipEndDate == null %}
+        {% assign constituencyEndDate = null %}
+    {% else %}
+        {% assign constituencyEndDate = history.membershipEndDate | date: "%Y-%m-%d" | prettyDate %}
+    {% endif %}
+    <dl class="card--with-border {% if history.house == 1 %}commons{% else %}lords{% endif %}">
+        <dt>House</dt> 
+        <dd>{% if history.house == 1 %}Commons{% else %}Lords{% endif %}</dd>
+        
+        {% if history.house == 1 %}
+        <dt>Constituency</dt> 
+        <dd>{{ constituency }}</dd>
+        
+        {% if constituencyEndDate != null %}
+        <dt>End date</dt>
+        <dd>{{ constituencyEndDate }}</dd>
+        {% endif %}
+        {% endif %}
+        
+        <dt>Start date</dt>
+        <dd>{{ constituencyStartDate }}</dd>
+    </dl>
+{% endfor %}
+
+<h2>Parties</h2>
+{% for history in parties %}
+    {% assign partyName = history.party.name %}
+    {% assign partyStartDate = history.startDate | date: "%Y-%m-%d" | prettyDate %}
+    {% if history.endDate == null %}
+        {% assign partyEndDate = "Current" %}
+    {% else %}
+        {% assign partyEndDate = history.endDate | date: "%Y-%m-%d" | prettyDate %}
+    {% endif %}
+
+    <dl class="card--with-border {{ partyName | slugify }}">
+        <dt>Party</dt> 
+        <dd>{{ partyName }}</dd>
+        
+        <dt>Until</dt>
+        <dd>{{ partyEndDate }}</dd>
+        
+        <dt>From</dt>
+        <dd>{{ partyStartDate }}</dd>
+    </dl>
+{% endfor %}

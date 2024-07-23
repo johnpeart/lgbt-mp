@@ -1,9 +1,20 @@
 ---
-layout: page
+layout: 'layouts/page.html'
 title: Change log
+excerpt: This page explains all the changes that have been made to this dataset and website.
 ---
 
-## 4 – 12 July 2024
+## 23 July 2024
+
+The entire site has been rebuilt using Eleventy instead of Jekyll. The underlying dataset was amended to support the new site.
+
+As a result of the changes there is now a simpler core CSV dataset that lists only the member of Parliament, their ID number from the UK Parliament website, and the source of the information pertaining to their LGBT+ identity. Eleventy uses the ID number and polls the UK Parliament Members API, combines it with the data from the CSV file, and then outputs the site based on a newly created JSON file.
+
+This new site also allows new features, including individual pages for every LGBT+ MP and more detailed information about each member's parliamentary career.
+
+Further stylistic changes are planned to the website, including refreshed styles and further rich data polled from the UK Parliament APIs.
+
+## 4 to 12 July 2024
 
 The dataset was updated to reflect the results of the UK General Election.
 
@@ -13,7 +24,7 @@ Further updates to the dataset are likely to be required in the coming days.
 
 The dataset was updated to reflect former MPs who had confirmed they were not standing for re-election.
 
-The dataset was also updated to reflect missing data for Crispin Blunt (Reigate, Independent). Other data was amended to ensure correct dates were recorded.
+The dataset was also updated to reflect missing data for Crispin Blunt (Reigate). Other data was amended to ensure correct dates were recorded.
 
 ## 30 May 2024
 
@@ -21,7 +32,7 @@ A General Election has been called. This dataset was updated to reflect the [fin
 
 # 29 May 2024
 
-The dataset was updated to show a change of party affiliation for Lloyd Russell-Moyle (Labour, Brighton Kemptown). The BBC reports that [Lloyd Russell-Moyle is suspended from the Labour Party](https://www.bbc.co.uk/news/articles/c5114q1x09eo) following a complaint into his behaviour.
+The dataset was updated to show a change of party affiliation for Lloyd Russell-Moyle (Brighton Kemptown). The BBC reports that [Lloyd Russell-Moyle is suspended from the Labour Party](https://www.bbc.co.uk/news/articles/c5114q1x09eo) following a complaint into his behaviour.
 
 # 24 May 2024
 
@@ -33,7 +44,7 @@ The dataset was updated to show a change of party affiliation for Mark Menzies (
 
 ## 12 April 2024
 
-The dataset was updated to indicate that Scott Benton (Independent, Blackpool South) resigned as an MP on 25 March 2024.
+The dataset was updated to indicate that Scott Benton (Blackpool South) resigned as an MP on 25 March 2024.
 
 ## 9 April 2024
 
