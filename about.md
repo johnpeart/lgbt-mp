@@ -1,13 +1,10 @@
 ---
-layout: page
+layout: 'layouts/page.html'
 title: About this site
 ---
 
-<!-- ASSIGN DATES -->
-{% assign now = "now" | date: "%s" | times: 1 %}
+## What's in this dataset 
 
-
-{:.lead}
 This website was created to publicly record how many Members of Parliament sitting in the UK Parliament's House of Commons are LGBT+.
 
 The dataset shows Members of Parliament who are ‘out’ as lesbian, gay, bisexual, trans or with another minority sexual orientation or gender identity.
@@ -24,8 +21,7 @@ This dataset has been used by journalists at the BBC, Sky News and Quartz, and c
 - **BBC News**, 17 December 2019, [Election 2019: Britain’s most diverse Parliament](https://www.bbc.co.uk/news/election-2019-50808536).
 - **Sky News**, 16 December 2019, [General election: 2019 heralds the most diverse parliament for gender and ethnicity](https://news.sky.com/story/general-election-2019-heralds-the-most-diverse-parliament-for-gender-and-ethnicity-11885529).
 - **Quartz**, 17 December 2019, [The UK’s new parliament is its most diverse ever](https://qz.com/1769275/new-uk-parliament-has-record-number-of-female-non-white-and-lgbtq-mps/).
-- **Cosmopolitan**, 11 June 2020, [Your no BS guide to the Gender Recognition Act reforms
-](https://www.cosmopolitan.com/uk/reports/a29590439/gender-recognition-act/).
+- **Cosmopolitan**, 11 June 2020, [Your no BS guide to the Gender Recognition Act reforms](https://www.cosmopolitan.com/uk/reports/a29590439/gender-recognition-act/).
 - **Pink News**, 24 June 2022, [UK has record number of LGBTQ+ MPs as Labour wins crucial ‘red wall’ by-election](https://www.thepinknews.com/2022/06/24/wakefield-by-election-lgbtq-mps-simon-lightwood/).
 
 ### Academic publications
@@ -43,32 +39,6 @@ This dataset has been used by journalists at the BBC, Sky News and Quartz, and c
 
 - **Fawcett Society**, January 2022, [Sex and Power 2022](https://www.fawcettsociety.org.uk/sex-power-2022).
 - **YouGov**, 26 July 2022, [Do Britons think a minority prime minister would improve things for minority groups?](https://yougov.co.uk/topics/politics/articles-reports/2022/07/26/do-britons-think-minority-prime-minister-would-imp).
-
-## Using this data
-
-### Quick reference
-
-If you use this dataset, please reference it. The following is a suggested referencing style:
-
-> **Referencing style**  \
-> LGBT+ Members of Parliament ({{ now | date: "%Y" }}) *'A dataset of MPs who define as LGBT+ in the UK House of Commons'*, electronic dataset, available at: [https://mps.whoare.lgbt](https://mps.whoare.lgbt) (Accessed: {{ now | date: "%d %B %Y" }})
-
-### License
-
-The data contained in the dataset is made available through the [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) license.
-
-You are free to:
-
-- **Share** — copy and redistribute the material in any medium or format
-- **Adapt** — remix, transform, and build upon the material
-for any purpose, even commercially.
-
-Under the following terms:
-
-- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-- **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
-No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
-- **No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
 ## Who made this
 

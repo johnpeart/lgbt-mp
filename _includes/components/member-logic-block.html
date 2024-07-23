@@ -1,0 +1,38 @@
+{% assign houseMembershipHistoryItems = member.houseMembershipHistory | size | minus: 1 %}
+
+{% if member.houseMembershipHistory[houseMembershipHistoryItems].house == 1 %}
+    {% assign bannerColor = "commons" %}
+    {% assign mostRecentConstituency = member.houseMembershipHistory[houseMembershipHistoryItems].membershipFrom %}
+    {% if member.houseMembershipHistory[houseMembershipHistoryItems].membershipEndDate == null %}
+        {% assign isCurrent = true %}
+    {% endif %}
+    
+    {% assign partyHistoryItems = member.partyHistory | size | minus: 1 %}
+    {% assign mostRecentParty = member.partyHistory[partyHistoryItems].party.name %}
+    {% assign firstElected = member.partyHistory[0].startDate | date: "%Y-%m-%d" | prettyDate %}
+{% else %}
+    
+    {% assign bannerColor = "lords" %}
+    {% if member.houseMembershipHistory[houseMembershipHistoryItems].membershipEndDate == null %}
+        {% assign isLord = "current" %}
+    {% else %}
+        {% assign isLord = "former" %}
+    {% endif %}
+    
+    {% assign houseMembershipHistoryItems = member.houseMembershipHistory | size | minus: 2 %}
+    {% assign mostRecentConstituency = member.houseMembershipHistory[houseMembershipHistoryItems].membershipFrom %}
+    {% if member.houseMembershipHistory[houseMembershipHistoryItems].membershipEndDate == null %}
+        {% assign isCurrent = true %}
+    {% endif %}
+    
+    {% assign partyHistoryItems = member.partyHistory | size | minus: 1 %}
+    {% assign mostRecentParty = member.partyHistory[partyHistoryItems].party.name %}
+    {% assign firstElected = member.partyHistory[0].startDate | date: "%Y-%m-%d" | prettyDate %}
+{% endif %}
+
+{% assign electionWins = 0 %}
+{% for history in member.houseMembershipHistory %}
+    {% if history.house == 1 %}
+        {% assign electionWins = electionWins | plus: 1 %}    
+    {% endif %}
+{% endfor %}

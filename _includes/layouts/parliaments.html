@@ -1,0 +1,40 @@
+---
+layout: "layouts/base.html"
+---
+
+<ul class="parliaments">
+    {% for parliament in parliaments %}
+    <ul class="parliaments cards">
+        {% if parliament.endDate == null %}
+        <a class="card" href="/">
+            <li class="card">
+                <p class="date">
+                    <span class="label">Current Parliament</span>
+                    <span class="large-date">Right now</span>
+                </p>
+                <span class="more-icon"></span>
+            </li>
+        </a>
+        {% else %}
+        <a class="card" href="/parliament/end/{{ parliament.endDate | slug }}/">
+            <li class="card">
+                <p class="date">
+                    <span class="label">Dissolved on</span>
+                    <span class="large-date">{{ parliament.endDate | prettyDate }}</span>
+                </p> 
+                <span class="more-icon"></span>
+            </li>
+        </a>
+        {% endif %}
+        <a class="card" href="/parliament/start/{{ parliament.startDate | slug }}/">
+            <li class="card">
+                <p class="date">
+                    <span class="label">Summoned on</span>
+                    <span class="large-date">{{ parliament.startDate | prettyDate }}</span>
+                </p>
+                <span class="more-icon"></span>
+            </li>
+        </a>
+    </ul>
+    {% endfor %}
+</ul>

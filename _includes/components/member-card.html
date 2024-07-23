@@ -1,0 +1,41 @@
+<a class="card" href="/member/{{ member.memberId }}/" title="Read more about {{ member.firstName }} {{ member.lastName }}">
+    <section class="member card">
+        <img class="member-portrait member-portrait-small {{ partyName | downcase | slugify }}" src="https://members-api.parliament.uk/api/Members/{{ member.memberId }}/Thumbnail">
+        <h3 class="member-name">{{ member.firstName }} {{ member.lastName }}</h3>
+        
+        {% for history in member.houseMembershipHistory %}
+            {% assign house = history.house %}
+            {% assign membershipStartDate = history.membershipStartDate | date: "%s" %}
+            {% assign membershipEndDate = history.membershipEndDate | date: "%s" %}
+            {% if endDate == null and startDate == null %}
+                {% if   house == 1 and
+                        membershipEndDate == null %}
+                        {% assign memberConstituency = history.membershipFrom %}
+                {% endif %}
+            {% elsif parliament.endDate == null %}
+                {% assign compareEndDate = null %}
+                    {% if   house == 1 and
+                            compareEndDate == membershipEndDate %}
+                            {% assign memberConstituency = history.membershipFrom %}
+                    {% endif %}
+            {% elsif endDate == false %}
+                {% assign compareStartDate = startDate | date: "%s" %}
+                {% if   house == 1 and
+                        compareStartDate >= membershipStartDate  and
+                        compareStartDate <= membershipEndDate %}
+                        {% assign memberConstituency = history.membershipFrom %}
+                {% endif %}
+            {% elsif startDate == false %}
+                {% assign compareStartDate = startDate | date: "%s" %}
+                {% if   house == 1 and
+                        compareEndDate >= membershipStartDate  and
+                        compareEndDate <= membershipEndDate %}
+                        {% assign memberConstituency = history.membershipFrom %}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        
+        <p class="member-constituency">{{ history.membershipFrom }}</p>
+        <span class="more-icon"></span>
+    </section>
+</a>

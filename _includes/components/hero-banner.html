@@ -1,0 +1,75 @@
+{% if layout == "layouts/parliament.html" %}
+<section class="hero-banner hero-banner--default">
+    <div class="container">
+        {% if endDate == null %}
+        
+            <h1>LGBT+ MPs in Parliament now</h1>
+            <p>This page shows the Members of Parliament in the House of Commons who are lesbian, gay, bisexual or transgender on {{ now }}. This data may have changed since this Parliament began due to by-elections or resignations.</p>
+            <p><a class="inverse" href="/parliament">View data from previous Parliaments</a></p>
+		
+        {% else %}
+        
+            <h1>This Parliament at a glance</h1>
+            <p><strong>This data is for an historic Parliament.</strong></p>
+            
+            <p><strong>The dataset shows MPs who are known to be LGBT+ today.</strong> The MPs referenced might not have been known to be LGBT+ at the time this Parliament took place.</p>
+            
+            {% if endDate == false %}
+            <p><strong>This page includes all MPs who were elected at the start of this Parliament.</strong> Some members may have vacated their seats during the course of this Parliament. Members who were elected through by-elections are not included.</p>
+            {% elsif startDate == false %}
+            <p><strong>This page includes all MPs who were members on the day that Parliament was dissolved ahead of a General Election.</strong> Members who were elected through by-elections during the course of the Parliament are included. Members who vacated their seat during this Parliament are not shown here.</p>
+            {% endif %}
+            <p><a class="inverse" href="/parliament">View data from other Parliaments</a></p>
+            
+        {% endif %}
+    </div>
+</section>
+{% elsif layout == "layouts/parliaments.html" %}
+<section class="hero-banner hero-banner--default">
+    <div class="container">
+        <h1>All parliaments</h1>
+        <p>This project has collected data about LGBT+ MPs across several Parliaments. The pages below allow you to view the LGBT+ MPs who sat in the House of Commons when the Parliament was summoned (started) and dissolved (ended).</p>
+    </div>
+</section>
+{% elsif layout == "layouts/member.html" %}
+    {% include "components/member-logic-block.html" %}
+    <header class="page-type-banner">
+        <div class="container">
+            <h1>Member of Parliament</h1>
+        </div>
+    </header>
+    <section class="hero-banner hero-banner--{{ bannerColor }} hero-banner--with-image">
+        <div class="container">
+            <div class="hero-banner--content">
+                <h2>{{ member.memberData.nameFullTitle }}</h2>
+                <p>As of {{ now }}, {{ member.firstName }} {{ member.lastName }} {% if isCurrent == true %}is{% else %}was most recently{% endif %} the {{ mostRecentParty }} MP for {{ mostRecentConstituency }}. 
+                {% if member.memberData.gender == "M" %}
+                    He 
+                    {% if isCurrent == true %}has been{% else %}was{% endif %}
+                {% elsif member.memberData.gender == "F" %}She 
+                    {% if isCurrent == true %}has been{% else %}was{% endif %}
+                {% else %}
+                    They 
+                    {% if isCurrent == true %}have been{% else %}were{% endif %}
+                {% endif %} elected {{ electionWins }} {% if electionWins > 1 %}times{% else %}time{% endif %} since {{ firstElected }}.</p>
+                
+                {% if isLord == "current" %}
+                <p>{% if member.memberData.gender == "M" %}He is{% elsif member.memberData.gender == "F" %}She is{% else %}They are{% endif %} now a member of the House of Lords.</p>
+                {% elsif isLord == "former" %}
+                <p>{% if member.memberData.gender == "M" %}He was{% elsif member.memberData.gender == "F" %}She was{% else %}They were{% endif %} subsequently a member of the House of Lords.</p>
+                {% endif %}
+                
+                <p><a class="inverse" href="https://members.parliament.uk/member/{{ member.memberId }}/contact">Find out more on the UK Parliament website</a></p>
+            </div>
+            
+            <img class="member-portrait member-portrait-large {{ mostRecentParty | downcase | slugify }}" src="{{ member.memberData.thumbnailUrl }}" alt="Thumbnail of {{ member.firstName }} {{ member.lastName }}">
+        </div>
+    </section>
+{% elsif layout == "layouts/page.html" %}
+    <section class="hero-banner hero-banner--default">
+        <div class="container">
+            <h1>{{ title }}</h1>
+            {% if excerpt %}{{ excerpt | markdown }}{% endif %}
+        </div>
+    </section>
+{% endif %}

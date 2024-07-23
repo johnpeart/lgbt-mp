@@ -1,0 +1,62 @@
+ul.parliaments {
+    margin-top: $container-padding;
+    padding-left: 0;
+    margin-left: 0;
+    
+    list-style: none;
+}
+
+ul.parliaments.cards {
+    display: grid;
+    
+    @include sm-down {
+        grid-template-rows: 1fr 1fr;
+    }
+    @include md-up {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    list-style: none;
+
+    background: map-get($colors, "white");
+    @include box-shadow();
+}
+
+ul.parliaments li {
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "text arrow";
+    padding: $container-padding;
+    margin: 0;
+    
+    
+    @include sm-down {
+        &:nth-of-type(2n-1) {
+            border-bottom: 1px dotted map-get($colors, "grey-3");
+        }
+    }
+    @include md-up {
+        &:nth-of-type(2n-1) {
+            border-right: 1px dotted map-get($colors, "grey-3");
+        }
+    }
+    
+    p.date {
+    
+    padding: 0;
+    
+    span.label {
+        display: block;
+    }
+    
+    span.large-date {
+        display: block;
+        @each $style, $sizes in $largeDate {
+            @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+        }
+    }
+
+}
+
+}

@@ -1,0 +1,63 @@
+// EXPAND ICONS 
+span.expand-icon {
+    
+    display: block;
+    padding: 0;
+    margin: 0;
+    
+    grid-area: arrow;
+    
+    justify-self: flex-end;
+    align-self: center;
+    
+    @include toggleSizes(width, 15px, 20px, 20px, 25px, 30px);
+    @include toggleSizes(height, 15px, 20px, 20px, 25px, 30px);
+    
+    background-repeat: no-repeat;
+
+}
+
+details > summary span.expand-icon {
+
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns='http://www.w3.org/2000/svg' xmlns:xl='http://www.w3.org/1999/xlink' viewBox='0 0 20 20' %3E%3Cdefs/%3E%3Cg id='Expand' stroke-opacity='1' stroke='none' stroke-dasharray='none' fill='none' fill-opacity='1'%3E%3Ctitle%3EExpand%3C/title%3E%3Cg id='Expand_expand'%3E%3Ctitle%3Eexpand%3C/title%3E%3Cg id='Graphic_27'%3E%3Cpath d='M 5 3 L 3 3 L 3 5 L 3 9 L 4 9 L 4 4 L 9 4 L 9 3 Z' fill='%23373151'/%3E%3C/g%3E%3Cg id='Graphic_31'%3E%3Cpath d='M 20 2 L 20 8881784e-22 L 18 26645353e-22 L 12 0 L 12 2 L 16.585786 2 L 11.050253 7.535534 L 12.464466 8.949747 L 18 3.4142136 L 18 8 L 20 8 Z' fill='%232b57ab'/%3E%3C/g%3E%3Cg id='Graphic_30'%3E%3Cpath d='M 17763568e-22 18 L 26645353e-22 20 L 2 20 L 8 20 L 8 18 L 3.4142136 18 L 8.949747 12.464466 L 7.535534 11.050253 L 2 16.585786 L 2 12 L 17763568e-22 12 Z' fill='%232b57ab'/%3E%3C/g%3E%3Cg id='Graphic_33'%3E%3Cpath d='M 15 17 L 17 17 L 17 15 L 17 11 L 16 11 L 16 16 L 11 16 L 11 17 Z' fill='%23373151'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+
+}
+
+details > summary:hover span.expand-icon {
+
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' xmlns:xl='http://www.w3.org/1999/xlink' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' %3E%3Cdefs/%3E%3Cg id='Expand_hover' fill='none' stroke-opacity='1' stroke='none' fill-opacity='1' stroke-dasharray='none'%3E%3Ctitle%3EExpand hover%3C/title%3E%3Cg id='Expand_hover_expand'%3E%3Ctitle%3Eexpand hover%3C/title%3E%3Cg id='Graphic_27'%3E%3Cpath d='M 2 8881784e-22 L 4440892e-22 2220446e-21 L 2220446e-21 2 L 31086245e-22 6 L 1 6 L 1 1 L 6 1 L 6 35527137e-22 Z' fill='%23373151'/%3E%3C/g%3E%3Cg id='Graphic_31'%3E%3Cpath d='M 20 2 L 20 8881784e-22 L 18 26645353e-22 L 12 0 L 12 2 L 16.585786 2 L 11.050253 7.535534 L 12.464466 8.949747 L 18 3.4142136 L 18 8 L 20 8 Z' fill='%237592c8'/%3E%3C/g%3E%3Cg id='Graphic_30'%3E%3Cpath d='M 17763568e-22 18 L 26645353e-22 20 L 2 20 L 8 20 L 8 18 L 3.4142136 18 L 8.949747 12.464466 L 7.535534 11.050253 L 2 16.585786 L 2 12 L 17763568e-22 12 Z' fill='%237592c8'/%3E%3C/g%3E%3Cg id='Graphic_33'%3E%3Cpath d='M 18 20 L 20 20 L 20 18 L 20 14 L 19 14 L 19 19 L 14 19 L 14 20 Z' fill='%23373151'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+
+}
+
+details[open] > summary span.expand-icon {
+
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns='http://www.w3.org/2000/svg' xmlns:xl='http://www.w3.org/1999/xlink' viewBox='0 0 20 20' %3E%3Cdefs/%3E%3Cg id='Collapse' stroke-opacity='1' stroke='none' stroke-dasharray='none' fill='none' fill-opacity='1'%3E%3Ctitle%3ECollapse%3C/title%3E%3Cg id='Collapse_collapse'%3E%3Ctitle%3Ecollapse%3C/title%3E%3Cg id='Graphic_25'%3E%3Cpath d='M 11.050253 6.9497475 L 11.050253 8.949747 L 13.050253 8.949747 L 19.050253 8.949747 L 19.050253 6.9497475 L 14.464466 6.9497475 L 20 1.4142136 L 18.585786 8881784e-22 L 13.050253 5.535534 L 13.050253 .9497475 L 11.050253 .9497475 Z' fill='%232b57ab'/%3E%3C/g%3E%3Cg id='Graphic_24'%3E%3Cpath d='M 8.949747 13.050253 L 8.949747 11.050253 L 6.9497475 11.050253 L .9497475 11.050253 L .9497475 13.050253 L 5.535534 13.050253 L 0 18.585786 L 1.4142136 20 L 6.9497475 14.464466 L 6.9497475 19.050253 L 8.949747 19.050253 Z' fill='%232b57ab'/%3E%3C/g%3E%3Cg id='Graphic_31'%3E%3Cpath d='M 5 3 L 3 3 L 3 5 L 3 9 L 4 9 L 4 4 L 9 4 L 9 3 Z' fill='%23373151'/%3E%3C/g%3E%3Cg id='Graphic_30'%3E%3Cpath d='M 15 17 L 17 17 L 17 15 L 17 11 L 16 11 L 16 16 L 11 16 L 11 17 Z' fill='%23373151'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+
+}
+
+details[open] > summary:hover span.expand-icon {
+
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' xmlns:xl='http://www.w3.org/1999/xlink' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' %3E%3Cdefs/%3E%3Cg id='Collapse_1' fill='none' stroke-opacity='1' stroke='none' fill-opacity='1' stroke-dasharray='none'%3E%3Ctitle%3ECollapse 1%3C/title%3E%3Cg id='Collapse_1_collapse'%3E%3Ctitle%3Ecollapse%3C/title%3E%3Cg id='Graphic_25'%3E%3Cpath d='M 11.050253 6.9497475 L 11.050253 8.949747 L 13.050253 8.949747 L 19.050253 8.949747 L 19.050253 6.9497475 L 14.464466 6.9497475 L 20 1.4142136 L 18.585786 8881784e-22 L 13.050253 5.535534 L 13.050253 .9497475 L 11.050253 .9497475 Z' fill='%237592c8'/%3E%3C/g%3E%3Cg id='Graphic_24'%3E%3Cpath d='M 8.949747 13.050253 L 8.949747 11.050253 L 6.9497475 11.050253 L .9497475 11.050253 L .9497475 13.050253 L 5.535534 13.050253 L 0 18.585786 L 1.4142136 20 L 6.9497475 14.464466 L 6.9497475 19.050253 L 8.949747 19.050253 Z' fill='%237592c8'/%3E%3C/g%3E%3Cg id='Graphic_31'%3E%3Cpath d='M 7 5 L 5 5 L 5 7 L 5 11 L 6 11 L 6 6 L 11 6 L 11 5 Z' fill='%23373151'/%3E%3C/g%3E%3Cg id='Graphic_30'%3E%3Cpath d='M 13 15 L 15 15 L 15 13 L 15 9 L 14 9 L 14 14 L 9 14 L 9 15 Z' fill='%23373151'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+
+}
+
+// ARROW ICONS
+span.more-icon {
+
+    display: block;
+    padding: 0;
+    margin: 0;
+    
+    grid-area: arrow;
+    
+    justify-self: flex-end;
+    align-self: center;
+    
+    @include toggleSizes(width, 15px, 15px, 15px, 15px, 20px);
+    @include toggleSizes(height, 15px, 15px, 15px, 15px, 20px);
+    
+    background-repeat: no-repeat;
+
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:xl='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='8 8 12 18' %3E%3Cdefs/%3E%3Cg id='Canvas_1' stroke-dasharray='none' stroke='none' fill-opacity='1' stroke-opacity='1' fill='none'%3E%3Ctitle%3ECanvas 1%3C/title%3E%3Cg id='Canvas_1_Layer_1'%3E%3Ctitle%3ELayer 1%3C/title%3E%3Cg id='Graphic_3'%3E%3Ctitle%3E􀆊%3C/title%3E%3Cpath d='M 18.291016 16.949219 C 18.291016 17.072917 18.266602 17.188476 18.217773 17.295898 C 18.168945 17.40332 18.098959 17.502604 18.007812 17.59375 L 10.273438 25.16211 C 10.097655 25.33789 9.882814 25.42578 9.628906 25.42578 C 9.466145 25.42578 9.316407 25.38672 9.179688 25.308594 C 9.042968 25.230468 8.935547 25.124675 8.857422 24.99121 C 8.779296 24.857747 8.740234 24.70638 8.740234 24.53711 C 8.740234 24.296223 8.824869 24.084636 8.994141 23.902344 L 16.103516 16.949219 L 8.994141 9.996094 C 8.824869 9.813801 8.740234 9.602215 8.740234 9.361328 C 8.740234 9.192056 8.779296 9.040691 8.857422 8.907227 C 8.935547 8.773762 9.042968 8.667969 9.179688 8.589844 C 9.316407 8.511718 9.466145 8.472656 9.628906 8.472656 C 9.882814 8.472656 10.097655 8.557291 10.273438 8.726563 L 18.007812 16.304688 C 18.098959 16.395834 18.168945 16.495117 18.217773 16.60254 C 18.266602 16.709961 18.291016 16.82552 18.291016 16.949219 Z' fill='black'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+
+}

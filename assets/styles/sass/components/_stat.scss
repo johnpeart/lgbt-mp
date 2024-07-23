@@ -1,0 +1,21 @@
+.stat--number {
+
+  @each $style, $sizes in $largeNumber {
+      @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+
+  &.top-padding {
+    @include toggleSizes(margin-top, 25pt, 0, 0, 0, 0);
+  }
+
+  color: map-get($colors, "purple--dark");
+
+}
+
+.stat--label {
+
+  @each $style, $sizes in $label {
+      @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+  }
+
+}

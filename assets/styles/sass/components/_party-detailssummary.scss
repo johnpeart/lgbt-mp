@@ -1,0 +1,95 @@
+details {
+    background: map-get($colors, "white");
+    margin-bottom: $container-padding;
+    @include box-shadow();
+}
+
+details.party summary {
+    position: relative;
+    padding: $container-padding;
+    
+    // Hide the marker completely.
+    list-style-image: none;
+    &::marker,
+    &::-webkit-details-marker {
+        display: none;
+        list-style-image: none;
+        content: '';
+        width: 0;
+        height: 0;
+    }
+}
+
+div.party-summary {
+    display: grid;
+    position: relative;
+    
+    grid-template-columns: auto 1fr 20px;
+    grid-template-rows: auto auto;
+    grid-template-areas: "img party-name arrow" "img party-total arrow"
+}
+
+details > summary:focus,
+details[open] > summary:focus {
+
+    background: map-get($colors, "mint--light");
+    outline: 5px solid map-get($colors, "mint--light");
+    outline-offset: 6px;
+
+    &:active {
+	    outline: none;	
+        outline-offset: 0;
+    }
+
+}
+
+details > summary:focus-visible,
+details > summary:active,
+details[open] > summary:focus-visible,
+details[open] > summary:active {
+
+    background: map-get($colors, "mint--light");
+    outline: 5px solid map-get($colors, "mint--light");
+
+}
+
+
+
+details[open] > summary {
+    border-bottom: 1px dotted map-get($colors, "grey-3");
+}
+
+summary:hover {
+    cursor: pointer;
+    background: map-get($colors, "grey-5");
+}
+
+
+.party-name {
+    display: block;
+    grid-area: party-name;
+
+    @each $style, $sizes in $partyName {
+        @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+    }
+}
+
+.party-total {
+    display: block;
+    grid-area: party-total;
+
+    @each $style, $sizes in $partyTotal {
+        @include toggleSizes($style, map-get($sizes, "xs"),  map-get($sizes, "sm"),  map-get($sizes, "md"),  map-get($sizes, "lg"),  map-get($sizes, "xl"));
+    }
+}
+
+section.party-members {
+    display: grid;
+    grid-gap: $container-padding;
+    padding: $container-padding;
+    
+    p strong.label,
+    p span.data {
+      text-align: left;
+    }
+}

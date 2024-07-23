@@ -1,0 +1,32 @@
+<section class="summary-data">
+
+    <h2>Total number of LGBT+ MPs</h2>
+    
+    <div class="summary-data max-width-container">
+        
+        {% if endDate == null %}
+            <p class="lead">In the current Parliament at least:</p>
+        {% elsif endDate == false %}
+            <p class="lead">On {{ startDate | date: "%Y-%m-%d" | prettyDate }}, when the {{ parliament.parliamentPeriod }}<sup>{{ parliament.parliamentPeriodSuffix }}</sup> Parliament of the United Kingdom was summoned, at least:</p>
+        {% elsif startDate == false %}
+            <p class="lead">On {{ endDate | date: "%Y-%m-%d" | prettyDate }}, when the {{ parliament.parliamentPeriod }}<sup>{{ parliament.parliamentPeriodSuffix }}</sup> Parliament of the United Kingdom dissolved, at least:</p>
+        {% endif %}
+        
+
+        <div class="summary-block">
+
+            <p>
+                <span class="stat--number top-padding">{{ countAllMembers }}</span>
+                <span class="stat--label">MPs  {% if endDate == null %}are{% else %}were{% endif %}  LGBT+</span>
+            </p>
+
+            <p>
+                <span class="stat--number">{{ countAllParties }}</span>
+                <span class="stat--label">parties  {% if endDate == null %}have{% else %}had{% endif %}   LGBT+ MPs</span>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>

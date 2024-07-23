@@ -1,0 +1,11 @@
+---
+layout: layouts/parliament.html
+pagination:
+  data: parliaments
+  size: 1
+  alias: parliament
+permalink: "/parliament/end/{{ parliament.endDate | slug }}/index.html"
+parliament: {{ parliament.parliamentPeriod }}
+startDate: false
+endDate: {{ parliament.endDate }}
+---
