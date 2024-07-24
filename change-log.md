@@ -14,13 +14,11 @@ This new site also allows new features, including individual pages for every LGB
 
 Further stylistic changes are planned to the website, including refreshed styles and further rich data polled from the UK Parliament APIs.
 
-Additional MPs for previous parliamentary periods have also been added.
-
-## 4 to 12 July 2024
+## 4 to 24 July 2024
 
 The dataset was updated to reflect the results of the UK General Election.
 
-Further updates to the dataset are likely to be required in the coming days.
+Additional MPs from previous parliamentary periods have also been added.
 
 ## 3 June 2024
 
