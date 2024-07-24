@@ -8,7 +8,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets/styles");
     eleventyConfig.addPassthroughCopy("assets/images");
     eleventyConfig.addPassthroughCopy("assets/fonts");
-    eleventyConfig.addPassthroughCopy("/favicon.ico");
+    eleventyConfig.addPassthroughCopy("favicon.ico");
     
     const md = new markdownIt({
         html: true,

@@ -48,9 +48,12 @@
     <meta property="fediverse:creator" content="{{ site.fediverse }}" />
 
     <!-- Favicons -->
-    <!-- Place favicon.ico in the root directory - no tag necessary -->
-    <link rel="icon" href="{{ site.url | append: '/assets/images/site/favicon.svg' }}">
+    <link rel="shortcut icon" href="{{ site.url | append: '/assets/images/site/favicon.ico' }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url | append: '/assets/images/site/favicon-16x16.png' }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url | append: '/assets/images/site/favicon-32x32.png' }}">
+    <link rel="icon" href="{{ site.url | append: append: '/assets/images/site/favicon.svg' }}">
     <link rel="mask-icon" href="{{ site.url | append: '/assets/images/site/favicon-pinned-svg.svg' }}" color="#373151">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url | append: '/assets/images/site/apple-touch-icon.png' }}">
     <link rel="apple-touch-icon" href="{{ site.url | append: '/assets/images/site/favicon-large-png.png' }}">
     
     <!-- Safari toolbar colors -->
