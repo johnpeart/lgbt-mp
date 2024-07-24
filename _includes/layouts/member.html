@@ -14,9 +14,9 @@ layout: layouts/base.html
     <dt>Source date</dt>
     <dd>{{ member.lgbt.lgbtSourceDate | date: "%Y-%m-%d" | prettyDate }}</dd>
     
-    {% if member.memberNotes != "" %}
+    {% if member.lgbt.lgbtSourceNotes != "" %}
     <dt>Notes</dt>
-    <dd>{{ member.memberNotes }}</dd>
+    <dd>{{ member.lgbt.lgbtSourceNotes }}</dd>
     {% endif %}
 </dl>
 
