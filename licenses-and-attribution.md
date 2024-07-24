@@ -20,7 +20,7 @@ All other data is gathered manually. Sources are cited on individual pages relat
 If you use this dataset, please reference it. The following is a suggested referencing style:
 
 > **Referencing style**  \
-> LGBT+ Members of Parliament ({{ 'now' | date: "%Y" }}) *'A dataset of MPs who define as LGBT+ in the UK House of Commons'*, electronic dataset, available at: [https://mps.whoare.lgbt](https://mps.whoare.lgbt) (Accessed: {{ 'now' | date: "%Y-%m-%d" | prettyDate }})
+> LGBT+ Members of Parliament ({{ 'now' | date: "%Y" }}) *'A dataset of MPs who define as LGBT+ in the UK House of Commons'*, electronic dataset, available at: [https://www.lgbt.mp](https://www.lgbt.mp) (Accessed: {{ 'now' | date: "%Y-%m-%d" | prettyDate }})
 
 ### License
 

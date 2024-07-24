@@ -14,13 +14,13 @@ Members of Parliament are only included where it is clear that the individual ha
 
 The purpose of this dataset is to show how many LGBT+ MPs **currently** in the House of Commons – today. This might differ from the number of MPs that were elected at the start of a Parliament, and how many remain in the House of Commons by the time of the following General Election.
 
-You can see the LGBT+ MPs who are currently in the House of Commons by visiting [mps.whoare.lgbt](//mps.whoare.lgbt)
+You can see the LGBT+ MPs who are currently in the House of Commons by visiting [www.lgbt.mp](//www.lgbt.mp)
 
 ## Historical datasets
 
 The LGBT Members of Parliament website makes it easy to see how many MPs were in Parliament on the day that Parliament started and the day that Parliament was disolved.
 
-These can be accessed on the [Historic Parliaments page](https://mps.whoare.lgbt/historic/).
+These can be accessed on the [Historic Parliaments page](https://www.lgbt.mp/historic/).
 
 ## CSV data
 
