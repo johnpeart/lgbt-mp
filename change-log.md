@@ -4,7 +4,7 @@ title: Change log
 excerpt: This page explains all the changes that have been made to this dataset and website.
 ---
 
-## 23 July 2024
+## 24 July 2024
 
 The entire site has been rebuilt using Eleventy instead of Jekyll. The underlying dataset was amended to support the new site.
 
@@ -13,6 +13,8 @@ As a result of the changes there is now a simpler core CSV dataset that lists on
 This new site also allows new features, including individual pages for every LGBT+ MP and more detailed information about each member's parliamentary career.
 
 Further stylistic changes are planned to the website, including refreshed styles and further rich data polled from the UK Parliament APIs.
+
+Additional MPs for previous parliamentary periods have also been added.
 
 ## 4 to 12 July 2024
 
