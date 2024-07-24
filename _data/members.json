@@ -19086,6 +19086,55 @@
     "committeeMemberships": []
   },
   {
+    "memberId": "5165",
+    "firstName": "Peter",
+    "lastName": "Swallow",
+    "lgbt": {
+      "lgbtIdentity": "",
+      "lgbtSourceDescription": "Twitter (X)",
+      "lgbtSourceDate": "2024-07-04",
+      "lgbtSourceURL": "https://x.com/rishi175/status/1808974532650414513?t=2mYiX8Rbj5EzJQ06OVprbA&s=19"
+    },
+    "memberData": {
+      "nameFullTitle": "Peter Swallow MP",
+      "gender": "M",
+      "thumbnailUrl": "https://members-api.parliament.uk/api/Members/5165/Thumbnail"
+    },
+    "partyHistory": [
+      {
+        "startDate": "2024-07-04T00:00:00",
+        "endDate": null,
+        "party": {
+          "id": 15,
+          "name": "Labour",
+          "abbreviation": "Lab",
+          "backgroundColour": "d50000",
+          "foregroundColour": "ffffff",
+          "isLordsMainParty": true,
+          "isLordsSpiritualParty": true,
+          "governmentType": null,
+          "isIndependentParty": false
+        }
+      }
+    ],
+    "houseMembershipHistory": [
+      {
+        "membershipFrom": "Bracknell",
+        "membershipFromId": 3932,
+        "house": 1,
+        "membershipStartDate": "2024-07-04T00:00:00",
+        "membershipEndDate": null,
+        "membershipEndReason": null,
+        "membershipEndReasonNotes": null,
+        "membershipEndReasonId": null,
+        "membershipStatus": null
+      }
+    ],
+    "governmentPosts": [],
+    "oppositionPosts": [],
+    "committeeMemberships": []
+  },
+  {
     "memberId": "5172",
     "firstName": "Dan",
     "lastName": "Aldridge",
