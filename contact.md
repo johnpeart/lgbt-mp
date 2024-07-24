@@ -9,6 +9,6 @@ If you believe there is an error or ommission in this dataset, you can [suggest 
 
 ## Questions?
 
-If you have questions about this project or website, please contact <data@whoare.lgbt>.
+If you have questions about this project or website, please contact <hello@lgbt.mp>.
 
 Please note that this is dataset is maintained on a voluntary basis; there may be a delay in responding to your enquiry.
