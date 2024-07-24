@@ -13,6 +13,11 @@ layout: layouts/base.html
     
     <dt>Source date</dt>
     <dd>{{ member.lgbt.lgbtSourceDate | date: "%Y-%m-%d" | prettyDate }}</dd>
+    
+    {% if member.memberNotes != "" %}
+    <dt>Notes</dt>
+    <dd>{{ member.memberNotes }}</dd>
+    {% endif %}
 </dl>
 
 <h2>Representations</h2>

@@ -55,6 +55,7 @@ function readCSVAndFetchData() {
       const lgbtSourceDescription = row.sourceDescription;
       const lgbtSourceDate = row.sourceDate;
       const lgbtSourceURL = row.sourceURL;
+      const lgbtSourceNotes = row.sourceNotes;
       const promise = (async () => {
         const memberData = await fetchMemberData(memberId);
         const memberHistory = await fetchMemberHistory(memberId);
@@ -65,7 +66,7 @@ function readCSVAndFetchData() {
               memberId, 
               firstName, 
               lastName,
-              lgbt: { lgbtIdentity, lgbtSourceDescription, lgbtSourceDate, lgbtSourceURL }, 
+              lgbt: { lgbtIdentity, lgbtSourceDescription, lgbtSourceDate, lgbtSourceURL, lgbtSourceNotes }, 
               memberData: memberData,
               partyHistory: memberHistory.partyHistory,
               houseMembershipHistory: memberHistory.houseMembershipHistory,
