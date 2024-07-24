@@ -1,21 +1,6 @@
 firstName,lastName,ID,identity,sourceDescription,sourceDate,sourceURL,notes
-Mark,Oaten,63,Gay,Pink News,2019-04-01,https://www.pinknews.co.uk/2019/01/14/mark-oaten-gay-liberal-democrat/,
 Crispin,Blunt,104,,The Independent,2016-02-20,http://www.independent.co.uk/news/uk/politics/gay-mps-the-photograph-that-shows-westminsters-attitude-towards-lgbt-politicians-is-changing-a6886771.html,"Crispin Blunt became an independent MP following an arrest for allegations of rape, which was reported on 25 October 2023."
 Nick,Gibb,111,,The Independent,2016-02-20,http://www.independent.co.uk/news/people/news/schools-minister-nick-gibb-to-marry-his-secret-partner-after-29-years-together-10301900.html,
-Stephen,Twigg,167,,The Guardian,2015-05-13,https://www.theguardian.com/world/2015/may/13/quiet-revolution-britain-more-gay-mps-than-anywhere-else-lgbt,
-Chris,Smith,186,,Wikipedia,2020-01-03,"https://en.wikipedia.org/wiki/Chris_Smith,_Baron_Smith_of_Finsbury","According to the source, Chris Smith came out publicly as gay at a rally in 1984. His full term of office is listed in this dataset"
-Ben,Bradshaw,230,,The Independent,2016-02-20,http://www.independent.co.uk/news/uk/politics/gay-mps-the-photograph-that-shows-westminsters-attitude-towards-lgbt-politicians-is-changing-a6886771.html,
-Michael,Fabricant,280,Bisexual,Wikipedia,2019-10-27,https://en.m.wikipedia.org/wiki/Michael_Fabricant,Michael Fabricant came out as bisexual during TV show “First Dates” in 2017. His full term of office is listed in this data set
-Alan,Duncan,343,,The Independent,2016-02-20,http://www.independent.co.uk/news/uk/politics/gay-mps-the-photograph-that-shows-westminsters-attitude-towards-lgbt-politicians-is-changing-a6886771.html,
-Clive,Betts,394,,Pink News,2007-12-27,http://www.pinknews.co.uk/2007/12/27/the-50-most-powerful-lgbt-people-in-british-politics/,
-Gordon,Marsden,465,,The Independent,2016-02-20,http://www.independent.co.uk/news/im-gay-and-im-happy-for-my-constituents-to-know-about-it-1164137.html,
-Nigel,Evans,474,,Daily Mail,2010-12-18,http://www.dailymail.co.uk/news/article-1339699/Im-gay-says-Tory-MP-Nigel-Evans-voted-equal-rights-homosexuals.html,
-David,Borrow,476,,Pink News,2006-05-08,https://www.pinknews.co.uk/2006/05/08/lancashire-politician-becomes-first-mp-to-have-gay-marriage/,
-Angela,Eagle,491,,The Independent,2016-02-20,http://www.independent.co.uk/news/uk/politics/gay-mps-the-photograph-that-shows-westminsters-attitude-towards-lgbt-politicians-is-changing-a6886771.html,
-Peter,Mandelson,500,,LGBT Labour,2019-12-13,http://www.lgbtlabour.org.uk/patrons,
-Nick,Brown,523,,The Independent,2016-02-20,http://www.independent.co.uk/news/browns-gay-so-what-tyneside-is-outed-as-a-tolerant-electorate-1183737.html,"Nick Brown was suspended from the Labour Party on 8 September 2022, pending an investigation into a complaint"
-Ron,Davies,552,Bisexual ,BBC News,2003-03-09,http://news.bbc.co.uk/1/hi/wales/2834145.stm,
-Robert,Hayward,863,,LGBT+ Conservatives,2020-01-03,https://www.lgbtconservatives.org.uk/people/type/Patrons?page=1,
 Greg,Barker,1389,,Web Archive (The Independent),2020-01-03,https://web.archive.org/web/20080704211658/http://news.independent.co.uk/uk/this_britain/article2516664.ece,
 Adam,Price,1401,,Pink News,2020-01-03,https://www.pinknews.co.uk/2018/09/28/adam-price-gay-leader-wales-plaid-cymru/,
 Chris,Bryant,1446,,The Independent,2016-02-20,http://www.independent.co.uk/news/uk/politics/gay-mps-the-photograph-that-shows-westminsters-attitude-towards-lgbt-politicians-is-changing-a6886771.html,
@@ -26,12 +11,20 @@ David,Mundell,1512,,The Independent,2016-02-20,http://www.independent.co.uk/news
 Nia,Griffith,1541,,The Independent,2016-02-20,http://www.independent.co.uk/news/uk/politics/gay-mps-the-photograph-that-shows-westminsters-attitude-towards-lgbt-politicians-is-changing-a6886771.html,
 Justine,Greening,1555,,The Independent,2016-02-20,http://www.independent.co.uk/news/people/who-is-justine-greening-equalities-minister-theresa-may-cabinet-latest-appointments-lgbt-same-sex-a7136586.html,"Justine Greening had the Conservative party whip removed from her in September 2019, and now sits as an independent MP"
 Daniel,Kawczynski,1566,,Wikipedia,2017-05-27,https://en.wikipedia.org/wiki/Daniel_Kawczynski,
+Stephen,Twigg,167,,The Guardian,2015-05-13,https://www.theguardian.com/world/2015/may/13/quiet-revolution-britain-more-gay-mps-than-anywhere-else-lgbt,
+Chris,Smith,186,,Wikipedia,2020-01-03,"https://en.wikipedia.org/wiki/Chris_Smith,_Baron_Smith_of_Finsbury","According to the source, Chris Smith came out publicly as gay at a rally in 1984. His full term of office is listed in this dataset"
+Chris,Smith,186,Gay,Metro,2022-06-22,https://metro.co.uk/2022/06/22/first-openly-gay-mp-says-coming-out-in-80s-was-scariest-moment-of-life-16701592/,
+Ben,Bradshaw,230,,The Independent,2016-02-20,http://www.independent.co.uk/news/uk/politics/gay-mps-the-photograph-that-shows-westminsters-attitude-towards-lgbt-politicians-is-changing-a6886771.html,
+Michael,Fabricant,280,Bisexual,Wikipedia,2019-10-27,https://en.m.wikipedia.org/wiki/Michael_Fabricant,Michael Fabricant came out as bisexual during TV show “First Dates” in 2017. His full term of office is listed in this data set
+Alan,Duncan,343,,The Independent,2016-02-20,http://www.independent.co.uk/news/uk/politics/gay-mps-the-photograph-that-shows-westminsters-attitude-towards-lgbt-politicians-is-changing-a6886771.html,
 Conor,Burns,3922,,Wikipedia,2017-05-27,https://en.wikipedia.org/wiki/Conor_Burns,Conor Burns had the Conservative party whip suspended on 7 October 2022
+Clive,Betts,394,,Pink News,2007-12-27,http://www.pinknews.co.uk/2007/12/27/the-50-most-powerful-lgbt-people-in-british-politics/,
 Nick,Boles,3995,,Pink News,2014-07-15,http://www.pinknews.co.uk/2014/07/15/gay-tory-mp-nick-boles-given-ministerial-responsibilities-for-equal-marriage-and-lgbt-equality/,Nick Boles resigned the Conservative party whip in April 2019 to sit as an independent MP
 Mark,Menzies,3998,,Pink News,2017-06-05,http://www.pinknews.co.uk/2017/06/05/uk-set-to-break-record-for-highest-number-of-lgbtq-mps-after-general-election/,Mark Menzies became an independent MP after allegations of misuse of party funds
 Mike,Freer,4004,,The Independent,2016-02-20,http://www.independent.co.uk/news/uk/politics/gay-mps-the-photograph-that-shows-westminsters-attitude-towards-lgbt-politicians-is-changing-a6886771.html,
 Iain,Stewart,4015,,The Independent,2016-02-20,http://www.independent.co.uk/news/uk/politics/gay-mps-the-photograph-that-shows-westminsters-attitude-towards-lgbt-politicians-is-changing-a6886771.html,
 Stuart,Andrew,4032,,Yorkshire Post,2013-05-22,http://www.yorkshirepost.co.uk/news/leeds-mp-beaten-unconscious-in-homophobic-attack-hits-out-at-tory-gay-marriage-rebels-1-5694767,
+Chris,Pincher,4075,,Pink News,2024-07-03,https://www.thepinknews.com/2024/07/03/lgbtq-representation-house-of-commons-general-election/,"Andrew Reynolds, writing for Pink News, writes that Chris Pincher is LGBT+."
 Margot,James,4115,,The Independent,2016-02-20,http://www.independent.co.uk/news/uk/politics/gay-mps-the-photograph-that-shows-westminsters-attitude-towards-lgbt-politicians-is-changing-a6886771.html,"Margot James had the Conservative party whip removed from her in September 2019, and now sits as an independent MP"
 Eric,Ollerenshaw,4141,,Wikipedia,2020-01-03,https://en.wikipedia.org/wiki/Eric_Ollerenshaw#cite_note-10,
 Stephen,Doughty,4264,,Pink News,2016-07-06,http://www.pinknews.co.uk/2016/07/06/out-Labour-mp-a-constituent-told-me-that-gay-people-should-be-killed-and-sent-to-hell/,
@@ -43,6 +36,7 @@ John,Nicolson,4415,,The Independent,2016-02-20,http://www.independent.co.uk/news
 Joanna,Cherry,4419,,The Independent,2016-02-20,http://www.independent.co.uk/news/uk/politics/gay-mps-the-photograph-that-shows-westminsters-attitude-towards-lgbt-politicians-is-changing-a6886771.html,
 Mhairi,Black,4421,,Attitude,2016-03-17,https://attitude.co.uk/article/as-a-gay-woman-im-a-westminster-outsider-the-snps-mhairi-black-speaks-to-owen-jones/10073/,
 William,Wragg,4429,,Twitter,2015-11-24,https://twitter.com/william_wragg/status/669302083493961733?lang=en,
+Patrick,Grady,4432,Gay,Herald Scotland,2022-06-27,https://www.heraldscotland.com/politics/20236731.mark-smith-patrick-grady-scandal-sign-changed/,"Mark Smith, writing for the Scotland Herald, describes Patrick Gray as a “gay man”."
 Cat,Smith,4436,,The Independent,2016-02-20,http://www.independent.co.uk/news/uk/politics/gay-mps-the-photograph-that-shows-westminsters-attitude-towards-lgbt-politicians-is-changing-a6886771.html,
 Ben,Howlett,4445,,The Independent,2016-02-20,http://www.independent.co.uk/news/uk/politics/gay-mps-the-photograph-that-shows-westminsters-attitude-towards-lgbt-politicians-is-changing-a6886771.html,
 Stewart,Malcolm McDonald,4461,,The Independent,2016-02-20,http://www.independent.co.uk/news/uk/politics/gay-mps-the-photograph-that-shows-westminsters-attitude-towards-lgbt-politicians-is-changing-a6886771.html,
@@ -53,6 +47,7 @@ Wes,Streeting,4504,,The Independent,2016-02-20,http://www.independent.co.uk/news
 Peter,Kyle,4505,,The Independent,2016-02-20,http://www.independent.co.uk/news/uk/politics/gay-mps-the-photograph-that-shows-westminsters-attitude-towards-lgbt-politicians-is-changing-a6886771.html,
 Ross,Thomson,4599,,Pink News,2017-06-05,http://www.pinknews.co.uk/2017/06/05/uk-set-to-break-record-for-highest-number-of-lgbtq-mps-after-general-election/,
 Lloyd,Russell-Moyle,4615,,Pink News,2017-06-05,http://www.pinknews.co.uk/2017/06/05/uk-set-to-break-record-for-highest-number-of-lgbtq-mps-after-general-election/,Lloyd Russell-Moyle was suspended from the Labour Party on 29 May 2024.
+Gordon,Marsden,465,,The Independent,2016-02-20,http://www.independent.co.uk/news/im-gay-and-im-happy-for-my-constituents-to-know-about-it-1164137.html,
 Dan,Carden,4651,,Pink News,2017-06-05,http://www.pinknews.co.uk/2017/06/05/uk-set-to-break-record-for-highest-number-of-lgbtq-mps-after-general-election/,
 Lee,Rowley,4652,,Pink News,2017-06-05,http://www.pinknews.co.uk/2017/06/05/uk-set-to-break-record-for-highest-number-of-lgbtq-mps-after-general-election/,
 Stephen,Morgan,4653,,LGBT Labour,2019-12-13,http://www.lgbtlabour.org.uk/patrons,
@@ -63,7 +58,9 @@ Sandy,Martin,4678,,Pink News,2017-06-05,http://www.pinknews.co.uk/2017/06/05/uk-
 Luke,Pollard,4682,,Pink News,2017-06-05,http://www.pinknews.co.uk/2017/06/05/uk-set-to-break-record-for-highest-number-of-lgbtq-mps-after-general-election/,
 Dehenna,Davison,4737,Bisexual,The Telegraph,2021-10-10,https://www.telegraph.co.uk/politics/2021/10/10/bisexual-no-big-deal-says-red-wall-tory-mp/,
 Alyn,Smith,4738,,Pink News,2019-12-13,https://www.pinknews.co.uk/2019/12/10/general-election-next-parliament-prominent-lgbt-voices/,
+Nigel,Evans,474,,Daily Mail,2010-12-18,http://www.dailymail.co.uk/news/article-1339699/Im-gay-says-Tory-MP-Nigel-Evans-voted-equal-rights-homosexuals.html,
 Peter,Gibson,4754,,Facebook,2019-12-14,https://www.facebook.com/darlingtonconservativeparty/videos/2550400468415917/,"Peter refers too his partner, Gareth, in his acceptance speech (video, linked)"
+David,Borrow,476,,Pink News,2006-05-08,https://www.pinknews.co.uk/2006/05/08/lancashire-politician-becomes-first-mp-to-have-gay-marriage/,
 Gary,Sambrook,4760,,Twitter,2019-12-14,https://twitter.com/GarySambrook89/status/328235991737458688,
 Jamie,Wallis,4766,Trans,Twitter,2022-03-30,https://twitter.com/JamieWallisMP/status/1508984487102844931,Jamie shared that they were trans on a post on Twitter on 30 March 2022. Their pronouns at the time of the statement are ‘he/him/his’.
 Mark,Fletcher,4774,,Pink News,2019-12-13,https://www.pinknews.co.uk/2019/12/10/general-election-next-parliament-prominent-lgbt-voices/,
@@ -82,11 +79,13 @@ Imran,Ahmad Khan,4841,Gay,Pink News,2022-04-11,https://www.theguardian.com/polit
 Kieran,Mullan,4860,,Pink News,2019-12-13,https://www.pinknews.co.uk/2019/12/10/general-election-next-parliament-prominent-lgbt-voices/,
 Olivia,Blake,4864,Bisexual,Twitter,2021-09-20,https://twitter.com/_OliviaBlake/status/1439942562933092355,Olivia Blake tweeted that she identified as a “bi woman” to mark Bi Awareness Week in September 2021.
 Nadia,Whittome,4869,,Gal Dem,2020-12-11,https://gal-dem.com/nadia-whittome-youngest-labour-mp-community-covers-people-of-colour-division/,
+Angela,Eagle,491,,The Independent,2016-02-20,http://www.independent.co.uk/news/uk/politics/gay-mps-the-photograph-that-shows-westminsters-attitude-towards-lgbt-politicians-is-changing-a6886771.html,
 Kim,Leadbeater,4923,,Wikipedia,2021-07-02,https://en.wikipedia.org/wiki/Kim_Leadbeater,Multiple additional newspaper sources refer to to Kim’s ‘partner’ or ‘wife’
 Simon,Lightwood,4943,,Wikipedia,2022-09-07,https://en.wikipedia.org/wiki/Simon_Lightwood,"Wikipedia article links to Halifax Courier article, referencing Simon Lightwood’s “husband”"
 Ashley,Dalton,4981,Gay,The Guardian,2023-02-09,https://www.theguardian.com/politics/2023/feb/09/polls-close-in-west-lancashire-byelection,
 Keir,Mather,4993,Gay,Cherwel,2023-07-20,https://www.cherwell.org/2018/06/01/union-under-fire-for-hosting-anti-lgbtq-speakers-either-side-of-oxford-pride/,Cherwell quotes Keir Mather describing himself as ‘gay man’.
 Sarah,Dyke,4995,,Pink News,2024-07-05,https://www.thepinknews.com/2024/07/05/lgbtq-mps-general-election/,"Andrew Reynolds, writing for Pink News, writes that Sarah Dyke is LGBT+."
+Peter,Mandelson,500,,LGBT Labour,2019-12-13,http://www.lgbtlabour.org.uk/patrons,
 Damien,Egan,5010,,Wikipedia,2024-02-16,https://en.wikipedia.org/wiki/Damien_Egan,
 Tom,Gordon,5032,Gay,Twitter (X),2020-03-17,https://x.com/tomgordonLD/status/1239840883303944192,
 Josh,MacAlister,5033,,LGBT+ Labour,2024-07-05,https://www.lgbtlabour.org.uk/chrissmithlistcandidates,LGBT+ Labour lists this MP as part of the “Chris Smith List”; a list of LGBT+ candidates in receipt of funding from LGBT+ Labour in support of their campaigns.
@@ -113,6 +112,7 @@ James,Asser,5211,,LGBT+ Labour,2024-07-05,https://www.lgbtlabour.org.uk/chrissmi
 Lloyd,Hatton,5217,,LGBT+ Labour,2024-07-05,https://www.lgbtlabour.org.uk/chrissmithlistcandidates,LGBT+ Labour lists this MP as part of the “Chris Smith List”; a list of LGBT+ candidates in receipt of funding from LGBT+ Labour in support of their campaigns.
 Tris,Osbourne,5220,,The Northern Echo,2004-02-17,https://www.thenorthernecho.co.uk/news/7000203.gay-rights-campaigners-stage-same-sex-weddings/,
 Tom,Rutland,5222,,LGBT+ Labour,2024-07-05,https://www.lgbtlabour.org.uk/chrissmithlistcandidates,LGBT+ Labour lists this MP as part of the “Chris Smith List”; a list of LGBT+ candidates in receipt of funding from LGBT+ Labour in support of their campaigns.
+Nick,Brown,523,,The Independent,2016-02-20,http://www.independent.co.uk/news/browns-gay-so-what-tyneside-is-outed-as-a-tolerant-electorate-1183737.html,"Nick Brown was suspended from the Labour Party on 8 September 2022, pending an investigation into a complaint"
 Andrew,Pakes,5243,,Times Higher Education,1988-11-20,https://www.timeshighereducation.com/news/glad-to-be-gay-but-still-unequal/109978.article?storyCode=109978&sectioncode=26,
 Chris,Murray,5245,Gay,Direct contact with MP,2024-07-11,,Chris Murray confirmed directly via email that he is LGBT+ and describes himself as a “gay man”.
 Luke,Murphy,5248,,LGBT+ Labour,2024-07-05,https://www.lgbtlabour.org.uk/chrissmithlistcandidates,LGBT+ Labour lists this MP as part of the “Chris Smith List”; a list of LGBT+ candidates in receipt of funding from LGBT+ Labour in support of their campaigns.
@@ -124,3 +124,6 @@ Terry,Jermy,5338,,Suffolk News,2018-09-14,https://www.suffolknews.co.uk/bury-st-
 Danny,Beales,5339,,LGBT+ Labour,2024-07-05,https://www.lgbtlabour.org.uk/chrissmithlistcandidates,LGBT+ Labour lists this MP as part of the “Chris Smith List”; a list of LGBT+ candidates in receipt of funding from LGBT+ Labour in support of their campaigns.
 Ben,Coleman,5344,,LGBT+ Labour,2024-07-05,https://www.lgbtlabour.org.uk/chrissmithlistcandidates,LGBT+ Labour lists this MP as part of the “Chris Smith List”; a list of LGBT+ candidates in receipt of funding from LGBT+ Labour in support of their campaigns.
 Ben,Maguire,5350,,Falmouth Packet,2024-07-05,https://www.falmouthpacket.co.uk/news/24433442.cornwalls-losing-conservative-mps-commented-defeats/,The Falmouth Packet reports that Ben Maguire has a husband.
+Ron,Davies,552,Bisexual ,BBC News,2003-03-09,http://news.bbc.co.uk/1/hi/wales/2834145.stm,
+Mark,Oaten,63,Gay,Pink News,2019-04-01,https://www.pinknews.co.uk/2019/01/14/mark-oaten-gay-liberal-democrat/,
+Robert,Hayward,863,,LGBT+ Conservatives,2020-01-03,https://www.lgbtconservatives.org.uk/people/type/Patrons?page=1,
