@@ -2146,7 +2146,7 @@ a#home-link span[class^=wordmark-line-] {
 }
 
 .page-type-banner {
-  padding: 15px;
+  padding: 15px 0;
   border-top: 1px solid #625a75;
 }
 
