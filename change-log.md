@@ -4,6 +4,10 @@ title: Change log
 excerpt: This page explains all the changes that have been made to this dataset and website.
 ---
 
+## 5 August 2024
+
+Sam Carling (Labour, North West Cambridgeshire) was added to the dataset.
+
 ## 24 July 2024
 
 The entire site has been rebuilt using Eleventy instead of Jekyll. The underlying dataset was amended to support the new site.

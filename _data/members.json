@@ -9657,6 +9657,15 @@
     "oppositionPosts": [
       {
         "house": 1,
+        "name": "SNP Chief Whip",
+        "id": 1124,
+        "startDate": "2024-07-10T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Opposition Department",
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
         "name": "Shadow SNP Spokesperson (Cabinet Office)",
         "id": 1227,
         "startDate": "2022-12-12T00:00:00",
@@ -16483,7 +16492,35 @@
         "additionalInfoLink": null
       }
     ],
-    "oppositionPosts": [],
+    "oppositionPosts": [
+      {
+        "house": 1,
+        "name": "Shadow Minister (Foreign, Commonwealth and Development Office)",
+        "id": 1671,
+        "startDate": "2024-07-19T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Foreign, Commonwealth and Development Office",
+        "additionalInfoLink": "https://www.gov.uk/government/organisations/foreign-commonwealth-development-office"
+      },
+      {
+        "house": 1,
+        "name": "Shadow Minister (Northern Ireland)",
+        "id": 969,
+        "startDate": "2024-07-19T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Northern Ireland Office",
+        "additionalInfoLink": "https://www.gov.uk/government/organisations/northern-ireland-office"
+      },
+      {
+        "house": 1,
+        "name": "Opposition Whip (Commons)",
+        "id": 10,
+        "startDate": "2024-07-19T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Whips Office (Commons)",
+        "additionalInfoLink": null
+      }
+    ],
     "committeeMemberships": [
       {
         "house": 1,
@@ -17350,7 +17387,17 @@
       }
     ],
     "governmentPosts": [],
-    "oppositionPosts": [],
+    "oppositionPosts": [
+      {
+        "house": 1,
+        "name": "Shadow Parliamentary Under Secretary (Transport)",
+        "id": 1681,
+        "startDate": "2024-07-19T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Department for Transport",
+        "additionalInfoLink": "https://www.gov.uk/government/organisations/department-for-transport"
+      }
+    ],
     "committeeMemberships": [
       {
         "house": 1,
@@ -19880,6 +19927,56 @@
       {
         "membershipFrom": "Sittingbourne and Sheppey",
         "membershipFromId": 4289,
+        "house": 1,
+        "membershipStartDate": "2024-07-04T00:00:00",
+        "membershipEndDate": null,
+        "membershipEndReason": null,
+        "membershipEndReasonNotes": null,
+        "membershipEndReasonId": null,
+        "membershipStatus": null
+      }
+    ],
+    "governmentPosts": [],
+    "oppositionPosts": [],
+    "committeeMemberships": []
+  },
+  {
+    "memberId": "5308",
+    "firstName": "Sam",
+    "lastName": "Carling",
+    "lgbt": {
+      "lgbtIdentity": "LGBT",
+      "lgbtSourceDescription": "The Times (Paywall)",
+      "lgbtSourceDate": "2024-07-29",
+      "lgbtSourceURL": "https://www.thetimes.com/life-style/celebrity/article/interview-generation-z-mps-politics-prfn6dbc7",
+      "lgbtSourceNotes": "Sam Carling describes himself as “in the LGBT community” in this profile piece in The Times."
+    },
+    "memberData": {
+      "nameFullTitle": "Sam Carling MP",
+      "gender": "M",
+      "thumbnailUrl": "https://members-api.parliament.uk/api/Members/5308/Thumbnail"
+    },
+    "partyHistory": [
+      {
+        "startDate": "2024-07-04T00:00:00",
+        "endDate": null,
+        "party": {
+          "id": 15,
+          "name": "Labour",
+          "abbreviation": "Lab",
+          "backgroundColour": "d50000",
+          "foregroundColour": "ffffff",
+          "isLordsMainParty": true,
+          "isLordsSpiritualParty": true,
+          "governmentType": null,
+          "isIndependentParty": false
+        }
+      }
+    ],
+    "houseMembershipHistory": [
+      {
+        "membershipFrom": "North West Cambridgeshire",
+        "membershipFromId": 4216,
         "house": 1,
         "membershipStartDate": "2024-07-04T00:00:00",
         "membershipEndDate": null,
