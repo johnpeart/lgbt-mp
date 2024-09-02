@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/page.html'
+layout: 'page.html'
 title: Licenses and attribution
 ---
 

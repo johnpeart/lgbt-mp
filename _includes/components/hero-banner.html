@@ -1,4 +1,4 @@
-{% if layout == "layouts/parliament.html" %}
+{% if layout == "parliament.html" %}
 <section class="hero-banner hero-banner--default">
     <div class="container">
         {% if endDate == null %}
@@ -24,14 +24,14 @@
         {% endif %}
     </div>
 </section>
-{% elsif layout == "layouts/parliaments.html" %}
+{% elsif layout == "parliaments.html" %}
 <section class="hero-banner hero-banner--default">
     <div class="container">
         <h1>All parliaments</h1>
         <p>This project has collected data about LGBT+ MPs across several Parliaments. The pages below allow you to view the LGBT+ MPs who sat in the House of Commons when the Parliament was summoned (started) and dissolved (ended).</p>
     </div>
 </section>
-{% elsif layout == "layouts/member.html" %}
+{% elsif layout == "member.html" %}
     {% include "components/member-logic-block.html" %}
     <header class="page-type-banner">
         <div class="container">
@@ -65,7 +65,7 @@
             <img class="member-portrait member-portrait-large {{ mostRecentParty | downcase | slugify }}" src="{{ member.memberData.thumbnailUrl }}" alt="Thumbnail of {{ member.firstName }} {{ member.lastName }}">
         </div>
     </section>
-{% elsif layout == "layouts/page.html" %}
+{% elsif layout == "page.html" %}
     <section class="hero-banner hero-banner--default">
         <div class="container">
             <h1>{{ title }}</h1>
