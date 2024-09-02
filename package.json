@@ -12,7 +12,7 @@
     "watch:sass": "chokidar 'assets/styles/sass/**/*.scss' -c 'npm run build:sass'",
     "fetch-data": "node _data/fetch-members.mjs",
     "build": "eleventy",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve --quiet"
   },
   "dependencies": {
     "csv-parser": "^3.0.0",

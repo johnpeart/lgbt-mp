@@ -1,0 +1,19 @@
+<a class="card" href="/member/{{ member.memberId }}/" title="Read more about {{ member.firstName }} {{ member.lastName }}">
+    <section class="member card">
+        <img class="member-portrait member-portrait-small {{ partyName | downcase | slugify }}" src="https://members-api.parliament.uk/api/Members/{{ member.memberId }}/Thumbnail">
+        <h3 class="member-name">{{ member.firstName }} {{ member.lastName }}</h3>
+        
+        {% for history in houseHistory %}
+            {% assign house = history.house %}
+            {% assign membershipStartDate = history.membershipStartDate %}
+            {% assign membershipEndDate = history.membershipEndDate | default: now %}
+            
+            {% if membershipStartDate <= parliamentDate and parliamentDate <= membershipEndDate %}
+                {% assign memberConstituency = history.membershipFrom %}
+            {% endif %}
+        {% endfor %}
+        
+        <p class="member-constituency">{{ memberConstituency }}</p>
+        <span class="more-icon"></span>
+    </section>
+</a>

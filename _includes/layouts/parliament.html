@@ -2,6 +2,21 @@
 layout: "base.html"
 ---
 
-{% include "components/party-logic-block.html" %}
-{% include "components/summary-block.html" %}
-{% include "components/members-by-party.html" %}
+{% assign countMembers = 0 %}
+{% assign countParties = 0 %}
+
+{% assign partyNames = "" %}
+
+{% assign now = page.date | date: "%Y-%m-%dT00:00:00" %}
+{% assign parliamentStartDate = parliament.startDate | date: "%Y-%m-%dT00:00:00" %}
+{% assign parliamentEndDate = parliament.endDate | date: "%Y-%m-%dT00:00:00" %}
+
+{% if endDate == false or endDate == null %}
+    {% assign parliamentDateType = "summon" %}
+    {% assign parliamentDate = parliamentStartDate %}
+{% elsif startDate == false %}
+    {% assign parliamentDateType = "dissolve" %}
+    {% assign parliamentDate = parliamentEndDate %}
+{% endif %}
+
+{% include "components/data-parliament.html " %}

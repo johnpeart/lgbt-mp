@@ -1,4 +1,4 @@
-{% if layout == "parliament.html" %}
+{% if layout == "parliament.html" or layout == "now.html" %}
 <section class="hero-banner hero-banner--default">
     <div class="container">
         {% if endDate == null %}
@@ -32,7 +32,7 @@
     </div>
 </section>
 {% elsif layout == "member.html" %}
-    {% include "components/member-logic-block.html" %}
+    {% include "components/data-member-logic.html" %}
     <header class="page-type-banner">
         <div class="container">
             <h1>Member of Parliament</h1>

@@ -1,0 +1,13 @@
+---
+layout: "base.html"
+---
+
+{% assign countMembers = 0 %}
+{% assign countParties = 0 %}
+
+{% assign partyNames = "" %}
+
+{% assign now = page.date | date: "%Y-%m-%dT00:00:00" %}
+{% assign parliamentDate = now %}
+
+{% include "components/data-parliament.html " %}
