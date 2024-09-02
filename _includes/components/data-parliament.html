@@ -1,3 +1,4 @@
+{% assign members = members | sort: "lastName" %}
 {% for member in members %}
     {% assign houseHistory = member.houseMembershipHistory %}
     {% assign partyHistory = member.partyHistory %}
@@ -34,7 +35,11 @@
     
     <div class="summary-data max-width-container">
         
+        {% if parliamentDateType == "now" %}
+        <p class="lead">In the current Parliament at least:</p>
+        {% else %}
         <p class="lead">On {{ parliamentDate | date: "%Y-%m-%d" | prettyDate }}, when the {{ parliament.parliamentPeriod }}<sup>{{ parliament.parliamentPeriodSuffix }}</sup> Parliament of the United Kingdom was {% if parliamentDateType == "summon" %}summoned{% elsif parliamentDateType == "dissolve" %}dissolved{% else %}<strong>ERROR</strong>{% endif %}, at least:</p>
+        {% endif %}
         
         
 
