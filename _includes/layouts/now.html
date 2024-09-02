@@ -8,6 +8,7 @@ layout: "base.html"
 {% assign partyNames = "" %}
 
 {% assign now = page.date | date: "%Y-%m-%dT00:00:00" %}
+{% assign parliamentDateType = "now" %}
 {% assign parliamentDate = now %}
 
 {% include "components/data-parliament.html" %}
