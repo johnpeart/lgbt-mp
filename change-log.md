@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/page.html'
+layout: 'page.html'
 title: Change log
 excerpt: This page explains all the changes that have been made to this dataset and website.
 ---

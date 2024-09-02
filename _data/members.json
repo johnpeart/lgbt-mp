@@ -413,7 +413,7 @@
       },
       {
         "house": 1,
-        "name": "Draft Voting Eligibility (Prisoners) Bill",
+        "name": "Draft Voting Eligibility (Prisoners) Bill (Joint Committee)",
         "id": 291,
         "startDate": "2013-03-04T00:00:00",
         "endDate": "2013-12-16T00:00:00",
@@ -739,7 +739,7 @@
       },
       {
         "house": 1,
-        "name": "Draft Voting Eligibility (Prisoners) Bill",
+        "name": "Draft Voting Eligibility (Prisoners) Bill (Joint Committee)",
         "id": 291,
         "startDate": "2013-05-15T00:00:00",
         "endDate": "2013-12-16T00:00:00",
@@ -748,7 +748,7 @@
       },
       {
         "house": 1,
-        "name": "Draft Voting Eligibility (Prisoners) Bill",
+        "name": "Draft Voting Eligibility (Prisoners) Bill (Joint Committee)",
         "id": 291,
         "startDate": "2013-03-04T00:00:00",
         "endDate": "2013-12-16T00:00:00",
@@ -2436,7 +2436,7 @@
       },
       {
         "house": 1,
-        "name": "Levelling Up, Housing and Communities Committee",
+        "name": "Housing, Communities and Local Government Committee",
         "id": 17,
         "startDate": "2020-01-27T00:00:00",
         "endDate": "2024-05-30T00:01:00",
@@ -2445,7 +2445,7 @@
       },
       {
         "house": 1,
-        "name": "Levelling Up, Housing and Communities Committee",
+        "name": "Housing, Communities and Local Government Committee",
         "id": 17,
         "startDate": "2017-07-12T00:00:00",
         "endDate": "2019-11-06T00:00:00",
@@ -2454,7 +2454,7 @@
       },
       {
         "house": 1,
-        "name": "Levelling Up, Housing and Communities Committee",
+        "name": "Housing, Communities and Local Government Committee",
         "id": 17,
         "startDate": "2015-06-18T00:00:00",
         "endDate": "2017-05-03T00:00:00",
@@ -2463,7 +2463,7 @@
       },
       {
         "house": 1,
-        "name": "Levelling Up, Housing and Communities Committee",
+        "name": "Housing, Communities and Local Government Committee",
         "id": 17,
         "startDate": "2010-06-10T00:00:00",
         "endDate": "2015-03-30T00:00:00",
@@ -2472,7 +2472,7 @@
       },
       {
         "house": 1,
-        "name": "Levelling Up, Housing and Communities Committee",
+        "name": "Housing, Communities and Local Government Committee",
         "id": 17,
         "startDate": "2006-06-27T00:00:00",
         "endDate": "2015-03-30T00:00:00",
@@ -7010,7 +7010,7 @@
       },
       {
         "house": 1,
-        "name": "Levelling Up, Housing and Communities Committee",
+        "name": "Housing, Communities and Local Government Committee",
         "id": 17,
         "startDate": "2020-03-02T00:00:00",
         "endDate": "2020-07-20T00:00:00",
@@ -7640,7 +7640,7 @@
       },
       {
         "house": 1,
-        "name": "Draft Registration of Overseas Entities Bill (Joint)",
+        "name": "Draft Registration of Overseas Entities Bill (Joint Committee)",
         "id": 397,
         "startDate": "2019-02-19T00:00:00",
         "endDate": "2019-11-06T00:00:00",
@@ -7860,7 +7860,7 @@
     "committeeMemberships": [
       {
         "house": 1,
-        "name": "Levelling Up, Housing and Communities Committee",
+        "name": "Housing, Communities and Local Government Committee",
         "id": 17,
         "startDate": "2010-07-12T00:00:00",
         "endDate": "2011-05-23T00:00:00",
@@ -13202,7 +13202,7 @@
       },
       {
         "house": 1,
-        "name": "Draft Registration of Overseas Entities Bill (Joint)",
+        "name": "Draft Registration of Overseas Entities Bill (Joint Committee)",
         "id": 397,
         "startDate": "2019-02-19T00:00:00",
         "endDate": "2019-11-06T00:00:00",
@@ -13994,6 +13994,24 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [
+      {
+        "house": 1,
+        "name": "Liberal Democrat Spokesperson (Foreign Affairs & International Development)",
+        "id": 1686,
+        "startDate": "2024-07-05T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Opposition Department",
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Liberal Democrat Spokesperson (Science, Innovation & Technology)",
+        "id": 1687,
+        "startDate": "2024-07-05T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Opposition Department",
+        "additionalInfoLink": null
+      },
       {
         "house": 1,
         "name": "Liberal Democrat Spokesperson (Foreign and Commonwealth Affairs)",
@@ -16524,7 +16542,7 @@
     "committeeMemberships": [
       {
         "house": 1,
-        "name": "Levelling Up, Housing and Communities Committee",
+        "name": "Housing, Communities and Local Government Committee",
         "id": 17,
         "startDate": "2022-10-25T00:00:00",
         "endDate": "2023-12-11T00:00:00",
@@ -16533,7 +16551,7 @@
       },
       {
         "house": 1,
-        "name": "Levelling Up, Housing and Communities Committee",
+        "name": "Housing, Communities and Local Government Committee",
         "id": 17,
         "startDate": "2020-03-02T00:00:00",
         "endDate": "2021-02-22T00:00:00",
@@ -17727,7 +17745,7 @@
       },
       {
         "house": 1,
-        "name": "Levelling Up, Housing and Communities Committee",
+        "name": "Housing, Communities and Local Government Committee",
         "id": 17,
         "startDate": "2022-11-29T00:00:00",
         "endDate": "2024-05-30T00:01:00",
@@ -19086,7 +19104,17 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": [
+      {
+        "house": 1,
+        "name": "Assistant Whip",
+        "id": 1206,
+        "startDate": "2024-07-18T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Whips Office (Commons)",
+        "additionalInfoLink": null
+      }
+    ],
     "oppositionPosts": [],
     "committeeMemberships": []
   },

@@ -1,0 +1,161 @@
+{% assign members = members | sort: "lastName" %}
+{% for member in members %}
+    {% assign houseHistory = member.houseMembershipHistory %}
+    {% assign partyHistory = member.partyHistory %}
+    {% for membership in houseHistory %}
+    
+        {% assign house = membership.house %}
+        {% assign membershipStartDate = membership.membershipStartDate %}
+        {% assign membershipEndDate = membership.membershipEndDate | default: now %}
+
+        {% if house == 1 %}
+            {% if membershipStartDate <= parliamentDate and parliamentDate <= membershipEndDate %}
+                
+                {% assign countMembers = countMembers | plus: 1 %}
+                
+                {% for party in partyHistory %}
+                    {% assign partyName = party.party.name %}
+                    {% unless partyNames contains partyName %}
+                        {% assign partyNames = partyNames | append: partyName | append: ", " %}
+                        {% unless partyName == "Independent" or partyName == "Non-affiliated" %}
+                        {% assign countParties = countParties | plus: 1 %}
+                        {% endunless %}
+                    {% endunless %}
+                {% endfor %}
+                
+            {% endif %}
+        {% endif %}
+        
+    {% endfor %}
+{% endfor %}
+
+<section class="summary-data">
+
+    <h2>Total number of LGBT+ MPs</h2>
+    
+    <div class="summary-data max-width-container">
+        
+        {% if parliamentDateType == "now" %}
+        <p class="lead">In the current Parliament at least:</p>
+        {% else %}
+        <p class="lead">On {{ parliamentDate | date: "%Y-%m-%d" | prettyDate }}, when the {{ parliament.parliamentPeriod }}<sup>{{ parliament.parliamentPeriodSuffix }}</sup> Parliament of the United Kingdom was {% if parliamentDateType == "summon" %}summoned{% elsif parliamentDateType == "dissolve" %}dissolved{% else %}<strong>ERROR</strong>{% endif %}, at least:</p>
+        {% endif %}
+        
+        
+
+        <div class="summary-block">
+
+            <p>
+                <span class="stat--number top-padding">{{ countMembers | default: "ERR" }}</span>
+                <span class="stat--label">MPs  {% if endDate == null %}are{% else %}were{% endif %}  LGBT+</span>
+            </p>
+
+            <p>
+                <span class="stat--number">{{ countParties | default: "ERR" }}</span>
+                <span class="stat--label">parties  {% if endDate == null %}have{% else %}had{% endif %}   LGBT+ MPs</span>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<h2>LGBT+ MPs by party</h2>
+
+<section class="party-data max-width-container">
+
+    {% assign partyNames = partyNames | split: ", " | uniq | sort %}
+    {% for name in partyNames %}
+    {% assign countPartyMembers = 0 %}
+    
+    {% for member in members %}
+        {% assign houseHistory = member.houseMembershipHistory %}
+        {% assign partyHistory = member.partyHistory %}
+        {% for membership in houseHistory %}
+        
+            {% assign house = membership.house %}
+            {% assign membershipStartDate = membership.membershipStartDate %}
+            {% if membership.membershipEndDate != null %}
+                {% assign membershipEndDate = membership.membershipEndDate %}
+            {% else %}
+                {% assign membershipEndDate = now %}
+            {% endif %}
+            {% if house == 1 %}
+                {% if membershipStartDate <= parliamentDate and parliamentDate <= membershipEndDate %}
+                                            
+                    {% for party in partyHistory %}
+                        {% assign partyName = party.party.name %}
+                        {% assign partyStartDate = party.startDate %}
+                        {% if party.endDate != null %}
+                            {% assign partyEndDate = party.endDate %}
+                        {% else %}
+                            {% assign partyEndDate = now %}
+                        {% endif %}
+                        {% if name == partyName and partyStartDate <= parliamentDate and parliamentDate <= partyEndDate %}
+                            {% assign countPartyMembers = countPartyMembers | plus: 1 %}
+                        {% endif %}
+                    {% endfor %}
+                    
+                {% endif %}
+            {% endif %}
+            
+        {% endfor %}
+    {% endfor %}
+    
+    {% if countPartyMembers > 0 %}
+    <details class="party">
+        
+        <summary>
+            <div class="party-summary">
+                {% include "icons/{{ name | slugify }}.svg" %}
+                <h2 class="party-name">{{ name }}</h2>
+                <p class="party-total">{{ countPartyMembers }} LGBT+ MPs</p>
+                <span class="expand-icon"></span>
+            </div>
+        </summary>
+        
+        <section class="party-members container">
+        {% for member in members %}
+            {% assign houseHistory = member.houseMembershipHistory %}
+            {% assign partyHistory = member.partyHistory %}
+            {% for membership in houseHistory %}
+            
+                {% assign house = membership.house %}
+                {% assign membershipStartDate = membership.membershipStartDate %}
+                {% if membership.membershipEndDate != null %}
+                    {% assign membershipEndDate = membership.membershipEndDate %}
+                {% else %}
+                    {% assign membershipEndDate = now %}
+                {% endif %}
+                {% if house == 1 %}
+                    {% if membershipStartDate <= parliamentDate and parliamentDate <= membershipEndDate %}
+                                                
+                        {% for party in partyHistory %}
+                            {% assign partyName = party.party.name %}
+                            {% assign partyStartDate = party.startDate %}
+                            {% if party.endDate != null %}
+                                {% assign partyEndDate = party.endDate %}
+                            {% else %}
+                                {% assign partyEndDate = now %}
+                            {% endif %}
+                            {% if name == partyName and partyStartDate <= parliamentDate and parliamentDate <= partyEndDate %}
+            
+                                {% include "components/data-member-card.html" %}
+                                
+                            {% endif %}
+                        {% endfor %}
+                            
+                    {% endif %}
+                {% endif %}
+                    
+            {% endfor %}
+        {% endfor %}
+        </section>
+        
+    </details>
+    {% endif %}
+    
+    {% endfor %}
+    
+</section>

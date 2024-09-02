@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    {% if layout == "layouts/parliament.html" %}
+    {% if layout == "parliament.html" %}
         {% if endDate == false %}
             {% assign startDate = parliament.startDate | prettyDate %}
             {% assign pageTitle = 'Parliament that started on ' | append: startDate | append: ' • LGBT+ Members of Parliament' %}
@@ -15,9 +15,9 @@
         {% else %}
             {% assign pageTitle = site.title %}
         {% endif %}
-    {% elsif layout == "layouts/parliaments.html" %}
+    {% elsif layout == "parliaments.html" %}
         {% assign pageTitle = 'All parliaments' | append: ' • LGBT+ Members of Parliament' %}
-    {% elsif layout == "layouts/member.html" %}
+    {% elsif layout == "member.html" %}
         {% assign pageTitle = member.firstName | append: ' ' | append: member.lastName | append: ' • LGBT+ Members of Parliament' %}
     {% else %}
         {% assign pageTitle = null %}

@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/page.html'
+layout: 'page.html'
 title: Contribute
 excerpt: This dataset is maintained entirely by volunteers in their spare time. Help to keep it up to date by suggesting edits to the dataset.
 ---
