@@ -11693,6 +11693,15 @@
         "endDate": "2024-04-24T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Procedure Committee",
+        "id": 126,
+        "startDate": "2024-09-11T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Chair",
+        "additionalInfoLink": null
       }
     ]
   },
@@ -14066,6 +14075,15 @@
         "startDate": "2022-01-19T00:00:00",
         "endDate": "2022-01-26T00:00:00",
         "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Health and Social Care Committee",
+        "id": 81,
+        "startDate": "2024-09-09T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Chair",
         "additionalInfoLink": null
       }
     ]
@@ -17647,6 +17665,15 @@
         "endDate": "2023-06-29T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Great British Energy Bill",
+        "id": 737,
+        "startDate": "2024-09-11T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -18506,7 +18533,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Great British Energy Bill",
+        "id": 737,
+        "startDate": "2024-09-11T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5034",
@@ -19056,7 +19093,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Great British Energy Bill",
+        "id": 737,
+        "startDate": "2024-09-11T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5129",
@@ -19766,7 +19813,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Great British Energy Bill",
+        "id": 737,
+        "startDate": "2024-09-11T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5245",
@@ -20205,6 +20262,56 @@
       {
         "membershipFrom": "Uxbridge and South Ruislip",
         "membershipFromId": 4373,
+        "house": 1,
+        "membershipStartDate": "2024-07-04T00:00:00",
+        "membershipEndDate": null,
+        "membershipEndReason": null,
+        "membershipEndReasonNotes": null,
+        "membershipEndReasonId": null,
+        "membershipStatus": null
+      }
+    ],
+    "governmentPosts": [],
+    "oppositionPosts": [],
+    "committeeMemberships": []
+  },
+  {
+    "memberId": "5343",
+    "firstName": "Joshua",
+    "lastName": "Reynolds",
+    "lgbt": {
+      "lgbtIdentity": "",
+      "lgbtSourceDescription": "Maidenhead",
+      "lgbtSourceDate": "2024-09-18",
+      "lgbtSourceURL": "https://www.youtube.com/live/nnEmF9OOUkg?si=awhCfDBDla7igaB9&t=39675",
+      "lgbtSourceNotes": "Josh Reynolds is confirmed as having a husband during this official Liberal Democrat event. (See time reference 11:01:15)"
+    },
+    "memberData": {
+      "nameFullTitle": "Mr Joshua Reynolds MP",
+      "gender": "M",
+      "thumbnailUrl": "https://members-api.parliament.uk/api/Members/5343/Thumbnail"
+    },
+    "partyHistory": [
+      {
+        "startDate": "2024-07-04T00:00:00",
+        "endDate": null,
+        "party": {
+          "id": 17,
+          "name": "Liberal Democrat",
+          "abbreviation": "LD",
+          "backgroundColour": "faa01a",
+          "foregroundColour": "FFFFFF",
+          "isLordsMainParty": true,
+          "isLordsSpiritualParty": false,
+          "governmentType": null,
+          "isIndependentParty": false
+        }
+      }
+    ],
+    "houseMembershipHistory": [
+      {
+        "membershipFrom": "Maidenhead",
+        "membershipFromId": 4163,
         "house": 1,
         "membershipStartDate": "2024-07-04T00:00:00",
         "membershipEndDate": null,

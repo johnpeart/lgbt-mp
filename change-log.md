@@ -4,6 +4,10 @@ title: Change log
 excerpt: This page explains all the changes that have been made to this dataset and website.
 ---
 
+## 18 September 2024
+
+Joshua Reynolds (Liberal Democrat, Maidenhead) was added to the dataset.
+
 ## 5 August 2024
 
 Sam Carling (Labour, North West Cambridgeshire) was added to the dataset.
