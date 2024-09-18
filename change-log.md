@@ -8,6 +8,8 @@ excerpt: This page explains all the changes that have been made to this dataset 
 
 Joshua Reynolds (Liberal Democrat, Maidenhead) was added to the dataset.
 
+Multiple other MPs were added to the historical 2010 Parliament.
+
 ## 5 August 2024
 
 Sam Carling (Labour, North West Cambridgeshire) was added to the dataset.
