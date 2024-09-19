@@ -1426,6 +1426,295 @@
     "committeeMemberships": []
   },
   {
+    "memberId": "194",
+    "firstName": "Simon",
+    "lastName": "Hughes",
+    "lgbt": {
+      "lgbtIdentity": "Gay",
+      "lgbtSourceDescription": "The Independent",
+      "lgbtSourceDate": "2006-01-27",
+      "lgbtSourceURL": "https://www.independent.co.uk/news/uk/politics/another-day-another-lib-dem-disaster-hughes-admits-he-lied-about-his-sexuality-6110664.html",
+      "lgbtSourceNotes": ""
+    },
+    "memberData": {
+      "nameFullTitle": "Rt Hon Simon Hughes",
+      "gender": "M",
+      "thumbnailUrl": "https://members-api.parliament.uk/api/Members/194/Thumbnail"
+    },
+    "partyHistory": [
+      {
+        "startDate": "1983-02-24T00:00:00",
+        "endDate": "1988-03-02T00:00:00",
+        "party": {
+          "id": 16,
+          "name": "Liberal",
+          "abbreviation": "Lib",
+          "backgroundColour": "eb7a43",
+          "foregroundColour": "FFFFFF",
+          "isLordsMainParty": false,
+          "isLordsSpiritualParty": false,
+          "governmentType": null,
+          "isIndependentParty": false
+        }
+      },
+      {
+        "startDate": "1988-03-02T00:00:00",
+        "endDate": "2015-03-30T00:00:00",
+        "party": {
+          "id": 17,
+          "name": "Liberal Democrat",
+          "abbreviation": "LD",
+          "backgroundColour": "faa01a",
+          "foregroundColour": "FFFFFF",
+          "isLordsMainParty": true,
+          "isLordsSpiritualParty": false,
+          "governmentType": null,
+          "isIndependentParty": false
+        }
+      }
+    ],
+    "houseMembershipHistory": [
+      {
+        "membershipFrom": "Bermondsey",
+        "membershipFromId": 211,
+        "house": 1,
+        "membershipStartDate": "1983-02-24T00:00:00",
+        "membershipEndDate": "1983-06-09T00:00:00",
+        "membershipEndReason": null,
+        "membershipEndReasonNotes": null,
+        "membershipEndReasonId": null,
+        "membershipStatus": null
+      },
+      {
+        "membershipFrom": "Southwark and Bermondsey",
+        "membershipFromId": 2726,
+        "house": 1,
+        "membershipStartDate": "1983-06-09T00:00:00",
+        "membershipEndDate": "1987-06-11T00:00:00",
+        "membershipEndReason": null,
+        "membershipEndReasonNotes": null,
+        "membershipEndReasonId": 7,
+        "membershipStatus": null
+      },
+      {
+        "membershipFrom": "Southwark and Bermondsey",
+        "membershipFromId": 2726,
+        "house": 1,
+        "membershipStartDate": "1987-06-11T00:00:00",
+        "membershipEndDate": "1992-04-09T00:00:00",
+        "membershipEndReason": null,
+        "membershipEndReasonNotes": null,
+        "membershipEndReasonId": 7,
+        "membershipStatus": null
+      },
+      {
+        "membershipFrom": "Southwark and Bermondsey",
+        "membershipFromId": 2726,
+        "house": 1,
+        "membershipStartDate": "1992-04-09T00:00:00",
+        "membershipEndDate": "1997-05-01T00:00:00",
+        "membershipEndReason": null,
+        "membershipEndReasonNotes": null,
+        "membershipEndReasonId": 7,
+        "membershipStatus": null
+      },
+      {
+        "membershipFrom": "North Southwark and Bermondsey",
+        "membershipFromId": 2155,
+        "house": 1,
+        "membershipStartDate": "1997-05-01T00:00:00",
+        "membershipEndDate": "2001-06-07T00:00:00",
+        "membershipEndReason": null,
+        "membershipEndReasonNotes": null,
+        "membershipEndReasonId": 7,
+        "membershipStatus": null
+      },
+      {
+        "membershipFrom": "North Southwark and Bermondsey",
+        "membershipFromId": 2155,
+        "house": 1,
+        "membershipStartDate": "2001-06-07T00:00:00",
+        "membershipEndDate": "2005-05-05T00:00:00",
+        "membershipEndReason": null,
+        "membershipEndReasonNotes": null,
+        "membershipEndReasonId": 7,
+        "membershipStatus": null
+      },
+      {
+        "membershipFrom": "North Southwark and Bermondsey",
+        "membershipFromId": 2155,
+        "house": 1,
+        "membershipStartDate": "2005-05-05T00:00:00",
+        "membershipEndDate": "2010-05-06T00:00:00",
+        "membershipEndReason": null,
+        "membershipEndReasonNotes": null,
+        "membershipEndReasonId": 7,
+        "membershipStatus": null
+      },
+      {
+        "membershipFrom": "Bermondsey and Old Southwark",
+        "membershipFromId": 3318,
+        "house": 1,
+        "membershipStartDate": "2010-05-06T00:00:00",
+        "membershipEndDate": "2015-03-30T00:00:00",
+        "membershipEndReason": null,
+        "membershipEndReasonNotes": null,
+        "membershipEndReasonId": 7,
+        "membershipStatus": null
+      }
+    ],
+    "governmentPosts": [
+      {
+        "house": 1,
+        "name": "Minister of State (Ministry of Justice)",
+        "id": 836,
+        "startDate": "2013-12-18T00:00:00",
+        "endDate": "2015-05-08T00:00:00",
+        "additionalInfo": "Ministry of Justice",
+        "additionalInfoLink": "https://www.gov.uk/government/organisations/ministry-of-justice"
+      }
+    ],
+    "oppositionPosts": [
+      {
+        "house": 1,
+        "name": "Shadow Secretary of State for Energy and Climate Change",
+        "id": 865,
+        "startDate": "2009-01-08T00:00:00",
+        "endDate": "2010-05-06T00:00:00",
+        "additionalInfo": "Department of Energy and Climate Change",
+        "additionalInfoLink": "https://www.gov.uk/government/organisations/department-of-energy-climate-change"
+      },
+      {
+        "house": 1,
+        "name": "Shadow Leader of the House of Commons",
+        "id": 14,
+        "startDate": "2007-12-20T00:00:00",
+        "endDate": "2009-01-08T00:00:00",
+        "additionalInfo": "Office of the Leader of the House of Commons",
+        "additionalInfoLink": "https://www.gov.uk/government/organisations/the-office-of-the-leader-of-the-house-of-commons"
+      },
+      {
+        "house": 1,
+        "name": "Shadow Lord Chancellor and Shadow Secretary of State for Justice (also Shadow Minister for London)",
+        "id": 857,
+        "startDate": "2006-03-10T00:00:00",
+        "endDate": "2007-05-09T00:00:00",
+        "additionalInfo": "Ministry of Justice",
+        "additionalInfoLink": "https://www.gov.uk/government/organisations/ministry-of-justice"
+      },
+      {
+        "house": 1,
+        "name": "Shadow Attorney General",
+        "id": 11,
+        "startDate": "2005-05-10T00:00:00",
+        "endDate": "2007-12-20T00:00:00",
+        "additionalInfo": "Attorney General's Office",
+        "additionalInfoLink": "https://www.gov.uk/government/organisations/attorney-generals-office"
+      },
+      {
+        "house": 1,
+        "name": "Shadow Spokesperson (Home Affairs)",
+        "id": 988,
+        "startDate": "1999-06-01T00:00:00",
+        "endDate": "2003-06-01T00:00:00",
+        "additionalInfo": "Home Office",
+        "additionalInfoLink": "https://www.gov.uk/government/organisations/home-office"
+      },
+      {
+        "house": 1,
+        "name": "Shadow Spokesperson (Health)",
+        "id": 987,
+        "startDate": "1995-06-01T00:00:00",
+        "endDate": "1999-06-01T00:00:00",
+        "additionalInfo": "Department of Health",
+        "additionalInfoLink": "http://www.dh.gov.uk"
+      },
+      {
+        "house": 1,
+        "name": "Shadow Spokesperson (Environment, Food and Rural Affairs)",
+        "id": 984,
+        "startDate": "1992-06-01T00:00:00",
+        "endDate": "1994-06-01T00:00:00",
+        "additionalInfo": "Department for Environment, Food and Rural Affairs",
+        "additionalInfoLink": "https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs"
+      },
+      {
+        "house": 1,
+        "name": "Opposition Deputy Chief Whip (Commons)",
+        "id": 8,
+        "startDate": "1989-06-01T00:00:00",
+        "endDate": "1999-06-01T00:00:00",
+        "additionalInfo": "Whips Office (Commons)",
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Shadow Spokesperson (Health)",
+        "id": 987,
+        "startDate": "1988-06-01T00:00:00",
+        "endDate": "1988-10-01T00:00:00",
+        "additionalInfo": "Department of Health",
+        "additionalInfoLink": "http://www.dh.gov.uk"
+      },
+      {
+        "house": 1,
+        "name": "Shadow Spokesperson (Education)",
+        "id": 982,
+        "startDate": "1988-06-01T00:00:00",
+        "endDate": "1992-06-01T00:00:00",
+        "additionalInfo": "Department for Education",
+        "additionalInfoLink": "http://www.education.gov.uk/"
+      },
+      {
+        "house": 1,
+        "name": "Shadow Spokesperson (Environment, Food and Rural Affairs)",
+        "id": 984,
+        "startDate": "1983-06-01T00:00:00",
+        "endDate": "1988-06-01T00:00:00",
+        "additionalInfo": "Department for Environment, Food and Rural Affairs",
+        "additionalInfoLink": "https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs"
+      }
+    ],
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Ecclesiastical Committee (Joint Committee)",
+        "id": 174,
+        "startDate": "2010-10-26T00:00:00",
+        "endDate": "2014-02-25T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Ecclesiastical Committee (Joint Committee)",
+        "id": 174,
+        "startDate": "2002-01-31T00:00:00",
+        "endDate": "2005-05-05T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Conventions (Joint Committee)",
+        "id": 20,
+        "startDate": "2006-05-17T00:00:00",
+        "endDate": "2006-10-31T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Human Rights (Joint Committee)",
+        "id": 93,
+        "startDate": "2012-11-05T00:00:00",
+        "endDate": "2014-01-27T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
+  },
+  {
     "memberId": "230",
     "firstName": "Ben",
     "lastName": "Bradshaw",
@@ -14360,7 +14649,7 @@
         "name": "Liberal Democrat Spokesperson (Foreign Affairs & International Development)",
         "id": 1686,
         "startDate": "2024-07-05T00:00:00",
-        "endDate": null,
+        "endDate": "2024-09-18T00:00:00",
         "additionalInfo": "Opposition Department",
         "additionalInfoLink": null
       },
@@ -14369,7 +14658,7 @@
         "name": "Liberal Democrat Spokesperson (Science, Innovation & Technology)",
         "id": 1687,
         "startDate": "2024-07-05T00:00:00",
-        "endDate": null,
+        "endDate": "2024-09-18T00:00:00",
         "additionalInfo": "Opposition Department",
         "additionalInfoLink": null
       },
@@ -19244,7 +19533,17 @@
       }
     ],
     "governmentPosts": [],
-    "oppositionPosts": [],
+    "oppositionPosts": [
+      {
+        "house": 1,
+        "name": "Liberal Democrat Spokesperson (Justice)",
+        "id": 1260,
+        "startDate": "2024-09-18T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Opposition Department",
+        "additionalInfoLink": null
+      }
+    ],
     "committeeMemberships": []
   },
   {
@@ -20774,7 +21073,17 @@
       }
     ],
     "governmentPosts": [],
-    "oppositionPosts": [],
+    "oppositionPosts": [
+      {
+        "house": 1,
+        "name": "Liberal Democrat Shadow Attorney General",
+        "id": 1295,
+        "startDate": "2024-09-18T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Opposition Department",
+        "additionalInfoLink": null
+      }
+    ],
     "committeeMemberships": []
   }
 ]
