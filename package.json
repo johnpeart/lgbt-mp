@@ -1,23 +1,22 @@
 {
-  "name": "mps-whoare-lgbt",
+  "name": "LGBT MPs",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "chokidar-cli": "^3.0.0",
-    "sass": "^1.77.6"
-  },
-  "scripts": {
-    "build:sass": "sass assets/styles/sass/styles.scss assets/styles/styles.css",
-    "watch:sass": "chokidar 'assets/styles/sass/**/*.scss' -c 'npm run build:sass'",
-    "fetch-data": "node _data/fetch-members.mjs",
-    "build": "eleventy",
-    "start": "eleventy --serve --quiet"
-  },
   "dependencies": {
     "csv-parser": "^3.0.0",
     "csv-writer": "^1.6.0",
-    "node-fetch": "^3.0.0"
+    "@11ty/eleventy": "^2.0.1",
+    "node-fetch": "^3.3.2",
+    "sass": "^1.77.8"
+  },
+  "scripts": {
+    "build:eleventy": "npx @11ty/eleventy --quiet",
+    "build:sass": "npx sass _sass:_site/assets/styles --no-source-map",
+    "fetch-data": "node _data/fetch-members.mjs",
+    "watch:eleventy": "npx @11ty/eleventy --serve --quiet",
+    "watch:sass": "npx sass _sass:_site/assets/styles --watch",
+    "build": "npm run fetch-data && npm run build:sass && npm run build:eleventy",
+    "start": "npm run watch:eleventy & npm run watch:sass"
   },
   "keywords": [],
   "author": "",
