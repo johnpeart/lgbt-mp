@@ -4,6 +4,10 @@ title: Change log
 excerpt: This page explains all the changes that have been made to this dataset and website.
 ---
 
+## 30 October 2024
+
+Matt Turmaine (Labour, Watford) and Alex Barros-Curtis (Labour, Cardiff West) were added to the dataset.
+
 ## 18 September 2024
 
 Joshua Reynolds (Liberal Democrat, Maidenhead) was added to the dataset.

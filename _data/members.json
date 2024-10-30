@@ -6839,6 +6839,15 @@
         "house": 1,
         "name": "International Development Committee",
         "id": 98,
+        "startDate": "2024-10-21T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "International Development Committee",
+        "id": 98,
         "startDate": "2022-11-21T00:00:00",
         "endDate": "2024-05-30T00:01:00",
         "additionalInfo": null,
@@ -14156,6 +14165,15 @@
         "house": 1,
         "name": "Foreign Affairs Committee",
         "id": 78,
+        "startDate": "2024-10-21T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Foreign Affairs Committee",
+        "id": 78,
         "startDate": "2023-11-28T00:00:00",
         "endDate": "2024-05-30T00:01:00",
         "additionalInfo": null,
@@ -16888,6 +16906,15 @@
         "endDate": "2024-05-21T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Public Accounts Committee",
+        "id": 127,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -18315,6 +18342,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Environmental Audit Committee",
+        "id": 62,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -18921,6 +18957,24 @@
         "endDate": "2024-01-31T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Terrorism (Protection of Premises) Bill: Programming sub committee",
+        "id": 743,
+        "startDate": "2024-10-23T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Terrorism (Protection of Premises) Bill",
+        "id": 742,
+        "startDate": "2024-10-23T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -18998,7 +19052,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Environment, Food and Rural Affairs Committee",
+        "id": 52,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5010",
@@ -19074,7 +19138,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Work and Pensions Committee",
+        "id": 164,
+        "startDate": "2024-10-21T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5032",
@@ -19124,7 +19198,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Science, Innovation and Technology Committee",
+        "id": 135,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5033",
@@ -19183,6 +19267,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Energy Security and Net Zero Committee",
+        "id": 664,
+        "startDate": "2024-10-21T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -19234,7 +19327,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Environment, Food and Rural Affairs Committee",
+        "id": 52,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5048",
@@ -19284,7 +19387,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Business and Trade Committee",
+        "id": 365,
+        "startDate": "2024-10-21T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5064",
@@ -19334,7 +19447,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Science, Innovation and Technology Committee",
+        "id": 135,
+        "startDate": "2024-10-21T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5065",
@@ -19384,7 +19507,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Women and Equalities Committee",
+        "id": 328,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5075",
@@ -19434,7 +19567,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Health and Social Care Committee",
+        "id": 81,
+        "startDate": "2024-10-21T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5080",
@@ -19544,7 +19687,17 @@
         "additionalInfoLink": null
       }
     ],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Justice Committee",
+        "id": 102,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5100",
@@ -19594,7 +19747,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Environmental Audit Committee",
+        "id": 62,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5102",
@@ -19644,7 +19807,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Renters’ Rights Bill",
+        "id": 739,
+        "startDate": "2024-10-16T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5106",
@@ -19694,7 +19867,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Women and Equalities Committee",
+        "id": 328,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5123",
@@ -19750,6 +19933,15 @@
         "name": "Great British Energy Bill",
         "id": 737,
         "startDate": "2024-09-11T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Energy Security and Net Zero Committee",
+        "id": 664,
+        "startDate": "2024-10-21T00:00:00",
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
@@ -19817,6 +20009,56 @@
     "committeeMemberships": []
   },
   {
+    "memberId": "5130",
+    "firstName": "Matt",
+    "lastName": "Turmaine",
+    "lgbt": {
+      "lgbtIdentity": "",
+      "lgbtSourceDescription": "LGBT+ Labour",
+      "lgbtSourceDate": "2024-10-03",
+      "lgbtSourceURL": "https://www.lgbtlabour.org.uk/campaign_session_in_watford",
+      "lgbtSourceNotes": "LGBT+ Labour’s website lists a “Campaign session” for this MP that took place on 19 November 2022. On this page, then Cllr Matthew Turmaine was referred to as an “LGBT+ candidate”. Separately, the MP has been in direct contact to confirm their LGBT+ identity."
+    },
+    "memberData": {
+      "nameFullTitle": "Matt Turmaine MP",
+      "gender": "M",
+      "thumbnailUrl": "https://members-api.parliament.uk/api/Members/5130/Thumbnail"
+    },
+    "partyHistory": [
+      {
+        "startDate": "2024-07-04T00:00:00",
+        "endDate": null,
+        "party": {
+          "id": 15,
+          "name": "Labour",
+          "abbreviation": "Lab",
+          "backgroundColour": "d50000",
+          "foregroundColour": "ffffff",
+          "isLordsMainParty": true,
+          "isLordsSpiritualParty": true,
+          "governmentType": null,
+          "isIndependentParty": false
+        }
+      }
+    ],
+    "houseMembershipHistory": [
+      {
+        "membershipFrom": "Watford",
+        "membershipFromId": 4383,
+        "house": 1,
+        "membershipStartDate": "2024-07-04T00:00:00",
+        "membershipEndDate": null,
+        "membershipEndReason": null,
+        "membershipEndReasonNotes": null,
+        "membershipEndReasonId": null,
+        "membershipStatus": null
+      }
+    ],
+    "governmentPosts": [],
+    "oppositionPosts": [],
+    "committeeMemberships": []
+  },
+  {
     "memberId": "5135",
     "firstName": "Oliver",
     "lastName": "Ryan",
@@ -19864,7 +20106,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Public Accounts Committee",
+        "id": 127,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5146",
@@ -19914,7 +20166,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Public Accounts Committee",
+        "id": 127,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5147",
@@ -20064,7 +20326,95 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Northern Ireland Affairs Committee",
+        "id": 120,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
+  },
+  {
+    "memberId": "5175",
+    "firstName": "Alex",
+    "lastName": "Barros-Curtis",
+    "lgbt": {
+      "lgbtIdentity": "",
+      "lgbtSourceDescription": "ITV News",
+      "lgbtSourceDate": "2024-07-24",
+      "lgbtSourceURL": "https://www.itv.com/news/wales/2024-07-24/meet-abc-the-new-welsh-labour-mp-for-cardiff-west",
+      "lgbtSourceNotes": "The linked article refers to this MP as an “openly gay man”."
+    },
+    "memberData": {
+      "nameFullTitle": "Mr Alex Barros-Curtis MP",
+      "gender": "M",
+      "thumbnailUrl": "https://members-api.parliament.uk/api/Members/5175/Thumbnail"
+    },
+    "partyHistory": [
+      {
+        "startDate": "2024-07-04T00:00:00",
+        "endDate": null,
+        "party": {
+          "id": 15,
+          "name": "Labour",
+          "abbreviation": "Lab",
+          "backgroundColour": "d50000",
+          "foregroundColour": "ffffff",
+          "isLordsMainParty": true,
+          "isLordsSpiritualParty": true,
+          "governmentType": null,
+          "isIndependentParty": false
+        }
+      }
+    ],
+    "houseMembershipHistory": [
+      {
+        "membershipFrom": "Cardiff West",
+        "membershipFromId": 4507,
+        "house": 1,
+        "membershipStartDate": "2024-07-04T00:00:00",
+        "membershipEndDate": null,
+        "membershipEndReason": null,
+        "membershipEndReasonNotes": null,
+        "membershipEndReasonId": null,
+        "membershipStatus": null
+      }
+    ],
+    "governmentPosts": [],
+    "oppositionPosts": [],
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Modernisation Committee",
+        "id": 736,
+        "startDate": "2024-09-09T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Justice Committee",
+        "id": 102,
+        "startDate": "2024-10-21T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Administration Committee",
+        "id": 2,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5185",
@@ -20314,7 +20664,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Public Accounts Committee",
+        "id": 127,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5220",
@@ -20414,7 +20774,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Culture, Media and Sport Committee",
+        "id": 378,
+        "startDate": "2024-10-21T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5243",
@@ -20473,6 +20843,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Environment, Food and Rural Affairs Committee",
+        "id": 52,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -20524,7 +20903,35 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Home Affairs Committee",
+        "id": 83,
+        "startDate": "2024-10-21T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Terrorism (Protection of Premises) Bill: Programming sub committee",
+        "id": 743,
+        "startDate": "2024-10-23T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Terrorism (Protection of Premises) Bill",
+        "id": 742,
+        "startDate": "2024-10-23T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5248",
@@ -20574,7 +20981,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Energy Security and Net Zero Committee",
+        "id": 664,
+        "startDate": "2024-10-21T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5287",
@@ -20624,7 +21041,35 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Terrorism (Protection of Premises) Bill: Programming sub committee",
+        "id": 743,
+        "startDate": "2024-10-23T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Terrorism (Protection of Premises) Bill",
+        "id": 742,
+        "startDate": "2024-10-23T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Environment, Food and Rural Affairs Committee",
+        "id": 52,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5300",
@@ -20724,7 +21169,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Renters’ Rights Bill",
+        "id": 739,
+        "startDate": "2024-10-16T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5318",
@@ -20774,7 +21229,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Transport Committee",
+        "id": 153,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5337",
@@ -20924,7 +21389,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Health and Social Care Committee",
+        "id": 81,
+        "startDate": "2024-10-21T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5343",
@@ -20974,7 +21449,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Business and Trade Committee",
+        "id": 365,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5344",
@@ -21024,7 +21509,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Health and Social Care Committee",
+        "id": 81,
+        "startDate": "2024-10-21T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5350",
@@ -21084,6 +21579,34 @@
         "additionalInfoLink": null
       }
     ],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Terrorism (Protection of Premises) Bill: Programming sub committee",
+        "id": 743,
+        "startDate": "2024-10-23T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Terrorism (Protection of Premises) Bill",
+        "id": 742,
+        "startDate": "2024-10-23T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Home Affairs Committee",
+        "id": 83,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   }
 ]
