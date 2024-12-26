@@ -4,6 +4,17 @@ title: Change log
 excerpt: This page explains all the changes that have been made to this dataset and website.
 ---
 
+## 26 December 2024
+
+4 additional MPs were added to the dataset:
+
+- Martin Rhodes (Labour) 
+- Tracy Gilbert (Labour)
+- Lillian Jones (Labour)
+- Jacob Collier (Labour)
+
+These MPs were added after appearing in a photograph of LGBT+ MPs in the Parliamentary Labour Party, posted on Twitter by James Asser MP.
+
 ## 30 October 2024
 
 Matt Turmaine (Labour, Watford) and Alex Barros-Curtis (Labour, Cardiff West) were added to the dataset.

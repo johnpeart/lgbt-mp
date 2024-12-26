@@ -3129,6 +3129,24 @@
         "endDate": "2024-05-23T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Public Accounts Committee",
+        "id": 127,
+        "startDate": "2024-11-04T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Speaker's Conference (2024)",
+        "id": 741,
+        "startDate": "2024-12-18T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -5136,7 +5154,7 @@
       "lgbtSourceNotes": ""
     },
     "memberData": {
-      "nameFullTitle": "Lord Hayward OBE",
+      "nameFullTitle": "The Lord Hayward OBE",
       "gender": "M",
       "thumbnailUrl": "https://members-api.parliament.uk/api/Members/863/Thumbnail"
     },
@@ -7191,6 +7209,15 @@
         "endDate": "2022-10-18T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Employment Rights Bill",
+        "id": 747,
+        "startDate": "2024-11-13T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -9014,10 +9041,19 @@
     "oppositionPosts": [
       {
         "house": 1,
+        "name": "Shadow Secretary of State for Culture, Media and Sport",
+        "id": 1186,
+        "startDate": "2024-11-05T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Department for Culture, Media and Sport",
+        "additionalInfoLink": "https://www.gov.uk/government/organisations/department-for-culture-media-sport"
+      },
+      {
+        "house": 1,
         "name": "Opposition Chief Whip (Commons)",
         "id": 1178,
         "startDate": "2024-07-08T00:00:00",
-        "endDate": null,
+        "endDate": "2024-11-03T00:00:00",
         "additionalInfo": "Whips Office (Commons)",
         "additionalInfoLink": null
       }
@@ -9920,6 +9956,15 @@
         "endDate": "2024-05-30T00:01:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Commonwealth Parliamentary Association and International Committee of the Red Cross (Status) Bill [HL]",
+        "id": 744,
+        "startDate": "2024-11-06T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -10511,6 +10556,15 @@
         "id": 687,
         "startDate": "2023-11-29T00:00:00",
         "endDate": "2023-12-12T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Speaker's Conference (2024)",
+        "id": 741,
+        "startDate": "2024-12-18T00:00:00",
+        "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -12315,6 +12369,15 @@
         "startDate": "2023-10-18T00:00:00",
         "endDate": "2024-05-30T00:01:00",
         "additionalInfo": "Chair",
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Liaison Committee (Commons)",
+        "id": 103,
+        "startDate": "2024-12-04T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
         "additionalInfoLink": null
       },
       {
@@ -14744,6 +14807,15 @@
         "endDate": null,
         "additionalInfo": "Chair",
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Liaison Committee (Commons)",
+        "id": 103,
+        "startDate": "2024-12-04T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -15298,6 +15370,15 @@
         "id": 676,
         "startDate": "2023-06-14T00:00:00",
         "endDate": "2023-06-19T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Armed Forces Commissioner Bill",
+        "id": 750,
+        "startDate": "2024-12-04T00:00:00",
+        "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -16581,6 +16662,15 @@
         "endDate": "2024-03-06T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Finance Committee (Commons)",
+        "id": 325,
+        "startDate": "2024-11-18T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -17110,6 +17200,15 @@
         "endDate": "2024-02-28T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Speaker's Committee for the Independent Parliamentary Standards Authority",
+        "id": 143,
+        "startDate": "2024-11-20T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -17199,10 +17298,19 @@
     "oppositionPosts": [
       {
         "house": 1,
+        "name": "Shadow Parliamentary Under Secretary (Housing, Communities and Local Government)",
+        "id": 1676,
+        "startDate": "2024-11-08T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Ministry of Housing, Communities and Local Government",
+        "additionalInfoLink": "https://www.gov.uk/government/organisations/ministry-of-housing-communities-local-government"
+      },
+      {
+        "house": 1,
         "name": "Shadow Minister (Foreign, Commonwealth and Development Office)",
         "id": 1671,
         "startDate": "2024-07-19T00:00:00",
-        "endDate": null,
+        "endDate": "2024-11-06T00:00:00",
         "additionalInfo": "Foreign, Commonwealth and Development Office",
         "additionalInfoLink": "https://www.gov.uk/government/organisations/foreign-commonwealth-development-office"
       },
@@ -17211,7 +17319,7 @@
         "name": "Shadow Minister (Northern Ireland)",
         "id": 969,
         "startDate": "2024-07-19T00:00:00",
-        "endDate": null,
+        "endDate": "2024-11-06T00:00:00",
         "additionalInfo": "Northern Ireland Office",
         "additionalInfoLink": "https://www.gov.uk/government/organisations/northern-ireland-office"
       },
@@ -17304,6 +17412,15 @@
         "id": 717,
         "startDate": "2024-04-17T00:00:00",
         "endDate": "2024-04-24T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Armed Forces Commissioner Bill",
+        "id": 750,
+        "startDate": "2024-12-04T00:00:00",
+        "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -18094,10 +18211,19 @@
     "oppositionPosts": [
       {
         "house": 1,
+        "name": "Shadow Minister (Justice)",
+        "id": 968,
+        "startDate": "2024-11-06T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Ministry of Justice",
+        "additionalInfoLink": "https://www.gov.uk/government/organisations/ministry-of-justice"
+      },
+      {
+        "house": 1,
         "name": "Shadow Parliamentary Under Secretary (Transport)",
         "id": 1681,
         "startDate": "2024-07-19T00:00:00",
-        "endDate": null,
+        "endDate": "2024-11-06T00:00:00",
         "additionalInfo": "Department for Transport",
         "additionalInfoLink": "https://www.gov.uk/government/organisations/department-for-transport"
       }
@@ -19207,6 +19333,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Human Rights (Joint Committee)",
+        "id": 93,
+        "startDate": "2024-12-02T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -19333,6 +19468,75 @@
         "name": "Environment, Food and Rural Affairs Committee",
         "id": 52,
         "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
+  },
+  {
+    "memberId": "5043",
+    "firstName": "Lillian",
+    "lastName": "Jones",
+    "lgbt": {
+      "lgbtIdentity": "",
+      "lgbtSourceDescription": "Twitter (X)",
+      "lgbtSourceDate": "2024-11-21",
+      "lgbtSourceURL": "https://x.com/JamesAsser/status/1859719790413349332/photo/1",
+      "lgbtSourceNotes": "This MP appears in a photograph of all LGBT+ MPs in the Parliamentary Labour Party, taking on 21 November 2024. James Asser MP tweeted the photograph."
+    },
+    "memberData": {
+      "nameFullTitle": "Lillian Jones MP",
+      "gender": "F",
+      "thumbnailUrl": "https://members-api.parliament.uk/api/Members/5043/Thumbnail"
+    },
+    "partyHistory": [
+      {
+        "startDate": "2024-07-04T00:00:00",
+        "endDate": null,
+        "party": {
+          "id": 15,
+          "name": "Labour",
+          "abbreviation": "Lab",
+          "backgroundColour": "d50000",
+          "foregroundColour": "ffffff",
+          "isLordsMainParty": true,
+          "isLordsSpiritualParty": true,
+          "governmentType": null,
+          "isIndependentParty": false
+        }
+      }
+    ],
+    "houseMembershipHistory": [
+      {
+        "membershipFrom": "Kilmarnock and Loudoun",
+        "membershipFromId": 4444,
+        "house": 1,
+        "membershipStartDate": "2024-07-04T00:00:00",
+        "membershipEndDate": null,
+        "membershipEndReason": null,
+        "membershipEndReasonNotes": null,
+        "membershipEndReasonId": null,
+        "membershipStatus": null
+      }
+    ],
+    "governmentPosts": [],
+    "oppositionPosts": [],
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Scottish Affairs Committee",
+        "id": 136,
+        "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Finance Committee (Commons)",
+        "id": 325,
+        "startDate": "2024-11-18T00:00:00",
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
@@ -19573,6 +19777,75 @@
         "name": "Health and Social Care Committee",
         "id": 81,
         "startDate": "2024-10-21T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Non-Domestic Rating (Multipliers and Private Schools) Bill",
+        "id": 749,
+        "startDate": "2024-12-04T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
+  },
+  {
+    "memberId": "5077",
+    "firstName": "Jacob",
+    "lastName": "Collier",
+    "lgbt": {
+      "lgbtIdentity": "",
+      "lgbtSourceDescription": "Twitter (X)",
+      "lgbtSourceDate": "2024-11-21",
+      "lgbtSourceURL": "https://x.com/JamesAsser/status/1859719790413349332/photo/1",
+      "lgbtSourceNotes": "This MP appears in a photograph of all LGBT+ MPs in the Parliamentary Labour Party, taking on 21 November 2024. James Asser MP tweeted the photograph."
+    },
+    "memberData": {
+      "nameFullTitle": "Jacob Collier MP",
+      "gender": "M",
+      "thumbnailUrl": "https://members-api.parliament.uk/api/Members/5077/Thumbnail"
+    },
+    "partyHistory": [
+      {
+        "startDate": "2024-07-04T00:00:00",
+        "endDate": null,
+        "party": {
+          "id": 15,
+          "name": "Labour",
+          "abbreviation": "Lab",
+          "backgroundColour": "d50000",
+          "foregroundColour": "ffffff",
+          "isLordsMainParty": true,
+          "isLordsSpiritualParty": true,
+          "governmentType": null,
+          "isIndependentParty": false
+        }
+      }
+    ],
+    "houseMembershipHistory": [
+      {
+        "membershipFrom": "Burton and Uttoxeter",
+        "membershipFromId": 3958,
+        "house": 1,
+        "membershipStartDate": "2024-07-04T00:00:00",
+        "membershipEndDate": null,
+        "membershipEndReason": null,
+        "membershipEndReasonNotes": null,
+        "membershipEndReasonId": null,
+        "membershipStatus": null
+      }
+    ],
+    "governmentPosts": [],
+    "oppositionPosts": [],
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Renters’ Rights Bill",
+        "id": 739,
+        "startDate": "2024-10-16T00:00:00",
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
@@ -19942,6 +20215,15 @@
         "name": "Energy Security and Net Zero Committee",
         "id": 664,
         "startDate": "2024-10-21T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Non-Domestic Rating (Multipliers and Private Schools) Bill",
+        "id": 749,
+        "startDate": "2024-12-04T00:00:00",
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
@@ -20335,6 +20617,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Water (Special Measures) Bill [HL]",
+        "id": 755,
+        "startDate": "2024-12-18T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -20413,6 +20704,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Tobacco and Vapes Bill",
+        "id": 753,
+        "startDate": "2024-12-18T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -20464,7 +20764,77 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Commonwealth Parliamentary Association and International Committee of the Red Cross (Status) Bill [HL]",
+        "id": 744,
+        "startDate": "2024-11-06T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
+  },
+  {
+    "memberId": "5188",
+    "firstName": "Tracey",
+    "lastName": "Gilbert",
+    "lgbt": {
+      "lgbtIdentity": "",
+      "lgbtSourceDescription": "Twitter (X)",
+      "lgbtSourceDate": "2024-11-21",
+      "lgbtSourceURL": "https://x.com/JamesAsser/status/1859719790413349332/photo/1",
+      "lgbtSourceNotes": "This MP appears in a photograph of all LGBT+ MPs in the Parliamentary Labour Party, taking on 21 November 2024. James Asser MP tweeted the photograph."
+    },
+    "memberData": {
+      "nameFullTitle": "Tracy Gilbert MP",
+      "gender": "F",
+      "thumbnailUrl": "https://members-api.parliament.uk/api/Members/5188/Thumbnail"
+    },
+    "partyHistory": [
+      {
+        "startDate": "2024-07-04T00:00:00",
+        "endDate": null,
+        "party": {
+          "id": 15,
+          "name": "Labour",
+          "abbreviation": "Lab",
+          "backgroundColour": "d50000",
+          "foregroundColour": "ffffff",
+          "isLordsMainParty": true,
+          "isLordsSpiritualParty": true,
+          "governmentType": null,
+          "isIndependentParty": false
+        }
+      }
+    ],
+    "houseMembershipHistory": [
+      {
+        "membershipFrom": "Edinburgh North and Leith",
+        "membershipFromId": 4468,
+        "house": 1,
+        "membershipStartDate": "2024-07-04T00:00:00",
+        "membershipEndDate": null,
+        "membershipEndReason": null,
+        "membershipEndReasonNotes": null,
+        "membershipEndReasonId": null,
+        "membershipStatus": null
+      }
+    ],
+    "governmentPosts": [],
+    "oppositionPosts": [],
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Procedure Committee",
+        "id": 126,
+        "startDate": "2024-11-04T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5191",
@@ -20564,7 +20934,26 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Public Accounts Commission",
+        "id": 207,
+        "startDate": "2024-12-17T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Water (Special Measures) Bill [HL]",
+        "id": 755,
+        "startDate": "2024-12-18T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5211",
@@ -20614,7 +21003,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Procedure Committee",
+        "id": 126,
+        "startDate": "2024-11-04T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5217",
@@ -20724,7 +21123,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Tobacco and Vapes Bill",
+        "id": 753,
+        "startDate": "2024-12-18T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5222",
@@ -20852,6 +21261,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Water (Special Measures) Bill [HL]",
+        "id": 755,
+        "startDate": "2024-12-18T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -20930,6 +21348,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Employment Rights Bill",
+        "id": 747,
+        "startDate": "2024-11-19T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -20987,6 +21414,66 @@
         "name": "Energy Security and Net Zero Committee",
         "id": 664,
         "startDate": "2024-10-21T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
+  },
+  {
+    "memberId": "5251",
+    "firstName": "Martin",
+    "lastName": "Rhodes",
+    "lgbt": {
+      "lgbtIdentity": "",
+      "lgbtSourceDescription": "Twitter (X)",
+      "lgbtSourceDate": "2024-11-21",
+      "lgbtSourceURL": "https://x.com/JamesAsser/status/1859719790413349332/photo/1",
+      "lgbtSourceNotes": "This MP appears in a photograph of all LGBT+ MPs in the Parliamentary Labour Party, taking on 21 November 2024. James Asser MP tweeted the photograph."
+    },
+    "memberData": {
+      "nameFullTitle": "Martin Rhodes MP",
+      "gender": "M",
+      "thumbnailUrl": "https://members-api.parliament.uk/api/Members/5251/Thumbnail"
+    },
+    "partyHistory": [
+      {
+        "startDate": "2024-07-04T00:00:00",
+        "endDate": null,
+        "party": {
+          "id": 15,
+          "name": "Labour",
+          "abbreviation": "Lab",
+          "backgroundColour": "d50000",
+          "foregroundColour": "ffffff",
+          "isLordsMainParty": true,
+          "isLordsSpiritualParty": true,
+          "governmentType": null,
+          "isIndependentParty": false
+        }
+      }
+    ],
+    "houseMembershipHistory": [
+      {
+        "membershipFrom": "Glasgow North",
+        "membershipFromId": 4474,
+        "house": 1,
+        "membershipStartDate": "2024-07-04T00:00:00",
+        "membershipEndDate": null,
+        "membershipEndReason": null,
+        "membershipEndReasonNotes": null,
+        "membershipEndReasonId": null,
+        "membershipStatus": null
+      }
+    ],
+    "governmentPosts": [],
+    "oppositionPosts": [],
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Environmental Audit Committee",
+        "id": 62,
+        "startDate": "2024-10-28T00:00:00",
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
@@ -21339,7 +21826,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Armed Forces Commissioner Bill",
+        "id": 750,
+        "startDate": "2024-12-04T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5339",
