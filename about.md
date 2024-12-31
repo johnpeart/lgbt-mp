@@ -23,12 +23,15 @@ This dataset has been used by journalists at the BBC, Sky News and Quartz, and c
 - **Quartz**, 17 December 2019, [The UK’s new parliament is its most diverse ever](https://qz.com/1769275/new-uk-parliament-has-record-number-of-female-non-white-and-lgbtq-mps/).
 - **Cosmopolitan**, 11 June 2020, [Your no BS guide to the Gender Recognition Act reforms](https://www.cosmopolitan.com/uk/reports/a29590439/gender-recognition-act/).
 - **Pink News**, 24 June 2022, [UK has record number of LGBTQ+ MPs as Labour wins crucial ‘red wall’ by-election](https://www.thepinknews.com/2022/06/24/wakefield-by-election-lgbtq-mps-simon-lightwood/).
+- *Diva Magazine*, 24 June 2024, [As we approach a general election on 4 July, can we expect to see more LGBTQIA politicians in the UK parliament?](https://diva-magazine.com/2024/06/24/is-it-becoming-easier-to-get-into-politics-as-a-queer-person/).
+- **The Guardian**, 3 October 2024, [Why do so many LGBTQ+ people still have to snatch moments of affection when we know others aren’t looking?](https://www.theguardian.com/commentisfree/2024/oct/03/lgbtq-people-hold-hands-in-public-snatch-moments-affection).
 
 ### Academic publications
 
-- **Bönisch, L. E** (2021). [What factors shape the substantive representation of LGBs in parliament? Testing the impact of minority membership, political values, and awareness](https://blogs.lse.ac.uk/politicsandpolicy/lgb-representation/). Blogpost and eprint. London School of Economics. 
+- **Bönisch, L. E** (2021). [What factors shape the substantive representation of LGBs in parliament? Testing the impact of minority membership, political values, and awareness](https://blogs.lse.ac.uk/politicsandpolicy/lgb-representation/). Blog post and e-print. London School of Economics. 
 - **Hertner, I.** (2021). [Gender and British Politics](https://kclpure.kcl.ac.uk/portal/files/155399603/Hertner_Politics_UK_Chapter_11_proofs.pdf) in B. Jones, P. Norton, & I. Hertner (Eds.), Politics UK: 10th Edition (, pp. 244-265).
 - **Jeffery, Heppell, Roe-Crines & Butler.** (2022). [Trusting Truss: Conservative MPs’ Voting Preferences in the (First) British Conservative Party Leadership Election of 2022](https://doi.org/10.1080/00344893.2023.2231469) in Representation, Journal of Representative Democracy, 59:4 (pp. 555-572).
+- **The Constitution Unit at University College London** (2024). [Monitor 87](https://www.ucl.ac.uk/constitution-unit/publications/monitor/monitor-87). Blog post.
 
 ### Government and NGO publications
 
