@@ -4,6 +4,13 @@ title: Change log
 excerpt: This page explains all the changes that have been made to this dataset and website.
 ---
 
+## 15 February 2025
+
+Corrected an error in the date of the source for Andrew Pakes.
+
+Party affiliations  updated following recent suspension of the party whip for Oliver Ryan. This change automatically takes place based on data from the UK Parliament Members API.
+
+
 ## 26 December 2024
 
 4 additional MPs were added to the dataset:
