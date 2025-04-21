@@ -214,7 +214,7 @@
         "membershipStatus": null
       },
       {
-        "membershipFrom": "St Helens South",
+        "membershipFrom": "St. Helens South",
         "membershipFromId": 2751,
         "house": 1,
         "membershipStartDate": "2001-06-07T00:00:00",
@@ -225,7 +225,7 @@
         "membershipStatus": null
       },
       {
-        "membershipFrom": "St Helens South",
+        "membershipFrom": "St. Helens South",
         "membershipFromId": 2751,
         "house": 1,
         "membershipStartDate": "2005-05-05T00:00:00",
@@ -1252,21 +1252,6 @@
         }
       },
       {
-        "startDate": "2005-06-22T00:00:00",
-        "endDate": "2008-07-11T00:00:00",
-        "party": {
-          "id": 15,
-          "name": "Labour",
-          "abbreviation": "Lab",
-          "backgroundColour": "d50000",
-          "foregroundColour": "ffffff",
-          "isLordsMainParty": true,
-          "isLordsSpiritualParty": true,
-          "governmentType": null,
-          "isIndependentParty": false
-        }
-      },
-      {
         "startDate": "2008-07-14T00:00:00",
         "endDate": "2024-07-12T00:00:00",
         "party": {
@@ -1293,6 +1278,21 @@
           "isLordsMainParty": true,
           "isLordsSpiritualParty": true,
           "governmentType": 0,
+          "isIndependentParty": false
+        }
+      },
+      {
+        "startDate": "2005-06-22T00:00:00",
+        "endDate": "2008-07-13T00:00:00",
+        "party": {
+          "id": 15,
+          "name": "Labour",
+          "abbreviation": "Lab",
+          "backgroundColour": "d50000",
+          "foregroundColour": "ffffff",
+          "isLordsMainParty": true,
+          "isLordsSpiritualParty": true,
+          "governmentType": null,
           "isIndependentParty": false
         }
       }
@@ -2936,6 +2936,15 @@
         "house": 1,
         "name": "Panel of Chairs",
         "id": 11,
+        "startDate": "2024-07-30T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Panel of Chairs",
+        "id": 11,
         "startDate": "2020-01-15T00:00:00",
         "endDate": "2024-05-30T00:01:00",
         "additionalInfo": null,
@@ -4354,6 +4363,15 @@
         "id": 97,
         "startDate": "2024-01-15T00:00:00",
         "endDate": "2024-05-30T00:01:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Border Security, Asylum and Immigration Bill",
+        "id": 778,
+        "startDate": "2025-02-12T00:00:00",
+        "endDate": "2025-03-18T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -6115,6 +6133,15 @@
         "endDate": "2022-12-14T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Data (Use and Access) Bill [HL]",
+        "id": 781,
+        "startDate": "2025-02-26T00:00:00",
+        "endDate": "2025-03-11T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -6848,6 +6875,15 @@
         "house": 1,
         "name": "Panel of Chairs",
         "id": 11,
+        "startDate": "2024-07-30T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Panel of Chairs",
+        "id": 11,
         "startDate": "2020-03-23T00:00:00",
         "endDate": "2024-05-30T00:01:00",
         "additionalInfo": null,
@@ -7215,7 +7251,7 @@
         "name": "Employment Rights Bill",
         "id": 747,
         "startDate": "2024-11-13T00:00:00",
-        "endDate": null,
+        "endDate": "2025-01-16T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -9962,7 +9998,7 @@
         "name": "Commonwealth Parliamentary Association and International Committee of the Red Cross (Status) Bill [HL]",
         "id": 744,
         "startDate": "2024-11-06T00:00:00",
-        "endDate": null,
+        "endDate": "2024-11-13T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -13296,6 +13332,15 @@
         "endDate": "2023-02-21T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Public Authorities (Fraud, Error and Recovery) Bill",
+        "id": 776,
+        "startDate": "2025-02-12T00:00:00",
+        "endDate": "2025-03-18T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -14622,6 +14667,15 @@
         "endDate": "2021-02-22T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Children’s Wellbeing and Schools Bill",
+        "id": 757,
+        "startDate": "2025-01-15T00:00:00",
+        "endDate": "2025-02-11T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -15378,7 +15432,7 @@
         "name": "Armed Forces Commissioner Bill",
         "id": 750,
         "startDate": "2024-12-04T00:00:00",
-        "endDate": null,
+        "endDate": "2024-12-12T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -17005,6 +17059,24 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Finance Bill",
+        "id": 765,
+        "startDate": "2025-01-22T00:00:00",
+        "endDate": "2025-01-30T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Crown Estate Bill [HL]",
+        "id": 767,
+        "startDate": "2025-01-29T00:00:00",
+        "endDate": "2025-02-06T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -17207,6 +17279,15 @@
         "id": 143,
         "startDate": "2024-11-20T00:00:00",
         "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Bank Resolution (Recapitalisation) Bill [HL]",
+        "id": 774,
+        "startDate": "2025-02-05T00:00:00",
+        "endDate": "2025-02-11T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -17420,7 +17501,7 @@
         "name": "Armed Forces Commissioner Bill",
         "id": 750,
         "startDate": "2024-12-04T00:00:00",
-        "endDate": null,
+        "endDate": "2024-12-12T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -18465,7 +18546,7 @@
         "name": "Great British Energy Bill",
         "id": 737,
         "startDate": "2024-09-11T00:00:00",
-        "endDate": null,
+        "endDate": "2024-10-15T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       },
@@ -18588,6 +18669,15 @@
         "id": 669,
         "startDate": "2023-05-17T00:00:00",
         "endDate": "2023-05-22T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Children’s Wellbeing and Schools Bill",
+        "id": 757,
+        "startDate": "2025-01-15T00:00:00",
+        "endDate": "2025-01-19T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -18729,6 +18819,15 @@
         "id": 680,
         "startDate": "2023-07-19T00:00:00",
         "endDate": "2023-09-14T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Terminally Ill Adults (End of Life) Bill",
+        "id": 758,
+        "startDate": "2025-01-15T00:00:00",
+        "endDate": "2025-03-25T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -18921,7 +19020,17 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": [
+      {
+        "house": 1,
+        "name": "Parliamentary Under-Secretary (Department of Health and Social Care)",
+        "id": 1212,
+        "startDate": "2025-02-10T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Department of Health and Social Care",
+        "additionalInfoLink": "https://www.gov.uk/government/organisations/department-of-health-and-social-care"
+      }
+    ],
     "oppositionPosts": [
       {
         "house": 1,
@@ -19089,7 +19198,7 @@
         "name": "Terrorism (Protection of Premises) Bill: Programming sub committee",
         "id": 743,
         "startDate": "2024-10-23T00:00:00",
-        "endDate": null,
+        "endDate": "2024-10-31T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       },
@@ -19098,6 +19207,15 @@
         "name": "Terrorism (Protection of Premises) Bill",
         "id": 742,
         "startDate": "2024-10-23T00:00:00",
+        "endDate": "2024-10-31T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Crime and Policing Bill",
+        "id": 786,
+        "startDate": "2025-03-20T00:00:00",
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
@@ -19273,6 +19391,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Public Authorities (Fraud, Error and Recovery) Bill",
+        "id": 776,
+        "startDate": "2025-02-12T00:00:00",
+        "endDate": "2025-03-18T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -19342,6 +19469,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Terminally Ill Adults (End of Life) Bill",
+        "id": 758,
+        "startDate": "2025-01-15T00:00:00",
+        "endDate": "2025-03-25T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -19399,7 +19535,7 @@
         "name": "Great British Energy Bill",
         "id": 737,
         "startDate": "2024-09-11T00:00:00",
-        "endDate": null,
+        "endDate": "2024-10-15T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       },
@@ -19408,7 +19544,7 @@
         "name": "Energy Security and Net Zero Committee",
         "id": 664,
         "startDate": "2024-10-21T00:00:00",
-        "endDate": null,
+        "endDate": "2025-03-17T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -19600,6 +19736,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Business and Trade Sub-Committee on Economic Security, Arms and Export Controls",
+        "id": 783,
+        "startDate": "2025-03-05T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -19658,6 +19803,15 @@
         "id": 135,
         "startDate": "2024-10-21T00:00:00",
         "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Crown Estate Bill [HL]",
+        "id": 767,
+        "startDate": "2025-01-29T00:00:00",
+        "endDate": "2025-02-06T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -19777,7 +19931,7 @@
         "name": "Health and Social Care Committee",
         "id": 81,
         "startDate": "2024-10-21T00:00:00",
-        "endDate": null,
+        "endDate": "2025-03-17T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       },
@@ -19786,7 +19940,7 @@
         "name": "Non-Domestic Rating (Multipliers and Private Schools) Bill",
         "id": 749,
         "startDate": "2024-12-04T00:00:00",
-        "endDate": null,
+        "endDate": "2024-12-12T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -19846,6 +20000,15 @@
         "name": "Renters’ Rights Bill",
         "id": 739,
         "startDate": "2024-10-16T00:00:00",
+        "endDate": "2024-11-05T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Petitions Committee",
+        "id": 326,
+        "startDate": "2025-03-03T00:00:00",
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
@@ -19900,7 +20063,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Institute for Apprenticeships and Technical Education (Transfer of Functions etc) Bill [HL]",
+        "id": 784,
+        "startDate": "2025-03-05T00:00:00",
+        "endDate": "2025-03-20T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5086",
@@ -20029,6 +20202,24 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Finance Bill",
+        "id": 765,
+        "startDate": "2025-01-22T00:00:00",
+        "endDate": "2025-01-30T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Bank Resolution (Recapitalisation) Bill [HL]",
+        "id": 774,
+        "startDate": "2025-02-05T00:00:00",
+        "endDate": "2025-02-11T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -20086,7 +20277,7 @@
         "name": "Renters’ Rights Bill",
         "id": 739,
         "startDate": "2024-10-16T00:00:00",
-        "endDate": null,
+        "endDate": "2024-11-05T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -20149,6 +20340,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Crime and Policing Bill",
+        "id": 786,
+        "startDate": "2025-03-20T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -20206,7 +20406,7 @@
         "name": "Great British Energy Bill",
         "id": 737,
         "startDate": "2024-09-11T00:00:00",
-        "endDate": null,
+        "endDate": "2024-10-15T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       },
@@ -20224,7 +20424,7 @@
         "name": "Non-Domestic Rating (Multipliers and Private Schools) Bill",
         "id": 749,
         "startDate": "2024-12-04T00:00:00",
-        "endDate": null,
+        "endDate": "2024-12-12T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -20288,7 +20488,17 @@
       }
     ],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Border Security, Asylum and Immigration Bill",
+        "id": 778,
+        "startDate": "2025-02-12T00:00:00",
+        "endDate": "2025-03-18T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5130",
@@ -20359,7 +20569,7 @@
     "partyHistory": [
       {
         "startDate": "2024-07-04T00:00:00",
-        "endDate": null,
+        "endDate": "2025-02-10T00:00:00",
         "party": {
           "id": 15,
           "name": "Labour",
@@ -20370,6 +20580,21 @@
           "isLordsSpiritualParty": true,
           "governmentType": null,
           "isIndependentParty": false
+        }
+      },
+      {
+        "startDate": "2025-02-10T00:00:00",
+        "endDate": null,
+        "party": {
+          "id": 8,
+          "name": "Independent",
+          "abbreviation": "Ind",
+          "backgroundColour": "909090",
+          "foregroundColour": "FFFFFF",
+          "isLordsMainParty": false,
+          "isLordsSpiritualParty": false,
+          "governmentType": null,
+          "isIndependentParty": true
         }
       }
     ],
@@ -20394,6 +20619,33 @@
         "name": "Public Accounts Committee",
         "id": 127,
         "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Finance Bill",
+        "id": 765,
+        "startDate": "2025-01-22T00:00:00",
+        "endDate": "2025-01-30T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Bank Resolution (Recapitalisation) Bill [HL]",
+        "id": 774,
+        "startDate": "2025-02-05T00:00:00",
+        "endDate": "2025-02-11T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Speaker's Advisory Committee on Works of Art",
+        "id": 301,
+        "startDate": "2025-02-06T00:00:00",
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
@@ -20457,6 +20709,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Public Authorities (Fraud, Error and Recovery) Bill",
+        "id": 776,
+        "startDate": "2025-02-12T00:00:00",
+        "endDate": "2025-03-18T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -20508,7 +20769,17 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Ecclesiastical Committee (Joint Committee)",
+        "id": 174,
+        "startDate": "2024-11-05T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5165",
@@ -20558,7 +20829,35 @@
     ],
     "governmentPosts": [],
     "oppositionPosts": [],
-    "committeeMemberships": []
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Human Rights (Joint Committee)",
+        "id": 93,
+        "startDate": "2025-01-06T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Court of Referees",
+        "id": 780,
+        "startDate": "2025-02-27T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Institute for Apprenticeships and Technical Education (Transfer of Functions etc) Bill [HL]",
+        "id": 784,
+        "startDate": "2025-03-05T00:00:00",
+        "endDate": "2025-03-20T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5172",
@@ -20623,7 +20922,7 @@
         "name": "Water (Special Measures) Bill [HL]",
         "id": 755,
         "startDate": "2024-12-18T00:00:00",
-        "endDate": null,
+        "endDate": "2025-01-16T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -20692,7 +20991,7 @@
         "name": "Justice Committee",
         "id": 102,
         "startDate": "2024-10-21T00:00:00",
-        "endDate": null,
+        "endDate": "2025-03-17T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       },
@@ -20710,6 +21009,15 @@
         "name": "Tobacco and Vapes Bill",
         "id": 753,
         "startDate": "2024-12-18T00:00:00",
+        "endDate": "2025-01-30T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Crime and Policing Bill",
+        "id": 786,
+        "startDate": "2025-03-20T00:00:00",
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
@@ -20770,7 +21078,7 @@
         "name": "Commonwealth Parliamentary Association and International Committee of the Red Cross (Status) Bill [HL]",
         "id": 744,
         "startDate": "2024-11-06T00:00:00",
-        "endDate": null,
+        "endDate": "2024-11-13T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -20778,7 +21086,7 @@
   },
   {
     "memberId": "5188",
-    "firstName": "Tracey",
+    "firstName": "Tracy",
     "lastName": "Gilbert",
     "lgbt": {
       "lgbtIdentity": "",
@@ -20830,6 +21138,15 @@
         "name": "Procedure Committee",
         "id": 126,
         "startDate": "2024-11-04T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "International Development Committee",
+        "id": 98,
+        "startDate": "2025-03-24T00:00:00",
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
@@ -20949,7 +21266,25 @@
         "name": "Water (Special Measures) Bill [HL]",
         "id": 755,
         "startDate": "2024-12-18T00:00:00",
-        "endDate": null,
+        "endDate": "2025-01-16T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Children’s Wellbeing and Schools Bill",
+        "id": 757,
+        "startDate": "2025-01-15T00:00:00",
+        "endDate": "2025-02-11T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Border Security, Asylum and Immigration Bill",
+        "id": 778,
+        "startDate": "2025-02-12T00:00:00",
+        "endDate": "2025-03-18T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -21129,7 +21464,16 @@
         "name": "Tobacco and Vapes Bill",
         "id": 753,
         "startDate": "2024-12-18T00:00:00",
-        "endDate": null,
+        "endDate": "2025-01-30T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Finance Bill",
+        "id": 765,
+        "startDate": "2025-01-22T00:00:00",
+        "endDate": "2025-01-30T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -21192,6 +21536,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Speaker's Advisory Committee on Works of Art",
+        "id": 301,
+        "startDate": "2025-02-06T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -21202,7 +21555,7 @@
     "lgbt": {
       "lgbtIdentity": "",
       "lgbtSourceDescription": "Times Higher Education",
-      "lgbtSourceDate": "1988-11-20",
+      "lgbtSourceDate": "1998-11-20",
       "lgbtSourceURL": "https://www.timeshighereducation.com/news/glad-to-be-gay-but-still-unequal/109978.article?storyCode=109978&sectioncode=26",
       "lgbtSourceNotes": ""
     },
@@ -21249,7 +21602,7 @@
         "name": "Great British Energy Bill",
         "id": 737,
         "startDate": "2024-09-11T00:00:00",
-        "endDate": null,
+        "endDate": "2024-10-15T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       },
@@ -21267,6 +21620,24 @@
         "name": "Water (Special Measures) Bill [HL]",
         "id": 755,
         "startDate": "2024-12-18T00:00:00",
+        "endDate": "2025-01-16T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Statutory Instruments (Joint Committee)",
+        "id": 148,
+        "startDate": "2025-03-10T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Statutory Instruments (Select Committee)",
+        "id": 149,
+        "startDate": "2025-03-10T00:00:00",
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
@@ -21336,7 +21707,7 @@
         "name": "Terrorism (Protection of Premises) Bill: Programming sub committee",
         "id": 743,
         "startDate": "2024-10-23T00:00:00",
-        "endDate": null,
+        "endDate": "2024-10-31T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       },
@@ -21345,7 +21716,7 @@
         "name": "Terrorism (Protection of Premises) Bill",
         "id": 742,
         "startDate": "2024-10-23T00:00:00",
-        "endDate": null,
+        "endDate": "2024-10-31T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       },
@@ -21354,7 +21725,16 @@
         "name": "Employment Rights Bill",
         "id": 747,
         "startDate": "2024-11-19T00:00:00",
-        "endDate": null,
+        "endDate": "2025-01-16T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Border Security, Asylum and Immigration Bill",
+        "id": 778,
+        "startDate": "2025-02-12T00:00:00",
+        "endDate": "2025-03-18T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -21534,7 +21914,7 @@
         "name": "Terrorism (Protection of Premises) Bill: Programming sub committee",
         "id": 743,
         "startDate": "2024-10-23T00:00:00",
-        "endDate": null,
+        "endDate": "2024-10-31T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       },
@@ -21543,7 +21923,7 @@
         "name": "Terrorism (Protection of Premises) Bill",
         "id": 742,
         "startDate": "2024-10-23T00:00:00",
-        "endDate": null,
+        "endDate": "2024-10-31T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       },
@@ -21662,6 +22042,15 @@
         "name": "Renters’ Rights Bill",
         "id": 739,
         "startDate": "2024-10-16T00:00:00",
+        "endDate": "2024-11-05T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Public Administration and Constitutional Affairs Committee",
+        "id": 327,
+        "startDate": "2025-01-06T00:00:00",
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
@@ -21832,7 +22221,7 @@
         "name": "Armed Forces Commissioner Bill",
         "id": 750,
         "startDate": "2024-12-04T00:00:00",
-        "endDate": null,
+        "endDate": "2024-12-12T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -21895,6 +22284,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Data (Use and Access) Bill [HL]",
+        "id": 781,
+        "startDate": "2025-02-26T00:00:00",
+        "endDate": "2025-03-11T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -21952,6 +22350,15 @@
         "name": "Business and Trade Committee",
         "id": 365,
         "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Business and Trade Sub-Committee on Economic Security, Arms and Export Controls",
+        "id": 783,
+        "startDate": "2025-03-05T00:00:00",
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
@@ -22082,7 +22489,7 @@
         "name": "Terrorism (Protection of Premises) Bill: Programming sub committee",
         "id": 743,
         "startDate": "2024-10-23T00:00:00",
-        "endDate": null,
+        "endDate": "2024-10-31T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       },
@@ -22091,7 +22498,7 @@
         "name": "Terrorism (Protection of Premises) Bill",
         "id": 742,
         "startDate": "2024-10-23T00:00:00",
-        "endDate": null,
+        "endDate": "2024-10-31T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       },
