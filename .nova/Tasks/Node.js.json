@@ -2,7 +2,7 @@
   "actions" : {
     "build" : {
       "enabled" : true,
-      "script" : "npm run fetch-data\n"
+      "script" : "npm run build\n"
     },
     "run" : {
       "enabled" : true,

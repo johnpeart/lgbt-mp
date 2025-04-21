@@ -1,6 +1,7 @@
 {
   "name": "LGBT MPs",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
@@ -11,11 +12,10 @@
   },
   "scripts": {
     "build:eleventy": "npx @11ty/eleventy --quiet",
-    "build:sass": "npx sass _sass:_site/assets/styles --no-source-map",
-    "fetch-data": "node _data/fetch-members.mjs",
+    "build:sass": "npx sass _sass:_site/assets/styles --no-source-map  --quiet",
     "watch:eleventy": "npx @11ty/eleventy --serve --quiet",
     "watch:sass": "npx sass _sass:_site/assets/styles --watch",
-    "build": "npm run fetch-data && npm run build:sass && npm run build:eleventy",
+    "build": "npm run build:sass && npm run build:eleventy",
     "start": "npm run watch:eleventy & npm run watch:sass"
   },
   "keywords": [],

@@ -93,7 +93,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -1423,7 +1423,7 @@
         "additionalInfoLink": ""
       }
     ],
-    "committeeMemberships": []
+    "committeeMemberships": null
   },
   {
     "memberId": "194",
@@ -3290,7 +3290,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -3575,7 +3575,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -3865,8 +3865,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -4527,8 +4527,8 @@
         "additionalInfoLink": ""
       }
     ],
-    "oppositionPosts": [],
-    "committeeMemberships": []
+    "oppositionPosts": null,
+    "committeeMemberships": null
   },
   {
     "memberId": "523",
@@ -5158,7 +5158,7 @@
         "additionalInfoLink": "https://www.gov.uk/government/organisations/wales-office"
       }
     ],
-    "committeeMemberships": []
+    "committeeMemberships": null
   },
   {
     "memberId": "863",
@@ -5228,8 +5228,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 2,
@@ -5490,7 +5490,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -5611,7 +5611,7 @@
         "additionalInfoLink": "https://www.gov.uk/government/organisations/scotland-office"
       }
     ],
-    "oppositionPosts": [],
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -7604,8 +7604,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -7864,7 +7864,7 @@
         "additionalInfoLink": "https://www.gov.uk/government/organisations/department-for-international-trade"
       }
     ],
-    "oppositionPosts": [],
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -8028,7 +8028,7 @@
         "additionalInfoLink": "https://www.gov.uk/government/organisations/department-for-communities-and-local-government"
       }
     ],
-    "oppositionPosts": [],
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -8180,8 +8180,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -8500,7 +8500,7 @@
         "additionalInfoLink": "https://www.gov.uk/government/organisations/hm-treasury"
       }
     ],
-    "oppositionPosts": [],
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -8720,7 +8720,7 @@
         "additionalInfoLink": null
       }
     ],
-    "oppositionPosts": [],
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -9337,7 +9337,7 @@
         "additionalInfoLink": "https://www.gov.uk/government/organisations/hm-treasury"
       }
     ],
-    "oppositionPosts": [],
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -9450,8 +9450,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -9630,7 +9630,7 @@
         "additionalInfoLink": "https://www.gov.uk/government/organisations/hm-treasury"
       }
     ],
-    "oppositionPosts": [],
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -9698,8 +9698,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -10384,7 +10384,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -10704,7 +10704,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -10970,7 +10970,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -11183,7 +11183,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -11350,7 +11350,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -11562,7 +11562,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -11762,8 +11762,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -12021,7 +12021,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -12277,7 +12277,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -12500,8 +12500,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -12621,7 +12621,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -12770,7 +12770,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -13036,7 +13036,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -13823,8 +13823,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -13909,7 +13909,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -14166,7 +14166,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -14426,7 +14426,7 @@
         "additionalInfoLink": "https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy"
       }
     ],
-    "oppositionPosts": [],
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -14777,7 +14777,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -14956,7 +14956,7 @@
         "additionalInfoLink": null
       }
     ],
-    "oppositionPosts": [],
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -15132,8 +15132,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -15192,7 +15192,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -15495,7 +15495,7 @@
         "additionalInfoLink": "https://www.gov.uk/government/organisations/department-for-levelling-up-housing-and-communities"
       }
     ],
-    "oppositionPosts": [],
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -15626,7 +15626,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -15714,8 +15714,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -15927,8 +15927,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -16095,8 +16095,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -16220,7 +16220,7 @@
         "additionalInfoLink": null
       }
     ],
-    "oppositionPosts": [],
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -16333,8 +16333,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": null,
@@ -16510,7 +16510,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -16606,8 +16606,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -16789,8 +16789,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -17152,7 +17152,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -17568,8 +17568,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -17675,7 +17675,7 @@
         "additionalInfoLink": null
       }
     ],
-    "oppositionPosts": [],
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -17833,8 +17833,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -17992,8 +17992,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -18202,8 +18202,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -18288,7 +18288,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -18465,7 +18465,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -18633,8 +18633,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -18755,7 +18755,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -19155,7 +19155,7 @@
         "additionalInfoLink": null
       }
     ],
-    "oppositionPosts": [],
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -19294,8 +19294,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -19380,8 +19380,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -19449,8 +19449,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -19527,8 +19527,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -19596,8 +19596,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -19656,8 +19656,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -19725,8 +19725,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -19794,8 +19794,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -19863,8 +19863,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -19923,8 +19923,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -19992,8 +19992,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -20061,8 +20061,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -20121,7 +20121,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
@@ -20191,8 +20191,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -20269,8 +20269,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -20329,8 +20329,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -20398,8 +20398,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -20487,7 +20487,7 @@
         "additionalInfoLink": null
       }
     ],
-    "oppositionPosts": [],
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -20546,9 +20546,9 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
-    "committeeMemberships": []
+    "governmentPosts": null,
+    "oppositionPosts": null,
+    "committeeMemberships": null
   },
   {
     "memberId": "5135",
@@ -20611,8 +20611,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -20698,8 +20698,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -20767,8 +20767,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -20827,8 +20827,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -20905,8 +20905,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -20974,8 +20974,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -21070,8 +21070,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -21130,8 +21130,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -21199,9 +21199,9 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
-    "committeeMemberships": []
+    "governmentPosts": null,
+    "oppositionPosts": null,
+    "committeeMemberships": null
   },
   {
     "memberId": "5210",
@@ -21249,8 +21249,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -21336,8 +21336,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -21396,8 +21396,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -21456,8 +21456,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -21525,8 +21525,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -21594,8 +21594,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -21690,8 +21690,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -21786,8 +21786,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -21846,8 +21846,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -21906,8 +21906,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -21984,9 +21984,9 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
-    "committeeMemberships": []
+    "governmentPosts": null,
+    "oppositionPosts": null,
+    "committeeMemberships": null
   },
   {
     "memberId": "5308",
@@ -22034,8 +22034,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -22103,8 +22103,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -22163,9 +22163,9 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
-    "committeeMemberships": []
+    "governmentPosts": null,
+    "oppositionPosts": null,
+    "committeeMemberships": null
   },
   {
     "memberId": "5338",
@@ -22213,8 +22213,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -22273,8 +22273,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -22342,8 +22342,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -22411,8 +22411,8 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
-    "oppositionPosts": [],
+    "governmentPosts": null,
+    "oppositionPosts": null,
     "committeeMemberships": [
       {
         "house": 1,
@@ -22471,7 +22471,7 @@
         "membershipStatus": null
       }
     ],
-    "governmentPosts": [],
+    "governmentPosts": null,
     "oppositionPosts": [
       {
         "house": 1,
