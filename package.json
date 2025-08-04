@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build:eleventy": "npx @11ty/eleventy --quiet",
-    "build:sass": "npx sass _sass:_site/styles --no-source-map",
+    "build:sass": "npx sass _sass:_site/assets/styles --no-source-map",
     "build": "npm run build:sass && npm run build:eleventy",
     "watch:eleventy": "npx @11ty/eleventy --serve --quiet",
     "watch:sass": "npx sass _sass:_site/assets/styles --watch",
