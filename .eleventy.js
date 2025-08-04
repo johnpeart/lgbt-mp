@@ -1,5 +1,6 @@
 import markdownIt from "markdown-it";
-import fetchMembers from './_data/fetch-members.js'; // Adjust the path if needed
+import fetchMembers from './utils/fetch-members.js';
+
 export default function(eleventyConfig) {
     console.log("Running Eleventy Configuration...");
 
@@ -9,10 +10,17 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets/fonts");
     eleventyConfig.addPassthroughCopy("favicon.ico");
 
-    // Run the fetch-members.js script before other Eleventy steps
-    eleventyConfig.on('beforeBuild', async () => {
+    eleventyConfig.on("eleventy.before", async () => {
+        const args = process.argv;
+        const isWatching = args.includes("--watch") || args.includes("--serve");
+    
+        if (isWatching) {
+            console.log("Skipping fetchMembers (watch/serve mode)");
+            return;
+        }
+    
         console.log("Fetching member data...");
-        await fetchMembers(); // This ensures it runs before the rest of the build
+        await fetchMembers();
         console.log("Member data fetched.");
     });
     

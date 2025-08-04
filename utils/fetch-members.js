@@ -69,7 +69,7 @@ export default async function () {
     const members = [];
 
     for (const row of rows) {
-        console.log(`Processing member ID: ${row.ID}`);  // Log each member being processed
+        // console.log(`Processing member ID: ${row.ID}`);  // Log each member being processed
         const memberId = row.ID;
         const memberData = await fetchMemberData(memberId);
         const memberHistory = await fetchMemberHistory(memberId);
@@ -94,13 +94,26 @@ export default async function () {
                 oppositionPosts: memberBiography?.oppositionPosts,
                 committeeMemberships: memberBiography?.committeeMemberships
             });
+        } else {
+            members.push({
+                memberId,
+                firstName: row.firstName,
+                lastName: row.lastName,
+                lgbt: {
+                    lgbtIdentity: row.identity,
+                    lgbtSourceDescription: row.sourceDescription,
+                    lgbtSourceDate: row.sourceDate,
+                    lgbtSourceURL: row.sourceURL,
+                    lgbtSourceNotes: row.sourceNotes
+                }
+            });
         }
     }
 
     // Sort numerically by ID
     members.sort((a, b) => Number(a.memberId) - Number(b.memberId));
 
-    console.log("Saving members to JSON...");
+    // console.log("Saving members to JSON...");
     // Save to JSON file
     fs.writeFileSync('_data/members.json', JSON.stringify(members, null, 2), 'utf-8');
     console.log("Members data saved.");

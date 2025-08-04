@@ -6,7 +6,7 @@
     },
     "run" : {
       "enabled" : true,
-      "script" : "npm run build:sass\nnpm run start"
+      "script" : "npm run start"
     }
   },
   "openLogOnRun" : "start"
