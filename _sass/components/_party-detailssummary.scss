@@ -7,17 +7,16 @@ details {
 details.party summary {
     position: relative;
     padding: $container-padding;
-    
-    // Hide the marker completely.
+}
+
+details > summary::marker,
+details > summary::-webkit-details-marker {
+    display: none;
     list-style-image: none;
-    &::marker,
-    &::-webkit-details-marker {
-        display: none;
-        list-style-image: none;
-        content: '';
-        width: 0;
-        height: 0;
-    }
+    list-style: none;
+    content: '';
+    width: 0;
+    height: 0;
 }
 
 div.party-summary {
