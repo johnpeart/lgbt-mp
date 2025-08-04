@@ -3156,6 +3156,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Football Governance Bill [HL]",
+        "id": 795,
+        "startDate": "2025-05-14T00:00:00",
+        "endDate": "2025-06-17T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -7073,6 +7082,15 @@
     "governmentPosts": [
       {
         "house": 1,
+        "name": "Parliamentary Under-Secretary of State (Department for Education) (Equalities)",
+        "id": 1303,
+        "startDate": "2024-10-08T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Department for Education",
+        "additionalInfoLink": "http://www.education.gov.uk/"
+      },
+      {
+        "house": 1,
         "name": "Parliamentary Under-Secretary (Wales Office)",
         "id": 543,
         "startDate": "2024-07-09T00:00:00",
@@ -9077,10 +9095,19 @@
     "oppositionPosts": [
       {
         "house": 1,
+        "name": "Shadow Secretary of State for Health and Social Care",
+        "id": 1412,
+        "startDate": "2025-07-22T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Department of Health and Social Care",
+        "additionalInfoLink": "https://www.gov.uk/government/organisations/department-of-health-and-social-care"
+      },
+      {
+        "house": 1,
         "name": "Shadow Secretary of State for Culture, Media and Sport",
         "id": 1186,
         "startDate": "2024-11-05T00:00:00",
-        "endDate": null,
+        "endDate": "2025-07-22T00:00:00",
         "additionalInfo": "Department for Culture, Media and Sport",
         "additionalInfoLink": "https://www.gov.uk/government/organisations/department-for-culture-media-sport"
       },
@@ -10390,6 +10417,24 @@
         "house": 1,
         "name": "SNP Chief Whip",
         "id": 1124,
+        "startDate": "2024-07-10T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Opposition Department",
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Shadow SNP Spokesperson (Work and Pensions)",
+        "id": 1138,
+        "startDate": "2024-07-10T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Opposition Department",
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Shadow SNP Spokesperson (Equalities)",
+        "id": 1478,
         "startDate": "2024-07-10T00:00:00",
         "endDate": null,
         "additionalInfo": "Opposition Department",
@@ -17290,6 +17335,15 @@
         "endDate": "2025-02-11T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Controlled Drugs (Procedure for Specification) Bill",
+        "id": 807,
+        "startDate": "2025-06-25T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -17502,6 +17556,33 @@
         "id": 750,
         "startDate": "2024-12-04T00:00:00",
         "endDate": "2024-12-12T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Planning and Infrastructure Bill",
+        "id": 788,
+        "startDate": "2025-04-24T00:00:00",
+        "endDate": "2025-05-22T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Committee of Selection",
+        "id": 381,
+        "startDate": "2025-04-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Rare Cancers Bill",
+        "id": 808,
+        "startDate": "2025-06-26T00:00:00",
+        "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -18390,6 +18471,15 @@
         "endDate": "2024-05-07T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Victims and Courts Bill",
+        "id": 801,
+        "startDate": "2025-06-17T00:00:00",
+        "endDate": "2025-06-24T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -18945,6 +19035,15 @@
         "endDate": "2024-03-19T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Bus Services (No. 2) Bill [HL]",
+        "id": 804,
+        "startDate": "2025-06-24T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -19067,6 +19166,15 @@
         "id": 667,
         "startDate": "2023-05-10T00:00:00",
         "endDate": "2023-05-18T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Rare Cancers Bill",
+        "id": 808,
+        "startDate": "2025-06-26T00:00:00",
+        "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -19216,7 +19324,7 @@
         "name": "Crime and Policing Bill",
         "id": 786,
         "startDate": "2025-03-20T00:00:00",
-        "endDate": null,
+        "endDate": "2025-05-13T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -19400,6 +19508,15 @@
         "endDate": "2025-03-18T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Bus Services (No. 2) Bill [HL]",
+        "id": 804,
+        "startDate": "2025-06-24T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -19476,6 +19593,15 @@
         "id": 758,
         "startDate": "2025-01-15T00:00:00",
         "endDate": "2025-03-25T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Courts (Remote Hearings) Bill",
+        "id": 810,
+        "startDate": "2025-06-26T00:00:00",
+        "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -19604,6 +19730,15 @@
         "name": "Environment, Food and Rural Affairs Committee",
         "id": 52,
         "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Bus Services (No. 2) Bill [HL]",
+        "id": 804,
+        "startDate": "2025-06-24T00:00:00",
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
@@ -19814,6 +19949,15 @@
         "endDate": "2025-02-06T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Bus Services (No. 2) Bill [HL]",
+        "id": 804,
+        "startDate": "2025-06-24T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -19872,6 +20016,15 @@
         "id": 328,
         "startDate": "2024-10-28T00:00:00",
         "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Planning and Infrastructure Bill",
+        "id": 788,
+        "startDate": "2025-04-24T00:00:00",
+        "endDate": "2025-05-22T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -19943,6 +20096,15 @@
         "endDate": "2024-12-12T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Rare Cancers Bill",
+        "id": 808,
+        "startDate": "2025-06-26T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -20009,6 +20171,24 @@
         "name": "Petitions Committee",
         "id": 326,
         "startDate": "2025-03-03T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Licensing Hours Extensions Bill",
+        "id": 797,
+        "startDate": "2025-06-04T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Courts (Remote Hearings) Bill",
+        "id": 810,
+        "startDate": "2025-06-26T00:00:00",
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
@@ -20220,6 +20400,15 @@
         "endDate": "2025-02-11T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Public Accounts Committee",
+        "id": 127,
+        "startDate": "2025-06-30T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -20270,7 +20459,44 @@
       }
     ],
     "governmentPosts": null,
-    "oppositionPosts": null,
+    "oppositionPosts": [
+      {
+        "house": 1,
+        "name": "Green Spokesperson (Immigration)",
+        "id": 1717,
+        "startDate": "2024-07-04T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Opposition Department",
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Green Spokesperson (Energy and Net Zero)",
+        "id": 1722,
+        "startDate": "2024-07-04T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Opposition Department",
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Green Spokesperson (Science, Innovation and Technology)",
+        "id": 1729,
+        "startDate": "2024-07-04T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Opposition Department",
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Green Spokesperson (Women and Equalities)",
+        "id": 1733,
+        "startDate": "2024-07-04T00:00:00",
+        "endDate": null,
+        "additionalInfo": "Opposition Department",
+        "additionalInfoLink": null
+      }
+    ],
     "committeeMemberships": [
       {
         "house": 1,
@@ -20346,7 +20572,16 @@
         "name": "Crime and Policing Bill",
         "id": 786,
         "startDate": "2025-03-20T00:00:00",
-        "endDate": null,
+        "endDate": "2025-05-13T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Mental Health Bill [HL]",
+        "id": 798,
+        "startDate": "2025-06-09T00:00:00",
+        "endDate": "2025-06-24T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -20649,6 +20884,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Courts (Remote Hearings) Bill",
+        "id": 810,
+        "startDate": "2025-06-30T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -20778,6 +21022,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Bus Services (No. 2) Bill [HL]",
+        "id": 804,
+        "startDate": "2025-06-24T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -20854,6 +21107,15 @@
         "id": 784,
         "startDate": "2025-03-05T00:00:00",
         "endDate": "2025-03-20T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Norwich Livestock Market Bill [HL]",
+        "id": 793,
+        "startDate": "2025-06-25T00:00:00",
+        "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -21018,7 +21280,7 @@
         "name": "Crime and Policing Bill",
         "id": 786,
         "startDate": "2025-03-20T00:00:00",
-        "endDate": null,
+        "endDate": "2025-05-13T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -21147,6 +21409,24 @@
         "name": "International Development Committee",
         "id": 98,
         "startDate": "2025-03-24T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Absent Voting (Elections in Scotland and Wales) Bill",
+        "id": 800,
+        "startDate": "2025-06-09T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Rare Cancers Bill",
+        "id": 808,
+        "startDate": "2025-06-26T00:00:00",
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
@@ -21476,6 +21756,15 @@
         "endDate": "2025-01-30T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Victims and Courts Bill",
+        "id": 801,
+        "startDate": "2025-06-17T00:00:00",
+        "endDate": "2025-06-24T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -21641,6 +21930,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Courts (Remote Hearings) Bill",
+        "id": 810,
+        "startDate": "2025-06-26T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -21737,6 +22035,24 @@
         "endDate": "2025-03-18T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Absent Voting (Elections in Scotland and Wales) Bill",
+        "id": 800,
+        "startDate": "2025-06-09T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Space Industry (Indemnities) Bill",
+        "id": 803,
+        "startDate": "2025-06-18T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -21797,6 +22113,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Planning and Infrastructure Bill",
+        "id": 788,
+        "startDate": "2025-04-24T00:00:00",
+        "endDate": "2025-05-22T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -21854,6 +22179,24 @@
         "name": "Environmental Audit Committee",
         "id": 62,
         "startDate": "2024-10-28T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Absent Voting (Elections in Scotland and Wales) Bill",
+        "id": 800,
+        "startDate": "2025-06-09T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Space Industry (Indemnities) Bill",
+        "id": 803,
+        "startDate": "2025-06-18T00:00:00",
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
@@ -21935,6 +22278,15 @@
         "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Courts (Remote Hearings) Bill",
+        "id": 810,
+        "startDate": "2025-06-26T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
       }
     ]
   },
@@ -21986,7 +22338,17 @@
     ],
     "governmentPosts": null,
     "oppositionPosts": null,
-    "committeeMemberships": null
+    "committeeMemberships": [
+      {
+        "house": 1,
+        "name": "Space Industry (Indemnities) Bill",
+        "id": 803,
+        "startDate": "2025-06-18T00:00:00",
+        "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      }
+    ]
   },
   {
     "memberId": "5308",
@@ -22112,6 +22474,15 @@
         "id": 153,
         "startDate": "2024-10-28T00:00:00",
         "endDate": null,
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Planning and Infrastructure Bill",
+        "id": 788,
+        "startDate": "2025-04-24T00:00:00",
+        "endDate": "2025-05-22T00:00:00",
         "additionalInfo": null,
         "additionalInfoLink": null
       }
@@ -22291,6 +22662,15 @@
         "id": 781,
         "startDate": "2025-02-26T00:00:00",
         "endDate": "2025-03-11T00:00:00",
+        "additionalInfo": null,
+        "additionalInfoLink": null
+      },
+      {
+        "house": 1,
+        "name": "Unauthorised Entry to Football Matches Bill",
+        "id": 806,
+        "startDate": "2025-06-25T00:00:00",
+        "endDate": null,
         "additionalInfo": null,
         "additionalInfoLink": null
       }
