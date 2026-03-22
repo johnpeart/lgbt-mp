@@ -21,7 +21,7 @@ function readCSV(filePath) {
 
 async function fetchMemberData(memberId) {
     try {
-        const response = await fetch(`https://members-api.parliament.uk/api/Members/${memberId}`);
+        const response = await fetch(`https://members-api.parliament.uk/api/Members/${encodeURIComponent(memberId)}`);
         if (!response.ok) {
             console.error(`Failed to fetch data for member ID: ${memberId}. Status: ${response.status}`);
             return null;
@@ -37,7 +37,11 @@ async function fetchMemberData(memberId) {
 
 async function fetchMemberHistory(memberId) {
     try {
-        const response = await fetch(`https://members-api.parliament.uk/api/Members/History?ids=${memberId}`);
+        const response = await fetch(`https://members-api.parliament.uk/api/Members/History?ids=${encodeURIComponent(memberId)}`);
+        if (!response.ok) {
+            console.error(`Failed to fetch history for member ID: ${memberId}. Status: ${response.status}`);
+            return null;
+        }
         const data = await response.json();
         const partyHistory = data[0].value.partyHistory;
         const houseMembershipHistory = data[0].value.houseMembershipHistory;
@@ -49,7 +53,11 @@ async function fetchMemberHistory(memberId) {
 
 async function fetchMemberBiography(memberId) {
     try {
-        const response = await fetch(`https://members-api.parliament.uk/api/Members/${memberId}/Biography`);
+        const response = await fetch(`https://members-api.parliament.uk/api/Members/${encodeURIComponent(memberId)}/Biography`);
+        if (!response.ok) {
+            console.error(`Failed to fetch biography for member ID: ${memberId}. Status: ${response.status}`);
+            return null;
+        }
         const data = await response.json();
         const { governmentPosts, oppositionPosts, committeeMemberships } = data.value;
         return {

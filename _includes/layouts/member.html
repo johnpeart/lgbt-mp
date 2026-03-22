@@ -9,7 +9,7 @@ layout: base.html
     <dd>{{ member.lgbt.lgbtIdentity | default: "LGBT+ (specific identity not known)"  }}</dd>
     
     <dt>Source</dt>
-    <dd><a href="{{ member.lgbt.lgbtSourceURL }}">{{ member.lgbt.lgbtSourceDescription }}</a></dd>
+    <dd><a href="{{ member.lgbt.lgbtSourceURL | safeUrl }}">{{ member.lgbt.lgbtSourceDescription }}</a></dd>
     
     <dt>Source date</dt>
     <dd>{{ member.lgbt.lgbtSourceDate | date: "%Y-%m-%d" | prettyDate }}</dd>

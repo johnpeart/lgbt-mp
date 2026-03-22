@@ -24,8 +24,15 @@ export default function(eleventyConfig) {
         console.log("Member data fetched.");
     });
     
-    const md = new markdownIt({ html: true });
+    const md = new markdownIt({ html: false });
     eleventyConfig.addFilter("markdown", (content) => md.render(content));
+
+    eleventyConfig.addFilter("safeUrl", function(url) {
+        if (!url) return "#";
+        const trimmed = url.trim();
+        if (/^https?:\/\//i.test(trimmed)) return trimmed;
+        return "#";
+    });
 
     eleventyConfig.addFilter("prettyDate", function(date) {
         const options = { day: 'numeric', month: 'long', year: 'numeric' };
