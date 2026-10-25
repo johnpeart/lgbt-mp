@@ -1,0 +1,145 @@
+/* PARTY ICONS */
+details.party > summary svg {
+
+    display: block;
+    grid-area: img;
+
+    align-self: center;
+    justify-self: center;
+
+    margin-right: var(--container-padding);
+    margin-left: 0;
+
+    height: var(--party-icon-size);
+    max-width: var(--party-icon-size);
+
+    @media (width >= 1024px) {
+        margin-right: calc(var(--container-padding) * 2);
+    }
+
+}
+
+details.party summary:hover {
+
+    & #party-icon--alba path {
+        fill: var(--color-alba);
+    }
+
+    & #party-icon--conservative path {
+        fill: var(--color-conservative);
+    }
+
+    & #party-icon--independent path {
+        fill: var(--color-independent);
+    }
+
+    & #party-icon--labour path {
+        fill: var(--color-labour);
+    }
+
+    & #party-icon--green path {
+        fill: var(--color-green);
+    }
+
+    & #party-icon--liberal-democrat path {
+        fill: var(--color-liberal-democrats);
+    }
+
+    & #party-icon--snp path {
+        fill: var(--color-scottish-national-party);
+    }
+
+    & #party-icon--plaid-cymru {
+
+        & #plaid-outer path {
+            fill: #fbc707;
+        }
+        & #plaid-fourth path {
+            fill: #f5af0b;
+        }
+        & #plaid-third path {
+            fill: #e8860f;
+        }
+        & #plaid-second path {
+            fill: #ef9b0d;
+        }
+        & #plaid-inner path {
+            fill: #d16d2f;
+        }
+    }
+
+}
+
+img.member-portrait {
+
+    grid-area: portrait;
+    border-radius: 100%;
+
+    border: 3px solid;
+
+    @media (width >= 1024px) {
+        margin-right: var(--container-padding);
+    }
+
+    &.member-portrait-small {
+        max-height: 50px;
+        max-width: 50px;
+
+        @media (width >= 1024px) {
+            max-height: 60px;
+            max-width: 60px;
+        }
+        @media (width >= 1360px) {
+            max-height: 70px;
+            max-width: 70px;
+        }
+        @media (width >= 1920px) {
+            max-height: 75px;
+            max-width: 75px;
+        }
+    }
+    &.member-portrait-large {
+        align-self: flex-start;
+        margin-block-start: var(--container-padding);
+        max-height: 100px;
+        max-width: 100px;
+
+        @media (width >= 1360px) {
+            max-height: 150px;
+            max-width: 150px;
+        }
+    }
+
+    &.alba {
+        border-color: var(--color-alba);
+    }
+
+    &.conservative {
+        border-color: var(--color-conservative);
+    }
+
+    &.independent {
+        border-color: var(--color-independent);
+    }
+
+    &.labour {
+        border-color: var(--color-labour);
+    }
+
+    &.liberal-democrat {
+        border-color: var(--color-liberal-democrats);
+    }
+
+    &.scottish-national-party {
+        border-color: var(--color-scottish-national-party);
+    }
+
+    &.plaid-cymru {
+        border-color: var(--color-plaid-cymru);
+    }
+
+    &.green-party {
+        border-color: var(--color-green);
+    }
+
+}

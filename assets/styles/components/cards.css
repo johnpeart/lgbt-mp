@@ -1,0 +1,84 @@
+.member {
+
+    display: grid;
+    position: relative;
+
+    grid-template-columns: auto 1fr 20px;
+    grid-template-rows: auto auto;
+    grid-gap: 0 var(--container-padding);
+    grid-template-areas: "portrait member-name arrow" "portrait member-constituency arrow";
+
+    box-shadow: var(--box-shadow);
+    padding: var(--container-padding);
+
+    & .member-name {
+
+        grid-area: member-name;
+
+        font-size: var(--member-name-font-size);
+        line-height: var(--member-name-line-height);
+        padding: var(--member-name-padding);
+        font-weight: bold;
+        font-style: normal;
+        text-align: left;
+
+    }
+
+    & .member-constituency {
+
+        grid-area: member-constituency;
+
+        font-size: var(--member-constituency-font-size);
+        line-height: var(--member-constituency-line-height);
+        padding: var(--member-constituency-padding);
+        font-weight: normal;
+        font-style: normal;
+        text-align: left;
+
+    }
+
+}
+
+.card--with-border {
+    border-left: 6px solid;
+
+    &.alba {
+        border-color: var(--color-alba);
+    }
+
+    &.conservative {
+        border-color: var(--color-conservative);
+    }
+
+    &.independent {
+        border-color: var(--color-independent);
+    }
+
+    &.labour {
+        border-color: var(--color-labour);
+    }
+
+    &.liberal-democrat {
+        border-color: var(--color-liberal-democrats);
+    }
+
+    &.scottish-national-party {
+        border-color: var(--color-scottish-national-party);
+    }
+
+    &.plaid-cymru {
+        border-color: var(--color-plaid-cymru);
+    }
+
+    &.green-party {
+        border-color: var(--color-green);
+    }
+
+    &.commons {
+        border-color: var(--color-commons);
+    }
+
+    &.lords {
+        border-color: var(--color-lords);
+    }
+}

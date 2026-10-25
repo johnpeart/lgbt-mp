@@ -1,0 +1,82 @@
+footer {
+
+    min-height: 20vh;
+
+    margin-block-start: var(--container-padding);
+    padding: calc(var(--container-padding) * 3) 0;
+
+    background: var(--color-grey-3);
+
+    & ul {
+        list-style: none;
+    }
+
+}
+
+footer > div.container {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "heading" "navigation" "other";
+
+    row-gap: var(--container-padding);
+    column-gap: var(--container-padding);
+
+    @media (width >= 1024px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "heading navigation" "heading other";
+    }
+    @media (width >= 1360px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "heading navigation other";
+    }
+
+    & p.footer--heading {
+        font-size: var(--lead-font-size);
+        line-height: var(--lead-line-height);
+        padding: var(--lead-padding);
+        font-weight: normal;
+        font-style: normal;
+        text-transform: none;
+        text-align: left;
+    }
+    & .footer--navigation {
+        grid-area: navigation;
+        font-size: var(--lead-font-size);
+        line-height: var(--lead-line-height);
+        padding: var(--lead-padding);
+        padding-left: 0;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: none;
+        text-align: left;
+    }
+    & .footer--other {
+        grid-area: other;
+        font-size: var(--lead-font-size);
+        line-height: var(--lead-line-height);
+        padding: var(--lead-padding);
+        padding-left: 0;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: none;
+        text-align: left;
+    }
+    & .footer--colophon {
+        padding-left: 0;
+        grid-area: colophon;
+        padding-top: calc(var(--container-padding) * 2);
+    }
+
+}
+
+aside.errors p:first-of-type {
+    border-top: 1px solid var(--color-grey-3);
+    margin-block-start: calc(var(--container-padding) * 3);
+    padding: var(--container-padding) 0;
+    color: var(--color-grey-1);
+}

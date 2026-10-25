@@ -1,0 +1,101 @@
+/* Global styles */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+
+    font-family: var(--font-family);
+    font-kerning: auto;
+    letter-spacing: normal;
+
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    text-align: left;
+
+    background: var(--color-deep-purple);
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    @media (width >= 1024px) {
+        overflow-x: auto;
+        overflow-y: scroll;
+    }
+
+}
+
+body {
+
+    display: grid;
+
+    background: var(--color-deep-purple);
+    color: var(--color-deep-purple);
+
+    /* Hide scrollbar on larger screens */
+    @media (width >= 1024px) {
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+}
+
+main {
+    min-height: 70vh;
+}
+
+section#content {
+
+    display: block;
+    position: relative;
+
+    top: 0;
+
+    background: var(--color-westminster-white);
+    color: var(--color-deep-purple);
+
+    min-height: 100vh;
+
+}
+
+.container {
+
+    display: block;
+    position: relative;
+
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+
+    width: 100%;
+    max-width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (width >= 767px) {
+        max-width: var(--container-sm);
+    }
+    @media (width >= 1024px) {
+        max-width: var(--container-md);
+    }
+    @media (width >= 1360px) {
+        max-width: var(--container-lg);
+    }
+    @media (width >= 1920px) {
+        max-width: var(--container-xl);
+    }
+
+}

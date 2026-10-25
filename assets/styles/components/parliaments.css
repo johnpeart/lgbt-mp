@@ -1,0 +1,62 @@
+ul.parliaments {
+    margin-top: var(--container-padding);
+    padding-left: 0;
+    margin-left: 0;
+
+    list-style: none;
+}
+
+ul.parliaments.cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    list-style: none;
+
+    background: var(--color-white);
+    box-shadow: var(--box-shadow);
+
+    @media (width >= 1024px) {
+        grid-template-rows: none;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+ul.parliaments li {
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "text arrow";
+    padding: var(--container-padding);
+    margin: 0;
+
+    &:nth-of-type(2n-1) {
+        @media (width < 1024px) {
+            border-bottom: 1px dotted var(--color-grey-3);
+        }
+        @media (width >= 1024px) {
+            border-right: 1px dotted var(--color-grey-3);
+        }
+    }
+
+    & p.date {
+
+        padding: 0;
+
+        & span.label {
+            display: block;
+        }
+
+        & span.large-date {
+            display: block;
+            font-size: var(--large-date-font-size);
+            line-height: var(--large-date-line-height);
+            padding: var(--large-date-padding);
+            font-weight: bold;
+            font-style: normal;
+            text-transform: none;
+            text-align: left;
+        }
+
+    }
+
+}

@@ -1,0 +1,441 @@
+/* DESIGN TOKENS
+   All colours, sizes and type styles used across the site live here.
+
+   Breakpoints (custom properties can't be used in media queries, so these
+   values are written out wherever they are needed):
+
+     xs:    0 – 766px
+     sm:  767 – 1023px
+     md: 1024 – 1359px
+     lg: 1360 – 1919px
+     xl: 1920px and up
+*/
+
+:root {
+
+    /* COLOUR PALETTE */
+
+    --color-black: #000000;
+    --color-westminster-white: #ebe9e8;
+    --color-westminster-white-90: #f6f5f5;
+
+    --color-deep-purple: #373151;
+    --color-deep-purple--light: #625a75;
+    --color-purple: #5c2db4;
+    --color-purple--dark: #3e1d78;
+    --color-purple--light: #e7dff4;
+    --color-mint: #96dcbe;
+    --color-mint--dark: #6ec29e;
+    --color-mint--light: #dff4eb;
+    --color-commons: #006e46;
+    --color-commons--dark: #004229;
+    --color-lords: #b50938;
+    --color-grey-1: #4d4d4d;
+    --color-grey-2: #717171;
+    --color-grey-3: #cbc9cd;
+    --color-grey-4: #ebe9e8;
+    --color-grey-5: #f8f7f7;
+    --color-white: #ffffff;
+
+    --color-link: #2b57ab;
+    --color-link-hover: #7592c8;
+    --color-link-visited: #7c1389;
+    --color-button: #2b57ab;
+    --color-button-hover: #214282;
+    --color-success: #00b95d;
+    --color-success--dark: #009049;
+    --color-success-light: #bfedd6;
+    --color-caution: #fbcf19;
+    --color-caution--dark: #e0b507;
+    --color-caution--light: #fef3c7;
+    --color-warning: #de2e32;
+    --color-warning--dark: #a72326;
+    --color-warning-light: #f7cbcc;
+
+    --color-dark-purple: #373151;
+    --color-dark-purple-90: #4d4564;
+    --color-dark-purple-80: #625a75;
+    --color-dark-purple-70: #777285;
+    --color-dark-purple-60: #8b8697;
+    --color-dark-purple-50: #a09ca9;
+    --color-dark-purple-40: #b6b2bb;
+    --color-dark-purple-30: #cbc9cd;
+    --color-dark-purple-20: #e2e0e1;
+
+    --color-deep-bright-purple: #3e1d78;
+    --color-dark-bright-purple: #4c238f;
+    --color-bright-purple: #5f2db4;
+    --color-bright-purple-85: #774cbe;
+    --color-bright-purple-70: #8e6cca;
+    --color-bright-purple-60: #9e80d1;
+    --color-bright-purple-50: #ae95d8;
+    --color-bright-purple-40: #beaae0;
+    --color-bright-purple-30: #cebfe8;
+    --color-bright-purple-20: #ded4ef;
+    --color-bright-purple-10: #e7dff4;
+
+    --color-deep-mint: #519c7c;
+    --color-dark-mint: #6ec29e;
+    --color-mint-100: #96dcbe;
+    --color-mint-85: #a6e1c8;
+    --color-mint-70: #b5e6d1;
+    --color-mint-60: #c0ead8;
+    --color-mint-50: #caedde;
+    --color-mint-40: #d5f1e5;
+    --color-mint-30: #dff4eb;
+    --color-mint-20: #eaf8f2;
+    --color-mint-10: #f4fbf8;
+
+    --color-vibrant-yellow: #f5ee61;
+    --color-vibrant-ochre: #fbcf20;
+    --color-vibrant-orange: #ff7200;
+    --color-vibrant-red: #de2e32;
+    --color-vibrant-magenta: #ff48a6;
+    --color-vibrant-purple: #b81cdd;
+    --color-vibrant-indigo: #4541e6;
+    --color-vibrant-blue: #0a78ff;
+    --color-vibrant-teal: #46cfdb;
+    --color-vibrant-green: #00ba5d;
+    --color-vibrant-light-green: #98d94d;
+    --color-vibrant-lime: #d2f05a;
+
+    --color-rich-light-ochre: #f0e4bb;
+    --color-rich-olive-green: #777d1a;
+    --color-rich-burnt-orange: #c23d00;
+    --color-rich-dark-red: #8f0028;
+    --color-rich-dark-magenta: #a91a71;
+    --color-rich-plum: #7c1389;
+    --color-rich-dark-indigo: #353375;
+    --color-rich-dark-blue: #2b57ab;
+    --color-rich-dark-teal: #335d7d;
+    --color-rich-dark-green: #005434;
+    --color-rich-silver: #a7a9ac;
+    --color-rich-gold: #a39161;
+
+    --color-commons-green: #006548;
+    --color-commons-deeper-green: #004229;
+    --color-commons-darker-green: #005434;
+
+    --color-lords-red: #b50938;
+
+    --color-alba: #005EB8;
+    --color-conservative: #0087dc;
+    --color-labour: #e41d13;
+    --color-liberal-democrats: #fdbb30;
+    --color-plaid-cymru: #d16d2f;
+    --color-green: #02A95B;
+    --color-scottish-national-party: #FDF38E;
+    --color-bishops: #57197c;
+    --color-crossbenchers: #007b87;
+    --color-independent: #4d4d4d;
+
+    /* LAYOUT */
+
+    --container-padding: 15px;
+
+    --container-sm: 510px;
+    --container-md: 690px;
+    --container-lg: 900px;
+    --container-xl: 950px;
+
+    --box-shadow: 0 1px 1px 0 rgb(60 64 67 / .08), 0 1px 3px 1px rgb(60 64 67 / .16);
+
+    /* FONTS */
+
+    --font-family: "custom", -apple-system, "Helvetica Neue", Helvetica, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    /* TYPE SCALE
+       Each text style has a font size, line height and padding that change
+       at each breakpoint. Values below are for xs (mobile first). */
+
+    --body-font-size: 12pt;
+    --body-line-height: 15pt;
+    --body-padding: 0 0 8pt;
+
+    --lead-font-size: 13pt;
+    --lead-line-height: 20pt;
+    --lead-padding: 0 0 13pt;
+
+    --large-date-font-size: 17pt;
+    --large-date-line-height: 22pt;
+    --large-date-padding: 5pt 0 0;
+
+    --title-1-large-font-size: 20pt;
+    --title-1-large-line-height: 30pt;
+    --title-1-large-padding: 24pt 0;
+
+    --title-1-font-size: 20pt;
+    --title-1-line-height: 31pt;
+    --title-1-padding: 30pt 0 25pt;
+
+    --title-2-large-font-size: 25pt;
+    --title-2-large-line-height: 31pt;
+    --title-2-large-padding: 50pt 0 25pt;
+
+    --title-2-font-size: 22pt;
+    --title-2-line-height: 28pt;
+    --title-2-padding: 40pt 0 20pt;
+
+    --title-3-font-size: 12pt;
+    --title-3-line-height: 15pt;
+    --title-3-padding: 24pt 0 12pt;
+
+    --title-4-font-size: 10pt;
+    --title-4-line-height: 15pt;
+    --title-4-padding: 10pt 0 8pt;
+
+    --large-number-font-size: 50pt;
+    --large-number-line-height: 50pt;
+    --large-number-padding: 0;
+
+    --label-font-size: 13pt;
+    --label-line-height: 13pt;
+    --label-padding: 0;
+
+    --party-name-font-size: 13pt;
+    --party-name-line-height: 18pt;
+    --party-name-padding: 0;
+    --party-icon-size: 27pt;
+
+    --party-total-font-size: 11pt;
+    --party-total-line-height: 18pt;
+    --party-total-padding: 0;
+
+    --member-name-font-size: 11pt;
+    --member-name-line-height: 15pt;
+    --member-name-padding: 0;
+
+    --member-constituency-font-size: 10pt;
+    --member-constituency-line-height: 15pt;
+    --member-constituency-padding: 0;
+
+}
+
+/* sm */
+@media (width >= 767px) {
+    :root {
+        --body-line-height: 16pt;
+        --body-padding: 0 0 9pt;
+
+        --lead-font-size: 14pt;
+        --lead-line-height: 21pt;
+        --lead-padding: 0 0 14pt;
+
+        --large-date-font-size: 18pt;
+        --large-date-line-height: 23pt;
+        --large-date-padding: 6pt 0 0;
+
+        --title-1-large-font-size: 30pt;
+        --title-1-large-line-height: 36pt;
+        --title-1-large-padding: 33pt 0;
+
+        --title-1-font-size: 26pt;
+        --title-1-line-height: 32pt;
+        --title-1-padding: 30pt 0 26pt;
+
+        --title-2-large-font-size: 26pt;
+        --title-2-large-line-height: 32pt;
+        --title-2-large-padding: 52pt 0 26pt;
+
+        --title-2-font-size: 23pt;
+        --title-2-line-height: 29pt;
+        --title-2-padding: 42pt 0 21pt;
+
+        --title-3-font-size: 13pt;
+        --title-3-line-height: 16pt;
+        --title-3-padding: 26pt 0 13pt;
+
+        --title-4-font-size: 11pt;
+        --title-4-line-height: 16pt;
+        --title-4-padding: 11pt 0 9pt;
+
+        --large-number-padding: 15pt 0 0;
+
+        --party-name-font-size: 16pt;
+        --party-name-line-height: 21pt;
+        --party-name-padding: 2pt 0;
+        --party-icon-size: 42pt;
+
+        --party-total-font-size: 13pt;
+        --party-total-line-height: 21pt;
+        --party-total-padding: 2pt 0 0;
+
+        --member-name-font-size: 14pt;
+        --member-name-line-height: 18pt;
+        --member-name-padding: 2pt 0 0;
+
+        --member-constituency-font-size: 12pt;
+        --member-constituency-line-height: 17pt;
+        --member-constituency-padding: 2pt 0 0;
+    }
+}
+
+/* md */
+@media (width >= 1024px) {
+    :root {
+        --body-font-size: 13pt;
+        --body-line-height: 17pt;
+        --body-padding: 0 0 10pt;
+
+        --lead-font-size: 15pt;
+        --lead-line-height: 22pt;
+        --lead-padding: 0 0 15pt;
+
+        --large-date-font-size: 19pt;
+        --large-date-line-height: 24pt;
+        --large-date-padding: 7pt 0 0;
+
+        --title-1-large-font-size: 34pt;
+        --title-1-large-line-height: 40pt;
+        --title-1-large-padding: 34pt 0;
+
+        --title-1-font-size: 27pt;
+        --title-1-line-height: 33pt;
+        --title-1-padding: 45pt 0 27pt;
+
+        --title-2-large-font-size: 27pt;
+        --title-2-large-line-height: 33pt;
+        --title-2-large-padding: 54pt 0 27pt;
+
+        --title-2-font-size: 24pt;
+        --title-2-line-height: 30pt;
+        --title-2-padding: 44pt 0 22pt;
+
+        --title-3-font-size: 14pt;
+        --title-3-line-height: 17pt;
+        --title-3-padding: 28pt 0 14pt;
+
+        --title-4-font-size: 12pt;
+        --title-4-line-height: 17pt;
+        --title-4-padding: 12pt 0 10pt;
+
+        --label-font-size: 14pt;
+        --label-line-height: 14pt;
+
+        --party-name-font-size: 18pt;
+        --party-name-line-height: 22pt;
+        --party-icon-size: 44pt;
+
+        --party-total-font-size: 15pt;
+        --party-total-line-height: 22pt;
+
+        --member-name-font-size: 16pt;
+        --member-name-line-height: 20pt;
+
+        --member-constituency-font-size: 13pt;
+        --member-constituency-line-height: 18pt;
+    }
+}
+
+/* lg */
+@media (width >= 1360px) {
+    :root {
+        --body-font-size: 14pt;
+        --body-line-height: 18pt;
+
+        --lead-font-size: 16pt;
+        --lead-line-height: 23pt;
+        --lead-padding: 0 0 16pt;
+
+        --large-date-font-size: 20pt;
+        --large-date-line-height: 25pt;
+        --large-date-padding: 8pt 0 0;
+
+        --title-1-large-font-size: 40pt;
+        --title-1-large-line-height: 48pt;
+        --title-1-large-padding: 36pt 0;
+
+        --title-1-font-size: 28pt;
+        --title-1-line-height: 34pt;
+        --title-1-padding: 45pt 0 28pt;
+
+        --title-2-large-font-size: 28pt;
+        --title-2-large-line-height: 34pt;
+        --title-2-large-padding: 56pt 0 28pt;
+
+        --title-2-font-size: 25pt;
+        --title-2-line-height: 31pt;
+        --title-2-padding: 46pt 0 23pt;
+
+        --title-3-font-size: 15pt;
+        --title-3-line-height: 18pt;
+        --title-3-padding: 30pt 0 15pt;
+
+        --title-4-font-size: 13pt;
+        --title-4-line-height: 18pt;
+        --title-4-padding: 13pt 0 10pt;
+
+        --large-number-font-size: 60pt;
+        --large-number-line-height: 60pt;
+        --large-number-padding: 20pt 0 0;
+
+        --label-font-size: 18pt;
+        --label-line-height: 18pt;
+
+        --party-name-font-size: 20pt;
+        --party-name-line-height: 25pt;
+        --party-icon-size: 50pt;
+
+        --party-total-font-size: 16pt;
+        --party-total-line-height: 23pt;
+
+        --member-name-font-size: 18pt;
+        --member-name-line-height: 25pt;
+
+        --member-constituency-font-size: 14pt;
+        --member-constituency-line-height: 19pt;
+    }
+}
+
+/* xl */
+@media (width >= 1920px) {
+    :root {
+        --body-font-size: 15pt;
+
+        --lead-font-size: 18pt;
+        --lead-line-height: 25pt;
+        --lead-padding: 0 0 18pt;
+
+        --large-date-font-size: 22pt;
+        --large-date-line-height: 27pt;
+        --large-date-padding: 10pt 0 0;
+
+        --title-1-large-font-size: 48pt;
+        --title-1-large-line-height: 54pt;
+        --title-1-large-padding: 40pt 0;
+
+        --title-1-font-size: 30pt;
+        --title-1-line-height: 36pt;
+        --title-1-padding: 50pt 0 30pt;
+
+        --title-2-large-font-size: 30pt;
+        --title-2-large-line-height: 36pt;
+        --title-2-large-padding: 60pt 0 30pt;
+
+        --title-2-font-size: 27pt;
+        --title-2-line-height: 33pt;
+        --title-2-padding: 50pt 0 25pt;
+
+        --title-3-font-size: 17pt;
+        --title-3-line-height: 20pt;
+        --title-3-padding: 34pt 0 17pt;
+
+        --large-number-font-size: 70pt;
+        --large-number-line-height: 70pt;
+
+        --label-font-size: 22pt;
+        --label-line-height: 22pt;
+
+        --party-name-font-size: 24pt;
+        --party-name-line-height: 27pt;
+        --party-icon-size: 54pt;
+
+        --party-total-font-size: 18pt;
+        --party-total-line-height: 25pt;
+
+        --member-name-font-size: 20pt;
+
+        --member-constituency-font-size: 16pt;
+        --member-constituency-line-height: 21pt;
+    }
+}

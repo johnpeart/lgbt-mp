@@ -1,0 +1,133 @@
+p,
+dt,
+dd,
+li {
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+    padding: var(--body-padding);
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    text-align: left;
+}
+
+p.lead {
+    font-size: var(--lead-font-size);
+    line-height: var(--lead-line-height);
+    padding: var(--lead-padding);
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    text-align: left;
+}
+
+ul {
+    list-style: disc;
+    padding-top: 0;
+    padding-left: calc(var(--container-padding) * 2);
+}
+ol {
+    list-style: decimal;
+    padding-top: 0;
+}
+
+strong, b, dt {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
+}
+
+center {
+    text-align: center;
+}
+
+code {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: var(--title-1-font-size);
+    line-height: var(--title-1-line-height);
+    padding: var(--title-1-padding);
+    font-weight: bold;
+    font-style: normal;
+    text-transform: none;
+    text-align: left;
+    text-wrap: balance;
+}
+
+h1.largeTitle {
+    font-size: var(--title-1-large-font-size);
+    line-height: var(--title-1-large-line-height);
+    padding: var(--title-1-large-padding);
+    font-weight: bold;
+    font-style: normal;
+    text-transform: none;
+    text-align: left;
+}
+
+h2 + h3 {
+    padding-top: 0;
+}
+
+h2 {
+    font-size: var(--title-2-font-size);
+    line-height: var(--title-2-line-height);
+    padding: var(--title-2-padding);
+    font-weight: bold;
+    font-style: normal;
+    text-transform: none;
+    text-align: left;
+}
+
+h2.largeTitle {
+    font-size: var(--title-2-large-font-size);
+    line-height: var(--title-2-large-line-height);
+    padding: var(--title-2-large-padding);
+    font-weight: bold;
+    font-style: normal;
+    text-transform: none;
+    text-align: left;
+}
+
+h3 {
+    font-size: var(--title-3-font-size);
+    line-height: var(--title-3-line-height);
+    padding: var(--title-3-padding);
+    font-weight: bold;
+    font-style: normal;
+    text-transform: none;
+    text-align: left;
+}
+
+h4 {
+    font-size: var(--title-4-font-size);
+    line-height: var(--title-4-line-height);
+    padding: var(--title-4-padding);
+    font-weight: bold;
+    font-style: normal;
+    text-transform: none;
+    text-align: left;
+}
+
+blockquote {
+
+    padding: var(--container-padding);
+    border-left: 5px solid var(--color-purple);
+    background: var(--color-purple--light);
+
+    & *:last-child {
+        padding-bottom: 0;
+    }
+
+    &.banner-mode {
+        margin-bottom: var(--container-padding);
+    }
+
+}

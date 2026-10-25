@@ -1,0 +1,33 @@
+.stat--number {
+
+    font-size: var(--large-number-font-size);
+    line-height: var(--large-number-line-height);
+    padding: var(--large-number-padding);
+    font-weight: bold;
+    font-style: normal;
+    text-transform: none;
+    text-align: left;
+
+    color: var(--color-purple--dark);
+
+    &.top-padding {
+        margin-top: 25pt;
+
+        @media (width >= 767px) {
+            margin-top: 0;
+        }
+    }
+
+}
+
+.stat--label {
+
+    font-size: var(--label-font-size);
+    line-height: var(--label-line-height);
+    padding: var(--label-padding);
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    text-align: left;
+
+}

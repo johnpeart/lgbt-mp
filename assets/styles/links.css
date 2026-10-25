@@ -1,0 +1,88 @@
+a {
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:link {
+        color: var(--color-link);
+    }
+    &:visited {
+        color: var(--color-link-visited);
+    }
+    &:hover {
+        color: var(--color-link-hover);
+        text-decoration: underline;
+    }
+    &:focus,
+    &:focus-visible {
+        color: var(--color-deep-purple) !important;
+        background: var(--color-mint);
+        outline: 5px solid var(--color-mint);
+    }
+    &:active {
+        text-decoration: none;
+        color: var(--color-deep-purple) !important;
+    }
+    &:focus:hover {
+        color: var(--color-deep-purple) !important;
+        text-decoration: none;
+    }
+}
+
+a.inverse {
+    &:link,
+    &:visited {
+        color: var(--color-westminster-white-90);
+        text-decoration: underline;
+    }
+    &:focus {
+        text-decoration: none;
+    }
+    &:focus:hover,
+    &:focus-visible:hover {
+        text-decoration: underline;
+    }
+    &:active {
+        text-decoration: none;
+    }
+}
+
+a.card:link,
+a.card:visited,
+a.card:hover {
+    & :is(h1, h2, h3) {
+        color: var(--color-deep-purple);
+    }
+    & p {
+        color: var(--color-black);
+    }
+}
+
+a.card:link .card,
+a.card:visited .card,
+a.card:hover .card {
+    & :is(h1, h2, h3) {
+        color: var(--color-deep-purple);
+    }
+    & p {
+        color: var(--color-black);
+    }
+}
+
+a.card:hover,
+a.card:hover .card {
+    text-decoration: none;
+    background: var(--color-grey-5);
+}
+
+a.card:focus,
+a.card:focus .card {
+    color: var(--color-deep-purple);
+    background: var(--color-mint);
+    outline: 3px solid var(--color-mint);
+}
+
+a.card:active,
+a.card:active .card {
+    text-decoration: none;
+}

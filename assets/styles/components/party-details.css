@@ -1,0 +1,95 @@
+details {
+    background: var(--color-white);
+    margin-bottom: var(--container-padding);
+    box-shadow: var(--box-shadow);
+}
+
+details.party summary {
+    position: relative;
+    padding: var(--container-padding);
+    list-style: none; /* Removes marker in most browsers */
+}
+
+details > summary::marker,
+details > summary::-webkit-details-marker {
+    display: none;
+    list-style-image: none;
+    list-style: none;
+    content: '';
+    width: 0;
+    height: 0;
+}
+
+div.party-summary {
+    display: grid;
+    position: relative;
+
+    grid-template-columns: auto 1fr 20px;
+    grid-template-rows: auto auto;
+    grid-template-areas: "img party-name arrow" "img party-total arrow";
+}
+
+details > summary:focus,
+details[open] > summary:focus {
+    background: var(--color-mint--light);
+    outline: 5px solid var(--color-mint--light);
+    outline-offset: 6px;
+}
+
+details > summary:focus:active,
+details[open] > summary:focus:active {
+    outline: none;
+    outline-offset: 0;
+}
+
+details > summary:focus-visible,
+details > summary:active,
+details[open] > summary:focus-visible,
+details[open] > summary:active {
+    background: var(--color-mint--light);
+    outline: 5px solid var(--color-mint--light);
+}
+
+details[open] > summary {
+    border-bottom: 1px dotted var(--color-grey-3);
+}
+
+summary:hover {
+    cursor: pointer;
+    background: var(--color-grey-5);
+}
+
+.party-name {
+    display: block;
+    grid-area: party-name;
+
+    font-size: var(--party-name-font-size);
+    line-height: var(--party-name-line-height);
+    padding: var(--party-name-padding);
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+}
+
+.party-total {
+    display: block;
+    grid-area: party-total;
+
+    font-size: var(--party-total-font-size);
+    line-height: var(--party-total-line-height);
+    padding: var(--party-total-padding);
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+}
+
+section.party-members {
+    display: grid;
+    grid-gap: var(--container-padding);
+    padding: var(--container-padding);
+
+    & p strong.label,
+    & p span.data {
+        text-align: left;
+    }
+}
