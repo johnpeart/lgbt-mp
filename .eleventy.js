@@ -10,6 +10,8 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets/fonts");
     eleventyConfig.addPassthroughCopy("favicon.ico");
 
+    eleventyConfig.ignores.add("README.md");
+
     eleventyConfig.on("eleventy.before", async () => {
         const args = process.argv;
         const isWatching = args.includes("--watch") || args.includes("--serve");
